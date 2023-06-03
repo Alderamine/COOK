@@ -90,19 +90,20 @@ export default function LandingPage() {
               </svg>
             </div>
 
-            <div className='absolute left-0 bottom-0 bg-primaryLighten rounded-[16px] p-[24px] w-[284px] h-[200px] '>
+            <div className='absolute left-[-5.139vw] bottom-[-58px] bg-primaryLighten border border-primary rounded-[16px] p-[24px] w-[284px] h-[200px] '>
               <div className='flex items-center gap-[25px]'>
                 <img src={CardProfile} />
                 <div>
-                  <h2>David Mitchell</h2>
+                  <h2 className='font-rubik text-[18px] font-medium leading-[21.33px]'>David Mitchell</h2>
                   <div className='flex items-center gap-[7px]'>
-                    <h3>4.8️</h3>
+                    <h3 className='font-outfit text-[16px] font-semibold leading-[20.16px]'>4.8️</h3>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 1.5L10.163 5.77865L15 6.46898L11.5 9.79758L12.326 14.5L8 12.2787L3.674 14.5L4.5 9.79758L1 6.46898L5.837 5.77865L8 1.5Z" fill="#D27722" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                   </div>
                 </div>
               </div>
+              <p className='font-outfit font-[400] text-[14px] leading-[22.4px]'>I've discovered a whole new world of flavors. Learning to cook has never been this fun and engaging!</p>
             </div>
           </div>
         </section>
