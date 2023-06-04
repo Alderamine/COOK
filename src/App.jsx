@@ -5,7 +5,7 @@ import LandingPage from './pages/LandingPage'
 function App() {
 
   return (
-    <div className='w-[100vw]'>
+    <div className='w-[calc(100vw - 100%)]'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<LandingPage></LandingPage>}></Route>
