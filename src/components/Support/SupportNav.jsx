@@ -1,6 +1,6 @@
 import React from 'react'
-import NavIcon from "../assets/Support/NavIcon.svg"
-import NavEnglish from "../assets/Support/NavEnglish.svg"
+import NavIcon from "../../assets/Support/NavIcon.svg"
+import NavEnglish from "../../assets/Support/NavEnglish.svg"
 
 export default function SupportNav() {
   return (

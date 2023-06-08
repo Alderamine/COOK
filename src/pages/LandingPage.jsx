@@ -38,7 +38,7 @@ import CookBlog4 from "../assets/LandingPage/CookBlog4.png"
 export default function LandingPage() {
   return (
     <>
-      <nav className='h-[104px] w-[100%] px-[64px] flex items-center justify-between border-b border-[rgba(255,219,184,1)]'>
+      <nav className='h-[104px] w-[100%] px-[64px] fixed top-0 bg-[white] z-[1000] flex items-center justify-between border-b border-[rgba(255,219,184,1)]'>
         <div className='flex items-center gap-[32px]'>
           <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primary'>COOK</h1>
           <div className='md:hidden h-[15px] border border-primary rouded-[16px]'></div>
@@ -94,7 +94,7 @@ export default function LandingPage() {
         </div>
       </nav>
 
-      <main>
+      <main className='pt-[104px]'>
         <section className='w-full px-[64px] flex md:flex-col-reverse md:items-center justify-between gap-[92px]'>
           <div className=''>
             <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] text-TextColor mt-[85px]'>Master the Art of Cooking with <span className='text-primary font-normal font-pacifico '>Experts</span> Worldwide </h1>

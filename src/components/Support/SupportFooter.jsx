@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SupportFooter() {
   return (
-    <footer className='border border-[rgba(255,219,184,1)] mt-[68px] flex flex-col items-center pt-[52px] pb-[64px]'>
+    <footer className='border-t border-[rgba(255,219,184,1)] mt-[68px] flex flex-col items-center pt-[52px] pb-[64px]'>
       <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primary'>COOK</h1>
       <div className='flex gap-[10px] mt-[8px]'>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

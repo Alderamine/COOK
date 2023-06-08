@@ -12,7 +12,7 @@ export default {
       },
     },
     colors: {
-      'primary': '#E08836',
+      'primary': '#D27722',
       'primaryLighten': '#FFFDF4',
       'TextColor': '#252422',
       'TextColorSec': '#403d39',
