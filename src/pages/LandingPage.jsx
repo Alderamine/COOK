@@ -110,7 +110,7 @@ export default function LandingPage() {
               <path d="M19.5555 4.35812C27.8213 0.191495 43.1371 0.505382 43.1371 0.505382C43.1371 0.505382 49.5786 19.5106 43.1371 28.5753C33.6644 41.9059 0 28.5753 0 28.5753C0 28.5753 8.50505 9.92845 19.5555 4.35812Z" fill="#D27722" />
             </svg>
             <div>
-              <h3 className='font-rubik font-medium text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px]'>Explore & Learn</h3>
+              <h3 className='font-rubik font-sem text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px]'>Explore & Learn</h3>
               <p className='font-outfit font-normal text-[16px] leading-[26.8px]'>Dive into a range of cooking styles and techniques tailored to your interests</p>
             </div>
           </div>
