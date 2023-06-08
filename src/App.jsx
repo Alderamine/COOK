@@ -5,6 +5,8 @@ import Support from './pages/Support'
 import SupportWrapper from "./components/Support/SupportWrapper"
 import SupportArticles from './components/Support/SupportArticles'
 import SupportArticle from './components/Support/SupportArticle'
+import LandingLayoutWrapper from './layout/LandingLayoutWrapper'
+import TutorList from './pages/TutorList'
 
 function App() {
 
@@ -13,11 +15,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/'>
-            <Route index element={<LandingPage></LandingPage>}></Route>
+            <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
+              <Route index element={<LandingPage></LandingPage>}></Route>
+              <Route path='tutor' element={<TutorList></TutorList>}></Route>
+            </Route>
             <Route path='support' element={<SupportWrapper></SupportWrapper>}>
               <Route index element={<Support />} />
-              <Route path=':category' element={<SupportArticles/>}/>
-              <Route path='article' element={<SupportArticle/>}/>
+              <Route path=':category' element={<SupportArticles />} />
+              <Route path='article' element={<SupportArticle />} />
             </Route>
           </Route>
         </Routes>
