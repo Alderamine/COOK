@@ -13,7 +13,7 @@ export default function LandingFooter() {
               <img src={COOKLogo} alt="" />
             </Link>
           </div>
-
+          
           <div className='flex-1 flex justify-between'>
             <div>
               <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
@@ -60,7 +60,7 @@ export default function LandingFooter() {
             <div className='flex-1 flex justify-between'>
               <div className='flex gap-[77.994px]'>
                 <div>
-                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>COOK’s Socials</p>
+                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>COOK’s SOCIALS</p>
                   <div className='flex gap-[10px] mt-[8px]'>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.5 2H7.5C4.73858 2 2.5 4.23858 2.5 7V17C2.5 19.7614 4.73858 22 7.5 22H17.5C20.2614 22 22.5 19.7614 22.5 17V7C22.5 4.23858 20.2614 2 17.5 2Z" stroke="#C7FFC2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -89,7 +89,7 @@ export default function LandingFooter() {
                 </div>
 
                 <div>
-                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>Legal</p>
+                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                   <div className='flex flex-col gap-[8px] mt-[8px]'>
                     <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Serivce</p>
                     <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>

@@ -438,7 +438,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full px-[64px] mt-[142px] flex justify-between gap-[73]'>
+      <section className='w-full px-[64px] mt-[142px] flex gap-[73px]'>
         <div className=''>
           <div className='flex items-center gap-[13px]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -449,27 +449,50 @@ export default function LandingPage() {
 
           <div className='ml-[49px] mt-[47px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px]'>Find a tutor by category</h4>
-            <div className='w-[491px] flex flex-wrap gap-[15px] mt-[26px]'>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Bakery</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Japanese Sushi Making</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Thai</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Seafood</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Italian Cuisine</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Vegan</p>
+            <div className='w-[496px] flex flex-wrap gap-[16px] mt-[26px]'>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Bakery</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Japanese Sushi Making</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Thai</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Seafood</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Italian Cuisine</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Vegan</p>
+              </Link>
               <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>BBQ & Grilling</p>
             </div>
           </div>
           <div className='ml-[49px] mt-[75px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px]'>Find a tutor by country</h4>
             <div className='w-[329px] flex flex-wrap gap-[16px] mt-[26px]'>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>USA</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Spain</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>France</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Mexico</p>
-              <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Germany</p>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>USA</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Spain</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>France</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Mexico</p>
+              </Link>
+              <Link to={'tutor'}>
+                <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Germany</p>
+              </Link>
             </div>
           </div>
         </div>
+
         <div className='h-[159.01px] border border-[rgba(255,219,184,1)] self-center'></div>
 
         <div className='flex flex-col min-w-[631px]'>
