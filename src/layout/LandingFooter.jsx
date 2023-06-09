@@ -16,7 +16,7 @@ export default function LandingFooter() {
 
           <div className='flex-1 flex justify-between'>
             <div>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>About US</p>
+              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
@@ -24,23 +24,25 @@ export default function LandingFooter() {
               </div>
             </div>
             <div>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>For Students</p>
+              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR STUDENTS</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
               </div>
             </div>
             <div>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>For Tutors</p>
+              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>fOR TUTORS</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
               </div>
             </div>
             <div>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>For Tutors</p>
+              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>SUPPORT</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
-                <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
+                <Link to={'/support'}>
+                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
+                </Link>
               </div>
             </div>
           </div>

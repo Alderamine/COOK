@@ -7,6 +7,8 @@ import SupportArticles from './components/Support/SupportArticles'
 import SupportArticle from './components/Support/SupportArticle'
 import LandingLayoutWrapper from './layout/LandingLayoutWrapper'
 import TutorList from './pages/TutorList'
+import GroupList from './pages/GroupList'
+import Signup from './pages/Signup'
 
 function App() {
 
@@ -15,9 +17,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/'>
+            <Route path='signup' element={<Signup></Signup>}></Route>
             <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
               <Route index element={<LandingPage></LandingPage>}></Route>
               <Route path='tutor' element={<TutorList></TutorList>}></Route>
+              <Route path='group' element={<GroupList></GroupList>}></Route>
             </Route>
             <Route path='support' element={<SupportWrapper></SupportWrapper>}>
               <Route index element={<Support />} />
