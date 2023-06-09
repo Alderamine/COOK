@@ -37,8 +37,8 @@ export default function CategoryCard({ title, description, icon }) {
           <div className='flex gap-[9px] items-center'>
             <p className='font-outfit font-semibold text-[16px] leading-[18.13px] text-[rgba(210,119,34,1)]'>View all articles</p>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 17.5L17 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M7 7.5H17V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 17.5L17 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M7 7.5H17V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </Link>

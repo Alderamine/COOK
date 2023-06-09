@@ -24,8 +24,8 @@ export default function SupportNav() {
           </div>
           <div className='w-[37.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative mt-[16px]'>
             <svg className='absolute' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <input type="text" className='flex-1 h-full outline-none indent-[37px] bg-[#00000000] text-[#FFDBB8] placeholder:text-[#FFDBB8]' placeholder='Search' />
           </div>

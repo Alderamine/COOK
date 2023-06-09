@@ -43,8 +43,8 @@ export default function LandingPage() {
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
           <div className='flex items-center gap-[11px] mt-[26px]'>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 4" />
-              <path d="M10 8L16 12L10 16V8Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 4" />
+              <path d="M10 8L16 12L10 16V8Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColor '>Learn more in the COOK video</p>
           </div>
@@ -70,7 +70,7 @@ export default function LandingPage() {
                 <div className='flex items-center gap-[7px]'>
                   <h3 className='font-outfit text-[16px] font-semibold leading-[20.16px]'>4.8️</h3>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 1.5L10.163 5.77865L15 6.46898L11.5 9.79758L12.326 14.5L8 12.2787L3.674 14.5L4.5 9.79758L1 6.46898L5.837 5.77865L8 1.5Z" fill="#D27722" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 1.5L10.163 5.77865L15 6.46898L11.5 9.79758L12.326 14.5L8 12.2787L3.674 14.5L4.5 9.79758L1 6.46898L5.837 5.77865L8 1.5Z" fill="#D27722" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function LandingPage() {
         <div className='flex flex-col h-[121px] justify-center items-center'>
           <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary flex gap-[10px] items-center'>4.8
             <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 1L19.1715 9.22818L28.5 10.5557L21.75 16.9569L23.343 26L15 21.7282L6.657 26L8.25 16.9569L1.5 10.5557L10.8285 9.22818L15 1Z" fill="#D27722" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M15 1L19.1715 9.22818L28.5 10.5557L21.75 16.9569L23.343 26L15 21.7282L6.657 26L8.25 16.9569L1.5 10.5557L10.8285 9.22818L15 1Z" fill="#D27722" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </h4>
           <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Rating</p>
@@ -117,8 +117,8 @@ export default function LandingPage() {
 
           <div className='flex items-center gap-[10px]'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category </p>
           </div>
@@ -209,10 +209,10 @@ export default function LandingPage() {
         <div className='flex items-center justify-end gap-[15px] mt-[32px]'>
           <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Show more</p>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_60_812)">
-              <path d="M10 18.3334C14.6024 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6024 1.66675 10 1.66675C5.39763 1.66675 1.66667 5.39771 1.66667 10.0001C1.66667 14.6025 5.39763 18.3334 10 18.3334Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M6.66667 10L10 13.3333L13.3333 10" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M10 6.66675V13.3334" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <g clipPath="url(#clip0_60_812)">
+              <path d="M10 18.3334C14.6024 18.3334 18.3333 14.6025 18.3333 10.0001C18.3333 5.39771 14.6024 1.66675 10 1.66675C5.39763 1.66675 1.66667 5.39771 1.66667 10.0001C1.66667 14.6025 5.39763 18.3334 10 18.3334Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M6.66667 10L10 13.3333L13.3333 10" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M10 6.66675V13.3334" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <defs>
               <clipPath id="clip0_60_812">
@@ -227,8 +227,8 @@ export default function LandingPage() {
       <section className='mt-[152px] w-full px-[64px] flex flex-col items-center'>
         <h2 className='font-rubik font-semibold text-[50px] leading-[59.25px] relative'>Our Unique Benefits
           <svg className='absolute right-[-30px] top-[-15px]' width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.8703 22.3536L25.9942 15.7492" stroke="#FFDBB8" stroke-width="4" stroke-linecap="round" />
-            <path d="M2.64703 15.7603L9.11337 1.99994" stroke="#FFDBB8" stroke-width="4" stroke-linecap="round" />
+            <path d="M13.8703 22.3536L25.9942 15.7492" stroke="#FFDBB8" strokeWidth="4" strokeLinecap="round" />
+            <path d="M2.64703 15.7603L9.11337 1.99994" stroke="#FFDBB8" strokeWidth="4" strokeLinecap="round" />
           </svg>
         </h2>
         <p className='font-outfit font-normal leading-[26.8px] text-[16px] mt-[15px]'>Experience the perks of learning and teaching cooking on our platform</p>
@@ -295,7 +295,7 @@ export default function LandingPage() {
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
             <svg className='relative top-[15px]' width="75" height="31" viewBox="0 0 75 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 24C7 24 20.6553 7 37.5 7C54.3447 7 68 24 68 24" stroke="#D27722" stroke-width="14" stroke-linecap="round" />
+              <path d="M7 24C7 24 20.6553 7 37.5 7C54.3447 7 68 24 68 24" stroke="#D27722" strokeWidth="14" strokeLinecap="round" />
             </svg>
             <div>
               <h3 className='font-rubik font-medium text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px]'>How It Works</h3>
@@ -304,8 +304,8 @@ export default function LandingPage() {
           </div>
           <div className='flex items-center gap-[10px]'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category</p>
           </div>
@@ -374,10 +374,10 @@ export default function LandingPage() {
             <button className='h-[39px] w-[150px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
             <div className='flex items-center gap-[8px]'>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_81_758)">
-                  <path d="M9.99996 18.3333C14.6023 18.3333 18.3333 14.6023 18.3333 9.99996C18.3333 5.39759 14.6023 1.66663 9.99996 1.66663C5.39759 1.66663 1.66663 5.39759 1.66663 9.99996C1.66663 14.6023 5.39759 18.3333 9.99996 18.3333Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M10 6.66663V9.99996" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M10 13.3334H10.0083" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <g clipPath="url(#clip0_81_758)">
+                  <path d="M9.99996 18.3333C14.6023 18.3333 18.3333 14.6023 18.3333 9.99996C18.3333 5.39759 14.6023 1.66663 9.99996 1.66663C5.39759 1.66663 1.66663 5.39759 1.66663 9.99996C1.66663 14.6023 5.39759 18.3333 9.99996 18.3333Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10 6.66663V9.99996" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M10 13.3334H10.0083" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </g>
                 <defs>
                   <clipPath id="clip0_81_758">
@@ -468,10 +468,10 @@ export default function LandingPage() {
                 <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
                   <div className='flex items-center gap-[6px]'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
                   </div>
@@ -485,10 +485,10 @@ export default function LandingPage() {
                 <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
                   <div className='flex items-center gap-[6px]'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
                   </div>
@@ -502,10 +502,10 @@ export default function LandingPage() {
                 <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
                   <div className='flex items-center gap-[6px]'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
                   </div>
@@ -519,10 +519,10 @@ export default function LandingPage() {
                 <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
                   <div className='flex items-center gap-[6px]'>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
                   </div>
