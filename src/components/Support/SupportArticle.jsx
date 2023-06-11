@@ -1,28 +1,30 @@
 import React from 'react'
 import AutherProfile from "../../assets/Support/AutherProfile.png"
 import SupportArticleImage from "../../assets/Support/SupportArticleImage.png"
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function SupportArticle() {
   const navigate = useNavigate()
+  const location = useLocation()
+  console.log(location);
   return (
     <>
       <nav class="ml-[293px] mr-[293px] rounded-md">
         <ol class="list-reset flex py-[56px]">
-          <li onClick={()=> navigate(-2)} className='cursor-pointer'>
+          <li onClick={() => navigate(-2)} className='cursor-pointer'>
             <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
           </li>
           <li>
             <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
           </li>
-          <li onClick={()=> navigate(-1)} className='cursor-pointer'>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Payments</p>
+          <li onClick={() => navigate(-1)} className='cursor-pointer'>
+            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.category}</p>
           </li>
           <li>
             <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
           </li>
           <li>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Recurring payments</p>
+            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.articleTitle}</p>
           </li>
         </ol>
       </nav>

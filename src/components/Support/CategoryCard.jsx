@@ -16,10 +16,10 @@ export default function CategoryCard({ title, description, icon }) {
       </div>
       <div className='flex justify-between items-center'>
         <div className='flex gap-[7px] items-center'>
-          <div className='flex'>
+          <div className='flex w-fit'>
             {arr.map((n, index) => {
               const adjustedNumber = arr.length - index;
-              const leftPosition = `-${index * 1.4}%`;
+              const leftPosition = `-${index * 18}px`;
               return (
                 <img
                   key={index}
@@ -31,9 +31,9 @@ export default function CategoryCard({ title, description, icon }) {
               );
             })}
           </div>
-          <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec'>50+ authors</p>
+          <p style={{position:'relative',left:"-"+(arr.length-1)*18+"px"}} className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec'>50+ authors</p>
         </div>
-        <Link to={title}>
+        <Link to={title} state={{category:title}}>
           <div className='flex gap-[9px] items-center'>
             <p className='font-outfit font-semibold text-[16px] leading-[18.13px] text-[rgba(210,119,34,1)]'>View all articles</p>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
