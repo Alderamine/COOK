@@ -1,23 +1,28 @@
 import React from 'react'
 import NavIcon from "../../assets/Support/NavIcon.svg"
 import NavEnglish from "../../assets/Support/NavEnglish.svg"
+import { Link } from 'react-router-dom'
 
 export default function SupportNav() {
   return (
     <nav className='w-full h-[166px] pl-[168px] pr-[175px] bg-[#D27722] flex items-center'>
       <div className='flex-1 flex items-center justify-between'>
-        <div>
-          <h1 className='text-[48px] font-rubik font-bold tracking-[-0.02em] leading-[56.88px] text-[#FFDBB8]'>COOK</h1>
-          <div className='flex gap-[11px] mt-[0.5px]'>
-            <img src={NavIcon} />
-            <p className='font-medium font-rubik text-[24px] leading-[28.44px] tracking-[-0.02em] text-[white]'>Support and Q&A</p>
+        <Link to={'/support'}>
+          <div>
+            <h1 className='text-[48px] font-rubik font-bold tracking-[-0.02em] leading-[56.88px] text-[#FFDBB8]'>COOK</h1>
+            <div className='flex gap-[11px] mt-[0.5px]'>
+              <img src={NavIcon} />
+              <p className='font-medium font-rubik text-[24px] leading-[28.44px] tracking-[-0.02em] text-[white]'>Support and Q&A</p>
+            </div>
           </div>
-        </div>
+        </Link>
 
         <div className='flex flex-col items-end'>
           <div className='flex gap-[29px]'>
-            <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] '>Go to COOK</p>
-            <div className='flex gap-[8px]'>
+            <Link to={'/'}>
+              <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] '>Go to COOK</p>
+            </Link>
+            <div className='flex gap-[8px] cursor-pointer'>
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] '>English</p>
               <img src={NavEnglish} alt="" />
             </div>
@@ -27,7 +32,7 @@ export default function SupportNav() {
               <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <input type="text" className='flex-1 h-full outline-none indent-[37px] bg-[#00000000] text-[#FFDBB8] placeholder:text-[#FFDBB8]' placeholder='Search' />
+            <input type="text" className='flex-1 font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#FFDBB8] placeholder:text-[#FFDBB8]' placeholder='Search' />
           </div>
         </div>
       </div>

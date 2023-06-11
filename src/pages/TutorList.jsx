@@ -59,7 +59,9 @@ export default function TutorList() {
 
       <div className=' mt-[42px]'>
         <h3 className='font-outfit font-medium text-[22px] leading-[27.72px] text-TextColor mb-[92px]'>100 tutors found</h3>
-        <div className="w-fit m-auto">
+        <div className="w-fit m-auto flex flex-col gap-[35px]">
+          <TutorCard />
+          <TutorCard />
           <TutorCard />
         </div>
       </div>
