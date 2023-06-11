@@ -9,6 +9,7 @@ import LandingLayoutWrapper from './layout/LandingLayoutWrapper'
 import TutorList from './pages/TutorList'
 import GroupList from './pages/GroupList'
 import Signup from './pages/Signup'
+import About from './pages/About'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route path='signup' element={<Signup></Signup>}></Route>
+            <Route path='/about' element={<About />}></Route>
             <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
               <Route index element={<LandingPage></LandingPage>}></Route>
               <Route path='tutor' element={<TutorList></TutorList>}></Route>
