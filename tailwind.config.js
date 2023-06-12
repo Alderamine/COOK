@@ -10,10 +10,17 @@ export default {
         'custom-filter': 'invert(99%) sepia(24%) saturate(168%) hue-rotate(154deg) brightness(118%) contrast(100%)',
         'custom-filter2': 'invert(68%) sepia(53%) saturate(1706%) hue-rotate(335deg) brightness(92%) contrast(90%)',
       },
+      backgroundImage: {
+        'about-oval': "url('/Oval.svg')",
+        'about-ovalTab': "url('/OvalTab.svg')",
+        'about-ovalMob': "url('/OvalMob.svg')",
+      },
     },
     colors: {
-      'primary': '#D27722',
+      'primary': '#E08836',
+      'primary2': '#D27722',
       'primaryLighten': '#FFFDF4',
+      'primaryLighten2': '#FFDBB8',
       'TextColor': '#252422',
       'TextColorSec': '#403d39',
       'backPri': '#ffffff',
@@ -24,6 +31,7 @@ export default {
       'outfit': ['Outfit', "sans-serif"],
       'pacifico': ['Pacifico', 'sans-serif'],
       'kanit': ['Kanit', 'sans-serif'],
+      'redHatDisplay': ['"Red Hat Display"', 'sans-serif'],
     },
     screens: {
       'xsm': { 'min': '0px', 'max': '577px' },
