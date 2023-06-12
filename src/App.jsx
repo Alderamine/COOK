@@ -11,6 +11,7 @@ import Signup from './pages/Signup'
 import Support from './pages/Support'
 import TutorList from './pages/TutorList'
 import TermsOfService from './pages/TermsOfService'
+import Profile from './pages/Profile'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
               <Route index element={<LandingPage></LandingPage>}></Route>
               <Route path='tutor' element={<TutorList></TutorList>}></Route>
               <Route path='group' element={<GroupList></GroupList>}></Route>
+              <Route path='profile' element={<Profile></Profile>}></Route>
             </Route>
             <Route path='support' element={<SupportWrapper></SupportWrapper>}>
               <Route index element={<Support />} />
