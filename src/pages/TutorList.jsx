@@ -4,6 +4,8 @@ import UpsideDownIcon from "../assets/TutorList/UpsideDownIcon.svg"
 import TutorCard from '../components/TutorList/TutorCard'
 import GroupCard from '../components/GroupList/GroupCard'
 import ScrollArrow from '../assets/GroupList/ScrollArrow.svg'
+import { Link } from 'react-router-dom'
+import Pagination from '../components/utils/Pagination'
 
 export default function TutorList() {
 
@@ -86,7 +88,9 @@ export default function TutorList() {
                 </svg>
                 <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>Group Lesson</p>
               </div>
-              <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
+              <Link to={'/group'}>
+                <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
+              </Link>
             </div>
             <div className=' relative'>
               <img onClick={handleScroll} className='absolute right-[-5%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
@@ -107,6 +111,7 @@ export default function TutorList() {
           </div>
 
         </div>
+        <Pagination currentPage={1} totalPages={6} />
       </div>
     </main>
   )
