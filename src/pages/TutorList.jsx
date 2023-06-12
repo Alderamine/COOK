@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import StarIcon from "../assets/TutorList/StarIcon.svg"
 import UpsideDownIcon from "../assets/TutorList/UpsideDownIcon.svg"
 import TutorCard from '../components/TutorList/TutorCard'
+import GroupCard from '../components/GroupList/GroupCard'
+import ScrollArrow from '../assets/GroupList/ScrollArrow.svg'
 
 export default function TutorList() {
+
+  const scrollRef = useRef(null);
+
+  const handleScroll = () => {
+    scrollRef.current.scrollTo({
+      left: 333,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <main className='px-[64px] w-full pt-[43px]'>
       <div className='w-full bg-primary rounded-[16px] flex justify-between items-center py-[43px] px-[52px]'>
@@ -13,7 +25,7 @@ export default function TutorList() {
         </div>
         <div className='flex flex-col items-end'>
           <div className='flex items-center gap-[8px]'>
-            <img src={StarIcon} alt="" className="w-[16px]" />
+            <img src={StarIcon} alt="" className="min-w-[16px]" />
             <h3 className='font-rubik font-semibold text-[22px] leading-[26.07px] tracking-[-0.02em] text-[white]'>Popular categories</h3>
           </div>
           <p className="font-outfit font-normal text-[18px] leading-[22.68px] mt-[8px] text-[rgba(255,219,184,1)]">Italian Cuisine • Vegan Cooking • Pastry & Baking </p>
@@ -59,10 +71,41 @@ export default function TutorList() {
 
       <div className=' mt-[42px]'>
         <h3 className='font-outfit font-medium text-[22px] leading-[27.72px] text-TextColor mb-[92px]'>100 tutors found</h3>
-        <div className="w-fit m-auto flex flex-col gap-[35px]">
-          <TutorCard />
-          <TutorCard />
-          <TutorCard />
+        <div className="w-fit m-auto flex flex-col">
+          <div className='flex flex-col gap-[35px]'>
+            <TutorCard />
+            <TutorCard />
+            <TutorCard />
+          </div>
+
+          <div className='mt-[122px]'>
+            <div className='flex items-center justify-between'>
+              <div className='flex items-center'>
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="11.5" cy="10.5" rx="11.5" ry="10.5" fill="#FFDBB8" />
+                </svg>
+                <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>Group Lesson</p>
+              </div>
+              <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
+            </div>
+            <div className=' relative'>
+              <img onClick={handleScroll} className='absolute right-[-5%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
+              <div ref={scrollRef} className='mt-[21px] flex gap-[20px] w-[979px] overflow-auto hideScrollbar'>
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+              </div>
+            </div>
+
+          </div>
+
+          <div className='flex flex-col gap-[35px] mt-[153px]'>
+            <TutorCard />
+            <TutorCard />
+            <TutorCard />
+          </div>
+
         </div>
       </div>
     </main>

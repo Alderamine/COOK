@@ -58,9 +58,9 @@ const About = () => {
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
             <div>
               <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 16.5V12.5" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 8.5H12.01" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 16.5V12.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 8.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
@@ -68,9 +68,9 @@ const About = () => {
               <button className='w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
                 Log In
                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M11.75 9.5H2.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M11.75 9.5H2.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </div>
@@ -167,17 +167,17 @@ const About = () => {
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-[white] sm:bg-backSec xsm:bg-backSec md:bg-backSec'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Support</h1>
-            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Knowledge is the cornerstone of our platform. We believe in the power of learning and sharing culinary wisdom. Through this knowledge exchange, our chefs and students continue to grow and refine their skills.</p>
+            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>We are committed to providing an environment of support and encouragement. Whether you’re a professional chef sharing your expertise or a student learning to sauté, we're here to ensure your journey is smooth, enjoyable, and rewarding.</p>
             <img src={Support} className='absolute min-w-[123px] h-[111px]  left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-65px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8]'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Community</h1>
-            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Knowledge is the cornerstone of our platform. We believe in the power of learning and sharing culinary wisdom. Through this knowledge exchange, our chefs and students continue to grow and refine their skills.</p>
+            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Community is at the heart of our platform. We are a global kitchen, bringing together chefs and food lovers from all walks of life. We value the connections formed and the shared passion that fuels our vibrant culinary network.</p>
             <img src={Community} className='absolute min-w-[123px] h-[111px]  left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-65px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-backSec'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Openness</h1>
-            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Knowledge is the cornerstone of our platform. We believe in the power of learning and sharing culinary wisdom. Through this knowledge exchange, our chefs and students continue to grow and refine their skills.</p>
+            <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Openness fosters innovation and creativity. We encourage open dialogue, feedback, and exchange of ideas. This openness helps us improve and inspires our members to explore new culinary possibilities.</p>
             <img src={Openness} className='absolute min-w-[123px] h-[111px] left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-65px]' alt="" />
           </div>
         </div>
@@ -254,7 +254,7 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>fOR TUTORS</p>
+                <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR TUTORS</p>
                 <div className='flex flex-col gap-[8px] mt-[16px]'>
                   <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
                   <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>

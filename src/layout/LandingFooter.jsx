@@ -31,7 +31,7 @@ export default function LandingFooter() {
               </div>
             </div>
             <div>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>fOR TUTORS</p>
+              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR TUTORS</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
                 <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
