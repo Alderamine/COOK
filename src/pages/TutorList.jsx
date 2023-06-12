@@ -65,7 +65,6 @@ export default function TutorList() {
           <TutorCard />
         </div>
       </div>
-
     </main>
   )
 }
