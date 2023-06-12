@@ -1,15 +1,16 @@
-import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
-import Support from './pages/Support'
-import SupportWrapper from "./components/Support/SupportWrapper"
-import SupportArticles from './components/Support/SupportArticles'
 import SupportArticle from './components/Support/SupportArticle'
+import SupportArticles from './components/Support/SupportArticles'
+import SupportWrapper from "./components/Support/SupportWrapper"
 import LandingLayoutWrapper from './layout/LandingLayoutWrapper'
-import TutorList from './pages/TutorList'
-import GroupList from './pages/GroupList'
-import Signup from './pages/Signup'
 import About from './pages/About'
+import Copyright from './pages/Copyright'
+import GroupList from './pages/GroupList'
+import LandingPage from './pages/LandingPage'
+import Signup from './pages/Signup'
+import Support from './pages/Support'
+import TutorList from './pages/TutorList'
+import TermsOfService from './pages/TermsOfService'
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
               <Route path=':category' element={<SupportArticles />} />
               <Route path='article' element={<SupportArticle />} />
             </Route>
+            <Route path='copyright' element={<Copyright />} />
+            <Route path='terms' element={<TermsOfService />} />
           </Route>
         </Routes>
       </BrowserRouter>
