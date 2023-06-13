@@ -51,3 +51,8 @@ body {
 .hideScrollbar::-webkit-scrollbar {
   display: none;
 }
+
+
+.boxShadow {
+  box-shadow: 0px 47px 28px rgba(39, 122, 3, 0.02), 0px 21px 21px rgba(39, 122, 3, 0.03), 0px 5px 11px rgba(39, 122, 3, 0.03), 0px 0px 0px rgba(39, 122, 3, 0.03);
+}
