@@ -325,7 +325,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className='w-[753.998px] mt-[124px]'>
+      <div className='w-[753.998px] mt-[124px] flex flex-col'>
         <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[47px]'>Other Tutors</h4>
         <div className='flex items-center gap-[12px]'>
 
@@ -367,7 +367,7 @@ export default function Profile() {
           </div>
 
         </div>
-        <div className='flex gap-[12px] mt-[38px]'>
+        <div className='flex gap-[12px] mt-[38px] self-end'>
           <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.3409 19.8182L13.2955 19.8182" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M19.8182 26.3409L13.2955 19.8182L19.8182 13.2955" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
