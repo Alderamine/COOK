@@ -56,3 +56,21 @@ body {
 .boxShadow {
   box-shadow: 0px 47px 28px rgba(39, 122, 3, 0.02), 0px 21px 21px rgba(39, 122, 3, 0.03), 0px 5px 11px rgba(39, 122, 3, 0.03), 0px 0px 0px rgba(39, 122, 3, 0.03);
 }
+
+.blurEnd {
+  border: 1px #d8d8d8 dashed;
+  font: 2em/1.6em Arial;
+  position: relative;
+}
+
+.blurEnd:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background-image:  linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  width: 180px;
+  height: 100%;
+}

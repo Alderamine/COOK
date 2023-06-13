@@ -327,7 +327,7 @@ export default function Profile() {
 
       <div className='w-[753.998px] mt-[124px] flex flex-col'>
         <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[47px]'>Other Tutors</h4>
-        <div className='flex items-center gap-[12px]'>
+        <div className='blurEnd flex items-center gap-[12px]'>
 
           <div className='boxShadow w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
             <img className='w-[100px]' src={ReviewProfilePic} alt="" />
