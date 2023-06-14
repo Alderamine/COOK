@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ProfilePicture from "../assets/Profile/ProfilePicture.png"
 import PlayIcon from "../assets/Profile/PlayIcon.svg"
 import BakerIcon from "../assets/Profile/BakerIcon.svg"
@@ -13,6 +13,22 @@ import ReviewProfilePic from "../assets/Profile/ReviewProfilePic.png"
 import ProfileBakerIcon from '../assets/Profile/ProfileBakerIcon.svg'
 
 export default function Profile() {
+
+  const scrollRef = useRef(null);
+
+  const handleScrollRight = () => {
+    scrollRef.current.scrollTo({
+      left: 333,
+      behavior: 'smooth',
+    });
+  };
+  const handleScrollLeft = () => {
+    scrollRef.current.scrollTo({
+      left: -333,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <main className='px-[175px]'>
       <div className='pt-[79px] flex gap-[20px]'>
@@ -325,11 +341,11 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className='w-[753.998px] mt-[124px] flex flex-col'>
+      <div className='blurEnd w-[753.998px] mt-[124px] flex flex-col '>
         <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[47px]'>Other Tutors</h4>
-        <div className='blurEnd flex items-center gap-[12px]'>
+        <div ref={scrollRef} className='hideScrollbar flex items-center gap-[12px] max-w-full overflow-x-scroll'>
 
-          <div className='boxShadow w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+          <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
             <img className='w-[100px]' src={ReviewProfilePic} alt="" />
             <div className='flex flex-col items-center mt-[24px]'>
               <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -341,7 +357,7 @@ export default function Profile() {
               <p className='font-kanit font-semibold text-[16px] leading-[23.92px] text-primary2'>Learn more</p>
             </div>
           </div>
-          <div className='boxShadow w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+          <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
             <img className='w-[100px]' src={ReviewProfilePic} alt="" />
             <div className='flex flex-col items-center mt-[24px]'>
               <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -353,7 +369,19 @@ export default function Profile() {
               <p className='font-kanit font-semibold text-[16px] leading-[23.92px] text-primary2'>Learn more</p>
             </div>
           </div>
-          <div className='boxShadow w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+          <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+            <img className='w-[100px]' src={ReviewProfilePic} alt="" />
+            <div className='flex flex-col items-center mt-[24px]'>
+              <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
+              <div className='flex items-center gap-[7px]'>
+                <img src={ProfileBakerIcon} alt="" />
+                <p className='font-kanit font-normal text-[18px] leading-[26.91px] text-primary2'>Baker</p>
+              </div>
+              <p className='font-outfit font-normal text-[16px] leading-[24px] text-center mt-[16px] mb-[10px]'>Lorem ipsum dolor sit amet consectetur. Massa consequat cras tortor cras morbi amet massa amet fermentum. Et</p>
+              <p className='font-kanit font-semibold text-[16px] leading-[23.92px] text-primary2'>Learn more</p>
+            </div>
+          </div>
+          <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
             <img className='w-[100px]' src={ReviewProfilePic} alt="" />
             <div className='flex flex-col items-center mt-[24px]'>
               <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -368,11 +396,11 @@ export default function Profile() {
 
         </div>
         <div className='flex gap-[12px] mt-[38px] self-end'>
-          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='cursor-pointer' onClick={handleScrollLeft}  width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M26.3409 19.8182L13.2955 19.8182" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M19.8182 26.3409L13.2955 19.8182L19.8182 13.2955" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
-          <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='cursor-pointer' onClick={handleScrollRight} width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="41" height="41" rx="20.5" fill="#D27722" />
             <path d="M13.6591 20.1818H26.7045" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M20.1818 13.6591L26.7045 20.1818L20.1818 26.7045" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
