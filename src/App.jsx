@@ -13,6 +13,7 @@ import TutorList from './pages/TutorList'
 import TermsOfService from './pages/TermsOfService'
 import Profile from './pages/Profile'
 import StudentDashboard from './pages/StudentDashboard'
+import Signin from './pages/Signin'
 
 function App() {
 
@@ -22,18 +23,23 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route path='signup' element={<Signup></Signup>}></Route>
-            <Route path='about' element={<About />}></Route>
+            <Route path='signin' element={<Signin></Signin>}></Route>
+
             <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
               <Route index element={<LandingPage></LandingPage>}></Route>
               <Route path='tutor' element={<TutorList></TutorList>}></Route>
               <Route path='group' element={<GroupList></GroupList>}></Route>
               <Route path='profile' element={<Profile></Profile>}></Route>
             </Route>
+
             <Route path='support' element={<SupportWrapper></SupportWrapper>}>
               <Route index element={<Support />} />
               <Route path=':category' element={<SupportArticles />} />
               <Route path='article' element={<SupportArticle />} />
             </Route>
+
+
+            <Route path='about' element={<About />}></Route>
             <Route path='student-dashboard' element={<StudentDashboard />} />
             <Route path='copyright' element={<Copyright />} />
             <Route path='terms' element={<TermsOfService />} />

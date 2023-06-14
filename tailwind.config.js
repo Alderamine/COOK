@@ -31,7 +31,7 @@ export default {
       'outfit': ['Outfit', "sans-serif"],
       'pacifico': ['Pacifico', 'sans-serif'],
       'kanit': ['Kanit', 'sans-serif'],
-      'redHatDisplay': ['"Red Hat Display"', 'sans-serif'],
+      'redHatDisplay': ['Red Hat Display', 'sans-serif'],
     },
     screens: {
       'xsm': { 'min': '0px', 'max': '577px' },
