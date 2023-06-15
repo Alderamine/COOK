@@ -15,6 +15,9 @@ import Profile from './pages/Profile'
 import StudentDashboard from './pages/StudentDashboard'
 import Signin from './pages/Signin'
 import OnlineLesson from './pages/OnlineLesson'
+import Blog from './pages/Blog'
+import BlogCategory from './components/Blog/BlogCategory'
+import BlogArticle from './components/Blog/BlogArticle'
 import DashboardLayout from './layout/DashboardLayout'
 import Chat from './pages/Chat'
 import SingleChatMob from './components/Chat/SingleChatMob'
@@ -46,6 +49,13 @@ function App() {
               <Route index element={<OnlineLesson></OnlineLesson>}></Route>
             </Route>
 
+            <Route path='blog'>
+              <Route index element={<Blog></Blog>}></Route>
+              <Route path=':category' >
+                <Route index element={<BlogCategory></BlogCategory>}></Route>
+                <Route path='article' element={<BlogArticle></BlogArticle>}></Route>
+              </Route>
+            </Route>
             <Route path='student-dashboard' element={<DashboardLayout></DashboardLayout>}>
               <Route index element={<StudentDashboard />} />
               <Route path='chat' element={<Chat />} />
