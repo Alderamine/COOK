@@ -15,6 +15,7 @@ import Profile from './pages/Profile'
 import StudentDashboard from './pages/StudentDashboard'
 import Signin from './pages/Signin'
 import OnlineLesson from './pages/OnlineLesson'
+import Blog from './pages/Blog'
 
 function App() {
 
@@ -43,6 +44,9 @@ function App() {
               <Route index element={<OnlineLesson></OnlineLesson>}></Route>
             </Route>
 
+            <Route path='blog'>
+              <Route index element={<Blog></Blog>}></Route>
+            </Route>
 
             <Route path='about' element={<About />}></Route>
             <Route path='student-dashboard' element={<StudentDashboard />} />
