@@ -14,6 +14,7 @@ import TermsOfService from './pages/TermsOfService'
 import Profile from './pages/Profile'
 import StudentDashboard from './pages/StudentDashboard'
 import Signin from './pages/Signin'
+import OnlineLesson from './pages/OnlineLesson'
 
 function App() {
 
@@ -36,6 +37,10 @@ function App() {
               <Route index element={<Support />} />
               <Route path=':category' element={<SupportArticles />} />
               <Route path='article' element={<SupportArticle />} />
+            </Route>
+
+            <Route path='online-lesson'>
+              <Route index element={<OnlineLesson></OnlineLesson>}></Route>
             </Route>
 
 
