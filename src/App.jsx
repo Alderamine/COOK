@@ -16,6 +16,8 @@ import StudentDashboard from './pages/StudentDashboard'
 import Signin from './pages/Signin'
 import OnlineLesson from './pages/OnlineLesson'
 import Blog from './pages/Blog'
+import BlogCategory from './components/Blog/BlogCategory'
+import BlogArticle from './components/Blog/BlogArticle'
 
 function App() {
 
@@ -46,6 +48,10 @@ function App() {
 
             <Route path='blog'>
               <Route index element={<Blog></Blog>}></Route>
+              <Route path=':category' >
+                <Route index element={<BlogCategory></BlogCategory>}></Route>
+                <Route path='article' element={<BlogArticle></BlogArticle>}></Route>
+              </Route>
             </Route>
 
             <Route path='about' element={<About />}></Route>
