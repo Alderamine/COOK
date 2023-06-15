@@ -15,6 +15,9 @@ import Profile from './pages/Profile'
 import StudentDashboard from './pages/StudentDashboard'
 import Signin from './pages/Signin'
 import OnlineLesson from './pages/OnlineLesson'
+import DashboardLayout from './layout/DashboardLayout'
+import Chat from './pages/Chat'
+import SingleChatMob from './components/Chat/SingleChatMob'
 
 function App() {
 
@@ -43,9 +46,13 @@ function App() {
               <Route index element={<OnlineLesson></OnlineLesson>}></Route>
             </Route>
 
+            <Route path='student-dashboard' element={<DashboardLayout></DashboardLayout>}>
+              <Route index element={<StudentDashboard />} />
+              <Route path='chat' element={<Chat />} />
+            </Route>
 
+            <Route path='singleChat' element={<SingleChatMob />} />
             <Route path='about' element={<About />}></Route>
-            <Route path='student-dashboard' element={<StudentDashboard />} />
             <Route path='copyright' element={<Copyright />} />
             <Route path='terms' element={<TermsOfService />} />
           </Route>
