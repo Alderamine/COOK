@@ -56,6 +56,7 @@ function App() {
                 <Route path='article' element={<BlogArticle></BlogArticle>}></Route>
               </Route>
             </Route>
+            
             <Route path='student-dashboard' element={<DashboardLayout></DashboardLayout>}>
               <Route index element={<StudentDashboard />} />
               <Route path='chat' element={<Chat />} />

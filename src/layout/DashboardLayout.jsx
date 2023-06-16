@@ -46,7 +46,7 @@ const DashboardLayout = () => {
             </div>
             <div className='h-[15px] border border-primaryLighten2 rouded-[16px]'></div>
             <div className='flex gap-[12px] items-center'>
-              <Link to={'support'}>
+              <Link to={'/support'}>
                 <div className='custom-tooltip' data-tooltip="Support">
                   <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -60,7 +60,7 @@ const DashboardLayout = () => {
                   <img src={message} alt="" />
                 </div>
               </Link>
-              <Link to={'setting'}>
+              <Link to={'/setting'}>
                 <div className='custom-tooltip' data-tooltip="Setting">
                   <img src={setting} alt="" />
                 </div>
