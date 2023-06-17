@@ -102,11 +102,11 @@ body {
   height: 77px;
 }
 
-.blurSignup {
+.blurSignin {
   position: relative;
 }
 
-.blurSignup:after {
+.blurSignin:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -118,7 +118,7 @@ body {
   height: 77px;
 }
 
-.blurSignup::before {
+.blurSignin::before {
   content: "";
   position: absolute;
   z-index: 1;

@@ -26,49 +26,47 @@ function App() {
 
   return (
     <div className='w-[calc(100vw - 100%)]'>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/'>
-            <Route path='signup' element={<Signup></Signup>}></Route>
-            <Route path='signin' element={<Signin></Signin>}></Route>
+      <Routes>
+        <Route path='/'>
+          <Route path='signup' element={<Signup></Signup>}></Route>
+          <Route path='signin' element={<Signin></Signin>}></Route>
 
-            <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
-              <Route index element={<LandingPage></LandingPage>}></Route>
-              <Route path='tutor' element={<TutorList></TutorList>}></Route>
-              <Route path='group' element={<GroupList></GroupList>}></Route>
-              <Route path='profile' element={<Profile></Profile>}></Route>
-            </Route>
-
-            <Route path='support' element={<SupportWrapper></SupportWrapper>}>
-              <Route index element={<Support />} />
-              <Route path=':category' element={<SupportArticles />} />
-              <Route path='article' element={<SupportArticle />} />
-            </Route>
-
-            <Route path='online-lesson'>
-              <Route index element={<OnlineLesson></OnlineLesson>}></Route>
-            </Route>
-
-            <Route path='blog'>
-              <Route index element={<Blog></Blog>}></Route>
-              <Route path=':category' >
-                <Route index element={<BlogCategory></BlogCategory>}></Route>
-                <Route path='article' element={<BlogArticle></BlogArticle>}></Route>
-              </Route>
-            </Route>
-            
-            <Route path='student-dashboard' element={<DashboardLayout></DashboardLayout>}>
-              <Route index element={<StudentDashboard />} />
-              <Route path='chat' element={<Chat />} />
-            </Route>
-
-            <Route path='singleChat' element={<SingleChatMob />} />
-            <Route path='about' element={<About />}></Route>
-            <Route path='copyright' element={<Copyright />} />
-            <Route path='terms' element={<TermsOfService />} />
+          <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
+            <Route index element={<LandingPage></LandingPage>}></Route>
+            <Route path='tutor' element={<TutorList></TutorList>}></Route>
+            <Route path='group' element={<GroupList></GroupList>}></Route>
+            <Route path='profile' element={<Profile></Profile>}></Route>
           </Route>
-        </Routes>
-      </BrowserRouter>
+
+          <Route path='support' element={<SupportWrapper></SupportWrapper>}>
+            <Route index element={<Support />} />
+            <Route path=':category' element={<SupportArticles />} />
+            <Route path='article' element={<SupportArticle />} />
+          </Route>
+
+          <Route path='online-lesson'>
+            <Route index element={<OnlineLesson></OnlineLesson>}></Route>
+          </Route>
+
+          <Route path='blog'>
+            <Route index element={<Blog></Blog>}></Route>
+            <Route path=':category' >
+              <Route index element={<BlogCategory></BlogCategory>}></Route>
+              <Route path='article' element={<BlogArticle></BlogArticle>}></Route>
+            </Route>
+          </Route>
+
+          <Route path='student-dashboard' element={<DashboardLayout></DashboardLayout>}>
+            <Route index element={<StudentDashboard />} />
+            <Route path='chat' element={<Chat />} />
+          </Route>
+
+          <Route path='singleChat' element={<SingleChatMob />} />
+          <Route path='about' element={<About />}></Route>
+          <Route path='copyright' element={<Copyright />} />
+          <Route path='terms-of-service' element={<TermsOfService />} />
+        </Route>
+      </Routes>
     </div>
   )
 }

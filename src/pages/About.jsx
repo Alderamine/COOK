@@ -18,6 +18,7 @@ import SimmeringIdeas from "../assets/About/SimmeringIdeas.svg"
 import Support from "../assets/About/Support.svg"
 import firstSpark from "../assets/About/firstSpark.svg"
 import COOKLogo from "../assets/allAssets/COOK-logo.svg"
+import TopPattern from "../assets/About/TopPattern.svg"
 
 const About = () => {
   return (
@@ -163,22 +164,26 @@ const About = () => {
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-backSec sm:bg-[white] xsm:bg-[white] md:bg-[white]'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Knowledge</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Knowledge is the cornerstone of our platform. We believe in the power of learning and sharing culinary wisdom. Through this knowledge exchange, our chefs and students continue to grow and refine their skills.</p>
-            <img src={Knowledge} className='absolute min-w-[123px] h-[111px] left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-65px]' alt="" />
+            <img src={Knowledge} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
+            <img src={TopPattern} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-[white] sm:bg-backSec xsm:bg-backSec md:bg-backSec'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Support</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>We are committed to providing an environment of support and encouragement. Whether you’re a professional chef sharing your expertise or a student learning to sauté, we're here to ensure your journey is smooth, enjoyable, and rewarding.</p>
-            <img src={Support} className='absolute min-w-[123px] h-[111px]  left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-65px]' alt="" />
+            <img src={Support} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
+            <img src={TopPattern} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8]'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Community</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Community is at the heart of our platform. We are a global kitchen, bringing together chefs and food lovers from all walks of life. We value the connections formed and the shared passion that fuels our vibrant culinary network.</p>
-            <img src={Community} className='absolute min-w-[123px] h-[111px]  left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-65px]' alt="" />
+            <img src={Community} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
+            <img src={TopPattern} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-backSec'>
+            <img src={Openness} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-52px]' alt="" />
+            <img src={TopPattern} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Openness</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Openness fosters innovation and creativity. We encourage open dialogue, feedback, and exchange of ideas. This openness helps us improve and inspires our members to explore new culinary possibilities.</p>
-            <img src={Openness} className='absolute min-w-[123px] h-[111px] left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-65px]' alt="" />
           </div>
         </div>
       </div>
@@ -202,7 +207,7 @@ const About = () => {
         </div>
       </div>
       {/* our achievements */}
-      <div>
+      {/* <div>
         <div className='flex flex-col items-center mb-[100px] xsm:mb-[56px] sm:mb-[53px] mt-[107px] sm:mt-[93px] xsm:mt-[73px]'>
           <h1 className='font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our achievements</h1>
           <p className='font-outfit mt-[10px]'>The milestones we’re proud of</p>
@@ -225,7 +230,32 @@ const About = () => {
             <p className='font-outfit'>Cooking Categories</p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <section className='h-fit relative'>
+        <div className='absolute w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
+        <div className='w-[75.347vw] m-auto mt-[159px] mb-[182px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
+          <div className=' flex flex-col h-[121px] justify-center items-center'>
+            <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2'>100+</h4>
+            <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Talented Chefs</p>
+          </div>
+          <div className='flex flex-col h-[121px] justify-center items-center'>
+            <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2'>1000+</h4>
+            <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Students</p>
+          </div>
+          <div className='flex flex-col h-[121px] justify-center items-center'>
+            <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2 flex gap-[10px] items-center'>4.8
+              <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 1L19.1715 9.22818L28.5 10.5557L21.75 16.9569L23.343 26L15 21.7282L6.657 26L8.25 16.9569L1.5 10.5557L10.8285 9.22818L15 1Z" fill="#D27722" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </h4>
+            <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Rating</p>
+          </div>
+          <div className='flex flex-col h-[121px] justify-center items-center'>
+            <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2'>20+</h4>
+            <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Cooking Categories</p>
+          </div>
+        </div>
+      </section>
       {/* footer */}
       <footer >
         <div className='w-[1311.998px] m-auto min-h-[419px] bg-primary rounded-tl-[25px] rounded-tr-[25px] mt-[135px] divide-y-2 divide-[rgba(255,219,184,1)]'>

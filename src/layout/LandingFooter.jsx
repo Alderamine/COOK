@@ -13,14 +13,20 @@ export default function LandingFooter() {
               <img src={COOKLogo} alt="" />
             </Link>
           </div>
-          
+
           <div className='flex-1 flex justify-between'>
             <div>
               <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
               <div className='flex flex-col gap-[8px] mt-[16px]'>
-                <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
-                <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
-                <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
+                <Link to={'about'}>
+                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
+                </Link>
+                <Link to={'about'}>
+                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
+                </Link>
+                <Link to={'about'}>
+                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
+                </Link>
               </div>
             </div>
             <div>
@@ -91,8 +97,12 @@ export default function LandingFooter() {
                 <div>
                   <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                   <div className='flex flex-col gap-[8px] mt-[8px]'>
-                    <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Serivce</p>
-                    <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                    <Link to={'terms-of-service'}>
+                      <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
+                    </Link>
+                    <Link to={'copyright'}>
+                      <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                    </Link>
                   </div>
                 </div>
               </div>

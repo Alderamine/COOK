@@ -7,7 +7,7 @@ import Image2 from '../assets/Signin/Image2.png'
 export default function Signin() {
   return (
     <main className='flex'>
-      <div className='blurSignup bg-[rgba(255,219,184,1)] w-[49.306vw] h-[846px] flex gap-[13px] justify-center overflow-hidden'>
+      <div className='blurSignin bg-[rgba(255,219,184,1)] w-[49.306vw] h-[846px] flex gap-[13px] justify-center overflow-hidden'>
         <img className='w-[283px] relative top-[45px]' src={Image1} alt="" />
         <img className='w-[283px]' src={Image2} alt="" />
       </div>

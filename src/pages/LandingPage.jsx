@@ -23,7 +23,7 @@ import AdvantagesIcon4 from "../assets/LandingPage/AdvantageIcon4.svg"
 import HIW1 from "../assets/LandingPage/HIW1.png"
 import HIW2 from "../assets/LandingPage/HIW2.png"
 import HIW3 from "../assets/LandingPage/HIW3.png"
-import HIWICONLast from "../assets/LandingPage/HIWICONLast.svg"
+import MoneyBackGaurenteeIcon from "../assets/LandingPage/MoneyBackGaurenteeIcon.svg"
 import BecomeaChef from "../assets/LandingPage/BecomeaChef.png"
 import BecomaChecfTick from "../assets/LandingPage/BecomaChecfTick.svg"
 import BecomeaStudent from "../assets/LandingPage/BecomeaStudent.png"
@@ -45,13 +45,13 @@ export default function LandingPage() {
         <div className=''>
           <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] text-TextColor mt-[85px]'>Master the Art of Cooking with <span className='text-primary font-normal font-pacifico '>Experts</span> Worldwide </h1>
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
-          <div className='flex items-center gap-[11px] mt-[26px]'>
+          {/* <div className='flex items-center gap-[11px] mt-[26px]'>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 4" />
               <path d="M10 8L16 12L10 16V8Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColor '>Learn more in the COOK video</p>
-          </div>
+          </div> */}
 
           <div className='flex gap-x-[20px] mt-[26px]'>
             <button className='w-[153px] h-[39px] rounded-[8px] bg-primary text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
@@ -118,7 +118,7 @@ export default function LandingPage() {
               <path d="M19.5555 4.35812C27.8213 0.191495 43.1371 0.505382 43.1371 0.505382C43.1371 0.505382 49.5786 19.5106 43.1371 28.5753C33.6644 41.9059 0 28.5753 0 28.5753C0 28.5753 8.50505 9.92845 19.5555 4.35812Z" fill="#D27722" />
             </svg>
             <div>
-              <h3 className='font-rubik font-sem text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px]'>Explore & Learn</h3>
+              <h3 className='font-rubik font-semibold text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px]'>Explore & Learn</h3>
               <p className='font-outfit font-normal text-[16px] leading-[26.8px]'>Dive into a range of cooking styles and techniques tailored to your interests</p>
             </div>
           </div>
@@ -154,7 +154,11 @@ export default function LandingPage() {
               <div className='flex items-center justify-between'>
                 <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100'>Vegan Cooking</h3>
                 <div>
-                  <img src={StatsIcon2} />
+                  {/* <img src={StatsIcon2} /> */}
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
               <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Create delicious, nutritious meals with plant-based ingredients</p>
@@ -167,7 +171,11 @@ export default function LandingPage() {
               <div className='flex items-center justify-between'>
                 <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100'>Seafood Mastery</h3>
                 <div>
-                  <img src={StatsIcon2} />
+                  {/* <img src={StatsIcon2} /> */}
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
               <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Dive into seafood: from grilling fish to creating sushi</p>
@@ -180,7 +188,11 @@ export default function LandingPage() {
               <div className='flex items-center justify-between'>
                 <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100'>BBQ & Grilling</h3>
                 <div>
-                  <img src={StatsIcon2} />
+                  {/* <img src={StatsIcon2} /> */}
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
               <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Fire up your skills with mouth-watering BBQ dishes</p>
@@ -193,7 +205,11 @@ export default function LandingPage() {
               <div className='flex items-center justify-between'>
                 <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100'>Wine Pairing</h3>
                 <div>
-                  <img src={StatsIcon2} />
+                  {/* <img src={StatsIcon2} /> */}
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
               <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Enhance culinary experiences by mastering wine pairing</p>
@@ -206,7 +222,11 @@ export default function LandingPage() {
               <div className='flex items-center justify-between'>
                 <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100'>Cake Decorating</h3>
                 <div>
-                  <img src={StatsIcon2} />
+                  {/* <img src={StatsIcon2} /> */}
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
               </div>
               <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Unleash creativity with cake decorating techniques</p>
@@ -217,7 +237,7 @@ export default function LandingPage() {
         </div>
 
         <div className='flex items-center justify-end gap-[15px] mt-[32px]'>
-          <Link to={'tutor'}>
+          {/* <Link to={'tutor'}>
             <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Show more</p>
           </Link>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +251,7 @@ export default function LandingPage() {
                 <rect width="20" height="20" fill="white" />
               </clipPath>
             </defs>
-          </svg>
+          </svg> */}
         </div>
 
       </section>
@@ -245,19 +265,19 @@ export default function LandingPage() {
         </h2>
         <p className='font-outfit font-normal leading-[26.8px] text-[16px] mt-[15px]'>Experience the perks of learning and teaching cooking on our platform</p>
         <div className='flex gap-[58px] items-center mt-[79px]'>
-          <div className='flex flex-col items-center gap-[27px] w-[360px]'>
+          <div className='flex flex-col items-center gap-[27px] w-[25vw]'>
             <img className='w-[100px]' src={Benefit1} />
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] '>Expert Chefs</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center'>Learn from the best. Our platform features professional chefs from around the world who bring their unique experiences and culinary secrets to every class.</p>
           </div>
           <div className='h-[42px] w-0 border-2 border-[rgba(255,219,184,1)]'></div>
-          <div className='flex flex-col items-center gap-[27px] w-[360px]'>
+          <div className='flex flex-col items-center gap-[27px] w-[25vw]'>
             <img className='w-[100px]' src={Benefit2} />
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] rounded-full'>Save Time and Money</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center'>Embrace the convenience of learning from home. Save time on travel, reduce dining-out expenses, and master your kitchen with our online cooking classes.</p>
           </div>
           <div className='h-[42px] w-0 border-2 border-[rgba(255,219,184,1)]'></div>
-          <div className='flex flex-col items-center gap-[27px] w-[360px]'>
+          <div className='flex flex-col items-center gap-[27px] w-[25vw]'>
             <img className='w-[100px]' src={Benefit3} />
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] '>Accessible Cooking</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center'>Start your culinary journey with ease. Our user-friendly platform makes navigation simple, letting you focus on learning and enjoying your online cooking classes.</p>
@@ -333,7 +353,9 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw]'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
-            <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
+            <Link to={'tutor'}>
+              <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
+            </Link>
           </div>
         </div>
 
@@ -356,12 +378,14 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw]'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Enjoy Your Interactive Lesson</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
-            <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
+            <Link to={'signup'}>
+              <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
+            </Link>
           </div>
         </div>
 
         <div className='w-[523px] h-[298px] mt-[125px] flex flex-col items-center  px-[25px] rounded-[16px] bg-primaryLighten border border-[rgba(255,219,184,1)] m-auto'>
-          <img className='relative top-[-70px]' src={HIWICONLast} alt="" />
+          <img className='relative top-[-70px]' src={MoneyBackGaurenteeIcon} alt="" />
           <div className='mt-[-39px]'>
             <h3 className='font-rubik font-bold text-center text-[32px] tracking-[-0.02em] leading-[37.92px]'>Money-back guarantee</h3>
             <p className='font-outfit font-normal text-center text-[18px] leading-[28.8px] mt-[20px]'>We believe you'll enjoy your first cooking lesson. However, we've got your back if anything goes differently than expected. Our money-back guarantee ensures you can take the first step with complete confidence.</p>
@@ -388,7 +412,9 @@ export default function LandingPage() {
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec'><span className='font-bold'>Grow Your Business Faster.</span> Utilize our platform's features and resources to accelerate your growth and increase your income.</p>
               </div>
             </div>
-            <button className='h-[39px] w-[150px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
+            <Link to={'signin'}>
+              <button className='h-[39px] w-[150px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
+            </Link>
             <div className='flex items-center gap-[8px]'>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_81_758)">
@@ -403,7 +429,7 @@ export default function LandingPage() {
                 </defs>
               </svg>
               <Link to={'support'}>
-                <p className='font-outfit font-medium leading-[22px] text-[14px] mt-[5px]'>Learn how our platform works</p>
+                <p className='font-outfit font-medium leading-[22px] text-[14px]'>Learn how our platform works</p>
               </Link>
             </div>
           </div>
@@ -433,7 +459,9 @@ export default function LandingPage() {
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'><span className='font-bold'>Grow Your Business Faster.</span> Utilize our platform's features and resources to accelerate your growth and increase your income.</p>
               </div>
             </div>
-            <button className='h-[39px] w-[90px] text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+            <Link to={'signup'}>
+              <button className='h-[39px] w-[90px] text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+            </Link>
           </div>
         </div>
       </section>
