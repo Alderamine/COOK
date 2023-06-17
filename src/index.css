@@ -16,6 +16,7 @@
 }
 
 body {
+  user-select: none;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
@@ -139,4 +140,12 @@ body {
   /* Number of lines to show before adding ellipsis */
   -webkit-box-orient: vertical;
   white-space: normal;
+}
+
+.line{
+  display: flex;
+}
+
+.line:hover{
+  box-shadow: 0px 0px 0px 4px #D27722;
 }
