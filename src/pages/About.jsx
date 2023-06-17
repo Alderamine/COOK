@@ -19,6 +19,9 @@ import Support from "../assets/About/Support.svg"
 import firstSpark from "../assets/About/firstSpark.svg"
 import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 import TopPattern from "../assets/About/TopPattern.svg"
+import teamUser1 from "../assets/About/teamUser1.jpg"
+import teamUser2 from "../assets/About/teamUser2.png"
+import ourTeam from "../assets/About/ourTeam.svg"
 
 const About = () => {
   return (
@@ -90,7 +93,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="line-before line-after bg-about-oval sm:bg-about-ovalTab xsm:bg-about-ovalMob h-[120px] mt-[112px] sm:h-[100px] sm:mt-[80px] xsm:h-[85px] xsm:mt-[64px] bg-no-repeat bg-center flex justify-center items-center ">
+      <div className="relative bg-about-oval sm:bg-about-ovalTab xsm:bg-about-ovalMob h-[120px] mt-[112px] sm:h-[100px] sm:mt-[80px] xsm:h-[85px] xsm:mt-[64px] bg-no-repeat bg-center flex justify-center items-center ">
+        <div className='absolute  w-full z-[-10] left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
+
         <h1 className='font-rubik text-[50px] font-[600] sm:text-[42px] xsm:text-[36px]'>Our mission</h1>
       </div>
       <p className='font-outfit leading-[38.84px] sm:leading-[32px] xsm:leading-[28.8px] px-[184px] sm:px-[48px] xsm:px-[33px]  text-[24px] sm:text-[20px] xsm:text-[18px] mt-[46.65px] sm:mt-[26.75px] xsm:mt-[19.81px] text-justify xsm:text-center text-TextColorSec'>Welcome to our platform, where we see cooking as a delightful art and a hobby that unites us all. We aim to foster a global culinary community that values knowledge, integrity, and artistry. We're passionate about nurturing your culinary journey, helping you learn from world-class chefs, and inspiring you to create delectable dishes. Together, we'll celebrate the joy of cooking and the universal language of food. Let's ignite your culinary potential and cook up a storm!</p>
@@ -194,6 +199,27 @@ const About = () => {
             <h1 className='bg-[white] w-[241px] relative z-20 text-center font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px] tracking-[-0.02em]'>Our Team</h1>
           </div>
           <p className='font-outfit mt-[10px]'>Meet with our platform innovators</p>
+          <div className='mx-[12.152777777777779vw] relative mt-[149px] flex gap-[40px] mb-[120px] sm:flex-col xsm:flex-col'>
+            <div className='flex flex-col items-center px-[44px]'>
+              <img src={teamUser1} alt="" className='w-[232px] h-[206px]' />
+              <h1 className='text-[30px] mt-[16px] mb-[5px] font-[600] font-rubik leading-[35.55px] text-center'>Carlos Mendoza</h1>
+              <p className='text-primary text-rubik text-[18px] font-[600] leading-[21.33px] mb-[16px]'>Co-founder and CEO</p>
+              <p className='text-outfit text-TextColorSec text-[16px] leading-[25.6px] text-center'>Carlos leads our strategic vision, fostering a platform that nurtures culinary education and community.</p>
+            </div>
+            <div className='flex flex-col items-center px-[44px]'>
+              <img src={teamUser2} alt="" className='w-[232px] h-[206px]' />
+              <h1 className='text-[30px] mt-[16px] mb-[5px] font-[600] font-rubik leading-[35.55px] text-center'>James Sullivan</h1>
+              <p className='text-primary text-rubik text-[18px] font-[600] leading-[21.33px] mb-[16px]'>Co-CEO</p>
+              <p className='text-outfit text-TextColorSec text-[16px] leading-[25.6px] text-center'>James works on forging partnerships, expanding our network of professional chefs and culinary institutes.</p>
+            </div>
+            <div className='flex flex-col items-center px-[44px]'>
+              <img src={teamUser1} alt="" className='w-[232px] h-[206px]' />
+              <h1 className='text-[30px] mt-[16px] mb-[5px] font-[600] font-rubik leading-[35.55px] text-center'>Emma Richards</h1>
+              <p className='text-primary text-rubik text-[18px] font-[600] leading-[21.33px] mb-[16px]'>Head of Community Engagement</p>
+              <p className='text-outfit text-TextColorSec text-[16px] leading-[25.6px] text-center'>Emma ensures a vibrant and supportive community, fostering strong relationships among chefs and learners.</p>
+            </div>
+            <img src={ourTeam} alt="" className='absolute top-[-70px] left-[-80px]' />
+          </div>
         </div>
       </div>
       {/* testimonial */}
@@ -204,7 +230,7 @@ const About = () => {
           <img src={User} alt="" />
           <div className="flex flex-col ">
             <h1 className='text-[20px] font-outfit font-[500] text-[white]'>Liam Thompson</h1>
-            <p className='text-[20px] font-[500] text-primaryLighten2'>Cooking Enthusiast</p>
+            <p className='font-outfit text-[20px] font-[500] text-primaryLighten2 leading-[20px] mt-[8px]'>Cooking Enthusiast</p>
           </div>
         </div>
       </div>
@@ -215,7 +241,7 @@ const About = () => {
             <div className='absolute w-full z-10 left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
             <h1 className='bg-[white] w-[449px] relative z-20 text-center font-rubik font-[600] tracking-[-0.02em] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our achievements</h1>
           </div>
-          <p className='font-outfit mt-[10px]'>The milestones we’re proud of</p>
+          <p className='font-outfit mt-[10px] leading-[26.8px] text-[16px] text-TextColorSec'>The milestones we’re proud of</p>
         </div>
       </div>
       <section className='h-fit relative'>
