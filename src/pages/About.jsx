@@ -89,12 +89,12 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* mission section */}
+
       <div className="line-before line-after bg-about-oval sm:bg-about-ovalTab xsm:bg-about-ovalMob h-[120px] mt-[112px] sm:h-[100px] sm:mt-[80px] xsm:h-[85px] xsm:mt-[64px] bg-no-repeat bg-center flex justify-center items-center ">
         <h1 className='font-rubik text-[50px] font-[600] sm:text-[42px] xsm:text-[36px]'>Our mission</h1>
       </div>
       <p className='font-outfit leading-[38.84px] sm:leading-[32px] xsm:leading-[28.8px] px-[184px] sm:px-[48px] xsm:px-[33px]  text-[24px] sm:text-[20px] xsm:text-[18px] mt-[46.65px] sm:mt-[26.75px] xsm:mt-[19.81px] text-justify xsm:text-center text-TextColorSec'>Welcome to our platform, where we see cooking as a delightful art and a hobby that unites us all. We aim to foster a global culinary community that values knowledge, integrity, and artistry. We're passionate about nurturing your culinary journey, helping you learn from world-class chefs, and inspiring you to create delectable dishes. Together, we'll celebrate the joy of cooking and the universal language of food. Let's ignite your culinary potential and cook up a storm!</p>
-      {/* story section */}
+
       <div className='flex flex-col items-center mt-[188px] sm:mt-[89px] xsm:mt-[100px]'>
         <div className='flex flex-col items-center mb-[100px] sm:mb-[67px] xsm:mb-[52px]'>
           <div className='relative'>
@@ -144,7 +144,6 @@ const About = () => {
             <div className='relative flex flex-col mt-[-5px]'>
               <img src={FirstTaste} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
               <img src={FirstTaste} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
-              {/* <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#98dba7af] border-l-2 border-black dark:border-white '></div> */}
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>First Taste of Success</h1>
@@ -154,7 +153,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* our values */}
+
       <div className='flex flex-col items-center mt-[203px] sm:mt-[89px] xsm:mt-[80px]'>
         <div className='flex flex-col items-center pb-[160px] sm:pb-[105px] xsm:pb-[105px]'>
           <h1 className='font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our Values</h1>
@@ -187,10 +186,13 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* our team */}
-      <div className='flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[255px]'>
-        <div className='flex flex-col items-center mb-[121px] '>
-          <h1 className='font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our Team</h1>
+
+      <div className='w-full flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[255px]'>
+        <div className='w-full flex flex-col justify-center items-center mb-[121px] '>
+          <div className='w-full flex justify-center relative'>
+            <div className='absolute w-full z-10 left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
+            <h1 className='bg-[white] w-[241px] relative z-20 text-center font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px] tracking-[-0.02em]'>Our Team</h1>
+          </div>
           <p className='font-outfit mt-[10px]'>Meet with our platform innovators</p>
         </div>
       </div>
@@ -206,34 +208,18 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* our achievements */}
-      {/* <div>
-        <div className='flex flex-col items-center mb-[100px] xsm:mb-[56px] sm:mb-[53px] mt-[107px] sm:mt-[93px] xsm:mt-[73px]'>
-          <h1 className='font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our achievements</h1>
+
+      <div className='w-full flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[255px]'>
+        <div className='w-full flex flex-col justify-center items-center'>
+          <div className='w-full flex justify-center relative'>
+            <div className='absolute w-full z-10 left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
+            <h1 className='bg-[white] w-[449px] relative z-20 text-center font-rubik font-[600] tracking-[-0.02em] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our achievements</h1>
+          </div>
           <p className='font-outfit mt-[10px]'>The milestones we’re proud of</p>
         </div>
-        <div className='grid grid-cols-4 xsm:grid-cols-1 mx-[178px] sm:mx-[49px] xsm:mx-[35px] gap-y-[29px] bg-[#FFFDF4] rounded-[16px] border border-primaryLighten2 pt-[32px] pb-[32px]'>
-          <div className='flex flex-col items-center'>
-            <h1 className='font-rubik leading-[47px] text-primary2 font-[700] mb-[10px] text-[40px]'>100+</h1>
-            <p className='font-outfit'>Talented Chefs</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <h1 className='font-rubik leading-[47px] text-primary2 font-[700] mb-[10px] text-[40px]'>1000+</h1>
-            <p className='font-outfit'>Students</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <h1 className='font-rubik leading-[47px] text-primary2 font-[700] mb-[10px] text-[40px]'>4.8 ★</h1>
-            <p className='font-outfit'>Rating</p>
-          </div>
-          <div className='flex flex-col items-center'>
-            <h1 className='font-rubik leading-[47px] text-primary2 font-[700] mb-[10px] text-[40px]'>20+</h1>
-            <p className='font-outfit'>Cooking Categories</p>
-          </div>
-        </div>
-      </div> */}
+      </div>
       <section className='h-fit relative'>
-        <div className='absolute w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
-        <div className='w-[75.347vw] m-auto mt-[159px] mb-[182px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
+        <div className='w-[75.347vw] m-auto mt-[100px] mb-[182px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
           <div className=' flex flex-col h-[121px] justify-center items-center'>
             <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2'>100+</h4>
             <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Talented Chefs</p>
@@ -256,12 +242,11 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* footer */}
+
       <footer >
         <div className='w-[1311.998px] m-auto min-h-[419px] bg-primary rounded-tl-[25px] rounded-tr-[25px] mt-[135px] divide-y-2 divide-[rgba(255,219,184,1)]'>
           <div className='flex gap-[198px] pt-[54px] pb-[43px] ml-[91.5px] mr-[102.5px]'>
             <div className='flex justify-center items-center'>
-              {/* <div className='text-[rgba(255,219,184,1)] font-bold font-rubik text-[56px] leading-[66.36px] tracking-[-0.02em]'>Cook</div> */}
               <Link to={'/'}>
                 <img src={COOKLogo} alt="" />
               </Link>
