@@ -27,8 +27,9 @@ export default function Signup() {
           </div>
         </div>
 
-        <div className='max-h-[1px] border border-[rgba(255,219,184,1)] w-full relative my-[79px]'>
-          <p className='font-outfit font-normal text-[14px] leading-[17.64px] text-TextColorSec w-[34px] h-[38px] bg-[white] absolute top-[-10px] left-[50%] text-center'>or</p>
+        <div className='relative my-[55px] w-full flex justify-center items-center'>
+          <div className='max-h-[1px] border border-[rgba(255,219,184,1)] w-full absolute z-10'></div>
+          <p className='relative z-20 font-outfit font-normal text-[14px] leading-[17.64px] text-TextColorSec w-[34px] h-[38px] bg-[white] flex justify-center items-center'>or</p>
         </div>
 
         <div>
