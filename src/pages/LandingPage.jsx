@@ -128,7 +128,7 @@ export default function LandingPage() {
               <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <Link to={'tutor'}>
+            <Link to={'search-tutor'}>
               <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category </p>
             </Link>
           </div>
@@ -237,7 +237,7 @@ export default function LandingPage() {
         </div>
 
         <div className='flex items-center justify-end gap-[15px] mt-[32px]'>
-          {/* <Link to={'tutor'}>
+          {/* <Link to={'search-tutor'}>
             <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Show more</p>
           </Link>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -339,7 +339,7 @@ export default function LandingPage() {
               <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <Link to={'tutor'}>
+            <Link to={'search-tutor'}>
               <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category</p>
             </Link>
           </div>
@@ -353,7 +353,7 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw]'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
-            <Link to={'tutor'}>
+            <Link to={'search-tutor'}>
               <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
             </Link>
           </div>
@@ -478,22 +478,22 @@ export default function LandingPage() {
           <div className='ml-[49px] mt-[47px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px]'>Find a tutor by category</h4>
             <div className='w-[496px] flex flex-wrap gap-[16px] mt-[26px]'>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Bakery</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Japanese Sushi Making</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Thai</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Seafood</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Italian Cuisine</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Vegan</p>
               </Link>
               <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>BBQ & Grilling</p>
@@ -502,19 +502,19 @@ export default function LandingPage() {
           <div className='ml-[49px] mt-[75px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px]'>Find a tutor by country</h4>
             <div className='w-[329px] flex flex-wrap gap-[16px] mt-[26px]'>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>USA</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Spain</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>France</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Mexico</p>
               </Link>
-              <Link to={'tutor'}>
+              <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Germany</p>
               </Link>
             </div>

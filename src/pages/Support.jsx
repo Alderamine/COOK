@@ -10,7 +10,7 @@ import SupportFooter from '../components/Support/SupportFooter';
 export default function Support() {
   return (
     <main>
-      <section className='w-full pt-[115px]'>
+      <section className='w-full pt-[75px]'>
         <CategoryCard icon={CategoriesIcon1} title={"COOK account"} description={"Find all the information you need to manage your COOK account. From setting up your profile to account security, we've got you covered."} />
         <CategoryCard icon={CategoriesIcon2} title={"Payments"} description={"Understand our payment process, from scheduling a class to refund policies. We're here to ensure a secure and seamless transaction experience."} />
         <CategoryCard icon={CategoriesIcon3} title={"Learning"} description={"Explore our resources to optimize your learning journey on COOK. Discover tips on class selection, progress tracking, and more."} />

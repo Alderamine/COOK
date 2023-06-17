@@ -12,8 +12,21 @@ export default function TutorList() {
   const scrollRef = useRef(null);
 
   const handleScroll = () => {
+    const currentScrollLeft = scrollRef.current.scrollLeft;
+    const targetScrollLeft = currentScrollLeft + 333;
+
     scrollRef.current.scrollTo({
-      left: 333,
+      left: targetScrollLeft,
+      behavior: 'smooth',
+    });
+  }
+  
+  const handleScrollLeft = () => {
+    const currentScrollLeft = scrollRef.current.scrollLeft;
+    const targetScrollLeft = currentScrollLeft - 333;
+
+    scrollRef.current.scrollTo({
+      left: targetScrollLeft,
       behavior: 'smooth',
     });
   };
@@ -83,18 +96,23 @@ export default function TutorList() {
           <div className='mt-[122px]'>
             <div className='flex items-center justify-between'>
               <div className='flex items-center'>
-                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="28" height="33" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <ellipse cx="11.5" cy="10.5" rx="11.5" ry="10.5" fill="#FFDBB8" />
                 </svg>
-                <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>Group Lesson</p>
+                <p className='font-rubik font-semibold text-[24px] leading-[18.96px] relative left-[-13px]'>Group Lesson</p>
               </div>
               <Link to={'/group'}>
                 <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
               </Link>
             </div>
             <div className=' relative'>
-              <img onClick={handleScroll} className='absolute right-[-5%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
+              <img onClick={handleScroll} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute right-[-5%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
+              <img onClick={handleScrollLeft} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute left-[-0%] rotate-180 top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
               <div ref={scrollRef} className='mt-[21px] flex gap-[20px] w-[979px] overflow-auto hideScrollbar'>
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
+                <GroupCard />
                 <GroupCard />
                 <GroupCard />
                 <GroupCard />

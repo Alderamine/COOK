@@ -4,8 +4,6 @@ const Pagination = ({ currentPage, totalPages }) => {
   // Generate array of page numbers
   const pageNumbers = Array.from({ length: totalPages }, (_, index) => index + 1);
 
-  console.log(pageNumbers)
-
   return (
     <div className="flex items-center justify-center space-x-2 mt-[110px]">
       <button className="w-[40px] h-[40px] px-2 py-1 bg-gray-200 rounded-md font-outfit font-medium text-[16px] leading-[20.16px]" disabled={currentPage === 1}>
@@ -15,8 +13,6 @@ const Pagination = ({ currentPage, totalPages }) => {
       </button>
 
       {pageNumbers.map((pageNumber) => {
-        console.log(pageNumber === currentPage)
-        console.log(pageNumber, currentPage)
         return (
           <button
             key={pageNumber}

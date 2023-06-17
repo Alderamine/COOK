@@ -32,7 +32,7 @@ export default function SupportNav() {
               <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <input type="text" className='flex-1 font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#FFDBB8] placeholder:text-[#FFDBB8]' placeholder='Search' />
+            <input type="text" className='flex-1 font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#fff] placeholder:text-[#FFDBB8]' placeholder='Search' />
           </div>
         </div>
       </div>
