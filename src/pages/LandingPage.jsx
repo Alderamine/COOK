@@ -43,16 +43,16 @@ export default function LandingPage() {
     <main>
       <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
         <div className='md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center xsm:flex xsm:flex-col xsm:items-center'>
-          <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] md:tracking-[0px] sm:tracking-[0px] text-TextColor mt-[85px] md:mt-[142px] sm:mt-[142px] xsm:mt-[192px] md:text-[50px] sm:text-[50px] xsm:text-[32px] md:leading-[56.65px] sm:leading-[56.65px] xsm:leading-[36.26px] md:w-[702px] sm:w-[84.072vw] md:text-center sm:text-center xsm:text-center min-w-[344px]'>Master the Art of Cooking with <span className='text-primary font-normal font-pacifico'>Experts</span> Worldwide </h1>
-          <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] min-w-[326px]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
+          <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] md:tracking-[0px] sm:tracking-[0px] text-TextColor mt-[85px] md:mt-[142px] sm:mt-[142px] xsm:mt-[192px] md:text-[50px] sm:text-[50px] xsm:text-[32px] md:leading-[56.65px] sm:leading-[56.65px] xsm:leading-[36.26px] md:w-[702px] sm:w-[84.072vw] md:text-center sm:text-center xsm:text-center xsm:min-w-[88.205vw]'>Master the Art of Cooking with <span className='text-primary font-normal font-pacifico'>Experts</span> Worldwide </h1>
+          <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
           <div className='flex gap-x-[20px] mt-[26px] xsm:flex-col xsm:w-full gap-y-[20px]'>
-            <button className='w-[153px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
+            <button className='w-[153px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
             <button className='w-[150px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
           </div>
         </div>
 
         <div className='mt-[71px] relative w-fit h-fit'>
-          <div className='xsm:overflow-hidden xsm:w-[100vw] flex justify-center'>
+          <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
             <img className='w-[518px] md:w-[585.994px] sm:w-[585.994px] xsm:min-w-[110vw] xsm:m-auto' src={HeroImg} />
           </div>
           <div className='absolute right-[-1.84vw] bottom-[-34px] xsm:hidden'>
@@ -61,7 +61,7 @@ export default function LandingPage() {
             </svg>
           </div>
 
-          <div className='absolute xsm:left-[50%] xsm:bottom-[-133px] xsm:translate-x-[-50%] left-[-5.139vw] bottom-[-58px] bg-primaryLighten border border-[rgba(255,219,184,1)] rounded-[16px] p-[24px] w-[284px] h-[200px] '>
+          <div className='absolute xsm:left-[50%] bg-[rgba(255,253,244,1)] xsm:bottom-[-133px] xsm:translate-x-[-50%] left-[-5.139vw] bottom-[-58px] bg-primary2Lighten border border-[rgba(255,219,184,1)] rounded-[16px] p-[24px] w-[284px] h-[200px] '>
             <div className='flex items-center gap-[25px]'>
               <img className='w-[65px]' src={CardProfile} />
               <div>
@@ -81,7 +81,7 @@ export default function LandingPage() {
 
       <section className='h-fit relative xsm:px-[8.205vw]'>
         <div className='absolute xsm:hidden w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
-        <div className='w-[75.347vw] xsm:w-full m-auto mt-[159px] xsm:mt-[78px] mb-[182px] xsm:mb-[112px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
+        <div className='w-[75.347vw] bg-[rgba(255,253,244,1)] xsm:w-full m-auto mt-[159px] xsm:mt-[78px] mb-[182px] xsm:mb-[112px] bg-primary2Lighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
           <div className=' flex flex-col h-[121px] justify-center items-center'>
             <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px]'>100+</h4>
             <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Talented Chefs</p>
@@ -130,7 +130,7 @@ export default function LandingPage() {
         </div>
 
         <div className='grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[1.667vw] mt-[68px] xsm:mt-[47px] gap-y-[24px]'>
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary transition-colors delay-100 duration-100'>
+          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2 transition-colors delay-100 duration-100'>
             <img className='img-primary' src={Stats1} />
             <div className='w-full'>
               <div className='flex items-center justify-between'>
@@ -287,10 +287,10 @@ export default function LandingPage() {
 
       <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[121px] gap-y-[162px] w-full'>
         <div className='relative w-fit h-fit'>
-          <div className='xsm:w-[100vw] xsm:overflow-hidden flex justify-center'>
+          <div className='xsm:w-[96.7vw] xsm:overflow-hidden flex justify-center'>
             <img className='min-w-[535px] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw]' src={AdvantagesHero} />
           </div>
-          <div className='absolute rounded-[16px] bg-primary h-[180px] w-[284px] bottom-[-27.023px] xsm:bottom-[-101px] left-[-5.694vw] xsm:left-[50%] xsm:translate-x-[-50%] p-[24px] flex flex-col items-end'>
+          <div className='absolute rounded-[16px] bg-primary2 h-[180px] w-[284px] bottom-[-27.023px] xsm:bottom-[-101px] left-[-5.694vw] xsm:left-[50%] xsm:translate-x-[-50%] p-[24px] flex flex-col items-end'>
             <h4 className='flex gap-[4px] items-center font-rubik font-medium text-right text-[white] text-[24px] leading-[28.44px]'>Level up <img src={AdvantagesIcon4} alt="" /></h4>
             <p className='font-outfit font-normal text-[14px] leading-[22.4px] text-right text-[white] mt-[16px]'>Take your culinary skills to new heights. Our platform provides you with the expert guidance you need to refine your skills and cook like a pro                          </p>
           </div>
@@ -298,7 +298,7 @@ export default function LandingPage() {
         <div>
           <h3 className='font-rubik font-semibold text-[31px] leading-[36.74px] tracking-[-0.02em] md:text-[36px] md:leading-[42.66px] sm:text-[36px] sm:leading-[42.66px] xsm:text-[30px] xsm:leading-[35.55px]'>Other Advantages</h3>
           <div className='mt-[29px] flex flex-col gap-[25px]'>
-            <div style={{boxShadow:"15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)"}} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col gap-y-[16px]'>
+            <div style={{ boxShadow: "15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)" }} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col gap-y-[16px]'>
               <img className='w-[32px] xsm:w-[48px]' src={AdvantagesIcon1} alt="" />
               <div>
                 <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] text-TextColor xsm:text-[20px] xsm:leading-[23.7px]'>Diverse Range of Classes</h4>
@@ -306,7 +306,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div style={{boxShadow:"15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)"}} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col'>
+            <div style={{ boxShadow: "15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)" }} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col'>
               <img className='w-[32px] xsm:w-[48px]' src={AdvantagesIcon2} alt="" />
               <div>
                 <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] text-TextColor xsm:text-[20px] xsm:leading-[23.7px]'>Opportunity to Teach</h4>
@@ -314,7 +314,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div style={{boxShadow:"15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)"}} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col'>
+            <div style={{ boxShadow: "15px 15px 13px rgba(0, 0, 0, 0.02), 7px 7px 9px rgba(0, 0, 0, 0.03), 2px 2px 5px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)" }} className='flex gap-[16px] items-start rounded-[16px] w-full border border-[rgba(255,219,184,1)] p-[16px] xsm:flex-col'>
               <img className='w-[32px] xsm:w-[48px]' src={AdvantagesIcon3} alt="" />
               <div>
                 <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] text-TextColor xsm:text-[20px] xsm:leading-[23.7px]'>Interactive Lessons</h4>
@@ -328,9 +328,13 @@ export default function LandingPage() {
       <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[199px]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
-            <svg className='relative top-[15px]' width="75" height="31" viewBox="0 0 75 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className='relative top-[15px] xsm:hidden' width="75" height="31" viewBox="0 0 75 31" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 24C7 24 20.6553 7 37.5 7C54.3447 7 68 24 68 24" stroke="#D27722" strokeWidth="14" strokeLinecap="round" />
             </svg>
+            <svg className='hidden xsm:flex mt-[5px]' width="39" height="22" viewBox="0 0 39 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 17C5 17 11.4919 5 19.5 5C27.5081 5 34 17 34 17" stroke="#D27722" stroke-width="9" stroke-linecap="round" />
+            </svg>
+
             <div>
               <h3 className='font-rubik font-medium text-[50px] leading-[56.65px] tracking-[-0.02em] mb-[7px] md:text-[36px] md:leading-[40.79px] sm:text-[36px] sm:leading-[40.79px] xsm:text-[30px] xsm:leading-[33.99px] '>How It Works</h3>
               <p className='font-outfit font-normal text-[16px] leading-[26.8px] xsm:hidden'>Getting Started with the COOK Platform</p>
@@ -347,50 +351,49 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className='flex justify-between gap-[131px] mt-[109px] md:flex-col md:items-center sm:flex-col sm:items-center xsm:flex-col xsm:items-center'>
+        <div className='flex justify-between gap-[131px] xsm:gap-[42px] mt-[109px] xsm:mt-[94px] md:flex-col md:items-center sm:flex-col sm:items-center xsm:flex-col xsm:items-center'>
           <div className='relative'>
-            <img className='absolute left-[-24px] select-none ' src={One} alt='' />
-            <img className='w-[39.375vw] xsm:min-w-[100vw] md:w-[551px] sm:w-[551px]' src={HIW1} alt="" />
+            <img className='absolute left-[-24px] select-none xsm:hidden' src={One} alt='' />
+            <img className='w-[39.375vw] md:w-[551px] sm:w-[551px] xsm:min-w-[83.59vw]' src={HIW1} alt="" />
           </div>
-          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:md:w-full'>
-            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Explore Our Culinary Experts</h3>
+          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
+            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
-            <Link to={'search-tutor'}>
-              <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
+            <Link className='self-center' to={'search-tutor'}>
+              <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
             </Link>
           </div>
         </div>
 
-        <div className='flex justify-between gap-[131px] mt-[109px] md:flex-col-reverse md:items-center sm:flex-col sm:items-center xsm:flex-col xsm:items-center'>
-          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:md:w-full'>
-            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Select Your Perfect Match</h3>
+        <div className='flex justify-between gap-[131px] xsm:gap-[42px] mt-[109px] xsm:mt-[94px] md:flex-col-reverse md:items-center sm:flex-col sm:items-center xsm:flex-col-reverse xsm:items-center'>
+          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
+            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Select Your Perfect Match</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Once you've explored our range of tutors, choose the one that resonates most with you. Their profiles provide detailed information, such as their areas of expertise, availability, and reviews. Scheduling a lesson has never been easier.</p>
           </div>
           <div className='h-fit relative'>
-            <img className='absolute top-[-52px] left-[-37px] select-none' src={Two} alt='' />
-            <img className='w-[39.375vw] md:w-[551px] sm:w-[551px]' src={HIW2} alt="" />
+            <img className='absolute top-[-52px] left-[-37px] select-none xsm:hidden' src={Two} alt='' />
+            <img className='w-[39.375vw] md:w-[551px] sm:w-[551px]  xsm:min-w-[83.59vw]' src={HIW2} alt="" />
           </div>
         </div>
 
-        <div className='flex justify-between gap-[131px] mt-[109px] md:flex-col md:items-center sm:flex-col sm:items-center xsm:flex-col xsm:items-center'>
+        <div className='flex justify-between gap-[131px] xsm:gap-[42px] mt-[109px] xsm:mt-[94px] xsm:mt-[94px md:flex-col md:items-center sm:flex-col sm:items-center xsm:flex-col xsm:items-center'>
           <div className='h-fit relative'>
-            <img className='absolute top-[-35px] left-[-24px] select-none' src={Three} alt='' />
-            <img className='w-[39.375vw] md:w-[551px] sm:w-[551px]' src={HIW3} alt="" />
+            <img className='absolute top-[-35px] left-[-24px] select-none xsm:hidden' src={Three} alt='' />
+            <img className='w-[39.375vw] md:w-[551px] sm:w-[551px]  xsm:min-w-[83.59vw]' src={HIW3} alt="" />
           </div>
-          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:md:w-full'>
-            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px]'>Enjoy Your Interactive Lesson</h3>
+          <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
+            <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Enjoy Your Interactive Lesson</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
-            <Link to={'signup'}>
-              <button className='h-[41px] w-[157px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
+            <Link className='self-center' to={'signup'}>
+              <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
             </Link>
           </div>
         </div>
-
       </section>
 
       <section className="relative">
         <div className='xsm:hidden absolute w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
-        <div className='w-[523px] xsm:w-[83.59vw] min-h-[298px] xsm:pb-[52px] mt-[125px] flex flex-col items-center  px-[25px] rounded-[16px] bg-primaryLighten border border-[rgba(255,219,184,1)] m-auto relative'>
+        <div className='w-[523px] bg-[rgba(255,253,244,1)] xsm:w-[83.59vw] min-h-[298px] xsm:pb-[52px] mt-[125px] xsm:mt-[148px] flex flex-col items-center  px-[25px] rounded-[16px] bg-primary2Lighten border border-[rgba(255,219,184,1)] m-auto relative'>
           <img className='relative top-[-70px]' src={MoneyBackGaurenteeIcon} alt="" />
           <div className='mt-[-39px]'>
             <h3 className='font-rubik font-bold text-center text-[32px] tracking-[-0.02em] leading-[37.92px]'>Money-back guarantee</h3>
@@ -402,7 +405,7 @@ export default function LandingPage() {
       <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
         <div className='flex justify-between items-center md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[9.097vw] mt-[123px]'>
           <div className='flex flex-col justify-center gap-[15px] w-[590.5px] md:w-[88.383vw] sm:w-[88.383vw] xsm:w-full'>
-            <h3 className='font-rubik font-semibold text-[50px] leading-[56.65px] tracking-[-0.02em]'>Become A Chef</h3>
+            <h3 className='font-rubik font-semibold text-[50px] leading-[56.65px] tracking-[-0.02em] xsm:text-[30px] xsm:leading-[33.99px]'>Become A Chef</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec mt-[1px]'>Share your culinary secrets, inspire cooking enthusiasts worldwide, and grow your career like never before. Our platform offers a unique way to connect, teach, and earn.</p>
             <div className='flex flex-col gap-[8px] my-[16px]'>
               <div className='flex items-start gap-[8px]'>
@@ -419,7 +422,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Link to={'signin'}>
-              <button className='h-[39px] w-[150px] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
+              <button className='h-[39px] w-[150px] xsm:w-full text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
             </Link>
             <div className='flex items-center gap-[8px]'>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -440,15 +443,19 @@ export default function LandingPage() {
             </div>
           </div>
           <div className='h-fit'>
-            <img className='w-[38.264vw] md:w-[583px] sm:w-[583px]' src={BecomeaChef} alt="" />
+            <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
+              <img className='w-[38.264vw] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw] xsm:m-auto' src={BecomeaChef} alt="" />
+            </div>
           </div>
         </div>
       </section>
 
       <section className='w-full md:px-0 sm:px-0 xsm:px-0 px-[64px] min-h-[647px] mt-[142px]'>
-        <div className='bg-primary rounded-[26px] flex md:items-center sm:items-center md:px-[42px] sm:px-[42px] px-0 gap-[5.036vw]'>
-          <img className='w-[39.167vw] md:w-[279px] sm:w-[md:w-[279px]] md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
-          <div className='pt-[90px] md:pr-0 sm:pr-0 xsm:pr-0 min-w-[50vw] pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
+        <div className='bg-primary2 rounded-[26px] xsm:rounded-[0px] flex md:items-center sm:items-center md:px-[42px] sm:px-[42px] px-0 gap-[5.036vw] xsm:gap-0 xsm:flex-col'>
+          <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
+            <img className='lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:w-[279px] sm:w-[279px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
+          </div>
+          <div className='pt-[90px] xsm:pt-[42px] xsm:pb-[34px] xsm:px-[32px] md:pr-0 sm:pr-0 min-w-[50vw] pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
             <h3 className='font-rubik font-semibold tracking-[-0.02em] text-[50px] md:text-[42px] md:leading-[47.59px] sm:text-[42px] sm:leading-[47.59px] xsm:text-[30px] xsm:leading-[33.99px] leading-[56.65px] text-[white]'>Become A Student</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'>Kick-start your culinary adventure with COOK. We provide a space for cooking enthusiasts of all levels to learn, explore, and master culinary arts from professional chefs worldwide. So dive in and transform your kitchen into a playground of flavors.</p>
             <div className='flex flex-col gap-[8px]'>
@@ -465,20 +472,20 @@ export default function LandingPage() {
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white] md:text-[16px] md:leading-[24.08px] sm:text-[16px] sm:leading-[24.08px]'><span className='font-bold'>Interactive Learning:</span> Ask questions and receive real-time feedback in our interactive classes.</p>
               </div>
             </div>
-            <Link to={'signup'}>
-              <button className='h-[39px] w-[90px] text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+            <Link className='xsm:w-full' to={'signup'}>
+              <button className='h-[39px] w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[73px]'>
+      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[73px]'>
         <div className=''>
           <div className='flex items-center gap-[13px]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.3043 3.0638C21.7732 -0.244989 33.7595 0.0042736 33.7595 0.0042736C33.7595 0.0042736 38.8006 15.0966 33.7595 22.2951C26.3461 32.8811 0 22.2951 0 22.2951C0 22.2951 6.65613 7.4873 15.3043 3.0638Z" fill="#D27722" />
             </svg>
-            <h3 className='font-semibold font-rubik text-[40px] leading-[45.32px]'>Popular online classes</h3>
+            <h3 className='font-semibold font-rubik text-[40px] leading-[45.32px]  xsm:text-[30px] xsm:leadnig-[33.99px] tracking-[-0.02em]'>Popular online classes</h3>
           </div>
 
           <div className='ml-[49px] md:ml-0 sm:ml-0 xsm:ml-0 mt-[47px]'>
@@ -535,7 +542,7 @@ export default function LandingPage() {
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.3043 3.0638C21.7732 -0.244989 33.7595 0.0042736 33.7595 0.0042736C33.7595 0.0042736 38.8006 15.0966 33.7595 22.2951C26.3461 32.8811 0 22.2951 0 22.2951C0 22.2951 6.65613 7.4873 15.3043 3.0638Z" fill="#D27722" />
             </svg>
-            <h3 className='font-semibold font-rubik text-[40px] leading-[45.32px]'>COOK Blog</h3>
+            <h3 className='font-semibold font-rubik text-[40px] leading-[45.32px] xsm:text-[36px] xsm:leadnig-[40.79px] tracking-[-0.02em]'>COOK Blog</h3>
           </div>
 
           <div className='grid grid-cols-2 xsm:grid-cols-1 mt-[53px] gap-[23px]'>
