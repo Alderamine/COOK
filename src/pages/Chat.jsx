@@ -186,7 +186,6 @@ const Chat = () => {
 
   const handleCardClick = (chatId) => {
     const selectedChat = allChats.find((chat) => chat.id === chatId);
-    console.log(window.innerWidth);
     if (window.innerWidth < 577)
       navigate('/singleChat', { state: selectedChat })
     else
@@ -195,9 +194,9 @@ const Chat = () => {
 
   return (
     <div className='flex min-h-[calc(100vh-142.3px)]'>
-      <div className={`w-[377px] sm:w-[260px] flex flex-col  xsm:min-w-full br-1px h-full pl-[38px] pr-[26px] pt-[38px] sm:pt-27px sm:pl-[20px] sm:pr-[20px] xsm:pl-[32px] xsm:pr-[32px] xsm:pt-[23px] xsm:pb-0`}>
+      <div className={`w-[377px] sm:w-[260px] md:w-[260px] flex flex-col  xsm:min-w-full br-1px h-full pl-[38px] pr-[26px] pt-[38px] sm:pt-27px sm:pl-[20px] sm:pr-[20px] md:pt-27px md:pl-[20px] md:pr-[20px] xsm:pl-[32px] xsm:pr-[32px] xsm:pt-[23px] xsm:pb-0`}>
         {allChats.map((chat) => (
-          <div className='card flex cursor-pointer hover:bg-[#cccccc27] items-center gap-[16px] px-[23px] py-[12px] sm:px-0 xsm:px-0 xsm:pr-[4px]' key={chat.id} onClick={() => handleCardClick(chat.id)}>
+          <div className='card flex cursor-pointer hover:bg-[#cccccc27] items-center gap-[16px] px-[23px] py-[12px] sm:px-0 md:px-0 xsm:px-0 xsm:pr-[4px]' key={chat.id} onClick={() => handleCardClick(chat.id)}>
             <img src={user} alt='' />
             <div className='flex flex-col gap-[7px]'>
               <h1 className='font-outfit text-[16px] leading-[18.13px] tracking-[-0.02em] font-[600]'>{chat.name}</h1>
@@ -206,8 +205,8 @@ const Chat = () => {
           </div>
         ))}
       </div>
-      <div className='flex-1 xsm:hidden pr-[65px] sm:w-[65vw] sm:pr-0 w-[72vw]'>
-        <div className={`border-primaryLighten2 border-l-[2px] border-r-[2px] sm:border-r-0 `}>
+      <div className='flex-1 xsm:hidden pr-[65px] sm:w-[65vw] md:w-[65vw] md:pr-0 sm:pr-0 w-[72vw]'>
+        <div className={`border-primaryLighten2 border-l-[2px] border-r-[2px] sm:border-r-0  md:border-r-0`}>
           {Object.keys(currentChat).length === 0 && (
             <div className='flex flex-col gap-2 min-h-[calc(100vh-142px)] justify-center items-center font-outfit text-[20px] leading-[18.13px]  text-[#949494] font-[600]'>
               <svg width='45' height='45' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -218,14 +217,14 @@ const Chat = () => {
           )}
           {Object.keys(currentChat).length !== 0 && (
             <div className='flex flex-col '>
-              <div className='z-10 max-h-[calc(100vh-228.3px)] min-h-[calc(100vh-228.3px)] sm:max-h-[calc(100vh-213.3px)] sm:min-h-[calc(100vh-213.3px)] overflow-auto'>
-                <div className='ml-[26px] mr-[41px] mt-[38px] flex flex-col sm:ml-[20px] sm:mr-[20px]'>
+              <div className='z-10 max-h-[calc(100vh-228.3px)] min-h-[calc(100vh-228.3px)] sm:max-h-[calc(100vh-213.3px)] md:max-h-[calc(100vh-213.3px)] sm:min-h-[calc(100vh-213.3px)] md:min-h-[calc(100vh-213.3px)]  overflow-auto'>
+                <div className='ml-[26px] mr-[41px] mt-[38px] flex flex-col sm:ml-[20px] sm:mr-[20px] md:ml-[20px] md:mr-[20px]'>
                   {currentChat.chats.map((chat, index) =>
                     userId === chat.senderId ? (
                       <div className='flex  my-[12px] justify-center ml-auto items-start' key={index}>
                         <div className='flex flex-col gap-[5px]'>
                           <div style={{ borderRadius: '16px 16px 0px 16px' }} className='flex justify-center items-center py-[12px] px-[16px] bg-primary'>
-                            <p className='max-w-[528px] sm:max-w-[320px] xsm:text-[0.75em] text-[white] text-[16px] font-[400] font-outfit '>{chat.message}</p>
+                            <p className='max-w-[528px] sm:max-w-[320px] md:max-w-[320px] xsm:text-[0.75em] text-[white] text-[16px] font-[400] font-outfit '>{chat.message}</p>
                           </div>
                         </div>
                       </div>
@@ -234,7 +233,7 @@ const Chat = () => {
                         <img src={user} className='mr-[11px] h-[42px] w-[42px] cursor-pointer rounded-full' alt='user' />
                         <div className='flex flex-col gap-[5px] mt-[10px]'>
                           <div style={{ borderRadius: '0px 12px 12px 12px' }} className='flex justify-center items-center py-[12px] px-[16px] bg-backSec'>
-                            <p className='max-w-[528px] sm:max-w-[320px] xsm:text-[0.75em] text-[black] text-[16px] font-[400] font-outfit'>{chat.message}</p>
+                            <p className='max-w-[528px] sm:max-w-[320px] md:max-w-[320px] xsm:text-[0.75em] text-[black] text-[16px] font-[400] font-outfit'>{chat.message}</p>
                           </div>
                         </div>
                       </div>
@@ -242,7 +241,7 @@ const Chat = () => {
                   )}
                 </div>
               </div>
-              <div className='h-[86px] sm:h-[71px] pl-[27px] pr-[40px] sm:pl-[36px] sm:pr-[46px]'>
+              <div className='h-[86px] sm:h-[71px] md:h-[71px] pl-[27px] pr-[40px] sm:pl-[36px] md:pl-[36px] sm:pr-[46px] md:pr-[46px]'>
                 <div className='flex gap-[16px] items-center'>
                   <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="49.4383" height="50.6106" rx="24.7192" fill="#D27722" />

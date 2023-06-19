@@ -6,22 +6,22 @@ import user from "../assets/StudentDashboard/user.svg"
 const StudentDashboard = () => {
   return (
     <>
-      <div className='flex flex-col mt-[95px] sm:mt-[76px] xsm:mt-[59px] px-[19.86111111111111vw] sm:px-[48px] xsm:px-[32px] mb-[172px] sm:mb-[201px] xsm:mb-[68px]'>
+      <div className='flex flex-col mt-[95px] sm:mt-[76px] md:mt-[76px] xsm:mt-[59px] px-[19.86111111111111vw] sm:px-[48px] md:px-[48px] xsm:px-[32px] mb-[172px] sm:mb-[201px] md:mb-[201px] xsm:mb-[68px]'>
         <div className='flex flex-col gap-[29px] xsm:gap-[30px]'>
           <h1 className='font-[600] font-rubik text-[40px] tracking-[-0.02em] leading-[45.32px] xsm:leading-[36.26px] xsm:text-[32px]'>Lessons</h1>
-          <div className='flex gap-[24px] xsm:gap-[16px] xsm:flex-col'>
-            <div className='p-[16px] bg-primaryLighten flex gap-[24px]'>
+          <div className='flex gap-[24px] xsm:gap-[16px] xsm:flex-col sm:flex-col md:flex-col'>
+            <div className='p-[16px] pr-0 bg-primaryLighten flex gap-[24px]'>
               <img src={finishedLesson} alt="" />
-              <div className='flex flex-col justify-between'>
+              <div className='flex flex-col '>
                 <h2 className='text-[24px] font-outfit font-[600] xsm:text-[20px] text-[black]'>12 Finished Lessons</h2>
-                <p className='font-outfit text-[16px] text-TextColorSec'>Celebrate your progress with completed lessons</p>
+                <p className='font-outfit mt-[4px] xsm:mt-[8px] text-[16px] text-TextColorSec'>Celebrate your progress with completed lessons</p>
               </div>
             </div>
-            <div className='p-[16px] bg-primaryLighten flex gap-[24px]'>
+            <div className='p-[16px] pr-0 bg-primaryLighten flex gap-[24px]'>
               <img src={upcomingLesson} alt="" />
-              <div className='flex flex-col justify-between'>
+              <div className='flex flex-col '>
                 <h2 className='text-[24px] font-outfit font-[600] xsm:text-[20px] text-[black]'>2 Upcoming Lessons</h2>
-                <p className='font-outfit text-[16px] text-TextColorSec'>Stay excited for what's ahead with upcoming lessons</p>
+                <p className='font-outfit mt-[4px] xsm:mt-[8px] text-[16px] text-TextColorSec'>Stay excited for what's ahead with upcoming lessons</p>
               </div>
             </div>
           </div>
@@ -67,8 +67,8 @@ const StudentDashboard = () => {
           </div>
         </div>
       </div>
-      <div className='mx-[19.86111111111111vw] xsm:mx-0 sm:m-0 h-[2px] bg-primaryLighten2'></div>
-      <footer className='flex justify-center items-center flex-col gap-[8px] pt-[52px] pb-[78px] sm:pb-[78px] xsm:pb-[51px]'>
+      <div className='mx-[19.86111111111111vw] xsm:mx-0 sm:m-0 md:m-0 h-[2px] bg-primaryLighten2'></div>
+      <footer className='flex justify-center items-center flex-col gap-[8px] pt-[52px] pb-[78px] sm:pb-[78px] md:pb-[78px] xsm:pb-[51px]'>
         <h1 className='text-[32px] font-rubik font-[700] text-primary2 leading-[37.92px] tracking-[-0.02em]'>COOK</h1>
         <div className='flex gap-[10px] items-center'>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
