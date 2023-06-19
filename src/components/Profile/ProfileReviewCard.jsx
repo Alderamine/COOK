@@ -3,7 +3,7 @@ import ReviewProfilePic from "../../assets/Profile/ReviewProfilePic.png"
 
 export default function ProfileReviewCard() {
   return (
-    <div className='flex items-start gap-[19px]'>
+    <div className='flex items-start gap-[19px] xsm:flex-col'>
       <img className='w-[86px]' src={ReviewProfilePic} alt="" />
       <div className='flex-1'>
         <div className='flex items-center justify-between'>

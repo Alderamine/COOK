@@ -50,17 +50,17 @@ export default function Profile() {
     }
   };
 
-  const ScrollToTop=(e)=>{
+  const ScrollToTop = (e) => {
     window.scrollTo({
       top: 0,
     });
   }
 
   return (
-    <main className='px-[175px] flex justify-start gap-[23px] pt-[79px]'>
+    <main className='px-[12.153vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex justify-start gap-[23px] pt-[79px]'>
       <div>
-        <div className=' flex gap-[20px]'>
-          <div className='flex gap-[66px] min-w-[754px]'>
+        <div className='w-[52.361vw] md:w-full sm:w-full xsm:w-full flex gap-[20px]'>
+          <div className='flex gap-[66px] min-w-[52.361vw] md:w-full sm:w-full xsm:w-full sm:flex-col xsm:flex-col'>
             <div className='relative w-fit'>
               <img className='w-[267px] relative' src={ProfilePicture} alt="" />
               <img className='absolute bottom-[13px] right-[15px]' src={PlayIcon} alt="" />
@@ -89,7 +89,7 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className='w-[753.998px] border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[16px] py-[12px]'>
+        <div className='w-[52.361vw] md:w-full sm:w-full xsm:w-full border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[16px] py-[12px]'>
           <div className='flex items-center gap-[16px] '>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -99,7 +99,29 @@ export default function Profile() {
           <p className='font-outfit font-normal text-[18px] leading-[27px]'>Lorem ipsum dolor sit amet consectetur. Vel mattis gravida elementum tellus sollicitudin vitae auctor lacus luctus. Neque sed ullamcorper lectus.</p>
         </div>
 
-        <div className='flex items-center gap-[18px] mt-[60px]'>
+        <div className='w-[52.361vw] md:w-full sm:w-full xsm:w-full mt-[50px] lg:hidden xl:hidden 2xl:hidden rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
+          <div>
+            <div className='flex items-center justify-center gap-[20px]'>
+              <div className='flex flex-col justify-center items-center'>
+                <p className='font-rubik font-bold text-[32px] leading-[37.92px]'>$1000</p>
+                <p className='font-outfit font-[300] text-[18px] leading-[22.68px] text-TextColorSec'>50-minutes</p>
+              </div>
+              <div className='flex flex-col justify-center items-center'>
+                <div className='flex items-center gap-[4px]'>
+                  <p className='font-rubik font-bold text-[32px] leading-[37.92px]'>5</p>
+                  <img className='w-[27px]' src={StarIcon2} alt="" />
+                </div>
+                <p className='font-outfit font-[300] text-[18px] leading-[22.68px] text-TextColorSec'>100 reviews</p>
+              </div>
+            </div>
+            <div className='flex gap-[13px] mt-[27px] xsm:flex-col sm:flex-col xsm:items-center sm:items-center justify-center'>
+              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary '>Send A Message</button>
+              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary text-[white] '>Book A Trial Lesson</button>
+            </div>
+          </div>
+        </div>
+
+        <div className='flex items-center gap-[18px] mt-[60px] flex-wrap'>
           <a href="#about" onClick={(e) => handleScroll(e, "about")}>
             <button className='px-[21px] min-h-[43px] bg-primary text-[white] rounded-[8px] font-outfit font-normal text-[18px] leading-[27px]'>About</button>
           </a>
@@ -117,14 +139,14 @@ export default function Profile() {
           </a>
         </div>
 
-        <div id='about' className='w-[753.998px] border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
+        <div id='about' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>About</h4>
-          <p className='font-outfit font-normal text-[16px] leading-[24.8px] mt-[12px] w-[693px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
+          <p className='font-outfit font-normal text-[16px] leading-[24.8px] mt-[12px] w-full'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
         </div>
 
-        <div id='availability' className='w-[753.998px] mt-[50px]'>
+        <div id='availability' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  mt-[50px] xsm:hidden'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>Availability</h4>
-          <div className='min-h-[49px] w-full bg-primary2 rounded-[8px] py-[12px] px-[16px] mt-[18px] mb-[32px] flex items-center gap-[16px]'>
+          <div className='min-h-[49px] w-full bg-primary2 rounded-[8px] py-[12px] px-[16px] mt-[18px] mb-[32px] flex items-center gap-[1.916vw]'>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M9.09003 9.50002C9.32513 8.83169 9.78918 8.26813 10.4 7.90915C11.0108 7.55018 11.7289 7.41896 12.4272 7.53873C13.1255 7.65851 13.7588 8.02154 14.2151 8.56355C14.6714 9.10555 14.9211 9.79154 14.92 10.5C14.92 12.5 11.92 13.5 11.92 13.5" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -132,6 +154,7 @@ export default function Profile() {
             </svg>
             <p className='font-outfit font-normal text-[16px] leading-[24.8px] text-[white]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus s</p>
           </div>
+          
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-[5px]'>
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,10 +174,10 @@ export default function Profile() {
             </div>
           </div>
           <div className='flex justify-between mt-[25px]'>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>SAT 22</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>SAT 22</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -168,10 +191,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>SUN 23</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>SUN 23</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -185,10 +208,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='w-fit m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>MON 24</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] w-f[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>MON 24</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -202,10 +225,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>TUE 25</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>TUE 25</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -219,10 +242,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>WED 26</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>WED 26</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -236,10 +259,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>THU 27</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>THU 27</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -253,10 +276,10 @@ export default function Profile() {
                 </div>
               </div>
             </div>
-            <div className='w-[84px] px-[14px] '>
+            <div className='w-[84px] px-[0.972vw] '>
               <div className='border-t-8 border-primary2'>
-                <div className='px-2 m-auto mt-[12px] mb-[24px]'>
-                  <p className='font-outfit font-normal text-[18px] leading-[27.9px] text-center'>FRI 28</p>
+                <div className=' m-auto mt-[12px] mb-[24px]'>
+                  <p className='px-[14px] font-outfit font-normal text-[18px] leading-[27.9px] text-center'>FRI 28</p>
                 </div>
                 <div className='flex flex-col gap-[10px]'>
                   <p className='font-outfit font-medium text-[16px] leading-[24.8px] text-center text-primary2'>09:00</p>
@@ -273,10 +296,10 @@ export default function Profile() {
           </div>
         </div>
 
-        <div id="reviews" className='w-[753.998px]'>
+        <div id="reviews" className='w-[52.361vw] md:w-full sm:w-full xsm:w-full '>
           <div className='w-full mt-[50px]'>
             <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>Reviews</h4>
-            <div className='flex gap-[74px] items-center mt-[40px]'>
+            <div className='flex gap-x-[8.862vw] items-center mt-[40px] xsm:flex-col sm:flex-col xsm:items-start gap-y-[22px] sm:items-start'>
               <div className='w-[119px]'>
                 <div className='flex items-center gap-[3px]'>
                   <h2 className='font-rubik font-semibold text-[49px] leading-[58.07px]'>4.5</h2>
@@ -287,7 +310,7 @@ export default function Profile() {
                 <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-primary2 text-center mt-[-1px]'>200 reviews</p>
               </div>
 
-              <div className='min-h-[113.5px] border border-[rgba(255,219,184,1)]'></div>
+              <div className='min-h-[113.5px] border border-[rgba(255,219,184,1)] sm:hidden xsm:hidden'></div>
 
               <div className='flex flex-col gap-[4px]'>
                 <div className='flex items-center gap-[10px]'>
@@ -332,39 +355,38 @@ export default function Profile() {
           </div>
         </div>
 
-        <div id='resume' className='w-[753.998px] border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
+        <div id='resume' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[20px]'>Resume</h4>
           <div className='flex items-center gap-[15px]'>
             <button className='h-[35px] px-[16px] rounded-[4px] bg-primary2 font-kanit font-normal text-[18px] leading-[26.91px] text-[white]'>Education</button>
             <button className='h-[35px] px-[16px] rounded-[4px] bg-[rgba(0,0,0,0)] border border-primary2 font-kanit font-normal text-[18px] leading-[26.91px] text-primary2'>Experience</button>
           </div>
-          <p className='font-outfit font-normal text-[16px] leading-[24.8px] mt-[20px] w-[693px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
+          <p className='font-outfit font-normal text-[16px] leading-[24.8px] mt-[20px] w-full'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
         </div>
 
-        <div id='subjects' className='w-[753.998px] mt-[124px]'>
+        <div id='subjects' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  mt-[124px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[28px]'>Subjects</h4>
-          <div className='flex items-center gap-[26px]'>
-            <div className='w-[196px] h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+          <div className='flex items-center gap-[26px] sm:flex-col xsm:flex-col'>
+            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
               <img src={ProfileSubject1} alt="" />
               <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
             </div>
-            <div className='w-[196px] h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
               <img src={ProfileSubject2} alt="" />
               <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
             </div>
-            <div className='w-[196px] h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
               <img src={ProfileSubject3} alt="" />
               <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
             </div>
           </div>
         </div>
 
-        <div className='blurEnd w-[757px] mt-[124px] flex flex-col '>
+        <div className='blurEnd w-[52.569vw] md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] mt-[124px] flex flex-col '>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[47px]'>Other Tutors</h4>
-          <div ref={scrollRef} className='hideScrollbar pb-[38px] bg-[rgba(0,0,0,0.0)] flex items-center gap-[12px] max-w-full overflow-y-auto overflow-x-scroll'>
-
+          <div ref={scrollRef} className='hideScrollbar xsm:w-full pb-[38px] bg-[rgba(0,0,0,0.0)] flex items-center gap-[12px] max-w-full overflow-y-auto overflow-x-scroll'>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className='boxShadow min-w-[244.33px] xsm:flex-col p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -463,7 +485,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className='w-[313px] sticky h-[243px] top-[112px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
+      <div className='w-[313px] md:hidden sm:hidden xsm:hidden sticky h-[243px] top-[112px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
         <div>
           <div className='flex items-center justify-between gap-[20px]'>
             <div className='flex flex-col justify-center items-center'>

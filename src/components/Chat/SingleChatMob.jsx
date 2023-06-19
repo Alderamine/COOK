@@ -20,7 +20,7 @@ const SingleChatMob = () => {
 
       <div className='sm:pr-0 w-full'>
         <div className={`border-primaryLighten2 border-l-[2px] border-r-[2px] sm:border-r-0 `}>
-          {Object.keys(location.state).length !== 0 && (
+          {location?.state && Object.keys(location?.state)?.length !== 0 && (
             <div className='flex flex-col '>
               <div className='z-10 max-h-[calc(100vh-158px)] min-h-[calc(100vh-158px)] overflow-auto'>
                 <div className='ml-[32px] mr-[32px] mt-[38px] flex flex-col sm:ml-[20px] sm:mr-[20px]'>
