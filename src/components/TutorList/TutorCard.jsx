@@ -7,14 +7,14 @@ import { Link } from 'react-router-dom'
 
 export default function TutorCard() {
   return (
-    <div className='w-[979px] border-2 border-[rgba(255,219,184,1)] px-[29.5px] py-[45px] rounded-[16px] flex gap-[46px] items-start'>
+    <div className='w-full md:w-[88.383vw] sm:w-[88.383vw] border-2 border-[rgba(255,219,184,1)] px-[29.5px] py-[45px] rounded-[16px] flex sm:flex-col xsm:flex-col xsm:items-center gap-[46px] sm:gap-[5.509vw] items-start'>
       <Link className='rounded-full' to={'/profile'}>
-        <img className='min-w-[154px]' src={TutorProfile} alt="" />
+        <img className='min-w-[154px] max-w-[154px]' src={TutorProfile} alt="" />
       </Link>
       <div>
         <div>
           <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em]'>Sarah Doe</h3>
-          <div className='flex items-center gap-[18px]'>
+          <div className='flex items-center gap-x-[18px] gap-y-[8px] sm:flex-col sm:items-start sm:mt-[8px]'>
             <div className='flex items-center gap-[7px]'>
               <img src={BakerIcon} alt="" />
               <p className='font-outfit font-normal text-[18px] leading-[22.68px] text-primary'>Baker</p>
@@ -34,7 +34,7 @@ export default function TutorCard() {
         </div>
       </div>
 
-      <div >
+      <div className='xsm:w-full'>
         <div className='flex items-center justify-center gap-[20px]'>
           <div className='flex flex-col justify-center items-center'>
             <div className='flex items-center gap-[4px]'>
@@ -48,12 +48,14 @@ export default function TutorCard() {
             <p className='font-outfit font-medium text-[12px] leading-[15.12px] text-TextColorSec'>per 60min </p>
           </div>
         </div>
-        <Link to={'/profile'}>
-          <button className='w-[165px] h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary mt-[15px]'>Write a message</button>
-        </Link>
-        <Link to={'/profile'}>
-          <button className='w-[165px] h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary text-[white] mt-[15px]'>Book a lesson</button>
-        </Link>
+        <div className='flex flex-col gap-[15px] mt-[15px] xsm:w-full'>
+          <Link to={'/profile'}>
+            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary'>Write a message</button>
+          </Link>
+          <Link to={'/profile'}>
+            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary text-[white]'>Book a lesson</button>
+          </Link>
+        </div>
       </div>
     </div>
   )

@@ -19,8 +19,8 @@ export default function LandingNav() {
           </Link>
           <img className='hidden xsm:flex' src={Hamburger} alt="" />
 
-          <div className='md:hidden h-[15px] border border-primary rouded-[16px] xsm:hidden'></div>
-          <div className='md:hidden flex gap-[24px] xsm:hidden'>
+          <div className='md:hidden sm:hidden h-[15px] border border-primary rouded-[16px] xsm:hidden'></div>
+          <div className='md:hidden sm:hidden flex gap-[24px] xsm:hidden'>
             <Link to={'search-tutor'}>
               <div className='flex gap-[7px]'>
                 <img src={Nav1} />
