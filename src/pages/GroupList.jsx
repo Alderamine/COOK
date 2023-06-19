@@ -74,7 +74,7 @@ export default function GroupList() {
           </div>
           <div className='w-full mt-[87px]'>
             <h3 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>All group classes</h3>
-            <div className='grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 items-center gap-x-[20px] gap-y-[42px] gap-y-[55px] mt-[26px]'>
+            <div className='grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 items-center gap-x-[20px] xsm:gap-y-[42px] gap-y-[55px] mt-[26px]'>
               <GroupCard />
               <GroupCard />
               <GroupCard />
