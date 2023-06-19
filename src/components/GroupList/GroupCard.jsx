@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import GroupCard1 from "../../assets/GroupList/GroupCard1.png"
 import AutherProfile from "../../assets/Support/AutherProfile.png"
 
-export default function GroupCard({background='white',divRef=null}) {
+export default function GroupCard({ background = 'white', divRef = null }) {
 
   const [arr, setArr] = useState([1, 2, 3]);
 
   return (
-    <div ref={divRef} style={{background:background}} className='min-w-[313px] xsm:min-w-[324px] md:min-w-[359px] sm:min-w-[359px] rounded-[12px] border border-[rgba(255,219,184,1)]'>
+    <div ref={divRef} style={{ background: background }} className=' rounded-[12px] border border-[rgba(255,219,184,1)]'>
       <div className='relative'>
         <div className='flex gap-[17px] absolute top-[15px] left-[14px]'>
           <button className='h-[32px] px-[12px] bg-primary2 rounded-[5px] font-outfit font-medium text-[16px] leading-[24px] text-[white]'>For Beginner</button>

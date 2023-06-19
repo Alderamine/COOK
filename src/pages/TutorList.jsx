@@ -17,10 +17,19 @@ export default function TutorList() {
   const [width, setWidth] = useState()
 
   useEffect(() => {
-    if (divRef.current) {
-      const width = divRef.current.offsetWidth;
-      setWidth(+width + 20)
+    const windowWidthHandler=()=>{
+      if (divRef.current) {
+        const width = divRef.current.offsetWidth;
+        setWidth(+width + 20)
+      }
     }
+
+    window.addEventListener('resize', windowWidthHandler);
+
+    // Cleanup by removing the event listener
+    return () => {
+      window.removeEventListener('resize', windowWidthHandler);
+    };
   }, [])
 
   console.log(width)
@@ -47,7 +56,7 @@ export default function TutorList() {
 
   return (
     <main className='w-full pt-[43px] xsm:pt-[72px] '>
-      <div className='mx-[64px] md:mx-[5.749vw] sm:mx-[5.749vw] xsm:mx-[0px] w-full bg-primary2 rounded-[16px] flex justify-between items-center py-[43px] px-[52px] xsm:px-[5.128vw] xsm:rounded-[0px]'>
+      <div className='mx-[64px] md:mx-[5.749vw] sm:mx-[5.749vw] xsm:mx-[0px] xsm:w-full bg-primary2 rounded-[16px] flex justify-between items-center py-[43px] px-[52px] xsm:px-[5.128vw] xsm:rounded-[0px]'>
         <div className='xsm:flex xsm:items-center xsm:flex-1 sm:flex sm:items-center sm:flex-1 md:flex md:items-center md:flex-1 xsm:flex-col sm:flex-col md:flex-col'>
           <h1 className='font-rubik font-bold text-[42px] leading-[50px] trakcing-[-0.02em] text-[white] xsm:text-center sm:text-center md:text-center xsm:text-[36px] xsm:font-semibold xsm:leading-[43.13px]'>Find Your Perfect Chef</h1>
           <p className="font-outfit font-normal text-[24px] leading-[30.24px] text-[rgba(255,219,184,1)] xsm:text-center sm:text-center md:text-center xsm:text-[22px] xsm:leading-[27.72px]">Discover, Learn, Cook with Masters</p>
@@ -100,7 +109,7 @@ export default function TutorList() {
 
         <div className='mt-[42px] '>
           {/* Mobile search and filter */}
-          <div className='mt-[1px]'>
+          <div className='mt-[1px] hidden xsm:grid'>
             <div className='xsm:w-full xsm:flex w-[37.153vw] h-[49px] border-2 border-primary2 rounded-[4px] hidden items-center px-[16px] relative mt-[31px]'>
               <svg className='absolute' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -112,7 +121,7 @@ export default function TutorList() {
             <div className='flex items-center justify-between mt-[14px] mb-[58px]'>
               <div className='flex gap-[12px] items-center'>
                 <img src={FilterIcon} alt="" />
-                <p>Filters</p>
+                <p className='font-outfit font-medium text-[22px] leading-[33px]'>Filters</p>
               </div>
               <img src={FilterButtonIcon} alt="" />
             </div>
@@ -154,8 +163,8 @@ export default function TutorList() {
                   <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
                 </Link>
               </div>
-              <div className=' relative'>
-                <img onClick={handleScroll} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute right-[-5%] xsm:right-[-15%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
+              <div className='w-fit relative'>
+                <img onClick={handleScroll} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute right-[-5%] xsm:right-[-0%] xsm:left-[100%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
                 <img onClick={handleScrollLeft} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute left-[-0%] rotate-180 top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
                 <div ref={scrollRef} className='mt-[21px] flex gap-[20px] w-full max-w-[67.986vw] md:max-w-[88.383vw] xsm:max-w-[83.077vw] overflow-auto hideScrollbar'>
                   <GroupCard divRef={divRef} />
