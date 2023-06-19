@@ -5,34 +5,34 @@ import { Link } from 'react-router-dom'
 
 export default function SupportNav() {
   return (
-    <nav className='w-full h-[166px] pl-[168px] pr-[175px] bg-[#D27722] flex items-center'>
+    <nav className='w-full h-[166px] xsm:h-[108px] pl-[11.667vw] pr-[12.153vw] md:pl-[5.749vw] md:pr-[5.749vw] sm:pl-[5.749vw] sm:pr-[5.749vw] xsm:pl-[5.385vw] xsm:pr-[8.205vw] bg-[#D27722] flex items-center'>
       <div className='flex-1 flex items-center justify-between'>
         <Link to={'/support'}>
           <div>
-            <h1 className='text-[48px] font-rubik font-bold tracking-[-0.02em] leading-[56.88px] text-[#FFDBB8]'>COOK</h1>
+            <h1 className='text-[48px] font-rubik font-bold tracking-[-0.02em] leading-[56.88px] text-[#FFDBB8] xsm:text-[32px] xsm:leading-[37.92px] md:text-[40px] md:leading-[47.4px] sm:text-[40px] sm:leading-[47.4px]'>COOK</h1>
             <div className='flex gap-[11px] mt-[0.5px]'>
               <img src={NavIcon} />
-              <p className='font-medium font-rubik text-[24px] leading-[28.44px] tracking-[-0.02em] text-[white]'>Support and Q&A</p>
+              <p className='font-medium font-rubik text-[24px] xsm:text-[18px] xsm:leading-[21.33px] leading-[28.44px] tracking-[-0.02em] text-[white] md:text-[20px] md:leading-[23.7px] sm:text-[20px] sm:leading-[23.7px]'>Support and Q&A</p>
             </div>
           </div>
         </Link>
 
         <div className='flex flex-col items-end'>
-          <div className='flex gap-[29px]'>
-            <Link to={'/'}>
-              <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] '>Go to COOK</p>
+          <div className='flex gap-[2.014vw]'>
+            <Link className='xsm:hidden' to={'/'}>
+              <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white]'>Go to COOK</p>
             </Link>
             <div className='flex gap-[8px] cursor-pointer'>
-              <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] '>English</p>
+              <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] xsm:hidden'>English</p>
               <img src={NavEnglish} alt="" />
             </div>
           </div>
-          <div className='w-[37.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative mt-[16px]'>
+          <div className='xsm:hidden w-[37.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative mt-[16px]'>
             <svg className='absolute' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-            <input type="text" className='flex-1 font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#fff] placeholder:text-[#FFDBB8]' placeholder='Search' />
+            <input type="text" className='w-full font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#fff] placeholder:text-[#FFDBB8]' placeholder='Search' />
           </div>
         </div>
       </div>
