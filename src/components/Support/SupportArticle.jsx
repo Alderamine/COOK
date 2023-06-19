@@ -9,27 +9,27 @@ export default function SupportArticle() {
   console.log(location);
   return (
     <>
-      <nav class="ml-[293px] mr-[293px] rounded-md">
-        <ol class="list-reset flex py-[56px]">
-          <li onClick={() => navigate(-2)} className='cursor-pointer'>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
+      <nav class="ml-[20.347vw] mr-[20.347vw] md:ml-[6.587vw] md:mr-[5.749vw] sm:ml-[6.587vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw] rounded-md">
+        <ol class="py-[56px]">
+          <li onClick={() => navigate(-2)} className='cursor-pointer inline'>
+            <p class="inline font-outfit w-fit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
           </li>
-          <li>
-            <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
+          <li className='inline'>
+            <span class="inline font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
           </li>
-          <li onClick={() => navigate(-1)} className='cursor-pointer'>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.category}</p>
+          <li onClick={() => navigate(-1)} className='cursor-pointer inline'>
+            <p class="inline font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.category}</p>
           </li>
-          <li>
-            <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
+          <li className='inline'>
+            <span class="inline font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
           </li>
-          <li>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.articleTitle}</p>
+          <li className='inline'>
+            <p class="inline font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.articleTitle}</p>
           </li>
         </ol>
       </nav>
-      <main className='ml-[293px] mr-[293px] '>
-        <div className="w-[828px] divide-y divide-[rgba(255,219,184,1)]">
+      <main className='ml-[20.347vw] mr-[20.347vw] md:ml-[6.587vw] md:mr-[5.749vw] sm:ml-[6.587vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw]'>
+        <div className="w-full divide-y divide-[rgba(255,219,184,1)]">
           <div>
             <h1 className='font-rubik text-[40px] font-bold leading-[47.4px] tracking-[-0.02em] text-TextColor'>Main Header</h1>
             <div className='flex gap-[13px] items-center mt-[19px] mb-[27px]'>
@@ -41,8 +41,8 @@ export default function SupportArticle() {
           <div className='pt-[71px]'>
             <p className='font-outfit font-normal text-[20px] leading-[30px] text-TextColorSec'>As a member of our online cooking platform, you may have noticed the option for recurring payments. But what are they, and how do they work? Here’s everything you need to know about recurring payments on our platform.</p>
 
-            <div className='flex flex-col gap-[16px] mt-[43px]'>
-              <div className='flex gap-[7px] items-center relative left-[-22px]'>
+            <div className='flex flex-col gap-[16px] mt-[43px] md:mt-[90px] sm:mt-[90px] xsm:mt-[73px]'>
+              <div className='flex gap-[7px] items-center relative left-[-22px] md:left-[0px] sm:left-[0px] xsm:left-[0px]'>
                 <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.4283 7.48C14.4283 12.1744 8.62446 17 2.70467 17C-3.21512 17 2.42822 11.8212 2.42822 8.5C2.42822 5.17879 -3.21512 0 2.70467 0C8.62446 0 14.4283 2.78558 14.4283 7.48Z" fill="#D27722" />
                 </svg>
@@ -57,7 +57,7 @@ export default function SupportArticle() {
             </div>
 
             <div className='flex flex-col gap-[16px] mt-[54px]'>
-              <div className='flex gap-[7px] items-center relative left-[-22px]'>
+              <div className='flex gap-[7px] items-center relative left-[-22px] md:left-[0px] sm:left-[0px] xsm:left-[0px]'>
                 <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.4283 7.48C14.4283 12.1744 8.62446 17 2.70467 17C-3.21512 17 2.42822 11.8212 2.42822 8.5C2.42822 5.17879 -3.21512 0 2.70467 0C8.62446 0 14.4283 2.78558 14.4283 7.48Z" fill="#D27722" />
                 </svg>
@@ -67,7 +67,7 @@ export default function SupportArticle() {
             </div>
 
             <div className='flex flex-col gap-[16px] mt-[58px]'>
-              <div className='flex gap-[7px] items-center relative left-[-22px]'>
+              <div className='flex gap-[7px] items-center relative left-[-22px] md:left-[0px] sm:left-[0px] xsm:left-[0px]'>
                 <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.4283 7.48C14.4283 12.1744 8.62446 17 2.70467 17C-3.21512 17 2.42822 11.8212 2.42822 8.5C2.42822 5.17879 -3.21512 0 2.70467 0C8.62446 0 14.4283 2.78558 14.4283 7.48Z" fill="#D27722" />
                 </svg>
@@ -77,7 +77,7 @@ export default function SupportArticle() {
             </div>
 
             <div className='flex flex-col gap-[16px] mt-[58px]'>
-              <div className='flex gap-[7px] items-center relative left-[-22px]'>
+              <div className='flex gap-[7px] items-center relative left-[-22px] md:left-[0px] sm:left-[0px] xsm:left-[0px]'>
                 <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.4283 7.48C14.4283 12.1744 8.62446 17 2.70467 17C-3.21512 17 2.42822 11.8212 2.42822 8.5C2.42822 5.17879 -3.21512 0 2.70467 0C8.62446 0 14.4283 2.78558 14.4283 7.48Z" fill="#D27722" />
                 </svg>
