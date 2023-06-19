@@ -38,11 +38,11 @@ const About = () => {
               </div>
               <div className='flex gap-[7px]'>
                 <img src={Nav2} />
-                <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
+                <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a chef</p>
               </div>
               <div className='flex gap-[7px]'>
                 <img src={Nav3} />
-                <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
+                <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Group Cooking</p>
               </div>
             </div>
           </div>

@@ -21,6 +21,7 @@ import BlogArticle from './components/Blog/BlogArticle'
 import DashboardLayout from './layout/DashboardLayout'
 import Chat from './pages/Chat'
 import SingleChatMob from './components/Chat/SingleChatMob'
+import GroupPage from './pages/GroupPage'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
             <Route index element={<LandingPage></LandingPage>}></Route>
             <Route path='search-tutor' element={<TutorList></TutorList>}></Route>
             <Route path='search-group' element={<GroupList></GroupList>}></Route>
+            <Route path='group-page' element={<GroupPage />} />
             <Route path='profile' element={<Profile></Profile>}></Route>
           </Route>
 
