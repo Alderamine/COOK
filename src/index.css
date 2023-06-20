@@ -141,10 +141,20 @@ body {
   white-space: normal;
 }
 
-.line{
+.line {
   display: flex;
 }
 
-.line:hover{
+.line:hover {
   box-shadow: 0px 0px 0px 4px #D27722;
+}
+
+.ellipsisShow2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Number of lines to show before adding ellipsis */
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
