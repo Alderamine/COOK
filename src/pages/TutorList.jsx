@@ -166,8 +166,8 @@ export default function TutorList() {
               <div className='w-fit relative'>
                 <img onClick={handleScroll} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute right-[-5%] xsm:right-[-0%] xsm:left-[100%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
                 <img onClick={handleScrollLeft} className='cursor-pointer opacity-80 hover:opacity-100 transition-all duration-150 absolute left-[-0%] rotate-180 top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
-                <div ref={scrollRef} className='mt-[21px] flex gap-[20px] w-full max-w-[67.986vw] md:max-w-[88.383vw] xsm:max-w-[83.077vw] overflow-auto hideScrollbar'>
-                  <GroupCard divRef={divRef} />
+                <div ref={scrollRef} className='mt-[21px] grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-[20px] w-full max-w-[67.986vw] md:max-w-[88.383vw] xsm:max-w-[83.077vw] overflow-scroll hideScrollbar'>
+                  <GroupCard divRef={divRef} width={"313px"}/>
                   <GroupCard />
                   <GroupCard />
                   <GroupCard />
