@@ -7,30 +7,99 @@ import { useRef } from 'react';
 import { useEffect } from 'react';
 
 export default function OnlineLesson() {
+  const [tabs,setTabs]=useState('chat');
   const [width, setWidth] = useState('932px');
+  const [widthNumber, setWidthNumber] = useState('932');
   const resizableDivRef = useRef(null);
   const handleDivRef = useRef(null);
 
   const handleDrag = (event) => {
-    const newWidth = event.clientX + 'px';
-    if (newWidth !== '0px') {
+    let newWidth = event.clientX + 'px';
+    let newWidthNumber = event.clientX;
+
+    if (newWidth !== '0px' && newWidthNumber < windowSize.width) {
       setWidth(newWidth);
+      setWidthNumber(newWidthNumber)
+    } else if (newWidthNumber > windowSize.width && newWidth !== '0px') {
+      setWidth(windowSize.width);
+      setWidthNumber(windowSize.width)
     }
   };
 
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+
+      if (newWidth > window.innerWidth) {
+        setWidth(window.innerWidth);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const handleDragStart = (event) => {
-    event.dataTransfer.setDragImage(new Image(), 0, 0); 
+    event.dataTransfer.setDragImage(new Image(), 0, 0);
   };
 
   const handleDragEnd = (event) => {
     event.target.style.opacity = '1'; // Reset the appearance after dragging ends
   };
 
+
+
+  const handleDragStartInner = (event) => {
+    event.dataTransfer.setData('text/plain', event.target.id);
+  };
+
+  const handleDragOver = (event) => {
+    event.preventDefault();
+  };
+
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const draggableElementId = event.dataTransfer.getData('text/plain');
+    const draggableElement = document.getElementById(draggableElementId);
+    const dropzone = event.target;
+
+    // Move the dragged element to the dropzone
+    dropzone.appendChild(draggableElement);
+  };
+
   return (
-    <main className='min-h-screen max-h-screen flex'>
-      <div ref={resizableDivRef} style={{ width }} className='h-full relative min-w-[508px]'>
+    <main className='min-h-screen max-h-screen flex md:flex-col sm:flex-col xsm:flex-col'>
+      <div ref={resizableDivRef} style={widthNumber < windowSize.width ? { width } : { width: "100%" }} className='h-full relative min-w-[508px] xsm:min-w-[320px]'>
         <img className='object-cover w-full h-screen' src={VideoImage} alt="" />
+
+        {/* <div
+          id="innerDiv"
+          className='absolute top-0'
+          draggable
+          onDragStart={handleDragStartInner}
+          onDragOver={handleDragOver}
+          onDrop={handleDrop}
+          style={{
+            width: '100px',
+            height: '100px',
+            backgroundColor: 'red',
+            cursor: 'move',
+          }}
+        >
+          Inner Div
+        </div> */}
 
         <div className='absolute top-[38px] w-full px-[44px] flex justify-between items-center'>
           <svg width="45.5" height="45.5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,10 +155,10 @@ export default function OnlineLesson() {
         </div>
       </div>
 
-      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line transition-all duration-200 min-h-full bg-primary w-[5px] cursor-e-resize'>
+      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-primary w-[5px] cursor-e-resize'>
       </div>
 
-      <div className='flex-1 flex flex-col min-h-screen'>
+      <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
         <div className='h-[114px] w-full flex gap-[16px] items-center justify-end pr-[4.444vw] border-b border-b-[rgba(255,219,184,1)]'>
           <button className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center'>
             <img src={EditIcon} alt="" />
@@ -103,10 +172,10 @@ export default function OnlineLesson() {
 
         <div className='flex-1 pl-[36px] pr-[64px] w-full overflow-auto'>
           <div className='flex flex-col justify-end h-full w-full m-auto gap-[5.5vh]'>
-            <div className='w-full max-w-[535px] ml-[0px] h-fit mx-auto bg-[rgba(255,253,244,1)] rounded-[12px] rounded-tl-none px-[16px] py-[12px]'>
+            <div className='w-full max-w-[535px] xsm:max-w-[320px] ml-[0px] h-fit mx-auto bg-[rgba(255,253,244,1)] rounded-[12px] rounded-tl-none px-[16px] py-[12px]'>
               <p className='text-TextColor font-outfit font-[400] text-[16px] leading-[24px]'>Lorem ipsum dolor sit amet consectetur. Lectus amet duis venenatis bibendum sed. Sed lacus neque orci feugiat turpis cursus.</p>
             </div>
-            <div className='w-full max-w-[535px] mr-[0px] h-fit mx-auto self-end bg-primary2 rounded-[12px] rounded-br-none px-[16px] py-[12px]'>
+            <div className='w-full max-w-[535px] xsm:max-w-[320px] mr-[0px] h-fit mx-auto self-end bg-primary2 rounded-[12px] rounded-br-none px-[16px] py-[12px]'>
               <p className='text-[white] font-outfit font-[400] text-[16px] leading-[24px]'>Lorem ipsum dolor sit amet consectetur. Lectus amet duis venenatis bibendum sed. Sed lacus neque orci feugiat turpis cursus.</p>
             </div>
           </div>
