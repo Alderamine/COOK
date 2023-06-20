@@ -83,21 +83,21 @@ const GroupPage = () => {
 
         <div className='mt-[47px] xsm:mt-[41px] flex flex-col gap-[13px]'>
           <div className='flex justify-between p-[13px] rounded-[12px] border border-primaryLighten2'>
-            <div className='flex gap-[8px]'>
+            <div className='flex flex-1 gap-[8px]'>
               <img src={specialization} alt="" />
               <h1 className='text-[18px] font-outfit leading-[22.68px] font-[500]'>Specialization</h1>
             </div>
             <h1 className='text-[18px] font-outfit leading-[22.68px] font-[400]'>Baking</h1>
           </div>
           <div className='flex justify-between p-[13px] rounded-[12px] border border-primaryLighten2'>
-            <div className='flex gap-[8px]'>
+            <div className='flex flex-1 gap-[8px]'>
               <img src={groupsize} alt="" />
               <h1 className='text-[18px] font-outfit leading-[22.68px] font-[500]'>Group size</h1>
             </div>
             <h1 className='text-[18px] font-outfit leading-[22.68px] font-[400]'>2-5</h1>
           </div>
           <div className='flex justify-between p-[13px] rounded-[12px] border border-primaryLighten2'>
-            <div className='flex gap-[8px]'>
+            <div className='flex flex-1 gap-[8px]'>
               <img src={level} alt="" />
               <h1 className='text-[18px] font-outfit leading-[22.68px] font-[500]'>Level</h1>
             </div>
