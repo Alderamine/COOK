@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import GroupCard1 from "../../assets/GroupList/GroupCard1.png"
 import AutherProfile from "../../assets/Support/AutherProfile.png"
 
-export default function GroupCard({ background = 'white', divRef = null }) {
+export default function GroupCard({ background = 'white', divRef = null,width }) {
 
   const [arr, setArr] = useState([1, 2, 3]);
 
   return (
-    <div ref={divRef} style={{ background: background }} className=' rounded-[12px] border border-[rgba(255,219,184,1)]'>
+    <div ref={divRef} style={{ background: background, }} className='min-w-[313px] rounded-[12px] border border-[rgba(255,219,184,1)]'>
       <div className='relative'>
         <div className='flex gap-[17px] absolute top-[15px] left-[14px]'>
           <button className='h-[32px] px-[12px] bg-primary2 rounded-[5px] font-outfit font-medium text-[16px] leading-[24px] text-[white]'>For Beginner</button>
@@ -27,7 +27,7 @@ export default function GroupCard({ background = 'white', divRef = null }) {
               </svg>
             </div>
           </div>
-          <p className='font-outfit font-normal text-[16px] leading-[24px]'>Lorem ipsum dolor sit amet consectetur. Massa consequat cras tortor cras morbi amet...</p>
+          <p className='font-outfit font-normal text-[16px] leading-[24px] w-full '>Lorem ipsum dolor sit amet consectetur. Massa consequat cras tortor cras morbi amet...</p>
         </div>
         <div className='flex justify-between items-center mt-[16px] py-[16px]'>
           <div className='flex w-fit'>
