@@ -86,7 +86,7 @@ export default function OnlineLesson() {
         </div>
       </div>
 
-      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line min-h-full bg-primary w-[5px] cursor-e-resize'>
+      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line transition-all duration-200 min-h-full bg-primary w-[5px] cursor-e-resize'>
       </div>
 
       <div className='flex-1 flex flex-col min-h-screen'>
