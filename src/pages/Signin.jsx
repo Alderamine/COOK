@@ -13,8 +13,8 @@ export default function Signin() {
         <img className='w-[283px] relative top-[45px] md:hidden xsm:hidden sm:hidden' src={Image1} alt="" />
         <img className='w-[283px] md:hidden xsm:hidden sm:hidden' src={Image2} alt="" />
 
-        <img className='max-h-[914px] w-[283px] relative md:absolute md:top-[0px] md:right-[-59px] sm:absolute sm:top-[0px] sm:right-[-59px]' src={MDImage2} alt="" />
-        <img className='max-h-[603px] max-w-[283px] relative md:absolute md:bottom-[0px] md:left-[-60px] sm:absolute sm:bottom-[0px] sm:left-[-60px]' src={MDImage1} alt="" />
+        <img className='max-h-[914px] hidden md:flex xsm:flex sm:flex w-[283px] relative md:absolute md:top-[0px] md:right-[-59px] sm:absolute sm:top-[0px] sm:right-[-59px]' src={MDImage2} alt="" />
+        <img className='max-h-[603px] hidden md:flex xsm:flex sm:flex max-w-[283px] relative md:absolute md:bottom-[0px] md:left-[-60px] sm:absolute sm:bottom-[0px] sm:left-[-60px]' src={MDImage1} alt="" />
       </div>
 
       <div className='bg-[white] xsm:w-full md:border-2 md:border-[rgba(255,219,184,1)] md:rounded-[23px] md:h-fit sm:border-2 sm:border-[rgba(255,219,184,1)] sm:rounded-[23px] sm:h-fit w-[50.694vw] md:w-[80.24vw] sm:w-[80.24vw] h-full flex flex-col items-center pt-[105px] md:absolute sm:absolute xsm:absolute md:left-[50%] md:translate-x-[-50%] md:top-[50%] md:translate-y-[-50%] sm:left-[50%] sm:translate-x-[-50%] sm:top-[50%] sm:translate-y-[-50%]'>

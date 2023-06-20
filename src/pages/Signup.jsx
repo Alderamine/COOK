@@ -3,16 +3,22 @@ import Google from "../assets/Signup/Google.svg"
 import Facebook from "../assets/Signup/Facebook.svg"
 import Image1 from '../assets/Signup/Image1.png'
 import Image2 from '../assets/Signup/Image2.png'
+import MDImage2 from '../assets/Signup/MDImage2.png'
+import MDImage1 from '../assets/Signup/MDImage1.png'
 
 export default function Signup() {
   return (
-    <main className='flex'>
-      <div className='blurSignup bg-primary2 w-[49.306vw] h-[846px] flex gap-[13px] justify-center overflow-hidden'>
-        <img className='w-[283px] relative top-[45px]' src={Image1} alt="" />
-        <img className='w-[283px]' src={Image2} alt="" />
+    <main className='flex relative md:min-h-[1194px] sm:min-h-[1194px] xsm:h-[844px]'>
+      <div className='blurSignup md:min-h-[1194px] sm:min-h-[1194px] bg-primary2 xsm:hidden w-[49.306vw] md:w-full sm:w-full h-[846px] flex gap-[13px] justify-center overflow-hidden xsm:relative xsm:z-20'>
+        <img className='w-[283px] relative top-[45px] md:hidden xsm:hidden sm:hidden' src={Image1} alt="" />
+        <img className='w-[283px] md:hidden xsm:hidden sm:hidden' src={Image2} alt="" />
+
+        <img className='max-h-[650px] hidden md:flex xsm:flex sm:flex w-[283px] relative md:absolute md:top-[0px] md:right-[-59px] sm:absolute sm:top-[0px] sm:right-[-59px]' src={MDImage2} alt="" />
+        <img className='max-h-[555px] hidden md:flex xsm:flex sm:flex max-w-[283px] relative md:absolute md:bottom-[0px] md:left-[-60px] sm:absolute sm:bottom-[0px] sm:left-[-60px]' src={MDImage1} alt="" />
+      
       </div>
 
-      <div className='bg-[white] w-[50.694vw] h-full flex flex-col items-center pt-[105px] '>
+      <div className='bg-[white] xsm:z-20 xsm:w-full md:border-2 md:border-[rgba(255,219,184,1)] md:rounded-[23px] md:h-fit sm:border-2 sm:border-[rgba(255,219,184,1)] sm:rounded-[23px] sm:h-fit w-[50.694vw] md:w-[80.24vw] sm:w-[80.24vw] h-full flex flex-col items-center pt-[105px] md:absolute sm:absolute xsm:absolute md:left-[50%] md:translate-x-[-50%] md:top-[50%] md:translate-y-[-50%] sm:left-[50%] sm:translate-x-[-50%] sm:top-[50%] sm:translate-y-[-50%]'>
         <div className='w-fit h-fit flex flex-col justify-center items-center'>
           <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em]'>Sign up to <span className='text-primary2 underline'>COOK</span></h1>
           <div className='flex flex-col gap-[8px] mt-[24px]'>
@@ -34,7 +40,7 @@ export default function Signup() {
 
         <div>
           <h3 className='font-redHatDisplay font-bold text-[20px] leading-[26.46px] text-center'>Sign up with email</h3>
-          <form className='w-[346px] flex flex-col gap-[18px] items-center mt-[29px] mb-[62px]'>
+          <form className='w-[346px] flex flex-col gap-[18px] items-center mt-[29px] mb-[62px] md:mb-[100px] sm:mb-[100px]'>
             <div className='w-full flex gap-[18px]'>
               <div className='w-[164px] flex flex-col gap-[2px]'>
                 <label className='font-outfit font-medium text-[16px] leading-[20.16px]' htmlFor="">First Name</label>
