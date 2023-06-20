@@ -59,7 +59,7 @@ export default function Blog() {
             </svg>
           </div>
         </div>
-        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-[7.665vw] md:gap-[3.832vw] sm:gap-[2.874vw] mt-[49px]'>
+        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-[4.444vw] md:gap-[3.832vw] sm:gap-[2.874vw] mt-[49px]'>
           <BlogCard />
           <BlogCard />
           <BlogCard />
@@ -80,7 +80,7 @@ export default function Blog() {
             </svg>
           </div>
         </div>
-        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-[7.665vw] md:gap-[3.832vw] sm:gap-[2.874vw] mt-[49px]'>
+        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-[4.444vw] md:gap-[3.832vw] sm:gap-[2.874vw] mt-[49px]'>
           <BlogCard />
           <BlogCard />
           <BlogCard />
@@ -129,7 +129,7 @@ export default function Blog() {
             </svg>
           </div>
         </div>
-        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-x-[7.665vw] md:gap-[3.832vw] sm:gap-[2.874vw] gap-y-[112px] mt-[49px]'>
+        <div className='grid grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 gap-x-[4.444vw] md:gap-[3.832vw] sm:gap-[2.874vw] gap-y-[112px] mt-[49px]'>
           <BlogCard />
           <BlogCard />
           <BlogCard />
