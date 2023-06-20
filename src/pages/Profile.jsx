@@ -35,6 +35,7 @@ export default function Profile() {
     });
   };
 
+  
   const handleScroll = (event, id) => {
     event.preventDefault();
 
