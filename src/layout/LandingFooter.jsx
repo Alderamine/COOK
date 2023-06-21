@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function LandingFooter() {
   return (
     <footer >
-      <div className='w-[91.111vw] md:w-full sm:w-full xsm:w-full md:rounded-none sm:rounded-none xsm:rounded-none m-auto min-h-[419px] bg-primary rounded-tl-[25px] rounded-tr-[25px] mt-[135px] md:divide-y-0 sm:divide-y-0 xsm:divide-y-0 divide-y-2 divide-[rgba(255,219,184,1)]'>
+      <div className='w-[91.111vw] md:w-full sm:w-full xsm:w-full md:rounded-none sm:rounded-none xsm:rounded-none m-auto min-h-[419px] bg-primary2 rounded-tl-[25px] rounded-tr-[25px] mt-[135px] md:divide-y-0 sm:divide-y-0 xsm:divide-y-0 divide-y-2 divide-[rgba(255,219,184,1)]'>
         <div className='flex md:flex-col sm:flex-col gap-y-[24px] gap-x-[13.75vw] pt-[54px] pb-[43px] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] ml-[91.5px] mr-[102.5px] xsm:flex-col xsm:gap-y-[32px]'>
           <div className='flex justify-center items-center md:justify-start sm:justify-start'>
             {/* <div className='text-[rgba(255,219,184,1)] font-bold font-rubik text-[56px] leading-[66.36px] tracking-[-0.02em]'>Cook</div> */}

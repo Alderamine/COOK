@@ -42,8 +42,8 @@ export default function BlogNav() {
           </div>
           <div className='relative w-[251px] h-[44px] rounded-[8px] border border-[rgba(255,219,184,1)]'>
             <svg className='absolute top-[50%] translate-y-[-50%] left-[16px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.9999 21L16.6499 16.65" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M20.9999 21L16.6499 16.65" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <input className='flex-1 h-full indent-[50px]' type="text" placeholder='Search Articles'/>
           </div>

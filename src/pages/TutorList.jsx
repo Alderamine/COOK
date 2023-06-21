@@ -74,19 +74,19 @@ export default function TutorList() {
         <div className='mt-[99px] flex justify-between items-center xsm:hidden'>
           <div className='flex gap-[21px]'>
             <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary top-[-14px] '>I want to Learn</p>
+              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
               <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
                 <option selected value="Baking">Baking</option>
               </select>
             </div>
             <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary top-[-14px] '>I want to Learn</p>
+              <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
               <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
                 <option selected value="Baking">$50  -  $200</option>
               </select>
             </div>
             <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary top-[-14px] '>I want to Learn</p>
+              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
               <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
                 <option selected value="Baking">9:00pm - 10:00pm</option>
               </select>
@@ -98,7 +98,7 @@ export default function TutorList() {
               <img className='w-[20px]' src={UpsideDownIcon} alt="" />
               <p className='font-outfit font-normal text-[22px] leading-[33px] text-[white] '>Popular</p>
             </div>
-            <div className='w-[64px] h-[61px] rounded-full bg-primary flex justify-center items-center'>
+            <div className='w-[64px] h-[61px] rounded-full bg-primary2 flex justify-center items-center'>
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.9167 20.5833C16.7031 20.5833 20.5833 16.7031 20.5833 11.9167C20.5833 7.1302 16.7031 3.25 11.9167 3.25C7.1302 3.25 3.25 7.1302 3.25 11.9167C3.25 16.7031 7.1302 20.5833 11.9167 20.5833Z" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M22.75 22.75L18.0375 18.0375" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />

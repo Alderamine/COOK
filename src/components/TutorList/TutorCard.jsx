@@ -29,7 +29,7 @@ export default function TutorCard() {
         <div>
           <p className='font-outfit font-normal text-[16px] leading-[24px] mt-[30px]'>Lorem ipsum dolor sit amet consectetur. Massa consequat cras tortor cras morbi amet massa amet fermentum. Et malesuada posuere sem dictumst ultricies ut varius. Sagittis arcu sit dictum adipiscing a sapien.</p>
           <Link to={'/profile'}>
-            <p className='font-outfit font-semibold text-[16px] leading-[24px] text-primary mt-[10px] hover:underline'>Learn more</p>
+            <p className='font-outfit font-semibold text-[16px] leading-[24px] text-primary2 mt-[10px] hover:underline'>Learn more</p>
           </Link>
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function TutorCard() {
             <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary'>Write a message</button>
           </Link>
           <Link to={'/profile'}>
-            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary text-[white]'>Book a lesson</button>
+            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary2 text-[white]'>Book a lesson</button>
           </Link>
         </div>
       </div>

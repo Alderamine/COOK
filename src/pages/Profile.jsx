@@ -93,7 +93,7 @@ export default function Profile() {
         <div className='w-[52.361vw] md:w-full sm:w-full xsm:w-full border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[16px] py-[12px]'>
           <div className='flex items-center gap-[16px] '>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <h4 className='font-outfit font-semibold text-[22px] leading-[27.72px]'>Verified tutor</h4>
           </div>
@@ -116,15 +116,15 @@ export default function Profile() {
               </div>
             </div>
             <div className='flex gap-[13px] mt-[27px] xsm:flex-col sm:flex-col xsm:items-center sm:items-center justify-center'>
-              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary '>Send A Message</button>
-              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary text-[white] '>Book A Trial Lesson</button>
+              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary2 '>Send A Message</button>
+              <button className='w-[242px] h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary2 text-[white] '>Book A Trial Lesson</button>
             </div>
           </div>
         </div>
 
         <div className='flex items-center gap-[18px] mt-[60px] flex-wrap'>
           <a href="#about" onClick={(e) => handleScroll(e, "about")}>
-            <button className='px-[21px] min-h-[43px] bg-primary text-[white] rounded-[8px] font-outfit font-normal text-[18px] leading-[27px]'>About</button>
+            <button className='px-[21px] min-h-[43px] bg-primary2 text-[white] rounded-[8px] font-outfit font-normal text-[18px] leading-[27px]'>About</button>
           </a>
           <a href="#availability" onClick={(e) => handleScroll(e, "availability")}>
             <button className='px-[21px] min-h-[43px] border border-[rgba(255,219,184,1)] rounded-[8px] font-outfit font-normal text-[18px] leading-[27px]'>Availability</button>
@@ -149,9 +149,9 @@ export default function Profile() {
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>Availability</h4>
           <div className='min-h-[49px] w-full bg-primary2 rounded-[8px] py-[12px] px-[16px] mt-[18px] mb-[32px] flex items-center gap-[1.916vw]'>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M9.09003 9.50002C9.32513 8.83169 9.78918 8.26813 10.4 7.90915C11.0108 7.55018 11.7289 7.41896 12.4272 7.53873C13.1255 7.65851 13.7588 8.02154 14.2151 8.56355C14.6714 9.10555 14.9211 9.79154 14.92 10.5C14.92 12.5 11.92 13.5 11.92 13.5" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12 17.5H12.01" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M9.09003 9.50002C9.32513 8.83169 9.78918 8.26813 10.4 7.90915C11.0108 7.55018 11.7289 7.41896 12.4272 7.53873C13.1255 7.65851 13.7588 8.02154 14.2151 8.56355C14.6714 9.10555 14.9211 9.79154 14.92 10.5C14.92 12.5 11.92 13.5 11.92 13.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 17.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <p className='font-outfit font-normal text-[16px] leading-[24.8px] text-[white]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus s</p>
           </div>
@@ -159,17 +159,17 @@ export default function Profile() {
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-[5px]'>
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.8333 3.83331H4.16667C3.24619 3.83331 2.5 4.57951 2.5 5.49998V17.1666C2.5 18.0871 3.24619 18.8333 4.16667 18.8333H15.8333C16.7538 18.8333 17.5 18.0871 17.5 17.1666V5.49998C17.5 4.57951 16.7538 3.83331 15.8333 3.83331Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M13.3333 2.16669V5.50002" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M6.66669 2.16669V5.50002" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M2.5 8.83331H17.5" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.8333 3.83331H4.16667C3.24619 3.83331 2.5 4.57951 2.5 5.49998V17.1666C2.5 18.0871 3.24619 18.8333 4.16667 18.8333H15.8333C16.7538 18.8333 17.5 18.0871 17.5 17.1666V5.49998C17.5 4.57951 16.7538 3.83331 15.8333 3.83331Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M13.3333 2.16669V5.50002" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M6.66669 2.16669V5.50002" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M2.5 8.83331H17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <p className='font-outfit font-semibold text-[20px] leading-[31px]'>Mon, 24 Apr</p>
             </div>
             <div className='flex items-center gap-[5px]'>
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 18.8334C14.6024 18.8334 18.3333 15.1024 18.3333 10.5C18.3333 5.89765 14.6024 2.16669 10 2.16669C5.39762 2.16669 1.66666 5.89765 1.66666 10.5C1.66666 15.1024 5.39762 18.8334 10 18.8334Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 5.5V10.5L13.3333 12.1667" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 18.8334C14.6024 18.8334 18.3333 15.1024 18.3333 10.5C18.3333 5.89765 14.6024 2.16669 10 2.16669C5.39762 2.16669 1.66666 5.89765 1.66666 10.5C1.66666 15.1024 5.39762 18.8334 10 18.8334Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 5.5V10.5L13.3333 12.1667" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <p className='font-outfit font-semibold text-[20px] leading-[31px]'>Spain, GMT +2:00</p>
             </div>
@@ -474,13 +474,13 @@ export default function Profile() {
           </div>
           <div className='flex gap-[12px] self-end'>
             <svg className='cursor-pointer' onClick={handleScrollLeft} width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M26.3409 19.8182L13.2955 19.8182" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M19.8182 26.3409L13.2955 19.8182L19.8182 13.2955" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M26.3409 19.8182L13.2955 19.8182" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M19.8182 26.3409L13.2955 19.8182L19.8182 13.2955" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg className='cursor-pointer' onClick={handleScrollRight} width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="41" height="41" rx="20.5" fill="#D27722" />
-              <path d="M13.6591 20.1818H26.7045" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M20.1818 13.6591L26.7045 20.1818L20.1818 26.7045" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13.6591 20.1818H26.7045" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M20.1818 13.6591L26.7045 20.1818L20.1818 26.7045" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
@@ -502,8 +502,8 @@ export default function Profile() {
             </div>
           </div>
 
-          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary mt-[27px]'>Send A Message</button>
-          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary text-[white] mt-[12px]'>Book A Trial Lesson</button>
+          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary2 mt-[27px]'>Send A Message</button>
+          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary2 text-[white] mt-[12px]'>Book A Trial Lesson</button>
         </div>
       </div>
     </main>

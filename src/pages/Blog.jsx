@@ -54,8 +54,8 @@ export default function Blog() {
           <div className='flex items-center gap-[9px]'>
             <p className='font-outfit font-medium text-[18px] leading-[23.58px] tracking-[-0.02em] text-primary2'>View all articles</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12 5L19 12L12 19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 12H19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 5L19 12L12 19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
@@ -75,8 +75,8 @@ export default function Blog() {
           <div className='flex items-center gap-[9px]'>
             <p className='font-outfit font-medium text-[18px] leading-[23.58px] tracking-[-0.02em] text-primary2'>View all articles</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12 5L19 12L12 19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 12H19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 5L19 12L12 19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
@@ -124,8 +124,8 @@ export default function Blog() {
           <div className='flex items-center gap-[9px]'>
             <p className='font-outfit font-medium text-[18px] leading-[23.58px] tracking-[-0.02em] text-primary2'>View all articles</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12 5L19 12L12 19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 12H19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 5L19 12L12 19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>

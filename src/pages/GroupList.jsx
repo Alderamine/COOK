@@ -14,11 +14,11 @@ export default function GroupList() {
       <div className='w-full min-h-[411px] flex items-center md:justify-center sm:justify-center bg-[rgba(255,253,244,1)] xsm:mt-[104px]'>
         <div className='pl-[67px] pr-[118px] xsm:pl-[8.205vw] xsm:pr-[8.205vw] flex items-center justify-between w-full'>
           <div className='flex flex-col gap-[20px] md:items-center sm:items-center xsm:items-center md:flex-1 sm:flex-1'>
-            <h1 className='font-bold font-rubik text-[54px] leading-[63.99px] tracking-[-0.02em] md:text-center sm:text-center xsm:text-center md:text-[36px] md:leading-[42.66px] xsm:text-[42px] xsm:leading-[50.11px]'>Cook Together with <span className='font-pacifico font-normal leading-[94.82px] text-primary md:leading-[63.22px] sm:leading-[63.22px]'>Group</span></h1>
+            <h1 className='font-bold font-rubik text-[54px] leading-[63.99px] tracking-[-0.02em] md:text-center sm:text-center xsm:text-center md:text-[36px] md:leading-[42.66px] xsm:text-[42px] xsm:leading-[50.11px]'>Cook Together with <span className='font-pacifico font-normal leading-[94.82px] text-primary2 md:leading-[63.22px] sm:leading-[63.22px]'>Group</span></h1>
             <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec w-[37.014vw] md:w-[63.832vw] sm:w-[63.832vw] xsm:w-[83.59vw] md:text-center sm:text-center xsm:text-center'>Embrace the fun of learning with COOK's group lessons. Dive into lively discussions, collaborate on recipes, and connect with a diverse community of food lovers. Transform your kitchen into a vibrant, interactive culinary classroom!</p>
             <div className='flex items-center gap-[17px]'>
               <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-[white] bg-primary'>Explore groups</button>
-              <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary bg-[white] border-2 border-primary'>Find A Tutor</button>
+              <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary2 bg-[white] border-2 border-primary'>Find A Tutor</button>
             </div>
           </div>
           <div className='md:hidden sm:hidden xsm:hidden'>

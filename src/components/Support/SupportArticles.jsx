@@ -23,13 +23,13 @@ export default function SupportArticles() {
       <nav class="ml-[12.153vw] mr-[10.764vw] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw] rounded-md">
         <ol class="list-reset flex py-[56px]">
           <li onClick={() => navigate(-1)} className='cursor-pointer'>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
+            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
           </li>
           <li>
             <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
           </li>
           <li>
-            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state?.category}</p>
+            <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state?.category}</p>
           </li>
         </ol>
       </nav>

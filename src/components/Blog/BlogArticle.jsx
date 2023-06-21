@@ -19,19 +19,19 @@ export default function BlogArticle() {
           <nav class="">
             <ol class="list-reset flex">
               <li onClick={() => navigate(-2)} className='cursor-pointer'>
-                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Articles</p>
+                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">Articles</p>
               </li>
               <li>
                 <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
               </li>
               <li onClick={() => navigate(-1)} className='cursor-pointer'>
-                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{params?.category}</p>
+                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{params?.category}</p>
               </li>
               <li>
                 <span class="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
               </li>
               <li className='cursor-pointer'>
-                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{params?.category}</p>
+                <p class="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{params?.category}</p>
               </li>
             </ol>
           </nav>
@@ -111,42 +111,42 @@ export default function BlogArticle() {
 
           <div className='flex items-center justify-center gap-[26px] my-[55px] md:mb-[42px]'>
             <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="42" height="43" viewBox="0 0 42 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 3.54492L26.4075 14.6386L38.5 16.4285L29.75 25.0588L31.815 37.2513L21 31.4918L10.185 37.2513L12.25 25.0588L3.5 16.4285L15.5925 14.6386L21 3.54492Z" stroke="#D27722" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
 
           <div className='hidden md:flex sm:flex xsm:flex items-center gap-[16px] justify-center'>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M34 14.0003C33.0424 14.6758 31.9821 15.1924 30.86 15.5303C30.2577 14.8378 29.4573 14.347 28.567 14.1242C27.6767 13.9015 26.7395 13.9575 25.8821 14.2847C25.0247 14.612 24.2884 15.1947 23.773 15.954C23.2575 16.7133 22.9877 17.6126 23 18.5303V19.5303C21.2426 19.5759 19.5013 19.1861 17.931 18.3957C16.3607 17.6054 15.0103 16.4389 14 15.0003C14 15.0003 10 24.0003 19 28.0003C16.9405 29.3983 14.4872 30.0992 12 30.0003C21 35.0003 32 30.0003 32 18.5003C31.9991 18.2217 31.9723 17.9439 31.92 17.6703C32.9406 16.6638 33.6608 15.393 34 14.0003Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 14.0003C33.0424 14.6758 31.9821 15.1924 30.86 15.5303C30.2577 14.8378 29.4573 14.347 28.567 14.1242C27.6767 13.9015 26.7395 13.9575 25.8821 14.2847C25.0247 14.612 24.2884 15.1947 23.773 15.954C23.2575 16.7133 22.9877 17.6126 23 18.5303V19.5303C21.2426 19.5759 19.5013 19.1861 17.931 18.3957C16.3607 17.6054 15.0103 16.4389 14 15.0003C14 15.0003 10 24.0003 19 28.0003C16.9405 29.3983 14.4872 30.0992 12 30.0003C21 35.0003 32 30.0003 32 18.5003C31.9991 18.2217 31.9723 17.9439 31.92 17.6703C32.9406 16.6638 33.6608 15.393 34 14.0003Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M27 19C28.5913 19 30.1174 19.6321 31.2426 20.7574C32.3679 21.8826 33 23.4087 33 25V32H29V25C29 24.4696 28.7893 23.9609 28.4142 23.5858C28.0391 23.2107 27.5304 23 27 23C26.4696 23 25.9609 23.2107 25.5858 23.5858C25.2107 23.9609 25 24.4696 25 25V32H21V25C21 23.4087 21.6321 21.8826 22.7574 20.7574C23.8826 19.6321 25.4087 19 27 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M17 20H13V32H17V20Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15 17C16.1046 17 17 16.1046 17 15C17 13.8954 16.1046 13 15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27 19C28.5913 19 30.1174 19.6321 31.2426 20.7574C32.3679 21.8826 33 23.4087 33 25V32H29V25C29 24.4696 28.7893 23.9609 28.4142 23.5858C28.0391 23.2107 27.5304 23 27 23C26.4696 23 25.9609 23.2107 25.5858 23.5858C25.2107 23.9609 25 24.4696 25 25V32H21V25C21 23.4087 21.6321 21.8826 22.7574 20.7574C23.8826 19.6321 25.4087 19 27 19Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M17 20H13V32H17V20Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M15 17C16.1046 17 17 16.1046 17 15C17 13.8954 16.1046 13 15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M28 13H18C15.2386 13 13 15.2386 13 18V28C13 30.7614 15.2386 33 18 33H28C30.7614 33 33 30.7614 33 28V18C33 15.2386 30.7614 13 28 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M27 22.3703C27.1234 23.2025 26.9812 24.0525 26.5937 24.7993C26.2062 25.5461 25.5931 26.1517 24.8416 26.53C24.0901 26.9082 23.2384 27.0399 22.4077 26.9062C21.5771 26.7726 20.8097 26.3804 20.2148 25.7855C19.6199 25.1905 19.2277 24.4232 19.094 23.5925C18.9604 22.7619 19.092 21.9102 19.4703 21.1587C19.8485 20.4072 20.4541 19.794 21.2009 19.4065C21.9477 19.019 22.7977 18.8769 23.63 19.0003C24.4789 19.1262 25.2648 19.5218 25.8716 20.1286C26.4785 20.7355 26.8741 21.5214 27 22.3703Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M28.5 17.5H28.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M28 13H18C15.2386 13 13 15.2386 13 18V28C13 30.7614 15.2386 33 18 33H28C30.7614 33 33 30.7614 33 28V18C33 15.2386 30.7614 13 28 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M27 22.3703C27.1234 23.2025 26.9812 24.0525 26.5937 24.7993C26.2062 25.5461 25.5931 26.1517 24.8416 26.53C24.0901 26.9082 23.2384 27.0399 22.4077 26.9062C21.5771 26.7726 20.8097 26.3804 20.2148 25.7855C19.6199 25.1905 19.2277 24.4232 19.094 23.5925C18.9604 22.7619 19.092 21.9102 19.4703 21.1587C19.8485 20.4072 20.4541 19.794 21.2009 19.4065C21.9477 19.019 22.7977 18.8769 23.63 19.0003C24.4789 19.1262 25.2648 19.5218 25.8716 20.1286C26.4785 20.7355 26.8741 21.5214 27 22.3703Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M28.5 17.5H28.51" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M29 13H26C24.6739 13 23.4021 13.5268 22.4645 14.4645C21.5268 15.4021 21 16.6739 21 18V21H18V25H21V33H25V25H28L29 21H25V18C25 17.7348 25.1054 17.4804 25.2929 17.2929C25.4804 17.1054 25.7348 17 26 17H29V13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M29 13H26C24.6739 13 23.4021 13.5268 22.4645 14.4645C21.5268 15.4021 21 16.6739 21 18V21H18V25H21V33H25V25H28L29 21H25V18C25 17.7348 25.1054 17.4804 25.2929 17.2929C25.4804 17.1054 25.7348 17 26 17H29V13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>
@@ -154,23 +154,23 @@ export default function BlogArticle() {
           <div className='flex md:hidden sm:hidden xsm:hidden items-center gap-[16px]'>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M34 14.0003C33.0424 14.6758 31.9821 15.1924 30.86 15.5303C30.2577 14.8378 29.4573 14.347 28.567 14.1242C27.6767 13.9015 26.7395 13.9575 25.8821 14.2847C25.0247 14.612 24.2884 15.1947 23.773 15.954C23.2575 16.7133 22.9877 17.6126 23 18.5303V19.5303C21.2426 19.5759 19.5013 19.1861 17.931 18.3957C16.3607 17.6054 15.0103 16.4389 14 15.0003C14 15.0003 10 24.0003 19 28.0003C16.9405 29.3983 14.4872 30.0992 12 30.0003C21 35.0003 32 30.0003 32 18.5003C31.9991 18.2217 31.9723 17.9439 31.92 17.6703C32.9406 16.6638 33.6608 15.393 34 14.0003Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M34 14.0003C33.0424 14.6758 31.9821 15.1924 30.86 15.5303C30.2577 14.8378 29.4573 14.347 28.567 14.1242C27.6767 13.9015 26.7395 13.9575 25.8821 14.2847C25.0247 14.612 24.2884 15.1947 23.773 15.954C23.2575 16.7133 22.9877 17.6126 23 18.5303V19.5303C21.2426 19.5759 19.5013 19.1861 17.931 18.3957C16.3607 17.6054 15.0103 16.4389 14 15.0003C14 15.0003 10 24.0003 19 28.0003C16.9405 29.3983 14.4872 30.0992 12 30.0003C21 35.0003 32 30.0003 32 18.5003C31.9991 18.2217 31.9723 17.9439 31.92 17.6703C32.9406 16.6638 33.6608 15.393 34 14.0003Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M27 19C28.5913 19 30.1174 19.6321 31.2426 20.7574C32.3679 21.8826 33 23.4087 33 25V32H29V25C29 24.4696 28.7893 23.9609 28.4142 23.5858C28.0391 23.2107 27.5304 23 27 23C26.4696 23 25.9609 23.2107 25.5858 23.5858C25.2107 23.9609 25 24.4696 25 25V32H21V25C21 23.4087 21.6321 21.8826 22.7574 20.7574C23.8826 19.6321 25.4087 19 27 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M17 20H13V32H17V20Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M15 17C16.1046 17 17 16.1046 17 15C17 13.8954 16.1046 13 15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27 19C28.5913 19 30.1174 19.6321 31.2426 20.7574C32.3679 21.8826 33 23.4087 33 25V32H29V25C29 24.4696 28.7893 23.9609 28.4142 23.5858C28.0391 23.2107 27.5304 23 27 23C26.4696 23 25.9609 23.2107 25.5858 23.5858C25.2107 23.9609 25 24.4696 25 25V32H21V25C21 23.4087 21.6321 21.8826 22.7574 20.7574C23.8826 19.6321 25.4087 19 27 19Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M17 20H13V32H17V20Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M15 17C16.1046 17 17 16.1046 17 15C17 13.8954 16.1046 13 15 13C13.8954 13 13 13.8954 13 15C13 16.1046 13.8954 17 15 17Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M28 13H18C15.2386 13 13 15.2386 13 18V28C13 30.7614 15.2386 33 18 33H28C30.7614 33 33 30.7614 33 28V18C33 15.2386 30.7614 13 28 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M27 22.3703C27.1234 23.2025 26.9812 24.0525 26.5937 24.7993C26.2062 25.5461 25.5931 26.1517 24.8416 26.53C24.0901 26.9082 23.2384 27.0399 22.4077 26.9062C21.5771 26.7726 20.8097 26.3804 20.2148 25.7855C19.6199 25.1905 19.2277 24.4232 19.094 23.5925C18.9604 22.7619 19.092 21.9102 19.4703 21.1587C19.8485 20.4072 20.4541 19.794 21.2009 19.4065C21.9477 19.019 22.7977 18.8769 23.63 19.0003C24.4789 19.1262 25.2648 19.5218 25.8716 20.1286C26.4785 20.7355 26.8741 21.5214 27 22.3703Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M28.5 17.5H28.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M28 13H18C15.2386 13 13 15.2386 13 18V28C13 30.7614 15.2386 33 18 33H28C30.7614 33 33 30.7614 33 28V18C33 15.2386 30.7614 13 28 13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M27 22.3703C27.1234 23.2025 26.9812 24.0525 26.5937 24.7993C26.2062 25.5461 25.5931 26.1517 24.8416 26.53C24.0901 26.9082 23.2384 27.0399 22.4077 26.9062C21.5771 26.7726 20.8097 26.3804 20.2148 25.7855C19.6199 25.1905 19.2277 24.4232 19.094 23.5925C18.9604 22.7619 19.092 21.9102 19.4703 21.1587C19.8485 20.4072 20.4541 19.794 21.2009 19.4065C21.9477 19.019 22.7977 18.8769 23.63 19.0003C24.4789 19.1262 25.2648 19.5218 25.8716 20.1286C26.4785 20.7355 26.8741 21.5214 27 22.3703Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M28.5 17.5H28.51" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="46" height="46" rx="23" fill="#D27722" />
-              <path d="M29 13H26C24.6739 13 23.4021 13.5268 22.4645 14.4645C21.5268 15.4021 21 16.6739 21 18V21H18V25H21V33H25V25H28L29 21H25V18C25 17.7348 25.1054 17.4804 25.2929 17.2929C25.4804 17.1054 25.7348 17 26 17H29V13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M29 13H26C24.6739 13 23.4021 13.5268 22.4645 14.4645C21.5268 15.4021 21 16.6739 21 18V21H18V25H21V33H25V25H28L29 21H25V18C25 17.7348 25.1054 17.4804 25.2929 17.2929C25.4804 17.1054 25.7348 17 26 17H29V13Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
 
@@ -214,8 +214,8 @@ export default function BlogArticle() {
           <div className='flex items-center gap-[9px]'>
             <p className='font-outfit font-medium text-[18px] leading-[23.58px] tracking-[-0.02em] text-primary2'>View all articles</p>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M12 5L19 12L12 19" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 12H19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M12 5L19 12L12 19" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>

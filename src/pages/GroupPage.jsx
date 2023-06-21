@@ -32,7 +32,7 @@ const GroupPage = () => {
         </div>
         <div className='mt-[80px] xsm:mt-0 sm:mt-0 md:mt-0 border rounded-[12px] border-primaryLighten2 flex-1 bg-primaryLighten px-[37px] py-[30px] sm:py-[30px] md:py-[30px] xsm:px-[16px] xsm:py-[24px]'>
           <h1 className='text-[32px] font-[600] font-outfit xsm:text-[24px] leading-[40p.32x] xsm:leading-[30.24px] mb-[32px] xsm:mb-[50px]'>$1000 <span className='text-[18px] font-[300] leading-[27px] text-TextColorSec'>/ class</span></h1>
-          <p className='leading-[17.64px] font-outfit text-[14px] text-primary font-[600] uppercase'>Upcoming group lessons</p>
+          <p className='leading-[17.64px] font-outfit text-[14px] text-primary2 font-[600] uppercase'>Upcoming group lessons</p>
           <div className='mt-[10px] xsm:mt-[8px]  flex flex-col divide-y-2 divide-primaryLighten2'>
             <div className='pb-[28px]'>
               <div className='flex justify-between'>
@@ -41,7 +41,7 @@ const GroupPage = () => {
               </div>
               <div className='flex mt-[14px] justify-between'>
                 <img src={user} className='h-[35px] w-[35px]' alt="" />
-                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary text-[white]'>Book</button>
+                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white]'>Book</button>
               </div>
             </div>
             <div className='py-[28px]'>
@@ -51,7 +51,7 @@ const GroupPage = () => {
               </div>
               <div className='flex mt-[14px] justify-between'>
                 <img src={user} className='h-[35px] w-[35px]' alt="" />
-                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary text-[white]'>Book</button>
+                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white]'>Book</button>
               </div>
             </div>
             <div className='pt-[28px]'>
@@ -61,7 +61,7 @@ const GroupPage = () => {
               </div>
               <div className='flex mt-[14px] justify-between'>
                 <img src={user} className='h-[35px] w-[35px]' alt="" />
-                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary text-[white]'>Book</button>
+                <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white]'>Book</button>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ const GroupPage = () => {
                 <h1 className='text-[49px] font-rubik font-[600] leading-[58.07px]'>4.5</h1>
                 <img src={ratingStar} alt="" className='h-[37px] w-[39px]' />
               </div>
-              <p className='text-primary font-outfit font-[500] leading-[20.16px]'>200 reviews</p>
+              <p className='text-primary2 font-outfit font-[500] leading-[20.16px]'>200 reviews</p>
             </div>
             <div className='pl-[74px] flex flex-1 flex-col gap-[8px] xsm:mt-[22px] xsm:pl-0'>
               <div className='flex gap-[10px] items-center'>

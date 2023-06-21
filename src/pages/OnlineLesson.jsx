@@ -104,9 +104,9 @@ export default function OnlineLesson() {
         <div className='absolute top-[38px] w-full px-[44px] flex justify-between items-center'>
           <svg width="45.5" height="45.5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="64.4" height="64.4" rx="32.2" fill="#D27722" />
-            <path d="M35.75 20.75L40.75 20.75C41.413 20.75 42.0489 21.0134 42.5178 21.4822C42.9866 21.9511 43.25 22.587 43.25 23.25L43.25 40.75C43.25 41.413 42.9866 42.0489 42.5178 42.5178C42.0489 42.9866 41.413 43.25 40.75 43.25L35.75 43.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M27 25.75L20.75 32L27 38.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M20.75 32L35.75 32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M35.75 20.75L40.75 20.75C41.413 20.75 42.0489 21.0134 42.5178 21.4822C42.9866 21.9511 43.25 22.587 43.25 23.25L43.25 40.75C43.25 41.413 42.9866 42.0489 42.5178 42.5178C42.0489 42.9866 41.413 43.25 40.75 43.25L35.75 43.25" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M27 25.75L20.75 32L27 38.25" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M20.75 32L35.75 32" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <svg width="45.5" height="45.5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.400024" width="64.4" height="64.4" rx="32.2" fill="white" />
@@ -125,10 +125,10 @@ export default function OnlineLesson() {
           <svg width="45.5" height="45.5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="64.4" height="64.4" rx="32.2" fill="white" />
             <g clip-path="url(#clip0_634_45472)">
-              <path d="M32.2 16.7998C31.0861 16.7998 30.0178 17.2423 29.2302 18.03C28.4425 18.8176 28 19.8859 28 20.9998V32.1998C28 33.3137 28.4425 34.382 29.2302 35.1697C30.0178 35.9573 31.0861 36.3998 32.2 36.3998C33.3139 36.3998 34.3822 35.9573 35.1698 35.1697C35.9575 34.382 36.4 33.3137 36.4 32.1998V20.9998C36.4 19.8859 35.9575 18.8176 35.1698 18.03C34.3822 17.2423 33.3139 16.7998 32.2 16.7998Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M42 29.3999V32.1999C42 34.799 40.9675 37.2917 39.1297 39.1295C37.2918 40.9674 34.7991 41.9999 32.2 41.9999C29.6009 41.9999 27.1082 40.9674 25.2704 39.1295C23.4325 37.2917 22.4 34.799 22.4 32.1999V29.3999" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M32.2 42V47.6" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M26.6 47.6001H37.8" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M32.2 16.7998C31.0861 16.7998 30.0178 17.2423 29.2302 18.03C28.4425 18.8176 28 19.8859 28 20.9998V32.1998C28 33.3137 28.4425 34.382 29.2302 35.1697C30.0178 35.9573 31.0861 36.3998 32.2 36.3998C33.3139 36.3998 34.3822 35.9573 35.1698 35.1697C35.9575 34.382 36.4 33.3137 36.4 32.1998V20.9998C36.4 19.8859 35.9575 18.8176 35.1698 18.03C34.3822 17.2423 33.3139 16.7998 32.2 16.7998Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M42 29.3999V32.1999C42 34.799 40.9675 37.2917 39.1297 39.1295C37.2918 40.9674 34.7991 41.9999 32.2 41.9999C29.6009 41.9999 27.1082 40.9674 25.2704 39.1295C23.4325 37.2917 22.4 34.799 22.4 32.1999V29.3999" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M32.2 42V47.6" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M26.6 47.6001H37.8" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <defs>
               <clipPath id="clip0_634_45472">
@@ -139,8 +139,8 @@ export default function OnlineLesson() {
           <svg width="45.5" height="45.5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.400024" width="64.4" height="64.4" rx="32.2" fill="white" />
             <g clip-path="url(#clip0_634_45478)">
-              <path d="M48 25.1997L38.2 32.1997L48 39.1997V25.1997Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M35.4 22.3999H20C18.4536 22.3999 17.2 23.6535 17.2 25.1999V39.1999C17.2 40.7463 18.4536 41.9999 20 41.9999H35.4C36.9463 41.9999 38.2 40.7463 38.2 39.1999V25.1999C38.2 23.6535 36.9463 22.3999 35.4 22.3999Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M48 25.1997L38.2 32.1997L48 39.1997V25.1997Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M35.4 22.3999H20C18.4536 22.3999 17.2 23.6535 17.2 25.1999V39.1999C17.2 40.7463 18.4536 41.9999 20 41.9999H35.4C36.9463 41.9999 38.2 40.7463 38.2 39.1999V25.1999C38.2 23.6535 36.9463 22.3999 35.4 22.3999Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
             </g>
             <defs>
               <clipPath id="clip0_634_45478">
@@ -155,7 +155,7 @@ export default function OnlineLesson() {
         </div>
       </div>
 
-      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-primary w-[5px] cursor-e-resize'>
+      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-primary2 w-[5px] cursor-e-resize'>
       </div>
 
       <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
@@ -184,13 +184,13 @@ export default function OnlineLesson() {
         <div className='pl-[36px] pr-[64px] w-full m-auto flex gap-[17px] items-center mb-[41px] mt-[10.6vh]'>
           <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="49.4383" height="50.6106" rx="24.7192" fill="#D27722" />
-            <path d="M34.4383 24.6622L25.2483 33.8522C24.1225 34.9781 22.5955 35.6106 21.0033 35.6106C19.4112 35.6106 17.8842 34.9781 16.7583 33.8522C15.6325 32.7264 15 31.1994 15 29.6072C15 28.015 15.6325 26.4881 16.7583 25.3622L25.9483 16.1722C26.6989 15.4217 27.7169 15 28.7783 15C29.8398 15 30.8578 15.4217 31.6083 16.1722C32.3589 16.9228 32.7806 17.9408 32.7806 19.0022C32.7806 20.0637 32.3589 21.0817 31.6083 21.8322L22.4083 31.0222C22.0331 31.3975 21.5241 31.6083 20.9933 31.6083C20.4626 31.6083 19.9536 31.3975 19.5783 31.0222C19.2031 30.6469 18.9922 30.138 18.9922 29.6072C18.9922 29.0765 19.2031 28.5675 19.5783 28.1922L28.0683 19.7122" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M34.4383 24.6622L25.2483 33.8522C24.1225 34.9781 22.5955 35.6106 21.0033 35.6106C19.4112 35.6106 17.8842 34.9781 16.7583 33.8522C15.6325 32.7264 15 31.1994 15 29.6072C15 28.015 15.6325 26.4881 16.7583 25.3622L25.9483 16.1722C26.6989 15.4217 27.7169 15 28.7783 15C29.8398 15 30.8578 15.4217 31.6083 16.1722C32.3589 16.9228 32.7806 17.9408 32.7806 19.0022C32.7806 20.0637 32.3589 21.0817 31.6083 21.8322L22.4083 31.0222C22.0331 31.3975 21.5241 31.6083 20.9933 31.6083C20.4626 31.6083 19.9536 31.3975 19.5783 31.0222C19.2031 30.6469 18.9922 30.138 18.9922 29.6072C18.9922 29.0765 19.2031 28.5675 19.5783 28.1922L28.0683 19.7122" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           <div className='relative w-full flex h-[47px] bg-[white] border border-[rgba(255,219,184,1)] px-[1.111vw]'>
             <input className='flex-1 outline-none' type="text" placeholder='Send a message' />
             <svg className='absolute right-[1.111vw] top-[50%] translate-y-[-50%]' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 2.30518L11 13.3052" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M22 2.30518L15 22.3052L11 13.3052L2 9.30518L22 2.30518Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 2.30518L11 13.3052" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M22 2.30518L15 22.3052L11 13.3052L2 9.30518L22 2.30518Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>

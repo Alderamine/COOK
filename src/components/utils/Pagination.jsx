@@ -8,7 +8,7 @@ const Pagination = ({ currentPage, totalPages }) => {
     <div className="flex items-center justify-center space-x-2 mt-[110px]">
       <button className="w-[40px] h-[40px] px-2 py-1 bg-gray-200 rounded-md font-outfit font-medium text-[16px] leading-[20.16px]" disabled={currentPage === 1}>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 6L9 12L15 18" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M15 6L9 12L15 18" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
 
@@ -25,7 +25,7 @@ const Pagination = ({ currentPage, totalPages }) => {
 
       <button className="w-[40px] h-[40px] px-2 py-1 bg-gray-200 rounded-md font-outfit font-medium text-[16px] leading-[20.16px]" disabled={currentPage === totalPages}>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9 18L15 12L9 6" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 18L15 12L9 6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </button>
     </div>
