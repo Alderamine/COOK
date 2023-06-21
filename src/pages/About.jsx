@@ -38,7 +38,7 @@ const About = () => {
   return (
     <div>
       <div className='relative bg-primary2 min-h-[580px]'>
-        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='h-[104px] w-[100%] relative z-20 px-[64px] xsm:px-[32px]  flex items-center justify-between'>
+        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='fixed top-0 h-[104px] w-[100%] z-30 px-[64px] xsm:px-[32px]  flex items-center justify-between'>
           <div className='flex items-center gap-[32px]'>
             {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
             <Link to={'/'}>
@@ -144,12 +144,14 @@ const About = () => {
         <img src={EllipseDesktop} className='absolute z-0 top-0 right-0 sm:hidden xsm:hidden' alt="" />
         <img src={EllipseTablet} className='absolute z-0 right-0 top-[157px] hidden sm:block' alt="" />
 
-        <div className='mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
+        <div className='pt-[104px] mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
           <h1 className='font-redHatDisplay text-[white] font-bold text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> Your Inner Chef</h1>
           <div className='flex flex-1 flex-col items-center'>
             <img src={Main} className='w-[535px] min-w-[535px] max-w-[535px] h-[287px] z-10 xsm:hidden' alt="" />
             <img src={Main2} className='hidden xsm:block z-10 xsm:w-[326px] xsm:max-w-[326px] xsm:min-w-[326px] xsm:h-[244px]' alt="" />
+            <Link to={'/signup'}>
             <button className='mt-[39px]  rounded-full border-[3px] border-primaryLighten2 leading-[27px] text-lg w-[155px] h-[47px] font-kanit text-[white]'>Become a Chef</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -174,7 +176,7 @@ const About = () => {
             <div className='relative flex flex-col mt-[-10px]'>
               <img src={firstSpark} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
               <img src={firstSpark} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
-              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#98dba7af] border-l-2 border-black dark:border-white '></div>
+              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] border-l-2 border-black dark:border-white '></div>
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>The First Spark</h1>
@@ -230,23 +232,19 @@ const About = () => {
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Knowledge</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Knowledge is the cornerstone of our platform. We believe in the power of learning and sharing culinary wisdom. Through this knowledge exchange, our chefs and students continue to grow and refine their skills.</p>
             <img src={Knowledge} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
-            <img src={TopPattern} className='absolute xsm:hidden left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] xsm:pl-[24px] xsm:pr-[24px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-[white] sm:bg-backSec xsm:bg-backSec md:bg-backSec'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Support</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>We are committed to providing an environment of support and encouragement. Whether you’re a professional chef sharing your expertise or a student learning to sauté, we're here to ensure your journey is smooth, enjoyable, and rewarding.</p>
             <img src={Support} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
-            <img src={TopPattern} className='absolute xsm:hidden left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] xsm:pl-[24px] xsm:pr-[24px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8]'>
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Community</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Community is at the heart of our platform. We are a global kitchen, bringing together chefs and food lovers from all walks of life. We value the connections formed and the shared passion that fuels our vibrant culinary network.</p>
             <img src={Community} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2 top-[-52px]' alt="" />
-            <img src={TopPattern} className='absolute xsm:hidden left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
           </div>
           <div className='relative rounded-[16px] border-[2px] pl-[53px] pr-[72px] xsm:pl-[24px] xsm:pr-[24px] sm:pl-[73px] sm:pr-[99px] border-[#FFDBB8] bg-backSec'>
             <img src={Openness} className='absolute left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-52px]' alt="" />
-            <img src={TopPattern} className='absolute xsm:hidden left-[53px] xsm:-translate-x-1/2 xsm:left-1/2  top-[-62px]' alt="" />
             <h1 className='mt-[74px] mb-[29px] text-[32px] font-[600] font-rubik xsm:mt-[80px] xsm:text-center'>Openness</h1>
             <p className='font-outfit text-TextColorSec text-[18px] mb-[42px] xsm:text-center'>Openness fosters innovation and creativity. We encourage open dialogue, feedback, and exchange of ideas. This openness helps us improve and inspires our members to explore new culinary possibilities.</p>
           </div>
@@ -296,17 +294,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className='w-full flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[83px]'>
+      <div className='w-full flex flex-col items-center mt-[107px] sm:mt-[71px] xsm:mt-[83px]'>
         <div className='w-full flex flex-col justify-center items-center'>
           <div className='w-full flex justify-center relative'>
-            <div className='absolute w-full z-10 left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
             <h1 className='bg-[white] w-[449px] relative z-20 text-center font-rubik font-[600] tracking-[-0.02em] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px]'>Our achievements</h1>
           </div>
           <p className='font-outfit mt-[10px] leading-[26.8px] text-[16px] text-TextColorSec'>The milestones we’re proud of</p>
         </div>
       </div>
       <section className='h-fit relative'>
-        <div className='w-[75.347vw] m-auto mt-[100px] xsm:mt-[64px] xsm:mb-[148px] mb-[182px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
+        <div className='w-[75.347vw] m-auto mt-[100px] xsm:mt-[64px] xsm:mb-[148px] mb-[182px] bg-primaryLighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[26px] relative'>
           <div className=' flex flex-col h-[121px] justify-center items-center'>
             <h4 className='font-rubik font-bold text-[40px] leading-[47.4px] tracking-[-0.02em] text-primary2'>100+</h4>
             <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec text-center'>Talented Chefs</p>

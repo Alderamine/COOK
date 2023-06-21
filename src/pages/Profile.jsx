@@ -12,8 +12,11 @@ import ProfileSubject3 from '../assets/Profile/ProfileSubject3.svg'
 import ReviewProfilePic from "../assets/Profile/ReviewProfilePic.png"
 import ProfileBakerIcon from '../assets/Profile/ProfileBakerIcon.svg'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function Profile() {
+
+  const [resumeTab, setResumeTab] = useState('education');
 
   const scrollRef = useRef(null);
 
@@ -35,7 +38,7 @@ export default function Profile() {
     });
   };
 
-  
+
   const handleScroll = (event, id) => {
     event.preventDefault();
 
@@ -64,7 +67,11 @@ export default function Profile() {
           <div className='flex gap-[66px] min-w-[52.361vw] md:w-full sm:w-full xsm:w-full sm:flex-col xsm:flex-col'>
             <div className='relative w-fit'>
               <img className='w-[267px] relative' src={ProfilePicture} alt="" />
-              <img className='absolute bottom-[13px] right-[15px]' src={PlayIcon} alt="" />
+              <svg className='absolute bottom-[13px] right-[15px]' width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="67" height="67" rx="33.5" fill="#D27722" />
+                <path d="M25 20L45.4167 33.125L25 46.25V20Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
             </div>
 
             <div>
@@ -155,7 +162,7 @@ export default function Profile() {
             </svg>
             <p className='font-outfit font-normal text-[16px] leading-[24.8px] text-[white]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus s</p>
           </div>
-          
+
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-[5px]'>
               <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,8 +366,8 @@ export default function Profile() {
         <div id='resume' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[20px]'>Resume</h4>
           <div className='flex items-center gap-[15px]'>
-            <button className='h-[35px] px-[16px] rounded-[4px] bg-primary2 font-kanit font-normal text-[18px] leading-[26.91px] text-[white]'>Education</button>
-            <button className='h-[35px] px-[16px] rounded-[4px] bg-[rgba(0,0,0,0)] border border-primary2 font-kanit font-normal text-[18px] leading-[26.91px] text-primary2'>Experience</button>
+            <button onClick={() => setResumeTab("education")} style={resumeTab === "education" ? { background: "#D27722", color: "#fff" } : { border: "1px solid #D27722", color: "#D27722" }} className='h-[35px] px-[16px] rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] '>Education</button>
+            <button onClick={() => setResumeTab("experience")} style={resumeTab === "experience" ? { background: "#D27722", color: "#fff" } : { border: "1px solid #D27722", color: "#D27722" }} className='h-[35px] px-[16px] rounded-[4px]  font-kanit font-normal text-[18px] leading-[26.91px]'>Experience</button>
           </div>
           <p className='font-outfit font-normal text-[16px] leading-[24.8px] mt-[20px] w-full'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
         </div>
@@ -368,18 +375,24 @@ export default function Profile() {
         <div id='subjects' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  mt-[124px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[28px]'>Subjects</h4>
           <div className='flex items-center gap-[26px] sm:flex-col xsm:flex-col'>
-            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
-              <img src={ProfileSubject1} alt="" />
-              <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
-            </div>
-            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
-              <img src={ProfileSubject2} alt="" />
-              <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
-            </div>
-            <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
-              <img src={ProfileSubject3} alt="" />
-              <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
-            </div>
+            <Link to={'/search-tutor'}>
+              <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+                <img src={ProfileSubject1} alt="" />
+                <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
+              </div>
+            </Link>
+            <Link to={'/search-tutor'}>
+              <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+                <img src={ProfileSubject2} alt="" />
+                <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
+              </div>
+            </Link>
+            <Link to={'/search-tutor'}>
+              <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
+                <img src={ProfileSubject3} alt="" />
+                <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -486,7 +499,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className='w-[313px] md:hidden sm:hidden xsm:hidden sticky h-[243px] top-[112px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
+      <div className='w-[313px] md:hidden sm:hidden xsm:hidden sticky h-[243px] top-[130px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
         <div>
           <div className='flex items-center justify-between gap-[20px]'>
             <div className='flex flex-col justify-center items-center'>

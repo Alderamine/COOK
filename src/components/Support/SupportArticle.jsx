@@ -10,18 +10,22 @@ export default function SupportArticle() {
   return (
     <>
       <nav class="ml-[20.347vw] mr-[20.347vw] md:ml-[6.587vw] md:mr-[5.749vw] sm:ml-[6.587vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw] rounded-md">
-        <ol class="py-[56px]">
+        <ol class="list-reset flex items-center gap-[6px] py-[56px]">
           <li onClick={() => navigate(-2)} className='cursor-pointer inline'>
             <p class="inline font-outfit w-fit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">All questions</p>
           </li>
           <li className='inline'>
-            <span class="inline font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </li>
           <li onClick={() => navigate(-1)} className='cursor-pointer inline'>
             <p class="inline font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.category}</p>
           </li>
           <li className='inline'>
-            <span class="inline font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
+            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 9L5 5L1 1" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </li>
           <li className='inline'>
             <p class="inline font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{location.state.articleTitle}</p>
