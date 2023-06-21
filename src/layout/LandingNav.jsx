@@ -115,22 +115,22 @@ export default function LandingNav() {
           <div className='h-[15px] border border-primary rouded-[16px]'></div>
           <Link to={'support'}>
             <div className='custom-tooltip' data-tooltip="Support">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='fill-[white] stroke-primary2 hover:fill-primary2 hover:stroke-[white] transition-all duration-200' width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 16.5V12.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 8.5H12.01" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 16.5V12.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 8.5H12.01" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
           </Link>
           <div className='h-[15px] border border-primary rouded-[16px]'></div>
           <div>
             <Link to={'signin'}>
-              <button className='w-[131px] h-[41px] bg-primary2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[0.556vw] rounded-[4px]'>
+              <button className='w-[131px] group hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 h-[41px] bg-primary2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[0.556vw] rounded-[4px]'>
                 Log In
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M11.75 9.5H2.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <svg className='stroke-[white] group-hover:stroke-primary2 transition-all duration-200' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M8 13.25L11.75 9.5L8 5.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M11.75 9.5H2.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </Link>

@@ -47,10 +47,10 @@ export default function LandingPage() {
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
           <div className='flex gap-x-[20px] mt-[26px] xsm:flex-col xsm:w-full gap-y-[20px]'>
             <Link to={'/search-tutors'}>
-              <button className='w-[153px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
+              <button className='w-[153px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
             </Link>
             <Link to={'/signup'}>
-              <button className='w-[150px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
+              <button className='w-[150px] hover:bg-primary2 hover:text-[white] transition-all xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
             </Link>
           </div>
         </div>
@@ -371,7 +371,7 @@ export default function LandingPage() {
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
             <Link className='xsm:self-center' to={'/search-tutors'}>
-              <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
+              <button className='h-[41px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
             </Link>
           </div>
         </div>
@@ -396,7 +396,7 @@ export default function LandingPage() {
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Enjoy Your Interactive Lesson</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
             <Link className='xsm:self-center' to={'signup'}>
-              <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
+              <button className='h-[41px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
             </Link>
           </div>
         </div>
@@ -433,7 +433,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Link to={'signup'}>
-              <button className='h-[39px] w-[150px] xsm:w-full text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
+              <button className='h-[39px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[150px] xsm:w-full text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
             </Link>
             <div className='flex items-center gap-[8px]'>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -484,7 +484,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Link className='xsm:w-full' to={'signup'}>
-              <button className='h-[39px] w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+              <button className='h-[39px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
             </Link>
           </div>
         </div>

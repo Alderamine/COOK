@@ -323,7 +323,7 @@ const GroupPage = () => {
           </div>
         </div>
       </div>
-      <div className='mt-[80px] sticky top-[130px] md:hidden sm:hidden xsm:hidden max-w-[33.125vw] h-fit xsm:mt-0 sm:mt-0 md:mt-0 border rounded-[12px] border-primaryLighten2 flex-1 bg-primaryLighten px-[37px] py-[30px] sm:py-[30px] md:py-[30px] xsm:px-[16px] xsm:py-[24px]'>
+      <div className='mt-[80px] sticky top-[140px] md:hidden sm:hidden xsm:hidden max-w-[33.125vw] h-fit xsm:mt-0 sm:mt-0 md:mt-0 border rounded-[12px] border-primaryLighten2 flex-1 bg-primaryLighten px-[37px] py-[30px] sm:py-[30px] md:py-[30px] xsm:px-[16px] xsm:py-[24px]'>
         <h1 className='text-[32px] font-[600] font-outfit xsm:text-[24px] leading-[40p.32x] xsm:leading-[30.24px] mb-[32px] xsm:mb-[50px]'>$1000 <span className='text-[18px] font-[300] leading-[27px] text-TextColorSec'>/ class</span></h1>
         <p className='leading-[17.64px] font-outfit text-[14px] text-primary2 font-[600] uppercase'>Upcoming group lessons</p>
         <div className='mt-[10px] xsm:mt-[8px]  flex flex-col divide-y-2 divide-primaryLighten2'>

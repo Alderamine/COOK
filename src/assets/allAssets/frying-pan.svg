@@ -5,7 +5,7 @@
 	 style="enable-background:new 0 0 682.7 682.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#D27722;stroke:#D27722;strokeWidth:26.6667;strokeLinecap:round;strokeLinejoin:round;stroke-miterlimit:13.3333;}
-	.st1{clip-path:url(#SVGID_00000005240681459517442160000004498066552188850603_);}
+	.st1{clipPath:url(#SVGID_00000005240681459517442160000004498066552188850603_);}
 </style>
 <g id="g2043" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
 	<g id="g2045" transform="translate(358.2666,191.1611)">
@@ -19,7 +19,7 @@
 			<clipPath id="SVGID_00000113329919564381026920000010324483945726367383_">
 				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 			</clipPath>
-			<g id="g2051" style="clip-path:url(#SVGID_00000113329919564381026920000010324483945726367383_);">
+			<g id="g2051" style="clipPath:url(#SVGID_00000113329919564381026920000010324483945726367383_);">
 				<g id="g2057" transform="translate(266.2227,108.627)">
 					<path id="path2059" className="st0" d="M0,0h-165.2c-50.3,0-91,40.8-91,91v13.1H91V91C91,40.8,50.3,0,0,0z"/>
 				</g>

@@ -69,7 +69,7 @@ export default function Profile() {
               <img className='w-[267px] relative' src={ProfilePicture} alt="" />
               <svg className='absolute bottom-[13px] right-[15px]' width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="67" height="67" rx="33.5" fill="#D27722" />
-                <path d="M25 20L45.4167 33.125L25 46.25V20Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M25 20L45.4167 33.125L25 46.25V20Z" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
 
             </div>
@@ -499,7 +499,7 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className='w-[313px] md:hidden sm:hidden xsm:hidden sticky h-[243px] top-[130px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
+      <div className='w-[313px] md:hidden sm:hidden xsm:hidden sticky h-[243px] top-[140px] rounded-[12px] py-[30px] px-[37px] bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)]'>
         <div>
           <div className='flex items-center justify-between gap-[20px]'>
             <div className='flex flex-col justify-center items-center'>
