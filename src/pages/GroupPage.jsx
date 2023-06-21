@@ -175,15 +175,21 @@ const GroupPage = () => {
         </div>
         <div className='sm:mt-[130px] lg:max-w-[52.638888888888886vw] xl:max-w-[52.638888888888886vw] 2xl:max-w-[52.638888888888886vw] md:mt-[130px] xsm:mt-[130px] mt-[43px] ml-[64px] mr-[71px] sm:ml-[50px] sm:mr-[48px] md:mr-[48px] md:ml-[50px] xsm:mr-[34px] xsm:ml-[30px]'>
           <div className='flex gap-[18px]  flex-wrap'>
-            <button className='font-outfit rounded-[8px] text-[white] px-[21px] py-[8px] bg-primary2 leading-[22.68px] font-[400]'>
-              Details
-            </button>
-            <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
-              About Tutor
-            </button>
-            <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
-              Reviews (100)
-            </button>
+            <a onClick={(e)=>handleScroll(e,"details")} href="#details">
+              <button className='font-outfit rounded-[8px] text-[white] px-[21px] py-[8px] bg-primary2 leading-[22.68px] font-[400]'>
+                Details
+              </button>
+            </a>
+            <a onClick={(e)=>handleScroll(e,"about")} href="#about">
+              <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
+                About Tutor
+              </button>
+            </a>
+            <a onClick={(e)=>handleScroll(e,"reviews")} href="#reviews">
+              <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
+                Reviews (100)
+              </button>
+            </a>
           </div>
 
           <div className='mt-[47px] xsm:mt-[41px] flex flex-col gap-[13px]'>
@@ -210,12 +216,12 @@ const GroupPage = () => {
             </div>
           </div>
 
-          <div className='px-[32px] py-[24px] mt-[47px] xsm:mt-[75px] xsm:px-[16px] border bg-backSec border-primaryLighten2 rounded-[16px]'>
+          <div id='details' className='px-[32px] py-[24px] mt-[47px] xsm:mt-[75px] xsm:px-[16px] border bg-backSec border-primaryLighten2 rounded-[16px]'>
             <h1 className='font-rubik text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[12px]'>Details</h1>
             <p className='font-outfit text-[16px] text-TextColor leading-[24.8px] xsm:leading-[25.76px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
           </div>
 
-          <div className='px-[32px] xsm:px-[16px] mt-[59px] sm:mt-[56px] md:mt-[56px] xsm:mt-[112px]'>
+          <div id='about' className='px-[32px] xsm:px-[16px] mt-[59px] sm:mt-[56px] md:mt-[56px] xsm:mt-[112px]'>
             <h1 className='font-rubik text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>About Tutor</h1>
             <div className='flex items-center mb-[16px]'>
               <img src={user} className='h-[48px] w-[48px]' alt="" />
@@ -228,7 +234,7 @@ const GroupPage = () => {
             <p className='font-outfit text-[16px] text-TextColor leading-[24.8px] xsm:leading-[27.92px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
           </div>
 
-          <div className='px-[32px] xsm:px-[16px] mt-[80px] sm:mt-[82px] md:mt-[82px] xsm:mt-[58px] flex flex-col gap-[40px] sm:gap-[36px] md:gap-[36px] xsm:gap-[17px]'>
+          <div id='reviews' className='px-[32px] xsm:px-[16px] mt-[80px] sm:mt-[82px] md:mt-[82px] xsm:mt-[58px] flex flex-col gap-[40px] sm:gap-[36px] md:gap-[36px] xsm:gap-[17px]'>
             <h1 className='font-rubik p-[10px] text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>Reviews</h1>
             <div className='flex xsm:flex-col xsm:divide-x-0 px-[23px] md:px-0 sm:px-0 xsm:px-0 divide-x-2 divide-primaryLighten2'>
               <div className='flex flex-col justify-center items-start pr-[74px] xsm:pr-0'>

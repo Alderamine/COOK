@@ -14,14 +14,15 @@ import Category4 from "../assets/Blog/Category4.svg"
 import Category5 from "../assets/Blog/Category5.svg"
 import Category6 from "../assets/Blog/Category6.svg"
 import LandingFooter from '../layout/LandingFooter'
+import { Link } from 'react-router-dom'
 
 export default function Blog() {
   return (
     <>
       <BlogNav />
       <div className='px-[64px] md:px-[48px] sm:px-[48px] xsm:px-[32px] w-full pt-[28px]'>
-        <div className='flex justify-between xsm:hidden'>
-          <button className='w-[85px] h-[30px] rounded-[8px] bg-primary2 text-[white] font-outfit font-medium text-[14px] leading-[17.64px]'>Business</button>
+        <div className='flex justify-end xsm:hidden'>
+          {/* <button className='w-[85px] h-[30px] rounded-[8px] bg-primary2 text-[white] font-outfit font-medium text-[14px] leading-[17.64px]'>Business</button> */}
           <div className='flex gap-[14px]'>
             <button className='px-[16px] h-[30px] rounded-[8px] border border-[rgba(255,219,184,1)] bg-[rgba(255,253,244,1)] text-primary2 font-outfit font-medium text-[14px] leading-[17.64px]'>Home Cooking</button>
             <button className='px-[16px] h-[30px] rounded-[8px] border border-[rgba(255,219,184,1)] bg-[rgba(255,253,244,1)] text-primary2 font-outfit font-medium text-[14px] leading-[17.64px]'>Recipes</button>
@@ -92,7 +93,9 @@ export default function Blog() {
           <div className='xsm:px-[11.875vw]'>
             <h3 className='font-rubik font-medium text-[48px] leading-[56.16px] tracking-[-0.02em]'>Did you know?</h3>
             <p className='font-outfit font-normal text-[18px] leading-[31.14px] tracking-[-0.02em] mt-[27px]'>With COOK you can discover and connect with professional chefs from around the world. Find your perfect chef or become one, as our platform provides a seamless experience for cooking enthusiasts. Unleash your culinary dreams and join our vibrant community today!</p>
-            <button className='bg-primary2 text-[white] mt-[35px] w-[129px] h-[39px] rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px]'>Find A Tutor</button>
+            <Link to="/search-tutor">
+              <button className='bg-primary2 text-[white] mt-[35px] w-[129px] h-[39px] rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px]'>Find A Tutor</button>
+            </Link>
           </div>
         </div>
         <div className='h-fit max-w-[434px] xsm:max-w-full relative '>

@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogNav from '../../layout/BlogNav'
-import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import BlogCategoryHeroImage from "../../assets/Blog/BlogCategoryHeroImage.svg"
 import BlogCard from './BlogCard';
 import Pagination from '../utils/Pagination';
@@ -62,7 +62,9 @@ export default function BlogCategory() {
           <div className='xsm:px-[11.875vw]'>
             <h3 className='font-rubik font-medium text-[48px] leading-[56.16px] tracking-[-0.02em]'>Did you know?</h3>
             <p className='font-outfit font-normal text-[18px] leading-[31.14px] tracking-[-0.02em] mt-[27px]'>With COOK you can discover and connect with professional chefs from around the world. Find your perfect chef or become one, as our platform provides a seamless experience for cooking enthusiasts. Unleash your culinary dreams and join our vibrant community today!</p>
-            <button className='bg-primary2 text-[white] mt-[35px] w-[129px] h-[39px] rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px]'>Find A Tutor</button>
+            <Link to="/search-tutor">
+              <button className='bg-primary2 text-[white] mt-[35px] w-[129px] h-[39px] rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px]'>Find A Tutor</button>
+            </Link>
           </div>
         </div>
         <div className='h-fit max-w-[434px] xsm:max-w-full relative '>
@@ -74,7 +76,7 @@ export default function BlogCategory() {
         </div>
       </section>
 
-      <LandingFooter/>
+      <LandingFooter />
     </>
   )
 }

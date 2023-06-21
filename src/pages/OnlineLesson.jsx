@@ -5,11 +5,12 @@ import ChatIcon from '../assets/OnlineLesson/ChatIcon.svg'
 import { useState } from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 export default function OnlineLesson() {
-  const [tabs,setTabs]=useState('chat');
+  const [currentTab, setCurrentTab] = useState("chat");
   const [width, setWidth] = useState('932px');
-  const [widthNumber, setWidthNumber] = useState('932');
+  const [widthNumber, setWidthNumber] = useState('1024');
   const resizableDivRef = useRef(null);
   const handleDivRef = useRef(null);
 
@@ -79,8 +80,10 @@ export default function OnlineLesson() {
     dropzone.appendChild(draggableElement);
   };
 
+  console.log(location.pathname);
+
   return (
-    <main className='min-h-screen max-h-screen flex md:flex-col sm:flex-col xsm:flex-col'>
+    <main className='min-h-screen max-h-screen w flex md:flex-col sm:flex-col xsm:flex-col'>
       <div ref={resizableDivRef} style={widthNumber < windowSize.width ? { width } : { width: "100%" }} className='h-full relative min-w-[508px] xsm:min-w-[320px]'>
         <img className='object-cover w-full h-screen' src={VideoImage} alt="" />
 
@@ -159,40 +162,42 @@ export default function OnlineLesson() {
       </div>
 
       <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
-        <div className='h-[114px] w-full flex gap-[16px] items-center justify-end pr-[4.444vw] border-b border-b-[rgba(255,219,184,1)]'>
-          <button className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center'>
-            <img src={EditIcon} alt="" />
-            <p className='font-outfit font-medium text-[20px] leading-[30px]'>Notes</p>
-          </button>
-          <button className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] bg-primary2'>
-            <img src={ChatIcon} alt="" />
-            <p className='font-outfit font-medium text-[20px] leading-[30px] text-[white]'>Chat</p>
-          </button>
-        </div>
+        <div className='h-[114px] w-full flex items-center justify-between pr-[4.444vw] border-b border-b-[rgba(255,219,184,1)]'>
+          <NavLink to={'members'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/members" ? "bg-primary2 text-[white] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] ml-[20px]" : "ml-[20px] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
+            <button onClick={() => setCurrentTab('member')} style={currentTab === 'member' ? { background: '#D27722', color: '#fff' } : {}} className='ml-[20px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
+              <svg className={location.pathname === "/online-lesson/members" ? "stroke-[white]" : "stroke-[black]"} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21.5V19.5C17 18.4391 16.5786 17.4217 15.8284 16.6716C15.0783 15.9214 14.0609 15.5 13 15.5H5C3.93913 15.5 2.92172 15.9214 2.17157 16.6716C1.42143 17.4217 1 18.4391 1 19.5V21.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 11.5C11.2091 11.5 13 9.70914 13 7.5C13 5.29086 11.2091 3.5 9 3.5C6.79086 3.5 5 5.29086 5 7.5C5 9.70914 6.79086 11.5 9 11.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M23 21.4999V19.4999C22.9993 18.6136 22.7044 17.7527 22.1614 17.0522C21.6184 16.3517 20.8581 15.8515 20 15.6299" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 3.62988C16.8604 3.85018 17.623 4.35058 18.1676 5.05219C18.7122 5.7538 19.0078 6.61671 19.0078 7.50488C19.0078 8.39305 18.7122 9.25596 18.1676 9.95757C17.623 10.6592 16.8604 11.1596 16 11.3799" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p className='font-outfit font-medium text-[20px] leading-[30px]'>Member</p>
+            </button>
+          </NavLink>
 
-        <div className='flex-1 pl-[36px] pr-[64px] w-full overflow-auto'>
-          <div className='flex flex-col justify-end h-full w-full m-auto gap-[5.5vh]'>
-            <div className='w-full max-w-[535px] xsm:max-w-[320px] ml-[0px] h-fit mx-auto bg-[rgba(255,253,244,1)] rounded-[12px] rounded-tl-none px-[16px] py-[12px]'>
-              <p className='text-TextColor font-outfit font-[400] text-[16px] leading-[24px]'>Lorem ipsum dolor sit amet consectetur. Lectus amet duis venenatis bibendum sed. Sed lacus neque orci feugiat turpis cursus.</p>
-            </div>
-            <div className='w-full max-w-[535px] xsm:max-w-[320px] mr-[0px] h-fit mx-auto self-end bg-primary2 rounded-[12px] rounded-br-none px-[16px] py-[12px]'>
-              <p className='text-[white] font-outfit font-[400] text-[16px] leading-[24px]'>Lorem ipsum dolor sit amet consectetur. Lectus amet duis venenatis bibendum sed. Sed lacus neque orci feugiat turpis cursus.</p>
-            </div>
+          <div className='flex items-center gap-[16px]'>
+            <NavLink to={'notes'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/notes" ? "bg-primary2 text-[white] w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]" : "w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
+              <button onClick={() => setCurrentTab('notes')} className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
+                <svg className={location.pathname === "/online-lesson/notes" ? "stroke-[white]" : "stroke-[black]"} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 4.5H4C3.46957 4.5 2.96086 4.71071 2.58579 5.08579C2.21071 5.46086 2 5.96957 2 6.5V20.5C2 21.0304 2.21071 21.5391 2.58579 21.9142C2.96086 22.2893 3.46957 22.5 4 22.5H18C18.5304 22.5 19.0391 22.2893 19.4142 21.9142C19.7893 21.5391 20 21.0304 20 20.5V13.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M18.5 2.99998C18.8978 2.60216 19.4374 2.37866 20 2.37866C20.5626 2.37866 21.1022 2.60216 21.5 2.99998C21.8978 3.39781 22.1213 3.93737 22.1213 4.49998C22.1213 5.06259 21.8978 5.60216 21.5 5.99998L12 15.5L8 16.5L9 12.5L18.5 2.99998Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p className='font-outfit font-medium text-[20px] leading-[30px]'>Notes</p>
+              </button>
+            </NavLink>
+
+            <NavLink to={''} className={({ isActive }) => isActive && location.pathname === "/online-lesson" ? "bg-primary2 text-[white] w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]" : "w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
+              <button onClick={() => setCurrentTab('chat')} className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
+                <svg className={location.pathname === "/online-lesson" ? "stroke-[white]" : "stroke-[black]"} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 12C21.0034 13.3199 20.6951 14.6219 20.1 15.8C19.3944 17.2118 18.3098 18.3992 16.9674 19.2293C15.6251 20.0594 14.0782 20.4994 12.5 20.5C11.1801 20.5035 9.87812 20.1951 8.7 19.6L3 21.5L4.9 15.8C4.30493 14.6219 3.99656 13.3199 4 12C4.00061 10.4218 4.44061 8.87488 5.27072 7.53258C6.10083 6.19028 7.28825 5.1056 8.7 4.40003C9.87812 3.80496 11.1801 3.49659 12.5 3.50003H13C15.0843 3.61502 17.053 4.49479 18.5291 5.97089C20.0052 7.44699 20.885 9.41568 21 11.5V12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p className='font-outfit font-medium text-[20px] leading-[30px]'>Chat</p>
+              </button>
+            </NavLink>
           </div>
         </div>
-
-        <div className='pl-[36px] pr-[64px] w-full m-auto flex gap-[17px] items-center mb-[41px] mt-[10.6vh]'>
-          <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="49.4383" height="50.6106" rx="24.7192" fill="#D27722" />
-            <path d="M34.4383 24.6622L25.2483 33.8522C24.1225 34.9781 22.5955 35.6106 21.0033 35.6106C19.4112 35.6106 17.8842 34.9781 16.7583 33.8522C15.6325 32.7264 15 31.1994 15 29.6072C15 28.015 15.6325 26.4881 16.7583 25.3622L25.9483 16.1722C26.6989 15.4217 27.7169 15 28.7783 15C29.8398 15 30.8578 15.4217 31.6083 16.1722C32.3589 16.9228 32.7806 17.9408 32.7806 19.0022C32.7806 20.0637 32.3589 21.0817 31.6083 21.8322L22.4083 31.0222C22.0331 31.3975 21.5241 31.6083 20.9933 31.6083C20.4626 31.6083 19.9536 31.3975 19.5783 31.0222C19.2031 30.6469 18.9922 30.138 18.9922 29.6072C18.9922 29.0765 19.2031 28.5675 19.5783 28.1922L28.0683 19.7122" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-          <div className='relative w-full flex h-[47px] bg-[white] border border-[rgba(255,219,184,1)] px-[1.111vw]'>
-            <input className='flex-1 outline-none' type="text" placeholder='Send a message' />
-            <svg className='absolute right-[1.111vw] top-[50%] translate-y-[-50%]' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22 2.30518L11 13.3052" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M22 2.30518L15 22.3052L11 13.3052L2 9.30518L22 2.30518Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
+        <div className='flex flex-col flex-1'>
+          <Outlet />
         </div>
       </div>
 

@@ -8,11 +8,12 @@ import searchIcon from "../assets/Legal/searchIcon.svg"
 import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 import LandingFooter from '../layout/LandingFooter'
 import Hamburger from "../assets/About/Hamburger.svg"
+import CopyrightTable from '../components/Copyright/CopyrightTable'
 
 const Copyright = () => {
   return (
     <div>
-      <nav className='h-[84px] z-10 w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
+      <nav className='sticky top-0 h-[84px] z-10 w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
         <div className='flex items-center gap-[32px]'>
           <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1>
           <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
@@ -67,27 +68,21 @@ const Copyright = () => {
         <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
       </nav>
       <div className='flex xsm:flex-col sm:flex-col md:flex-col xsm:gap-[36px] sm:gap-[36px] md:gap-[36px] gap-[54px] pl-[64px] py-[94px] pr-[69px] sm:pt-[89px] md:pt-[89px] sm:px-[48px] md:px-[48px] xsm:pt-[80px] xsm:pr-[32px] xsm:pl-[34px]'>
-        <div className='mt-[10px]'>
-          <h1 className='mb-[36px] hidden sm:block md:block xsm:block text-[48px] xsm:text-[36px] font-[700] sm:leading-[56.88px] font-rubik'>Copyright Policy</h1>
+      <div className='mt-[10px] h-full sticky md:relative sm:relative xsm:relative md:top-[0px] sm:top-[0px] xsm:top-[0px] top-[130px]'>
+          <h1 className='mb-[36px] hidden sm:block md:block xsm:block text-[48px] xsm:text-[36px] font-[700] sm:leading-[56.88px] font-rubik'>Terms Of Service</h1>
           <div className='relative mb-[30px] h-[50px] w-[313px] xsm:w-full sm:w-full md:w-full border-[2px] rounded-[4px] border-primaryLighten2 pl-[36px]'>
-            <input type="text" className='h-full w-full outline-none font-redHatDisplay placeholder:text-primary2 pl-4 text-[20px]' placeholder="Search" />
-            <img src={searchIcon} className='absolute top-[50%] left-[13px] transform translate-y-[-50%] text-gray-500' alt="" />
+            <input type="text" className='h-full w-full outline-none font-semibold leading-[26.46px] font-redHatDisplay placeholder:text-primary2 pl-4 text-[20px]' placeholder="Search" />
+            <svg className='absolute top-[50%] left-[13px] transform translate-y-[-50%]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21 20.9999L16.65 16.6499" stroke="#D27722" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div className='flex p-[24px] w-[313px] xsm:w-full sm:w-full md:w-full flex-col border-[2px] rounded-[8px] border-primaryLighten2'>
             <h1 className='mb-[27px] tracking-[-0.02em] font-outfit leading-[28.4px] font-[600] text-[24px] xsm:text-[20px]'>Table of content</h1>
             <div className='flex flex-col gap-[16px]'>
-              <div className='flex items-center gap-[8px]'>
-                <img src={arrow} alt="" />
-                <p className='font-outfit tracking-[-0.02em] text-[18px] leading-[21.06px]'>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <img src={arrow} alt="" />
-                <p className='font-outfit tracking-[-0.02em] text-[18px] leading-[21.06px]'>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <img src={arrow} alt="" />
-                <p className='font-outfit tracking-[-0.02em] text-[18px] leading-[21.06px]'>Lorem Ipsum</p>
-              </div>
+              <CopyrightTable/>
+              <CopyrightTable/>
+              <CopyrightTable/>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import Image1 from '../assets/Signin/Image1.png'
 import Image2 from '../assets/Signin/Image2.png'
 import MDImage2 from '../assets/Signin/MDImage2.png'
 import MDImage1 from '../assets/Signin/MDImage1.png'
+import { Link } from 'react-router-dom'
 
 export default function Signin() {
   return (
@@ -19,7 +20,7 @@ export default function Signin() {
 
       <div className='bg-[white] xsm:w-full md:border-2 md:border-[rgba(255,219,184,1)] md:rounded-[23px] md:h-fit sm:border-2 sm:border-[rgba(255,219,184,1)] sm:rounded-[23px] sm:h-fit w-[50.694vw] md:w-[80.24vw] sm:w-[80.24vw] h-full flex flex-col items-center pt-[105px] md:absolute sm:absolute xsm:absolute md:left-[50%] md:translate-x-[-50%] md:top-[50%] md:translate-y-[-50%] sm:left-[50%] sm:translate-x-[-50%] sm:top-[50%] sm:translate-y-[-50%]'>
         <div className='w-fit h-fit flex flex-col justify-center items-center'>
-          <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em]'>Log in to <span className='text-primary2 underline'>COOK</span></h1>
+          <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em]'>Log in to <Link to={'/'}><span className='text-primary2 underline'>COOK</span></Link></h1>
           <div className='flex flex-col gap-[8px] mt-[24px]'>
             <button className='flex items-center justify-center gap-[14px] w-[322px] h-[56px] border border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[30px]'>
               <img src={Google} alt="" />

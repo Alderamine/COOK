@@ -22,6 +22,9 @@ import DashboardLayout from './layout/DashboardLayout'
 import Chat from './pages/Chat'
 import SingleChatMob from './components/Chat/SingleChatMob'
 import GroupPage from './pages/GroupPage'
+import OnlineChat from './components/OnlineLesson/OnlineChat'
+import Notes from './components/OnlineLesson/Notes'
+import Members from './components/OnlineLesson/Members'
 
 function App() {
 
@@ -47,7 +50,11 @@ function App() {
           </Route>
 
           <Route path='online-lesson'>
-            <Route index element={<OnlineLesson></OnlineLesson>}></Route>
+            <Route element={<OnlineLesson></OnlineLesson>}>
+              <Route index element={<OnlineChat></OnlineChat>}></Route>
+              <Route path='notes' element={<Notes></Notes>}></Route>
+              <Route path='members' element={<Members></Members>}></Route>
+            </Route>
           </Route>
 
           <Route path='blog'>

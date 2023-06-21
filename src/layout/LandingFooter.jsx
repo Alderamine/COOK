@@ -16,49 +16,49 @@ export default function LandingFooter() {
 
           <div className='flex-1 flex justify-between sm:gap-[20px] xsm:flex xsm:flex-col xsm:items-center xsm:gap-y-[32px]'>
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
+              <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/about'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
                 </Link>
                 <Link to={'/about'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
                 </Link>
                 <Link to={'/about'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
                 </Link>
               </div>
             </div>
 
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR STUDENTS</p>
+              <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR STUDENTS</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/blog'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
                 </Link>
                 <Link to={'/search-tutor'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
                 </Link>
               </div>
             </div>
 
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR TUTORS</p>
+              <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR TUTORS</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/signup'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
                 </Link>
                 <Link to={'/signup'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
                 </Link>
               </div>
             </div>
 
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
-              <p className='font-outfit font-normal text-[18px] leading-[27pxpx] text-[white]'>SUPPORT</p>
+              <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>SUPPORT</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/support'}>
-                  <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
                 </Link>
               </div>
             </div>
@@ -69,15 +69,15 @@ export default function LandingFooter() {
           <div className='flex gap-[154px] pt-[54px] pb-[43px] ml-[49.5px] md:ml-[5.928vw] sm:ml-[5.928vw] xsm:ml-0'>
 
             <div className='flex md:flex-1 md:justify-between sm:flex-1 sm:justify-between sm:gap-[20px] xsm:flex-col xsm:gap-y-[41px] xsm:items-center xsm:w-full'>
-              <div className='text-[rgba(255,219,184,1)] font-normal font-outfit text-[20px] leading-[30px] tracking-[-0.02em] xsm:flex xsm:flex-col xsm:items-center'>
-                <p className='text-[20px] leading-[30px] font-outfit font-normal'>USA</p>
-                <p className='text-[20px] leading-[30px] font-outfit font-normal'>Your address goes here</p>
-                <p className='text-[20px] leading-[30px] font-outfit font-normal'>+000000000000</p>
+              <div className='text-[rgba(255,219,184,1)] font-normal font-outfit xsm:text-center text-[20px] leading-[30px] tracking-[-0.02em] xsm:flex xsm:flex-col xsm:items-center'>
+                <p className='text-[20px] leading-[30px] font-outfit xsm:text-center font-normal'>USA</p>
+                <p className='text-[20px] leading-[30px] font-outfit xsm:text-center font-normal'>Your address goes here</p>
+                <p className='text-[20px] leading-[30px] font-outfit xsm:text-center font-normal'>+000000000000</p>
               </div>
 
               {/* Below 2 divs for tablet */}
               <div className='lg:hidden xl:hidden 2xl:hidden xsm:flex xsm:flex-col xsm:items-center'>
-                <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>COOK’s SOCIALS</p>
+                <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>COOK’s SOCIALS</p>
                 <div className='flex gap-[10px] mt-[8px]'>
                   <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17.5 2H7.5C4.73858 2 2.5 4.23858 2.5 7V17C2.5 19.7614 4.73858 22 7.5 22H17.5C20.2614 22 22.5 19.7614 22.5 17V7C22.5 4.23858 20.2614 2 17.5 2Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -106,13 +106,13 @@ export default function LandingFooter() {
               </div>
 
               <div className='lg:hidden xl:hidden 2xl:hidden xsm:flex xsm:flex-col xsm:items-center'>
-                <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
+                <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                 <div className='flex flex-col gap-[8px] mt-[8px] xsm:flex xsm:flex-col xsm:items-center'>
-                  <Link to={'terms-of-service'}>
-                    <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
+                  <Link to={'/terms-of-service'}>
+                    <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
                   </Link>
-                  <Link to={'copyright'}>
-                    <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                  <Link to={'/copyright'}>
+                    <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
                   </Link>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function LandingFooter() {
             <div className='flex-1 flex justify-between xsm:hidden sm:hidden md:hidden'>
               <div className='flex gap-[77.994px]'>
                 <div>
-                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>COOK’s SOCIALS</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>COOK’s SOCIALS</p>
                   <div className='flex gap-[10px] mt-[8px]'>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17.5 2H7.5C4.73858 2 2.5 4.23858 2.5 7V17C2.5 19.7614 4.73858 22 7.5 22H17.5C20.2614 22 22.5 19.7614 22.5 17V7C22.5 4.23858 20.2614 2 17.5 2Z" stroke="#FFDBB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -151,23 +151,23 @@ export default function LandingFooter() {
                 </div>
 
                 <div>
-                  <p className='font-outfit font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
+                  <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                   <div className='flex flex-col gap-[8px] mt-[8px]'>
-                    <Link to={'terms-of-service'}>
-                      <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
+                    <Link to={'/terms-of-service'}>
+                      <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
                     </Link>
-                    <Link to={'copyright'}>
-                      <p className='font-outfit font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                    <Link to={'/copyright'}>
+                      <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
                     </Link>
                   </div>
                 </div>
               </div>
-              <p className='self-end text-[white] text-[20px] leading-[30px] font-outfit'>2023 Copyright</p>
+              <p className='self-end text-[white] text-[20px] leading-[30px] font-outfit xsm:text-center'>2023 Copyright</p>
             </div>
 
           </div>
         </div>
-        <p className='hidden md:flex sm:flex xsm:flex text-[white] font-outfit font-normal text-[20px] leading-[30px] mt-[45px] justify-center pb-[34px]'>2023 ©</p>
+        <p className='hidden md:flex sm:flex xsm:flex text-[white] font-outfit xsm:text-center font-normal text-[20px] leading-[30px] mt-[45px] justify-center pb-[34px]'>2023 ©</p>
       </div>
     </footer>
   )
