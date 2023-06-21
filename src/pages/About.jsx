@@ -174,9 +174,9 @@ const About = () => {
         <div className='w-full px-[175px] sm:px-[49px] xsm:px-[34px]'>
           <div className='flex xsm:flex-col xsm:items-start gap-[22px] h-full pb-[96px] sm:pb-[64px] xsm:pb-[43px]'>
             <div className='relative flex flex-col mt-[-10px]'>
-              <img src={firstSpark} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
-              <img src={firstSpark} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
-              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] border-l-2 border-black dark:border-white '></div>
+              <img src={firstSpark} className='h-[100px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
+              <img src={firstSpark} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" />
+              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] z-10 border-l-2 border-black dark:border-white '></div>
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>The First Spark</h1>
@@ -186,9 +186,9 @@ const About = () => {
           </div>
           <div className='flex xsm:flex-col xsm:items-start gap-[22px] h-full pb-[96px] sm:pb-[64px] xsm:pb-[43px]'>
             <div className='relative flex flex-col mt-[-10px]'>
-              <img src={SimmeringIdeas} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
-              <img src={SimmeringIdeas} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
-              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#98dba7af] border-l-2 border-black dark:border-white '></div>
+              <img src={SimmeringIdeas} className='h-[100px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
+              <img src={SimmeringIdeas} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" />
+              <div className='absolute h-[calc(100%+10px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] z-10 border-l-2 border-black dark:border-white '></div>
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>Simmering Ideas</h1>
@@ -198,9 +198,9 @@ const About = () => {
           </div>
           <div className='flex xsm:flex-col xsm:items-start gap-[22px] h-full pb-[96px] sm:pb-[64px] xsm:pb-[43px]'>
             <div className='relative flex flex-col mt-[-10px]'>
-              <img src={CookLunch} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
-              <img src={CookLunch} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
-              <div className='absolute h-[calc(100%+20px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#98dba7af] border-l-2 border-black dark:border-white '></div>
+              <img src={CookLunch} className='h-[100px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
+              <img src={CookLunch} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" />
+              <div className='absolute h-[calc(100%+20px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] z-10 border-l-2 border-black dark:border-white '></div>
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>COOK Launch</h1>
@@ -210,8 +210,8 @@ const About = () => {
           </div>
           <div className='flex xsm:flex-col xsm:items-start gap-[22px]'>
             <div className='relative flex flex-col mt-[-5px]'>
-              <img src={FirstTaste} className='h-[100px] min-w-[103px] sm:hidden xsm:hidden' alt="" />
-              <img src={FirstTaste} className='h-[82px] min-w-[79px] hidden sm:block xsm:block' alt="" />
+              <img src={FirstTaste} className='h-[100px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
+              <img src={FirstTaste} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" />
             </div>
             <div className='flex flex-col'>
               <h1 className='font-rubik text-[36px] leading-[35px] font-[600] sm:text-[30px] xsm:text-[30px]'>First Taste of Success</h1>
