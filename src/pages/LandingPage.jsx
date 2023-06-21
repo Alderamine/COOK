@@ -50,7 +50,7 @@ export default function LandingPage() {
               <button className='w-[153px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
             </Link>
             <Link to={'/signup'}>
-              <button className='w-[150px] hover:bg-primary2 hover:text-[white] transition-all xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
+              <button className='w-[150px] hover:bg-primary2 hover:text-[white] transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
             </Link>
           </div>
         </div>

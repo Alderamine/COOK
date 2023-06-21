@@ -50,10 +50,10 @@ export default function TutorCard() {
         </div>
         <div className='flex flex-col gap-[15px] mt-[15px] xsm:w-full'>
           <Link to={'/profile'}>
-            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary'>Write a message</button>
+            <button className='hover:bg-primary2 hover:text-[white] transition-all duration-200 w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary'>Write a message</button>
           </Link>
           <Link to={'/profile'}>
-            <button className='w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary2 text-[white]'>Book a lesson</button>
+            <button className='hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[165px] xsm:w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] bg-primary2 text-[white]'>Book a lesson</button>
           </Link>
         </div>
       </div>
