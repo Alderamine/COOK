@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Community from "../assets/About/Community.svg"
 import CookLunch from '../assets/About/CookLunch.svg'
@@ -23,17 +23,27 @@ import ourTeam from "../assets/About/ourTeam.svg"
 import teamUser1 from "../assets/About/teamUser1.jpg"
 import teamUser2 from "../assets/About/teamUser2.png"
 import Hamburger from "../assets/About/Hamburger.svg"
+import AboutLogo from "../assets/About/AboutLogo.svg"
 import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 import LandingFooter from '../layout/LandingFooter'
-
+import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
+import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
+import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
+import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
+import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
 
 const About = () => {
+  const [currencyModal, setCurrencyModal] = useState(false);
+  const [languageModal, setLanguageModal] = useState(false);
   return (
     <div>
       <div className='relative bg-primary2 min-h-[580px]'>
-        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
+        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='h-[104px] w-[100%] relative z-20 px-[64px] xsm:px-[32px]  flex items-center justify-between'>
           <div className='flex items-center gap-[32px]'>
-            <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1>
+            {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
+            <Link to={'/'}>
+              <img src={AboutLogo} alt="" />
+            </Link>
             <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
             <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
               <Link to={'/search-tutor'} className='flex gap-[7px]'>
@@ -51,26 +61,73 @@ const About = () => {
             </div>
           </div>
           <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
-            <div className='flex items-center gap-[4px]'>
+            <div onClick={() => setLanguageModal(!languageModal)} className='flex items-center gap-[4px] relative cursor-pointer'>
+              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
+                <div className='mt-[17px] flex flex-col gap-[5px]'>
+                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                    <img src={EnglishIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                    <img src={GermanIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ChineseIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ItalianIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={HebrewIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
+                  </div>
+                </div>
+              </div>}
               <p className='font-outfit font-normal text-[19px] leading-[19px] text-[white]'>Eng</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
               </svg>
             </div>
-            <div className='flex items-center gap-[4px]'>
+            <div onClick={() => setCurrencyModal(!currencyModal)} className='flex items-center gap-[4px] relative cursor-pointer'>
+              {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a currency</h5>
+                <div className='mt-[17px] flex flex-col gap-[5px]'>
+                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>USD</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>EUR</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>UAH</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>GBP</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>VHF</p>
+                  </div>
+                </div>
+              </div>}
               <p className='font-outfit font-normal text-[18px] leading-[18px] text-[white]'>USD</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
               </svg>
             </div>
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
-            <div>
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 16.5V12.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 8.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
+            <Link to={'/support'}>
+              <div className='custom-tooltip' data-tooltip="Support">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M12 16.5V12.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M12 8.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+            </Link>
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
             <Link to={'/signin'} className='w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
               Log In
@@ -84,11 +141,11 @@ const About = () => {
           <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
         </nav>
 
-        <img src={EllipseDesktop} className='absolute top-0 right-0 sm:hidden xsm:hidden' alt="" />
-        <img src={EllipseTablet} className='absolute right-0 top-[157px] hidden sm:block' alt="" />
+        <img src={EllipseDesktop} className='absolute z-0 top-0 right-0 sm:hidden xsm:hidden' alt="" />
+        <img src={EllipseTablet} className='absolute z-0 right-0 top-[157px] hidden sm:block' alt="" />
 
         <div className='mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
-          <h1 className='font-redHatDisplay text-[white] font-bold text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> your inner chef</h1>
+          <h1 className='font-redHatDisplay text-[white] font-bold text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> Your Inner Chef</h1>
           <div className='flex flex-1 flex-col items-center'>
             <img src={Main} className='w-[535px] min-w-[535px] max-w-[535px] h-[287px] z-10 xsm:hidden' alt="" />
             <img src={Main2} className='hidden xsm:block z-10 xsm:w-[326px] xsm:max-w-[326px] xsm:min-w-[326px] xsm:h-[244px]' alt="" />

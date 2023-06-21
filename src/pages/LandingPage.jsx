@@ -41,13 +41,17 @@ import { Link } from 'react-router-dom'
 export default function LandingPage() {
   return (
     <main>
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
         <div className='md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center xsm:flex xsm:flex-col xsm:items-center'>
           <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] md:tracking-[0px] sm:tracking-[0px] text-TextColor mt-[85px] md:mt-[142px] sm:mt-[142px] xsm:mt-[192px] md:text-[50px] sm:text-[50px] xsm:text-[32px] md:leading-[56.65px] sm:leading-[56.65px] xsm:leading-[36.26px] md:w-[702px] sm:w-[84.072vw] md:text-center sm:text-center xsm:text-center xsm:min-w-[88.205vw]'>Master the Art of Cooking with <span className='text-primary2 font-normal font-pacifico'>Experts</span> Worldwide </h1>
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
           <div className='flex gap-x-[20px] mt-[26px] xsm:flex-col xsm:w-full gap-y-[20px]'>
-            <button className='w-[153px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
-            <button className='w-[150px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
+            <Link to={'/search-tutor'}>
+              <button className='w-[153px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
+            </Link>
+            <Link to={'/signup'}>
+              <button className='w-[150px] xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
+            </Link>
           </div>
         </div>
 
@@ -106,7 +110,7 @@ export default function LandingPage() {
       </section>
 
 
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
             <svg className='relative top-[10px] xsm:top-[4px] w-[46px] h-[35px] md:w-[36px] md:h-[26px] sm:w-[36px] sm:h-[26px] xsm:w-[36px] xsm:h-[26px]' viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,103 +134,110 @@ export default function LandingPage() {
         </div>
 
         <div className='grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[1.667vw] mt-[68px] xsm:mt-[47px] gap-y-[24px]'>
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2 transition-colors delay-100 duration-100'>
-            <img className='img-primary' src={Stats1} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-[white] delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Bakery</h3>
-                <div>
-                  <img src={StatsIcon1} />
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2 transition-colors delay-100 duration-100'>
+              <img className='img-primary' src={Stats1} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-[white] delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Bakery</h3>
+                  <div>
+                    <img src={StatsIcon1} />
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-[white] delay-100 duration-100 mt-[4px]'>Master baking: from rustic bread to delicate pastries</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-[white] delay-100 duration-100 mt-[4px]'>Master baking: from rustic bread to delicate pastries</p>
             </div>
-          </div>
-
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-            <img src={Stats3} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Vegan Cooking</h3>
-                <div>
-                  {/* <img src={StatsIcon2} /> */}
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          </Link>
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+              <img src={Stats3} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Vegan Cooking</h3>
+                  <div>
+                    {/* <img src={StatsIcon2} /> */}
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Create delicious, nutritious meals with plant-based ingredients</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Create delicious, nutritious meals with plant-based ingredients</p>
             </div>
-          </div>
-
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-            <img src={Stats5} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Seafood Mastery</h3>
-                <div>
-                  {/* <img src={StatsIcon2} /> */}
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          </Link>
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+              <img src={Stats5} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Seafood Mastery</h3>
+                  <div>
+                    {/* <img src={StatsIcon2} /> */}
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Dive into seafood: from grilling fish to creating sushi</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Dive into seafood: from grilling fish to creating sushi</p>
             </div>
-          </div>
-
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-            <img src={Stats2} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>BBQ & Grilling</h3>
-                <div>
-                  {/* <img src={StatsIcon2} /> */}
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          </Link>
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+              <img src={Stats2} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>BBQ & Grilling</h3>
+                  <div>
+                    {/* <img src={StatsIcon2} /> */}
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Fire up your skills with mouth-watering BBQ dishes</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Fire up your skills with mouth-watering BBQ dishes</p>
             </div>
-          </div>
-
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-            <img src={Stats4} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Wine Pairing</h3>
-                <div>
-                  {/* <img src={StatsIcon2} /> */}
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          </Link>
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+              <img src={Stats4} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Wine Pairing</h3>
+                  <div>
+                    {/* <img src={StatsIcon2} /> */}
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Enhance culinary experiences by mastering wine pairing</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Enhance culinary experiences by mastering wine pairing</p>
             </div>
-          </div>
-
-          <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-            <img src={Stats6} />
-            <div className='w-full'>
-              <div className='flex items-center justify-between'>
-                <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Cake Decorating</h3>
-                <div>
-                  {/* <img src={StatsIcon2} /> */}
-                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+          </Link>
+          <Link to={"/search-tutor"}>
+            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+              <img src={Stats6} />
+              <div className='w-full'>
+                <div className='flex items-center justify-between'>
+                  <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Cake Decorating</h3>
+                  <div>
+                    {/* <img src={StatsIcon2} /> */}
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33328 17.5L17.3333 7.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7.33328 7.5H17.3333V17.5" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
                 </div>
+                <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Unleash creativity with cake decorating techniques</p>
               </div>
-              <p className='font-kanit font-normal text-[14px] leading-[21px] text-TextColor delay-100 duration-100 mt-[4px]'>Unleash creativity with cake decorating techniques</p>
             </div>
-          </div>
+          </Link>
 
 
         </div>
@@ -251,7 +262,7 @@ export default function LandingPage() {
 
       </section>
 
-      <section className='mt-[152px] xsm:mt-[112px] w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex flex-col items-center'>
+      <section className='mt-[152px] xsm:mt-[112px] w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex flex-col items-center'>
         <h2 className='font-rubik font-semibold text-[50px] leading-[59.25px] relative md:text-[42px] md:leading-[49.77px] sm:text-[42px] sm:leading-[49.77px] xsm:text-[30px] xsm:leading-[35.55px]'>Our Unique Benefits
           <svg className='absolute right-[-30px] top-[-15px]' width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.8703 22.3536L25.9942 15.7492" stroke="#FFDBB8" strokeWidth="4" strokeLinecap="round" />
@@ -325,7 +336,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[199px]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[199px]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
             <svg className='relative top-[15px] xsm:hidden' width="75" height="31" viewBox="0 0 75 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +370,7 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
-            <Link className='self-center' to={'search-tutor'}>
+            <Link className='xsm:self-center' to={'search-tutor'}>
               <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
             </Link>
           </div>
@@ -384,7 +395,7 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Enjoy Your Interactive Lesson</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
-            <Link className='self-center' to={'signup'}>
+            <Link className='xsm:self-center' to={'signup'}>
               <button className='h-[41px] w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
             </Link>
           </div>
@@ -402,7 +413,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
         <div className='flex justify-between items-center md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[9.097vw] mt-[123px]'>
           <div className='flex flex-col justify-center gap-[15px] w-[590.5px] md:w-[88.383vw] sm:w-[88.383vw] xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[50px] leading-[56.65px] tracking-[-0.02em] xsm:text-[30px] xsm:leading-[33.99px]'>Become A Chef</h3>
@@ -421,7 +432,7 @@ export default function LandingPage() {
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec'><span className='font-bold'>Grow Your Business Faster.</span> Utilize our platform's features and resources to accelerate your growth and increase your income.</p>
               </div>
             </div>
-            <Link to={'signin'}>
+            <Link to={'signup'}>
               <button className='h-[39px] w-[150px] xsm:w-full text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Become a chef</button>
             </Link>
             <div className='flex items-center gap-[8px]'>
@@ -450,12 +461,12 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full md:px-0 sm:px-0 xsm:px-0 px-[64px] min-h-[647px] mt-[142px]'>
-        <div className='bg-primary2 rounded-[26px] xsm:rounded-[0px] flex md:items-center sm:items-center md:px-[42px] sm:px-[42px] px-0 gap-[5.036vw] xsm:gap-0 xsm:flex-col'>
+      <section className='w-full md:px-0 sm:px-0 xsm:px-0 px-[4.444vw] min-h-[647px] mt-[142px]'>
+        <div className='bg-primary2 rounded-[26px] xsm:rounded-[0px] flex md:items-center sm:items-center md:px-[42px] sm:px-[36px] px-0 gap-[5.036vw] xsm:gap-0 xsm:flex-col'>
           <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
-            <img className='lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:w-[279px] sm:w-[279px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
+            <img className='lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:min-w-[278.999px] sm:min-w-[230.999px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
           </div>
-          <div className='pt-[90px] xsm:pt-[42px] xsm:pb-[34px] xsm:px-[32px] md:pr-0 sm:pr-0 min-w-[50vw] pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
+          <div className='pt-[90px] w-full xsm:pt-[42px] xsm:pb-[34px] xsm:px-[2.222vw] md:pr-0 sm:pr-0 pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
             <h3 className='font-rubik font-semibold tracking-[-0.02em] text-[50px] md:text-[42px] md:leading-[47.59px] sm:text-[42px] sm:leading-[47.59px] xsm:text-[30px] xsm:leading-[33.99px] leading-[56.65px] text-[white]'>Become A Student</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'>Kick-start your culinary adventure with COOK. We provide a space for cooking enthusiasts of all levels to learn, explore, and master culinary arts from professional chefs worldwide. So dive in and transform your kitchen into a playground of flavors.</p>
             <div className='flex flex-col gap-[8px]'>
@@ -479,9 +490,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[73px]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[5.069vw]'>
         <div className=''>
-          <div className='flex items-center gap-[13px]'>
+          <div className='flex items-center gap-[0.903vw]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.3043 3.0638C21.7732 -0.244989 33.7595 0.0042736 33.7595 0.0042736C33.7595 0.0042736 38.8006 15.0966 33.7595 22.2951C26.3461 32.8811 0 22.2951 0 22.2951C0 22.2951 6.65613 7.4873 15.3043 3.0638Z" fill="#D27722" />
             </svg>
@@ -490,7 +501,7 @@ export default function LandingPage() {
 
           <div className='ml-[49px] md:ml-0 sm:ml-0 xsm:ml-0 mt-[47px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px] md:leading-[36px] sm:leading-[36px]'>Find a tutor by category</h4>
-            <div className='w-[496px] md:w-full sm:w-full xsm:w-full flex flex-wrap gap-[16px] mt-[26px]'>
+            <div className='w-[34.444vw] md:w-full sm:w-full xsm:w-full flex flex-wrap gap-[16px] mt-[26px]'>
               <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary2 bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>Bakery</p>
               </Link>
@@ -515,7 +526,7 @@ export default function LandingPage() {
 
           <div className='ml-[49px] md:ml-0 sm:ml-0 xsm:ml-0 mt-[75px]'>
             <h4 className='font-[600] font-outfit text-[24px] leading-[30.24px]  md:leading-[36px] sm:leading-[36px]'>Find a tutor by country</h4>
-            <div className='w-[329px] md:w-full sm:w-full xsm:w-full flex flex-wrap gap-[16px] mt-[26px]'>
+            <div className='w-[22.847vw] md:w-full sm:w-full xsm:w-full flex flex-wrap gap-[16px] mt-[26px]'>
               <Link to={'search-tutor'}>
                 <p className='px-[24px] h-[30px] rounded-[58px] text-primary2 bg-[rgba(255,253,244,1)] border border-[rgba(255,219,184,1)] font-[400] font-kanit text-[20px] leading-[29.9px]'>USA</p>
               </Link>
@@ -537,7 +548,7 @@ export default function LandingPage() {
 
         <div className='h-[159.01px] border border-[rgba(255,219,184,1)] self-center md:hidden sm:hidden xsm:hidden'></div>
 
-        <div className='flex flex-col w-[631px] md:w-full sm:w-full xsm:w-full'>
+        <div className='flex flex-col  w-full md:w-full sm:w-full xsm:w-full'>
           <div className='flex items-center gap-[13px]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.3043 3.0638C21.7732 -0.244989 33.7595 0.0042736 33.7595 0.0042736C33.7595 0.0042736 38.8006 15.0966 33.7595 22.2951C26.3461 32.8811 0 22.2951 0 22.2951C0 22.2951 6.65613 7.4873 15.3043 3.0638Z" fill="#D27722" />
@@ -546,74 +557,82 @@ export default function LandingPage() {
           </div>
 
           <div className='grid grid-cols-2 xsm:grid-cols-1 mt-[53px] gap-[23px]'>
-            <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
-              <div>
-                <img className='' src={CookBlog1} alt="" />
-                <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
-                  <div className='flex items-center gap-[6px]'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+            <Link to={"/blog"}>
+              <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+                <div>
+                  <img className='' src={CookBlog1} alt="" />
+                  <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
+                    <div className='flex items-center gap-[6px]'>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+                    </div>
+                    <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                   </div>
-                  <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                 </div>
               </div>
-            </div>
-            <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
-              <div>
-                <img src={CookBlog2} alt="" />
-                <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
-                  <div className='flex items-center gap-[6px]'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+            </Link>
+            <Link to={"/blog"}>
+              <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+                <div>
+                  <img src={CookBlog2} alt="" />
+                  <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
+                    <div className='flex items-center gap-[6px]'>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+                    </div>
+                    <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                   </div>
-                  <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                 </div>
               </div>
-            </div>
-            <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
-              <div>
-                <img src={CookBlog3} alt="" />
-                <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
-                  <div className='flex items-center gap-[6px]'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+            </Link>
+            <Link to={"/blog"}>
+              <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+                <div>
+                  <img src={CookBlog3} alt="" />
+                  <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
+                    <div className='flex items-center gap-[6px]'>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+                    </div>
+                    <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                   </div>
-                  <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                 </div>
               </div>
-            </div>
-            <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
-              <div>
-                <img src={CookBlog4} alt="" />
-                <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
-                  <div className='flex items-center gap-[6px]'>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+            </Link>
+            <Link to={"/blog"}>
+              <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+                <div>
+                  <img src={CookBlog4} alt="" />
+                  <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
+                    <div className='flex items-center gap-[6px]'>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M16 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M8 2V6" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M3 10H21" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <p className='font-outfit font-normal text-[18px] leading-[22.68px]'>24 Apr, 2023</p>
+                    </div>
+                    <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                   </div>
-                  <h4 className="font-rubik font-[600] text-[20px] leading-[26.76px]">Mastering the Art of Homemade Pizza</h4>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

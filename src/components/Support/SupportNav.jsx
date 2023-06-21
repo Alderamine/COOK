@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavIcon from "../../assets/Support/NavIcon.svg"
 import NavEnglish from "../../assets/Support/NavEnglish.svg"
 import { Link } from 'react-router-dom'
+import EnglishIcon from "../../assets/LandingPage/EnglishIcon.svg"
+import GermanIcon from "../../assets/LandingPage/GermanIcon.svg"
+import ChineseIcon from "../../assets/LandingPage/ChineseIcon.svg"
+import ItalianIcon from "../../assets/LandingPage/ItalianIcon.svg"
+import HebrewIcon from "../../assets/LandingPage/HebrewIcon.svg"
 
 export default function SupportNav() {
+
+  const [languageModal, setLanguageModal] = useState(false);
+
   return (
     <nav className='w-full h-[166px] xsm:h-[108px] pl-[11.667vw] pr-[12.153vw] md:pl-[5.749vw] md:pr-[5.749vw] sm:pl-[5.749vw] sm:pr-[5.749vw] xsm:pl-[5.385vw] xsm:pr-[8.205vw] bg-[#D27722] flex items-center'>
       <div className='flex-1 flex items-center justify-between'>
@@ -22,7 +30,32 @@ export default function SupportNav() {
             <Link className='xsm:hidden' to={'/'}>
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white]'>Go to COOK</p>
             </Link>
-            <div className='flex gap-[8px] cursor-pointer'>
+            <div onClick={() => setLanguageModal(!languageModal)} className='flex gap-[8px] cursor-pointer'>
+              {languageModal && <div style={{boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)'}} onClick={(e) => e.stopPropagation()} className='absolute z-30 top-[75px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
+                <div className='mt-[17px] flex flex-col gap-[5px]'>
+                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                    <img src={EnglishIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                    <img src={GermanIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ChineseIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ItalianIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={HebrewIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
+                  </div>
+                </div>
+              </div>}
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] xsm:hidden'>English</p>
               <img src={NavEnglish} alt="" />
             </div>
