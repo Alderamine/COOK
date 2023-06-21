@@ -31,7 +31,7 @@ export default function LandingNav() {
 
           <div className='md:hidden sm:hidden h-[15px] border border-primary rouded-[16px] xsm:hidden'></div>
           <div className='md:hidden sm:hidden flex gap-[1.667vw] xsm:hidden'>
-            <Link to={'search-tutor'}>
+            <Link to={'/search-tutors'}>
               <div className='flex gap-[0.486vw]'>
                 <img src={Nav1} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Cooking Classes</p>
@@ -45,7 +45,7 @@ export default function LandingNav() {
               </div>
             </Link>
 
-            <Link to={'search-group'}>
+            <Link to={'/search-groups'}>
               <div className='flex gap-[0.486vw]'>
                 <img src={Nav3} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Group Cooking</p>

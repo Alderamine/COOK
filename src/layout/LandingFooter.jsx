@@ -36,7 +36,7 @@ export default function LandingFooter() {
                 <Link to={'/blog'}>
                   <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
                 </Link>
-                <Link to={'/search-tutor'}>
+                <Link to={'/search-tutors'}>
                   <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
                 </Link>
               </div>

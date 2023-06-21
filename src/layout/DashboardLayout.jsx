@@ -23,7 +23,7 @@ const DashboardLayout = () => {
               </Link>
               <div className='sm:hidden xsm:hidden h-[15px] border border-primaryLighten2 rouded-[16px]'></div>
               <div className='sm:hidden xsm:hidden flex gap-[24px]'>
-                <Link to={'/search-tutor'}>
+                <Link to={'/search-tutors'}>
                   <div className='flex gap-[7px]'>
                     <img src={search} />
                     <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Find Tutors</p>

@@ -60,7 +60,7 @@ const GroupPage = () => {
   const [arr, setArr] = useState([1, 2, 3])
 
   return (
-    <div className='flex justify-start gap-[23px] pt-[79px]'>
+    <div className='flex justify-start gap-[23px]'>
       <div>
         <div className='flex flex-col gap-[71px] sm:flex-col md:flex-col sm:gap-[42px] md:gap-[42px] xsm:flex-col xsm:gap-[59px] ml-[64px] mr-[71px] sm:ml-[50px] sm:mr-[48px] md:mr-[48px] md:ml-[50px] xsm:mr-[34px] xsm:ml-[30px]'>
           <div className='flex flex-col mt-[80px] sm:mt-[55px] md:mt-[55px] xsm:mt-[37px] gap-[16px] xsm:flex-col-reverse xsm:gap-[27px]'>
@@ -68,19 +68,7 @@ const GroupPage = () => {
               <h1 className='text-[40px] font-[600] font-rubik leading-[47.4px] tracking-[-0.02em] xsm:text-[32px] xsm:leading-[37.92px]'>Lorem ipsum dolor sit</h1>
               <div className='flex items-center'>
                 <div className='flex w-fit'>
-                  {arr.map((n, index) => {
-                    const adjustedNumber = arr.length - index;
-                    const leftPosition = `-${index * 18}px`;
-                    return (
-                      <img
-                        key={index}
-                        style={index !== 0 ? { left: leftPosition, zIndex: adjustedNumber } : { zIndex: adjustedNumber }}
-                        className='relative w-[35px]'
-                        src={user}
-                        alt=""
-                      />
-                    );
-                  })}
+                  <img className='w-[35px]' src={user} alt="" />
                 </div>
                 <h1 className='ml-[7px] text-[18px] font-[500] font-outfit leading-[27px]'>Jack Doe</h1>
                 <div className='flex gap-[8px] ml-[30px] items-center'>
@@ -175,17 +163,17 @@ const GroupPage = () => {
         </div>
         <div className='sm:mt-[130px] lg:max-w-[52.638888888888886vw] xl:max-w-[52.638888888888886vw] 2xl:max-w-[52.638888888888886vw] md:mt-[130px] xsm:mt-[130px] mt-[43px] ml-[64px] mr-[71px] sm:ml-[50px] sm:mr-[48px] md:mr-[48px] md:ml-[50px] xsm:mr-[34px] xsm:ml-[30px]'>
           <div className='flex gap-[18px]  flex-wrap'>
-            <a onClick={(e)=>handleScroll(e,"details")} href="#details">
+            <a onClick={(e) => handleScroll(e, "details")} href="#details">
               <button className='font-outfit rounded-[8px] text-[white] px-[21px] py-[8px] bg-primary2 leading-[22.68px] font-[400]'>
                 Details
               </button>
             </a>
-            <a onClick={(e)=>handleScroll(e,"about")} href="#about">
+            <a onClick={(e) => handleScroll(e, "about")} href="#about">
               <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
                 About Tutor
               </button>
             </a>
-            <a onClick={(e)=>handleScroll(e,"reviews")} href="#reviews">
+            <a onClick={(e) => handleScroll(e, "reviews")} href="#reviews">
               <button className='font-outfit rounded-[8px] px-[21px] py-[8px] border border-primaryLighten2 leading-[22.68px] font-[400]'>
                 Reviews (100)
               </button>
@@ -305,7 +293,7 @@ const GroupPage = () => {
           <div ref={scrollRef} className='flex pb-[49px] gap-[20px] xsm:pl-[10px] overflow-scroll max-w-[51.181vw] min-w-[51.181vw] hideScrollbar md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full'>
             {[1, 2, 3].map((val, index) => {
               return (
-                <div style={{ boxShadow: '0px 25px 15px rgba(0, 0, 0, 0.02), 0px 11px 11px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(0, 0, 0, 0.03), 0px 0px 0px rgba(0, 0, 0, 0.03)' }} className='relative max-w-[358px] min-w-[358px] rounded-[12px] xsm:max-w-[286px] xsm:min-w-[286px]'>
+                <div className='relative max-w-[358px] min-w-[358px] rounded-[12px] xsm:max-w-[286px] xsm:min-w-[286px]'>
                   <img src={card} className='rounded-[12px] h-[208px] w-full' alt="" />
                   <div className='mt-[14px] px-[16px] divide-y-2 divide-primaryLighten2'>
                     <div className='flex flex-col  pb-[16px]'>

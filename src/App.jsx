@@ -37,8 +37,8 @@ function App() {
 
           <Route path='/' element={<LandingLayoutWrapper></LandingLayoutWrapper>}>
             <Route index element={<LandingPage></LandingPage>}></Route>
-            <Route path='search-tutor' element={<TutorList></TutorList>}></Route>
-            <Route path='search-group' element={<GroupList></GroupList>}></Route>
+            <Route path='search-tutors' element={<TutorList></TutorList>}></Route>
+            <Route path='search-groups' element={<GroupList></GroupList>}></Route>
             <Route path='group-page' element={<GroupPage />} />
             <Route path='profile' element={<Profile></Profile>}></Route>
           </Route>

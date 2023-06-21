@@ -375,19 +375,19 @@ export default function Profile() {
         <div id='subjects' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  mt-[124px]'>
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[28px]'>Subjects</h4>
           <div className='flex items-center gap-[26px] sm:flex-col xsm:flex-col'>
-            <Link to={'/search-tutor'}>
+            <Link to={'/search-tutors'}>
               <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
                 <img src={ProfileSubject1} alt="" />
                 <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
               </div>
             </Link>
-            <Link to={'/search-tutor'}>
+            <Link to={'/search-tutors'}>
               <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
                 <img src={ProfileSubject2} alt="" />
                 <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
               </div>
             </Link>
-            <Link to={'/search-tutor'}>
+            <Link to={'/search-tutors'}>
               <div className='w-[196px] xsm:w-full h-[136px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-center'>
                 <img src={ProfileSubject3} alt="" />
                 <p className='font-outfit font-medium text-[20px] leading-[31px]'>Subject name 1</p>
@@ -400,7 +400,7 @@ export default function Profile() {
           <h4 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em] mb-[47px]'>Other Tutors</h4>
           <div ref={scrollRef} className='hideScrollbar xsm:w-full pb-[38px] bg-[rgba(0,0,0,0.0)] flex items-center gap-[12px] max-w-full overflow-y-auto overflow-x-scroll'>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] xsm:flex-col p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] xsm:flex-col p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -414,7 +414,7 @@ export default function Profile() {
               </div>
             </Link>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -428,7 +428,7 @@ export default function Profile() {
               </div>
             </Link>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -442,7 +442,7 @@ export default function Profile() {
               </div>
             </Link>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -456,7 +456,7 @@ export default function Profile() {
               </div>
             </Link>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>
@@ -470,7 +470,7 @@ export default function Profile() {
               </div>
             </Link>
             <Link to={'/profile'} onClick={ScrollToTop}>
-              <div className='boxShadow min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
+              <div className=' min-w-[244.33px] p-[16px] min-h-[384px] border border-[rgba(255,219,184,1)] rounded-[9px] flex flex-col gap-[9px] items-center justify-start'>
                 <img className='w-[100px]' src={ReviewProfilePic} alt="" />
                 <div className='flex flex-col items-center mt-[24px]'>
                   <h5 className='font-rubik font-semibold text-[26px] leading-[30.81px] tracking-[-0.02em]'>Sarah Doe</h5>

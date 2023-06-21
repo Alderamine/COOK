@@ -36,7 +36,7 @@ export default function GroupList() {
               <a onClick={(e)=> handleScroll(e,"explore")} href="#explore">
                 <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-[white] bg-primary'>Explore groups</button>
               </a>
-              <Link to={"/search-tutor"}>
+              <Link to={'/search-tutors'}>
                 <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-primary2 bg-[white] border-2 border-primary'>Find A Tutor</button>
               </Link>
             </div>

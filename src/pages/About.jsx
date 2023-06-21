@@ -46,7 +46,7 @@ const About = () => {
             </Link>
             <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
             <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
-              <Link to={'/search-tutor'} className='flex gap-[7px]'>
+              <Link to={'/search-tutors'} className='flex gap-[7px]'>
                 <img src={Nav1} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
               </Link>
@@ -54,7 +54,7 @@ const About = () => {
                 <img src={Nav2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
               </Link>
-              <Link to={'/search-group'} className='flex gap-[7px]'>
+              <Link to={'/search-groups'} className='flex gap-[7px]'>
                 <img src={Nav3} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Group Cooking</p>
               </Link>
