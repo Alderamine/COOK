@@ -84,12 +84,12 @@ export default function TutorList() {
             </svg>
             <h3 className='font-rubik font-semibold text-[22px] leading-[26.07px] tracking-[-0.02em] text-[white]'>Popular categories</h3>
           </div>
-          <p className="font-outfit font-normal text-[18px] leading-[22.68px] mt-[8px] text-[rgba(255,219,184,1)]">Italian Cuisine • Vegan Cooking • Pastry & Baking </p>
+          <p className="font-outfit font-normal text-[18px] leading-[22.68px] mt-[8px] text-[rgba(255,219,184,1)] text-right">Italian Cuisine • Vegan Cooking • Pastry & Baking </p>
         </div>
       </div>
 
       <div className='px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px]'>
-        <div className='mt-[99px] flex justify-between items-center xsm:hidden'>
+        <div className='mt-[99px] flex justify-between items-center xsm:hidden '>
           <div className='flex gap-[21px]'>
             <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={iWantToLearn ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setIWantToLearn(!iWantToLearn)} className='cursor-pointer h-[67px]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>

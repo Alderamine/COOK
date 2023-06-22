@@ -6,7 +6,7 @@ export default function LandingFooter() {
   return (
     <footer >
       <div className='w-[91.111vw] md:w-full sm:w-full xsm:w-full md:rounded-none sm:rounded-none xsm:rounded-none m-auto min-h-[419px] bg-primary2 rounded-tl-[25px] rounded-tr-[25px] mt-[135px] md:divide-y-0 sm:divide-y-0 xsm:divide-y-0 divide-y-2 divide-[rgba(255,219,184,0.2)]'>
-        <div className='flex md:flex-col sm:flex-col gap-y-[24px] gap-x-[13.75vw] pt-[54px] pb-[43px] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] ml-[91.5px] mr-[102.5px] xsm:flex-col xsm:gap-y-[32px]'>
+        <div className='flex md:flex-col sm:flex-col gap-y-[24px] gap-x-[13.75vw] lg:gap-x-[7.75vw] pt-[54px] pb-[43px] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] ml-[91.5px] mr-[102.5px] xsm:flex-col xsm:gap-y-[32px]'>
           <div className='flex justify-center items-center md:justify-start sm:justify-start'>
             {/* <div className='text-[rgba(255,219,184,1)] font-bold font-rubik text-[56px] leading-[66.36px] tracking-[-0.02em]'>Cook</div> */}
             <Link to={'/'}>
@@ -66,7 +66,7 @@ export default function LandingFooter() {
         </div>
 
         <div className='ml-[31px] mr-[45.5px] md:ml-0 sm:ml-0'>
-          <div className='flex gap-[154px] pt-[54px] pb-[43px] ml-[49.5px] md:ml-[5.928vw] sm:ml-[5.928vw] xsm:ml-0'>
+          <div className='flex gap-[10.694vw] lg:gap-x-[4.75vw] pt-[54px] pb-[43px] ml-[49.5px] md:ml-[5.928vw] sm:ml-[5.928vw] xsm:ml-0'>
 
             <div className='flex md:flex-1 md:justify-between sm:flex-1 sm:justify-between sm:gap-[20px] xsm:flex-col xsm:gap-y-[41px] xsm:items-center xsm:w-full'>
               <div className='text-[rgba(255,219,184,1)] font-normal font-outfit xsm:text-center text-[20px] leading-[30px] tracking-[-0.02em] xsm:flex xsm:flex-col xsm:items-center'>

@@ -149,7 +149,7 @@ export default function LandingPage() {
             </div>
           </Link>
           <Link to={'/search-tutors'}>
-            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+            <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
               <img src={Stats3} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
@@ -167,7 +167,7 @@ export default function LandingPage() {
             </div>
           </Link>
           <Link to={'/search-tutors'}>
-            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+            <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
               <img src={Stats5} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
@@ -185,7 +185,7 @@ export default function LandingPage() {
             </div>
           </Link>
           <Link to={'/search-tutors'}>
-            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+            <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
               <img src={Stats2} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
@@ -203,7 +203,7 @@ export default function LandingPage() {
             </div>
           </Link>
           <Link to={'/search-tutors'}>
-            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+            <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
               <img src={Stats4} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
@@ -221,7 +221,7 @@ export default function LandingPage() {
             </div>
           </Link>
           <Link to={'/search-tutors'}>
-            <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
+            <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
               <img src={Stats6} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
@@ -274,7 +274,7 @@ export default function LandingPage() {
         <div className='flex gap-x-[58px] gap-y-[33px] md:flex-col sm:flex-col xsm:flex-col items-center mt-[79px] xsm:mt-[53px]'>
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
             <img className='w-[100px]' src={Benefit1} />
-            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px]'>Expert Chefs</h3>
+            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Expert Chefs</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Learn from the best. Our platform features professional chefs from around the world who bring their unique experiences and culinary secrets to every class.</p>
           </div>
 
@@ -282,7 +282,7 @@ export default function LandingPage() {
 
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
             <img className='w-[100px]' src={Benefit2} />
-            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px]'>Save Time and Money</h3>
+            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Save Time and Money</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Embrace the convenience of learning from home. Save time on travel, reduce dining-out expenses, and master your kitchen with our online cooking classes.</p>
           </div>
 
@@ -290,13 +290,13 @@ export default function LandingPage() {
 
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
             <img className='w-[100px]' src={Benefit3} />
-            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px]'>Accessible Cooking</h3>
+            <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Accessible Cooking</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Start your culinary journey with ease. Our user-friendly platform makes navigation simple, letting you focus on learning and enjoying your online cooking classes.</p>
           </div>
         </div>
       </section>
 
-      <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[121px] gap-y-[162px] w-full'>
+      <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[8.403vw] lg:gap-x-[3.403vw] gap-y-[162px] w-full'>
         <div className='relative w-fit h-fit'>
           <div className='xsm:w-[96.7vw] xsm:overflow-hidden flex justify-center'>
             <img className='min-w-[535px] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw]' src={AdvantagesHero} />
@@ -490,7 +490,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[5.069vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[5.069vw] lg:gap-[2.5vw]'>
         <div className=''>
           <div className='flex items-center gap-[0.903vw]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">
