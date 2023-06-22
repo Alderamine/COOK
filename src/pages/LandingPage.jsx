@@ -557,7 +557,7 @@ export default function LandingPage() {
           </div>
 
           <div className='grid grid-cols-2 xsm:grid-cols-1 mt-[53px] gap-[23px]'>
-            <Link to={"/blog"}>
+            <Link to={"/blog/category/article"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img className='' src={CookBlog1} alt="" />
@@ -576,7 +576,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog"}>
+            <Link to={"/blog/category/article"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog2} alt="" />
@@ -595,7 +595,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog"}>
+            <Link to={"/blog/category/article"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog3} alt="" />
@@ -614,7 +614,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog"}>
+            <Link to={"/blog/category/article"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog4} alt="" />
