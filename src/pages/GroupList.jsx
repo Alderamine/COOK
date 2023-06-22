@@ -7,8 +7,17 @@ import GroupCard from '../components/GroupList/GroupCard'
 import Pagination from '../components/utils/Pagination'
 import FilterIcon from "../assets/TutorList/FilterIcon.svg"
 import { Link } from 'react-router-dom'
+import IWantToLearn from '../components/DropDowns/IWantToLearn'
+import PricePerLesson from '../components/DropDowns/PricePerLesson'
+import Availability from '../components/DropDowns/Availability'
+import SortBy from '../components/DropDowns/SortBy'
+import UpsideDown from "../assets/TutorList/UpsideDown.svg"
 
 export default function GroupList() {
+  const [iWantToLearn, setIWantToLearn] = useState(false);
+  const [pricePerLesson, setPricePerLesson] = useState(false);
+  const [availability, setAvailability] = useState(false);
+  const [sort, setSort] = useState(false);
 
   const handleScroll = (event, id) => {
     event.preventDefault();
@@ -33,7 +42,7 @@ export default function GroupList() {
             <h1 className='font-bold font-rubik text-[54px] leading-[63.99px] tracking-[-0.02em] md:text-center sm:text-center xsm:text-center md:text-[36px] md:leading-[42.66px] xsm:text-[42px] xsm:leading-[50.11px]'>Cook Together with <span className='font-pacifico font-normal leading-[63.99px] text-primary2 md:leading-[63.22px] sm:leading-[63.22px]'>Group</span></h1>
             <p className='font-outfit font-normal text-[16px] leading-[24px] text-TextColorSec w-[37.014vw] md:w-[63.832vw] sm:w-[63.832vw] xsm:w-[83.59vw] md:text-center sm:text-center xsm:text-center'>Embrace the fun of learning with COOK's group lessons. Dive into lively discussions, collaborate on recipes, and connect with a diverse community of food lovers. Transform your kitchen into a vibrant, interactive culinary classroom!</p>
             <div className='flex items-center gap-[17px]'>
-              <a onClick={(e)=> handleScroll(e,"explore")} href="#explore">
+              <a onClick={(e) => handleScroll(e, "explore")} href="#explore">
                 <button className='px-[16px] h-[39px] rounded-[4px] font-outfit font-medium text-[18px] leading-[22.68px] text-[white] bg-primary'>Explore groups</button>
               </a>
               <Link to={'/search-tutors'}>
@@ -55,7 +64,7 @@ export default function GroupList() {
           <img src={FilterIcon} alt="" />
           <p className='font-outfit font-medium text-[22px] leading-[33px]'>Filters</p>
         </button>
-        <div className='flex gap-[21px] mt-[81px] mb-[79px] flex-wrap xsm:hidden'>
+        {/* <div className='flex gap-[21px] mt-[81px] mb-[79px] flex-wrap xsm:hidden'>
           <div className='flex flex-col gap-[4ox]'>
             <p className='font-outfit font-semibold text-[16px] leading-[24px] text-primary'>Category</p>
             <select name="" className='min-h-[49px] w-[239px] md:w-[231px] sm:w-[231px] flex border-2 border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[25.2px] text-TextColor flex-1 rounded-[12px] px-[16px]' id="">
@@ -80,9 +89,75 @@ export default function GroupList() {
               <option selected value="Baking">Mon, 27 Apr </option>
             </select>
           </div>
+        </div> */}
+
+        <div className='mt-[52px] flex justify-between items-center xsm:hidden'>
+          <div className='flex gap-[21px]'>
+            <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={iWantToLearn ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setIWantToLearn(!iWantToLearn)} className='cursor-pointer h-[67px]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">I want to Learn</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {iWantToLearn &&
+                <IWantToLearn />
+              }
+            </div>
+
+            <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={pricePerLesson ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setPricePerLesson(!pricePerLesson)} className='cursor-pointer h-[67px] w-full md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Price per lesson</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Price per lesson</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {pricePerLesson &&
+                <PricePerLesson />
+              }
+            </div>
+
+            <div className='relative w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={availability ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setAvailability(!availability)} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Availability</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Availability</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {availability &&
+                <Availability />
+              }
+            </div>
+          </div>
+
+
+          <div className='flex gap-[20px] items-center md:hidden sm:hidden'>
+            <div className='overflow-hidden relative p-[16px] w-[226px] h-[55px] border-2 border-[rgba(255,219,184,1)] rounded-[8px]'>
+              <svg className='min-w-[26px] absolute top-[50%] translate-y-[-50%]' width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <input type="text" name="" id="" placeholder='Search' className='indent-[35px] placeholder:text-TextColor outline-none font-outfit text-[20px] leading-[22.68px] ' />
+            </div>
+            <div className='relative'>
+              <div onClick={() => setSort(!sort)} className='relative w-[64px] h-[61px] rounded-full border-2 border-[rgba(255,219,184,1)] flex justify-center items-center'>
+                <img className='w-[20px]' src={UpsideDown} alt="" />
+              </div>
+
+              {sort && <div className='absolute top-[110%] right-0 w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+                <div style={sort ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                  <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Sort By</p>
+                </div>
+                <SortBy />
+              </div>}
+            </div>
+          </div>
         </div>
 
-        <div className='w-full'>
+        <div className='w-full mt-[52px]'>
           <div>
             <h3 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>Popular classes</h3>
             <div className='grid grid-cols-4 md:grid-cols-2 sm:grid-cols-2 xsm:grid-cols-1 items-center gap-x-[20px] gap-y-[42px] mt-[26px]'>
