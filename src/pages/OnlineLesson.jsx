@@ -16,6 +16,7 @@ export default function OnlineLesson() {
   const [newWidth,setNewWidth]=useState()
 
   const handleDrag = (event) => {
+    console.log(event)
     setNewWidth(event.clientX || (event?.touches && event?.touches[0].clientX))
     let newWidth = event.clientX || (event?.touches && event?.touches[0].clientX) + "px";
     let newWidthNumber = event.clientX || (event?.touches && event?.touches[0].clientX);

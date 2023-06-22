@@ -18,13 +18,13 @@ export default function BlogNav() {
           <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
             <Link to={'signup'}>
               <div className='flex gap-[7px]'>
-                <img src={Nav2} />
+                <img className='w-[24px]' src={Nav2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Become tutor</p>
               </div>
             </Link>
             <Link to={'signup'}>
               <div className='flex gap-[7px]'>
-                <img src={BlogNavIcon2} />
+                <img className='w-[24px]' src={BlogNavIcon2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Become tutor</p>
               </div>
             </Link>

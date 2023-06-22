@@ -47,15 +47,15 @@ const About = () => {
             <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
             <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
               <Link to={'/search-tutors'} className='flex gap-[7px]'>
-                <img src={Nav1} />
+                <img className='w-[24px]' src={Nav1} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
               </Link>
               <Link to={'/signup'} className='flex gap-[7px]'>
-                <img src={Nav2} />
+                <img className='w-[24px]' src={Nav2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
               </Link>
               <Link to={'/search-groups'} className='flex gap-[7px]'>
-                <img src={Nav3} />
+                <img className='w-[24px]' src={Nav3} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Group Cooking</p>
               </Link>
             </div>
@@ -198,8 +198,9 @@ const About = () => {
           </div>
           <div className='flex xsm:flex-col xsm:items-start gap-[22px] h-full pb-[96px] sm:pb-[64px] xsm:pb-[43px]'>
             <div className='relative flex flex-col mt-[-10px]'>
-              <img src={CookLunch} className='h-[100px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
-              <img src={CookLunch} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" />
+              <div className=''></div>
+              <img src={CookLunch} className='w-[80px] relative z-20 min-w-[103px] sm:hidden xsm:hidden' alt="" />
+              {/* <img src={CookLunch} className='h-[82px] relative z-20 min-w-[79px] hidden sm:block xsm:block' alt="" /> */}
               <div className='absolute h-[calc(100%+20px)] sm:h-full top-[98px] bottom-[0px] sm:top-[80px] xsm:hidden right-[50%] border-[3px] border-[#FFEFE0] z-10 border-l-2 border-black dark:border-white '></div>
             </div>
             <div className='flex flex-col'>
