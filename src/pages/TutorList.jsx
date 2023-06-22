@@ -9,8 +9,15 @@ import GroupCardScroll from '../components/GroupList/GroupCardScroll'
 import ScrollArrow from '../assets/GroupList/ScrollArrow.svg'
 import { Link } from 'react-router-dom'
 import Pagination from '../components/utils/Pagination'
+import IWantToLearn from '../components/DropDowns/IWantToLearn'
+import PricePerLesson from '../components/DropDowns/PricePerLesson'
+import Availability from '../components/DropDowns/Availability'
 
 export default function TutorList() {
+  const [iWantToLearn, setIWantToLearn] = useState(false);
+  const [pricePerLesson, setPricePerLesson] = useState(false);
+  const [availability, setAvailability] = useState(false);
+  // const [iWantToLearn,setIWantToLearn]=useState(false);
 
   const scrollRef = useRef(null);
   const divRef = useRef(null);
@@ -83,30 +90,51 @@ export default function TutorList() {
       <div className='px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px]'>
         <div className='mt-[99px] flex justify-between items-center xsm:hidden'>
           <div className='flex gap-[21px]'>
-            <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
-              <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
-                <option selected value="Baking">Baking</option>
-              </select>
+            <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={iWantToLearn ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setIWantToLearn(!iWantToLearn)} className='cursor-pointer h-[67px]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">I want to Learn</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {iWantToLearn &&
+                <IWantToLearn />
+              }
             </div>
-            <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
-              <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
-                <option selected value="Baking">$50  -  $200</option>
-              </select>
+
+            <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={pricePerLesson ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setPricePerLesson(!pricePerLesson)} className='cursor-pointer h-[67px] w-full md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Price per lesson</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Price per lesson</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {pricePerLesson &&
+                <PricePerLesson />
+              }
             </div>
-            <div className='h-[67px] w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-              <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>I want to Learn</p>
-              <select name="" className='font-outfit font-normal md:text-[18px] md:leading-[27px] text-[22px] leading-[27.72px] text-TextColor flex-1 rounded-[12px] pl-[20px] mr-[27px]' id="">
-                <option selected value="Baking">9:00pm - 10:00pm</option>
-              </select>
+
+            <div className='relative w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
+              <div style={availability ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setAvailability(!availability)} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
+                {/* <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Availability</p> */}
+                <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Availability</p>
+                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
+                </svg>
+              </div>
+              {availability &&
+                <Availability />
+              }
             </div>
           </div>
 
+
           <div className='flex gap-[20px] items-center md:hidden sm:hidden'>
-            <div className='h-[61px] w-[131px] rounded-[12px] flex justify-center items-center gap-[12px] relative border-2 border-[rgba(255,219,184,1)] bg-primary'>
+            <div className='h-[61px] w-[131px] rounded-[12px] flex justify-center items-center gap-[12px] relative border-2 border-[rgba(255,219,184,1)] bg-primary2'>
               <img className='w-[20px]' src={UpsideDownIcon} alt="" />
-              <p className='font-outfit font-normal text-[22px] leading-[33px] text-[white] '>Popular</p>
+              <p className='font-outfit font-normal text-[18px] leading-[24px] text-[white] '>Popular</p>
             </div>
             <div className='w-[64px] h-[61px] rounded-full bg-primary2 flex justify-center items-center'>
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
