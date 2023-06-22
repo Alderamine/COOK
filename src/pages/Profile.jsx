@@ -81,15 +81,15 @@ export default function Profile() {
               </div>
               <div className='flex flex-col gap-[6px] mt-[30px]'>
                 <div className='flex items-center gap-[7px]'>
-                  <img src={BakerIcon} alt="" />
+                  <img className='w-[20px]' src={BakerIcon} alt="" />
                   <p className='font-outfit font-normal text-[18px] leading-[27px]'>Baker</p>
                 </div>
                 <div className='flex items-center gap-[7px]'>
-                  <img src={UserIcon} alt="" />
+                  <img className='w-[20px]' src={UserIcon} alt="" />
                   <p className='font-outfit font-normal text-[18px] leading-[27px]'>15 active students</p>
                 </div>
                 <div className='flex items-center gap-[7px]'>
-                  <img src={CookIcon} alt="" />
+                  <img className='w-[20px]' src={CookIcon} alt="" />
                   <p className='font-outfit font-normal text-[18px] leading-[27px]'>100 lessons on COOK</p>
                 </div>
               </div>
