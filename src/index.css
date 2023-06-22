@@ -398,9 +398,6 @@ body {
   font-weight: bold;
   font-size: 0.75em;
   color: #D27722;
-  display: flex;
-  gap: 9px;
-  justify-content: space-between;
 }
 
 .react-calendar__month-view__weekdays__weekday abbr[title] {
@@ -421,12 +418,6 @@ body {
   border-radius: 100%;
   max-width: 32px;
   max-height: 32px;
-}
-
-.react-calendar__month-view__days{
-  display: flex;
-  gap: 4px;
-  justify-content: space-around;
 }
 
 

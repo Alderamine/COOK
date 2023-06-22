@@ -35,7 +35,7 @@ export default function PricePerLesson({ min = 20, max = 100 }) {
   }, [maxVal, getPercent]);
 
   return (
-    <div className='absolute w-full p-[16px] flex flex-col gap-[22px] pb-[32px] bg-[white] border-2 border-t-[0px] border-[rgba(255,219,184,1)] rounded-bl-[8px] rounded-br-[8px]'>
+    <div className='absolute z-40 w-full p-[16px] flex flex-col gap-[22px] pb-[32px] bg-[white] border-2 border-t-[0px] border-[rgba(255,219,184,1)] rounded-bl-[8px] rounded-br-[8px]'>
       <div className="flex gap-[12px] items-center">
         <p className="w-[5.59vw] p-[8px] border-b border-[rgba(255,219,184,1)] font-outfit font-normal text-[18px] leading-[22.68px]">${minVal}</p>
         <p className="font-outfit font-normal text-[18px] leading-[22.68px]">-</p>
