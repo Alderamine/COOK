@@ -6,6 +6,7 @@ import BlogArticle1 from "../../assets/Blog/BlogArticle1.svg";
 import BlogArticleImage from "../../assets/Blog/BlogArticleImage.png";
 import BlogCard from './BlogCard';
 import LandingFooter from '../../layout/LandingFooter';
+import CopyrightTable from '../Copyright/CopyrightTable';
 
 export default function BlogArticle() {
   const navigate = useNavigate();
@@ -62,31 +63,10 @@ export default function BlogArticle() {
 
           <div className='w-[269px] flex-col mt-[53px] border border-[rgba(255,219,184,1)] rounded-[8px] p-[24px] hidden md:flex sm:flex xsm:flex'>
             <h4 className='font-outfit font-semibold text-[24px] leading-[28.08px] tracking-[-0.02em]'>Table of content</h4>
-            <div className='mt-[27px] flex flex-col gap-[16px]'>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
+            <div className='flex flex-col gap-[16px] mt-[26px]'>
+              <CopyrightTable/>
+              <CopyrightTable/>
+              <CopyrightTable/>
             </div>
           </div>
 
@@ -174,33 +154,12 @@ export default function BlogArticle() {
             </svg>
           </div>
 
-          <div className='w-full border border-[rgba(255,219,184,1)] mt-[18px] rounded-[8px] p-[24px] flex md:hidden sm:hidden xsm:hidden'>
+          <div className='w-full flex-col border border-[rgba(255,219,184,1)] mt-[18px] rounded-[8px] p-[24px] flex md:hidden sm:hidden xsm:hidden'>
             <h4 className='font-outfit font-semibold text-[24px] leading-[28.08px] tracking-[-0.02em]'>Table of content</h4>
-            <div className='mt-[27px] flex flex-col gap-[16px]'>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
-              <div className='flex items-center gap-[8px]'>
-                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.36389 3.81795C5.72215 4.20208 5.72215 4.79792 5.36389 5.18205L2.48131 8.27282C1.86214 8.9367 0.75 8.49857 0.75 7.59077L0.75 1.40923C0.75 0.501427 1.86214 0.0632987 2.48131 0.72718L5.36389 3.81795Z" fill="#D27722" />
-                </svg>
-                <p>Lorem Ipsum</p>
-              </div>
+            <div className='flex flex-col gap-[16px] mt-[26px]'>
+              <CopyrightTable/>
+              <CopyrightTable/>
+              <CopyrightTable/>
             </div>
           </div>
         </div>

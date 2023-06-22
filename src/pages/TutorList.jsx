@@ -33,6 +33,11 @@ export default function TutorList() {
       }
     }
 
+    if (divRef.current) {
+      const width = divRef.current.offsetWidth;
+      setWidth(+width + 20)
+    }
+
     window.addEventListener('resize', windowWidthHandler);
 
     // Cleanup by removing the event listener
@@ -41,11 +46,10 @@ export default function TutorList() {
     };
   }, [])
 
-  console.log(width)
-
   const handleScroll = () => {
     const currentScrollLeft = scrollRef.current.scrollLeft;
     const targetScrollLeft = currentScrollLeft + width;
+    console.log(width)
 
     scrollRef.current.scrollTo({
       left: targetScrollLeft,

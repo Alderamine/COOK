@@ -48,6 +48,13 @@ body {
   opacity: 1;
 }
 
+@-moz-document url-prefix() {
+  .hideScrollbar {
+    overflow: -moz-scrollbars-none;
+  }
+}
+
+/* Hide scrollbar in Safari and WebKit-based browsers */
 .hideScrollbar::-webkit-scrollbar {
   display: none;
 }
