@@ -12,9 +12,9 @@ import Stats5 from "../assets/LandingPage/Stats5.svg"
 import Stats6 from "../assets/LandingPage/Stats6.svg"
 import StatsIcon1 from "../assets/LandingPage/StatsIcon1.svg"
 import StatsIcon2 from "../assets/LandingPage/StatsIcon2.svg"
-import Benefit1 from "../assets/LandingPage/Benefit1.png"
-import Benefit2 from "../assets/LandingPage/Benefit2.png"
-import Benefit3 from "../assets/LandingPage/Benefit3.png"
+import Benefit1 from "../assets/LandingPage/Benefit1.svg"
+import Benefit2 from "../assets/LandingPage/Benefit2.svg"
+import Benefit3 from "../assets/LandingPage/Benefit3.svg"
 import AdvantagesHero from "../assets/LandingPage/AdvantagesHero.png"
 import AdvantagesIcon1 from "../assets/LandingPage/AdvantageIcon1.svg"
 import AdvantagesIcon2 from "../assets/LandingPage/AdvantageIcon2.svg"
@@ -136,7 +136,7 @@ export default function LandingPage() {
         <div className='grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[1.667vw] mt-[68px] xsm:mt-[47px] gap-y-[24px]'>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2 transition-colors delay-100 duration-100'>
-              <img className='img-primary' src={Stats1} />
+              <img className='img-primary w-[52px]' src={Stats1} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-[white] delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Bakery</h3>
@@ -150,7 +150,7 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img src={Stats3} />
+              <img className='w-[52px]' src={Stats3} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Vegan Cooking</h3>
@@ -168,7 +168,7 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img src={Stats5} />
+              <img className='w-[52px]' src={Stats5} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Seafood Mastery</h3>
@@ -186,7 +186,7 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img src={Stats2} />
+              <img className='w-[52px]' src={Stats2} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>BBQ & Grilling</h3>
@@ -204,7 +204,7 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img src={Stats4} />
+              <img className='w-[52px]' src={Stats4} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Wine Pairing</h3>
@@ -222,7 +222,7 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img src={Stats6} />
+              <img className='w-[52px]' src={Stats6} />
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Cake Decorating</h3>
@@ -273,7 +273,9 @@ export default function LandingPage() {
 
         <div className='flex gap-x-[58px] gap-y-[33px] md:flex-col sm:flex-col xsm:flex-col items-center mt-[79px] xsm:mt-[53px]'>
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
-            <img className='w-[100px]' src={Benefit1} />
+            <div className='w-[100px] h-[100px] bg-primary2 rounded-full flex justify-center items-center'>
+              <img className='w-[50px]' src={Benefit1} />
+            </div>
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Expert Chefs</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Learn from the best. Our platform features professional chefs from around the world who bring their unique experiences and culinary secrets to every class.</p>
           </div>
@@ -281,7 +283,9 @@ export default function LandingPage() {
           <div className='h-[42px] w-0 border-2 border-[rgba(255,219,184,1)] md:hidden sm:hidden xsm:hidden'></div>
 
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
-            <img className='w-[100px]' src={Benefit2} />
+            <div className='w-[100px] h-[100px] bg-primary2 rounded-full flex justify-center items-center'>
+              <img className='w-[50px]' src={Benefit2} />
+            </div>
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Save Time and Money</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Embrace the convenience of learning from home. Save time on travel, reduce dining-out expenses, and master your kitchen with our online cooking classes.</p>
           </div>
@@ -289,7 +293,9 @@ export default function LandingPage() {
           <div className='h-[42px] w-0 border-2 border-[rgba(255,219,184,1)] md:hidden sm:hidden xsm:hidden'></div>
 
           <div className='flex flex-col items-center gap-[27px] w-[25vw] md:w-[70.06vw] sm:w-[70.06vw] xsm:w-[83.59vw]'>
-            <img className='w-[100px]' src={Benefit3} />
+            <div className='w-[100px] h-[100px] bg-primary2 rounded-full flex justify-center items-center'>
+              <img className='w-[50px]' src={Benefit3} />
+            </div>
             <h3 className='font-rubik font-semibold text-[32px] leading-[37.92px] tracking-[-0.02em] md:text-[32px] md:leading-[37.92px] sm:text-[32px] sm:leading-[37.92px] xsm:text-[28px] xsm:leading-[33.18px] text-center'>Accessible Cooking</h3>
             <p className='font-outfit font-normal leading-[28.8px] text-center text-[18px] text-TextColorSec'>Start your culinary journey with ease. Our user-friendly platform makes navigation simple, letting you focus on learning and enjoying your online cooking classes.</p>
           </div>
@@ -405,7 +411,14 @@ export default function LandingPage() {
       <section className="relative">
         <div className='xsm:hidden absolute w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
         <div className='w-[523px] bg-[rgba(255,253,244,1)] xsm:w-[83.59vw] min-h-[298px] xsm:pb-[52px] mt-[125px] xsm:mt-[148px] flex flex-col items-center  px-[25px] rounded-[16px] bg-primary2Lighten border border-[rgba(255,219,184,1)] m-auto relative'>
-          <img className='relative top-[-70px]' src={MoneyBackGaurenteeIcon} alt="" />
+          <div className='relative top-[-70px] w-[100px] h-[100px] bg-primary2 rounded-full flex justify-center items-center'>
+            <svg className='absolute top-[-19px] right-[-16px]' width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9784 3.00958C22.9784 3.00958 30.0015 2.99594 33.514 5.54081C37.2367 8.23799 38.3369 15.0307 38.3369 15.0307" stroke="#D27722" stroke-width="4" />
+              <path d="M1.99293 6.1303C1.99293 6.1303 16.7094 6.36661 24.1657 11.7441C32.0684 17.4435 34.6294 31.4856 34.6294 31.4856" stroke="#D27722" stroke-width="4" />
+            </svg>
+
+            <img className='w-[50px]' src={Benefit3} />
+          </div>
           <div className='mt-[-39px]'>
             <h3 className='font-rubik font-bold text-center text-[32px] tracking-[-0.02em] leading-[37.92px]'>Money-back guarantee</h3>
             <p className='font-outfit font-normal text-center text-[18px] leading-[28.8px] mt-[20px]'>We believe you'll enjoy your first cooking lesson. However, we've got your back if anything goes differently than expected. Our money-back guarantee ensures you can take the first step with complete confidence.</p>
@@ -420,15 +433,15 @@ export default function LandingPage() {
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec mt-[1px]'>Share your culinary secrets, inspire cooking enthusiasts worldwide, and grow your career like never before. Our platform offers a unique way to connect, teach, and earn.</p>
             <div className='flex flex-col gap-[8px] my-[16px]'>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomaChecfTick} alt='' />
+                <img className='w-[22px]' src={BecomaChecfTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec'><span className='font-bold'>Build Your Brand.</span> Showcase your culinary skills and build your brand within our community.</p>
               </div>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomaChecfTick} alt='' />
+                <img className='w-[22px]' src={BecomaChecfTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec'><span className='font-bold'>Expand Your Reach.</span> Connect with cooking enthusiasts across the globe and expand your audience beyond geographical limits.</p>
               </div>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomaChecfTick} alt='' />
+                <img className='w-[22px]' src={BecomaChecfTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-TextColorSec'><span className='font-bold'>Grow Your Business Faster.</span> Utilize our platform's features and resources to accelerate your growth and increase your income.</p>
               </div>
             </div>
@@ -471,15 +484,15 @@ export default function LandingPage() {
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'>Kick-start your culinary adventure with COOK. We provide a space for cooking enthusiasts of all levels to learn, explore, and master culinary arts from professional chefs worldwide. So dive in and transform your kitchen into a playground of flavors.</p>
             <div className='flex flex-col gap-[8px]'>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomeaStudentTick} alt='' />
+                <img className='w-[22px]' src={BecomeaStudentTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white] md:text-[16px] md:leading-[24.08px] sm:text-[16px] sm:leading-[24.08px]'><span className='font-bold'>Diverse Classes:</span> Showcase your culinary skills and build your brand within our community.</p>
               </div>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomeaStudentTick} alt='' />
+                <img className='w-[22px]' src={BecomeaStudentTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white] md:text-[16px] md:leading-[24.08px] sm:text-[16px] sm:leading-[24.08px]'><span className='font-bold'>World-Class Chefs:</span> Learn directly from professional chefs sharing their unique culinary secrets.</p>
               </div>
               <div className='flex items-start gap-[8px]'>
-                <img src={BecomeaStudentTick} alt='' />
+                <img className='w-[22px]' src={BecomeaStudentTick} alt='' />
                 <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white] md:text-[16px] md:leading-[24.08px] sm:text-[16px] sm:leading-[24.08px]'><span className='font-bold'>Interactive Learning:</span> Ask questions and receive real-time feedback in our interactive classes.</p>
               </div>
             </div>
@@ -638,4 +651,8 @@ export default function LandingPage() {
       </section>
     </main>
   )
-} 
+}
+
+
+
+

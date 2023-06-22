@@ -11,7 +11,6 @@ import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
 import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
 
-
 export default function LandingNav() {
 
   const [currencyModal, setCurrencyModal] = useState(false);
@@ -33,21 +32,21 @@ export default function LandingNav() {
           <div className='md:hidden sm:hidden flex gap-[1.667vw] xsm:hidden'>
             <Link to={'/search-tutors'}>
               <div className='flex gap-[0.486vw]'>
-                <img src={Nav1} />
+                <img className='w-[24px]' src={Nav1} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Cooking Classes</p>
               </div>
             </Link>
 
             <Link to={'signup'}>
               <div className='flex gap-[0.486vw]'>
-                <img src={Nav2} />
+                <img className='w-[24px]' src={Nav2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Become a Chef</p>
               </div>
             </Link>
 
             <Link to={'/search-groups'}>
               <div className='flex gap-[0.486vw]'>
-                <img src={Nav3} />
+                <img className='w-[24px]' src={Nav3} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Group Cooking</p>
               </div>
             </Link>

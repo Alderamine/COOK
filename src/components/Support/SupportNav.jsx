@@ -19,7 +19,7 @@ export default function SupportNav() {
           <div>
             <h1 className='text-[48px] font-rubik font-bold tracking-[-0.02em] leading-[56.88px] text-[#FFDBB8] xsm:text-[32px] xsm:leading-[37.92px] md:text-[40px] md:leading-[47.4px] sm:text-[40px] sm:leading-[47.4px]'>COOK</h1>
             <div className='flex gap-[11px] mt-[0.5px]'>
-              <img src={NavIcon} />
+              <img className='w-[29px]' src={NavIcon} />
               <p className='font-medium font-rubik text-[24px] xsm:text-[18px] xsm:leading-[21.33px] leading-[28.44px] tracking-[-0.02em] text-[white] md:text-[20px] md:leading-[23.7px] sm:text-[20px] sm:leading-[23.7px]'>Support and Q&A</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function SupportNav() {
                 </div>
               </div>}
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] xsm:hidden'>English</p>
-              <img src={NavEnglish} alt="" />
+              <img className='w-[20px]' src={NavEnglish} alt="" />
             </div>
           </div>
           <div className='xsm:hidden w-[37.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative mt-[16px]'>
