@@ -50,13 +50,14 @@ body {
 
 @-moz-document url-prefix() {
   .hideScrollbar {
-    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
   }
 }
 
 /* Hide scrollbar in Safari and WebKit-based browsers */
 .hideScrollbar::-webkit-scrollbar {
   display: none;
+  /* scrollbar-width: none; */
 }
 
 
@@ -154,7 +155,7 @@ body {
 }
 
 .line:hover {
-  width: 8px;
+  width: 6px;
 }
 
 .line:active {

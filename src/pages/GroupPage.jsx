@@ -293,7 +293,7 @@ const GroupPage = () => {
           <div ref={scrollRef} className='flex pb-[49px] gap-[20px] xsm:pl-[10px] overflow-scroll max-w-[51.181vw] min-w-[51.181vw] hideScrollbar md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full'>
             {[1, 2, 3].map((val, index) => {
               return (
-                <div className='relative max-w-[358px] min-w-[358px] rounded-[12px] xsm:max-w-[286px] xsm:min-w-[286px]'>
+                <div className='relative max-w-[358px] min-w-[358px] rounded-[12px] border border-[rgba(255,219,184,1)] xsm:max-w-[286px] xsm:min-w-[286px]'>
                   <img src={card} className='rounded-[12px] h-[208px] w-full' alt="" />
                   <div className='mt-[14px] px-[16px] divide-y-2 divide-primaryLighten2'>
                     <div className='flex flex-col  pb-[16px]'>

@@ -95,7 +95,9 @@ const DashboardLayout = () => {
             <NavLink to={'/student-dashboard/chat'} className={({ isActive }) => { return isActive ? "font-outfit font-[600] text-[16px] leading-[18.31px] text-[white]" : "font-outfit font-[600] text-[16px] leading-[18.31px] text-primaryLighten2" }}>Messages</NavLink>
           </div>
           <div className='xsm:hidden flex items-center gap-[8px]'>
-            <p className='font-outfit font-[600] text-[16px] leading-[18.31px] text-[white]'>Join your group lesson</p>
+            <Link to={'/group-page'}>
+              <p className='font-outfit font-[600] text-[16px] leading-[18.31px] text-[white]'>Join your group lesson</p>
+            </Link>
             <img src={arrow} alt="" />
           </div>
         </div>

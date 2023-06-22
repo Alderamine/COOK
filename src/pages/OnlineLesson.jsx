@@ -15,8 +15,8 @@ export default function OnlineLesson() {
   const handleDivRef = useRef(null);
 
   const handleDrag = (event) => {
-    let newWidth = event.clientX + 'px';
-    let newWidthNumber = event.clientX;
+    let newWidth = event.clientX || event.touches[0].clientX + "px";
+    let newWidthNumber = event.clientX || event.touches[0].clientX;
 
     if (newWidth !== '0px' && newWidthNumber < windowSize.width) {
       setWidth(newWidth);
@@ -57,52 +57,15 @@ export default function OnlineLesson() {
   };
 
   const handleDragEnd = (event) => {
-    event.target.style.opacity = '1'; // Reset the appearance after dragging ends
+    event.target.style.opacity = '1';
   };
 
 
-
-  const handleDragStartInner = (event) => {
-    event.dataTransfer.setData('text/plain', event.target.id);
-  };
-
-  const handleDragOver = (event) => {
-    event.preventDefault();
-  };
-
-  const handleDrop = (event) => {
-    event.preventDefault();
-    const draggableElementId = event.dataTransfer.getData('text/plain');
-    const draggableElement = document.getElementById(draggableElementId);
-    const dropzone = event.target;
-
-    // Move the dragged element to the dropzone
-    dropzone.appendChild(draggableElement);
-  };
-
-  console.log(location.pathname);
 
   return (
     <main className='min-h-screen max-h-screen w flex md:flex-col sm:flex-col xsm:flex-col'>
       <div ref={resizableDivRef} style={widthNumber < windowSize.width ? { width } : { width: "100%" }} className='h-full relative min-w-[508px] xsm:min-w-[320px]'>
         <img className='object-cover w-full h-screen' src={VideoImage} alt="" />
-
-        {/* <div
-          id="innerDiv"
-          className='absolute top-0'
-          draggable
-          onDragStart={handleDragStartInner}
-          onDragOver={handleDragOver}
-          onDrop={handleDrop}
-          style={{
-            width: '100px',
-            height: '100px',
-            backgroundColor: 'red',
-            cursor: 'move',
-          }}
-        >
-          Inner Div
-        </div> */}
 
         <div className='absolute top-[38px] w-full px-[44px] flex justify-between items-center'>
           <svg width="54" height="54" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,7 +121,7 @@ export default function OnlineLesson() {
         </div>
       </div>
 
-      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-primary2 w-[5px] cursor-e-resize'>
+      <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-[#FFDBB8] w-[3px] cursor-e-resize'>
       </div>
 
       <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
