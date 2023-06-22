@@ -13,10 +13,12 @@ export default function OnlineLesson() {
   const [widthNumber, setWidthNumber] = useState('1024');
   const resizableDivRef = useRef(null);
   const handleDivRef = useRef(null);
+  const [newWidth,setNewWidth]=useState()
 
   const handleDrag = (event) => {
-    let newWidth = event.clientX || event.touches[0].clientX + "px";
-    let newWidthNumber = event.clientX || event.touches[0].clientX;
+    setNewWidth(event.clientX || (event?.touches && event?.touches[0].clientX))
+    let newWidth = event.clientX || (event?.touches && event?.touches[0].clientX) + "px";
+    let newWidthNumber = event.clientX || (event?.touches && event?.touches[0].clientX);
 
     if (newWidth !== '0px' && newWidthNumber < windowSize.width) {
       setWidth(newWidth);
