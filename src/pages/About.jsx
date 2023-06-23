@@ -65,7 +65,7 @@ const About = () => {
 
   return (
     <div>
-      <nav style={showNav?{maxHeight:'100%',overflow:"visible",opacity:'1'}:{maxHeight:'0px',overflow:"hidden",opacity:'0'}} className='transition-all duration-200 delay-75 fixed top-0 z-40 h-[84px] w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
+      <nav style={showNav?{top:0,overflow:"visible",}:{top:-102,overflow:"hidden"}} className='transition-all duration-500 fixed z-40 h-[84px] w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
         <div className='flex items-center gap-[32px]'>
           {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
           <Link to={'/'}>
@@ -184,7 +184,7 @@ const About = () => {
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
               </Link>
               <Link to={'/signup'} className='flex gap-[7px]'>
-                <img className='w-[24px]' src={Nav2} />
+                <img className='w-[20px]' src={Nav2} />
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
               </Link>
               <Link to={'/search-groups'} className='flex gap-[7px]'>
