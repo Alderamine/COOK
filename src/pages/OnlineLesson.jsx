@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import VideoImage from '../assets/OnlineLesson/VideoImage.png';
-
 export default function OnlineLesson() {
   const [currentTab, setCurrentTab] = useState("chat");
   const [width, setWidth] = useState('932px');
@@ -9,12 +8,11 @@ export default function OnlineLesson() {
   const resizableDivRef = useRef(null);
   const handleDivRef = useRef(null);
   const [newWidth, setNewWidth] = useState()
-
+  
   const handleDrag = (event) => {
     setNewWidth(event.clientX || (event?.touches && event?.touches[0].clientX))
     let newWidth = event.clientX || (event?.touches && event?.touches[0].clientX) + "px";
     let newWidthNumber = event.clientX || (event?.touches && event?.touches[0].clientX);
-
     if (newWidth !== '0px' && newWidthNumber < windowSize.width) {
       setWidth(newWidth);
       setWidthNumber(newWidthNumber)
@@ -23,54 +21,41 @@ export default function OnlineLesson() {
       setWidthNumber(windowSize.width)
     }
   };
-
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
   useEffect(() => {
     const handleResize = () => {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
-
       if (newWidth > window.innerWidth) {
         setWidth(window.innerWidth);
       }
     };
-
     window.addEventListener('resize', handleResize);
-
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-
   useEffect(() => {
-
   }, [])
-
   const [img, setImg] = useState(document.createElement("img"))
   useEffect(() => {
     img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
   }, [])
-
   const handleDragStart = (event) => {
     event.dataTransfer.setDragImage(img, 0, 0);
   };
-
   const handleDragEnd = (event) => {
     event.target.style.opacity = '1';
   };
-
   return (
     <main className='min-h-screen max-h-screen w flex md:flex-col sm:flex-col xsm:flex-col'>
       <div ref={resizableDivRef} style={widthNumber < windowSize.width ? { width } : { width: "100%" }} className='h-full relative min-w-[508px] xsm:min-w-[320px]'>
         <img className='object-cover w-full h-screen' src={VideoImage} alt="" />
-
         <div className='absolute top-[38px] w-full px-[44px] flex justify-between items-center'>
           <svg width="54" height="54" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="64.4" height="64.4" rx="32.2" fill="#D27722" />
@@ -90,7 +75,6 @@ export default function OnlineLesson() {
             </defs>
           </svg>
         </div>
-
         <div className='absolute bottom-0 w-full h-[102px] bg-[rgba(37,36,34,0.5)] flex items-center justify-center gap-[25px]'>
           <svg width="54" height="54" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="64.4" height="64.4" rx="32.2" fill="white" />
@@ -124,10 +108,8 @@ export default function OnlineLesson() {
           </svg>
         </div>
       </div>
-
       <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-[#FFDBB8] w-[3px] cursor-e-resize'>
       </div>
-
       <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
         <div className='h-[114px] w-full flex items-center justify-between pr-[4.444vw] border-b border-b-[rgba(255,219,184,1)]'>
           <NavLink to={'members'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/members" ? "bg-primary2 text-[white] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] ml-[20px]" : "ml-[20px] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
@@ -141,7 +123,6 @@ export default function OnlineLesson() {
               <p className='font-outfit font-medium text-[20px] leading-[30px]'>Member</p>
             </button>
           </NavLink>
-
           <div className='flex items-center gap-[16px]'>
             <NavLink to={'notes'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/notes" ? "bg-primary2 text-[white] w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]" : "w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
               <button onClick={() => setCurrentTab('notes')} className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
@@ -152,7 +133,6 @@ export default function OnlineLesson() {
                 <p className='font-outfit font-medium text-[20px] leading-[30px]'>Notes</p>
               </button>
             </NavLink>
-
             <NavLink to={''} className={({ isActive }) => isActive && location.pathname === "/online-lesson" ? "bg-primary2 text-[white] w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]" : "w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
               <button onClick={() => setCurrentTab('chat')} className='w-[108px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
                 <svg className={location.pathname === "/online-lesson" ? "stroke-[white]" : "stroke-[black]"} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,7 +147,6 @@ export default function OnlineLesson() {
           <Outlet />
         </div>
       </div>
-
     </main>
   )
 }

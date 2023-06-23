@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import user from './../assets/StudentDashboard/user.svg';
-
 const Chat = () => {
   const [currentChat, setCurrentChat] = useState({});
   const navigate = useNavigate()
@@ -183,7 +182,6 @@ const Chat = () => {
     // Add more chat objects as needed
   ]);
   const userId = 1;
-
   const handleCardClick = (chatId) => {
     const selectedChat = allChats.find((chat) => chat.id === chatId);
     if (window.innerWidth < 577)
@@ -191,7 +189,6 @@ const Chat = () => {
     else
       setCurrentChat(selectedChat);
   };
-
   return (
     <div className='flex min-h-[calc(100vh-142.3px)]'>
       <div className={`w-[377px] sm:w-[260px] md:w-[260px] flex flex-col  xsm:min-w-full br-1px h-full pl-[38px] pr-[26px] pt-[38px] sm:pt-27px sm:pl-[20px] sm:pr-[20px] md:pt-27px md:pl-[20px] md:pr-[20px] xsm:pl-[32px] xsm:pr-[32px] xsm:pt-[23px] xsm:pb-0`}>
@@ -263,5 +260,4 @@ const Chat = () => {
     </div>
   );
 };
-
 export default Chat;

@@ -1,15 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import BlogNavIcon2 from "../assets/Blog/BlogNavIcon2.svg"
 import Hamburger from "../assets/Blog/Hamburger.svg"
-import Nav2 from "../assets/LandingPage/Nav2.svg"
-import { useState } from 'react'
-import Menu from './Menu'
+import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
 import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
 import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
-import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
-import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
+import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
+import Menu from './Menu'
 
 export default function BlogNav() {
 
@@ -42,21 +39,21 @@ export default function BlogNav() {
               <Link to={'signup'}>
                 <div className='flex gap-[7px]'>
                   <svg className='max-w-[24px] max-h-[24px] min-w-[24px] min-h-[24px]' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1283_45026)">
+                    <g clipPath="url(#clip0_1283_45026)">
                       <path d="M69.9707 62.6608H78.3101Z" fill="#D27722" />
-                      <path d="M69.9707 62.6608H78.3101" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M69.9707 62.6608H78.3101" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
                       <mask id="mask0_1283_45026" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="-17" y="-17" width="134" height="134">
                         <path d="M116.674 116.654H-16.6592V-16.6789H116.674V116.654Z" fill="white" />
                       </mask>
                       <g mask="url(#mask0_1283_45026)">
-                        <path d="M51.9941 78.7799H19.7301C9.90635 78.7799 1.95752 70.8115 1.95752 61.0073V58.4489H69.7667V61.0073C69.7667 70.8115 61.8179 78.7799 51.9941 78.7799Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M94.0232 66.6823H78.7505V58.6358H94.0232C96.2496 58.6358 98.0464 60.4326 98.0464 62.659C98.0464 64.8855 96.2496 66.6823 94.0232 66.6823Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M44.8155 38.8881C40.304 43.3996 40.8509 51.2898 40.8509 51.2898C40.8509 51.2898 48.7411 51.8562 53.2526 47.3252C57.7641 42.8137 57.2173 34.9235 57.2173 34.9235C57.2173 34.9235 49.327 34.3766 44.8155 38.8881Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M13.0636 49.3722C15.9541 52.2627 21.8522 51.0518 21.8522 51.0518C21.8522 51.0518 23.0631 45.1537 20.1726 42.2632C17.2626 39.3727 11.384 40.5836 11.384 40.5836C11.384 40.5836 10.1731 46.4817 13.0636 49.3722Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M24.1782 30.688C24.1782 33.9887 26.8539 36.6838 30.174 36.6838C33.4746 36.6838 36.1698 34.0082 36.1698 30.688C36.1698 27.3679 33.4746 24.6922 30.174 24.6922C26.8539 24.6922 24.1782 27.3874 24.1782 30.688Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M44.6943 24.6988C44.6943 26.6323 46.2568 28.1752 48.1707 28.1752C50.0847 28.1752 51.6667 26.6323 51.6667 24.6988C51.6667 22.7653 50.1042 21.2224 48.1903 21.2224C46.2763 21.2224 44.6943 22.7653 44.6943 24.6988Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M51.9941 78.7799H19.7301C9.90635 78.7799 1.95752 70.8115 1.95752 61.0073V58.4489H69.7667V61.0073C69.7667 70.8115 61.8179 78.7799 51.9941 78.7799Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M94.0232 66.6823H78.7505V58.6358H94.0232C96.2496 58.6358 98.0464 60.4326 98.0464 62.659C98.0464 64.8855 96.2496 66.6823 94.0232 66.6823Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M44.8155 38.8881C40.304 43.3996 40.8509 51.2898 40.8509 51.2898C40.8509 51.2898 48.7411 51.8562 53.2526 47.3252C57.7641 42.8137 57.2173 34.9235 57.2173 34.9235C57.2173 34.9235 49.327 34.3766 44.8155 38.8881Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M13.0636 49.3722C15.9541 52.2627 21.8522 51.0518 21.8522 51.0518C21.8522 51.0518 23.0631 45.1537 20.1726 42.2632C17.2626 39.3727 11.384 40.5836 11.384 40.5836C11.384 40.5836 10.1731 46.4817 13.0636 49.3722Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M24.1782 30.688C24.1782 33.9887 26.8539 36.6838 30.174 36.6838C33.4746 36.6838 36.1698 34.0082 36.1698 30.688C36.1698 27.3679 33.4746 24.6922 30.174 24.6922C26.8539 24.6922 24.1782 27.3874 24.1782 30.688Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M44.6943 24.6988C44.6943 26.6323 46.2568 28.1752 48.1707 28.1752C50.0847 28.1752 51.6667 26.6323 51.6667 24.6988C51.6667 22.7653 50.1042 21.2224 48.1903 21.2224C46.2763 21.2224 44.6943 22.7653 44.6943 24.6988Z" fill="#D27722" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M31.1143 46.14V49.0891Z" fill="#D27722" />
-                        <path d="M31.1143 46.14V49.0891" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M31.1143 46.14V49.0891" stroke="#D27722" strokeWidth="4" strokeMiterlimit="13.3333" strokeLinecap="round" strokeLinejoin="round" />
                       </g>
                     </g>
                     <defs>

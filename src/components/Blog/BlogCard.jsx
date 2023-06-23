@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogImage1 from "../../assets/Blog/BlogImage1.png"
 import { Link } from 'react-router-dom'
+import BlogImage1 from "../../assets/Blog/BlogImage1.png"
 
 export default function BlogCard() {
   return (

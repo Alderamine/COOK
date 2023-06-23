@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import arrow from "../assets/StudentDashboard/arrow.svg"
 import burgerMenu from "../assets/StudentDashboard/burgerMenu.svg"
 import search from "../assets/StudentDashboard/search.svg"
 import user from "../assets/StudentDashboard/user.svg"
-import { useState } from 'react'
 import Menu from './Menu'
 
 const DashboardLayout = () => {

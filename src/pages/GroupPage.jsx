@@ -9,16 +9,12 @@ import right from './../assets/GroupList/right.svg'
 import specialization from './../assets/GroupList/specialization.svg'
 import star2 from './../assets/GroupList/star2.svg'
 import user from './../assets/StudentDashboard/user.svg'
-
 const GroupPage = () => {
 
-
   const scrollRef = useRef(null);
-
   const handleScrollRight = () => {
     const currentScrollLeft = scrollRef.current.scrollLeft;
     const targetScrollLeft = currentScrollLeft + 378;
-
     scrollRef.current.scrollTo({
       left: targetScrollLeft,
       behavior: 'smooth',
@@ -33,10 +29,8 @@ const GroupPage = () => {
     });
   };
 
-
   const handleScroll = (event, id) => {
     event.preventDefault();
-
     const targetElementId = id;
     const targetElement = document.getElementById(targetElementId);
     if (targetElement) {
@@ -47,15 +41,12 @@ const GroupPage = () => {
       });
     }
   };
-
   const ScrollToTop = (e) => {
     window.scrollTo({
       top: 0,
     });
   }
-
   const [arr, setArr] = useState([1, 2, 3, 1, 1])
-
   return (
     <div className='flex justify-start gap-[23px]'>
       <div>
@@ -176,7 +167,6 @@ const GroupPage = () => {
               </button>
             </a>
           </div>
-
           <div className='mt-[47px] xsm:mt-[41px] flex flex-col gap-[13px]'>
             <div className='flex justify-between p-[13px] rounded-[12px] border border-primaryLighten2'>
               <div className='flex flex-1 gap-[8px]'>
@@ -200,12 +190,10 @@ const GroupPage = () => {
               <h1 className='text-[18px] font-outfit leading-[22.68px] font-[400]'>Intermediate</h1>
             </div>
           </div>
-
           <div id='details' className='px-[32px] py-[24px] mt-[47px] xsm:mt-[75px] xsm:px-[16px] border bg-backSec border-primaryLighten2 rounded-[16px]'>
             <h1 className='font-rubik text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[12px]'>Details</h1>
             <p className='font-outfit text-[16px] text-TextColor leading-[24.8px] xsm:leading-[25.76px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
           </div>
-
           <div id='about' className='px-[32px] xsm:px-[16px] mt-[59px] sm:mt-[56px] md:mt-[56px] xsm:mt-[112px]'>
             <h1 className='font-rubik text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>About Tutor</h1>
             <div className='flex items-center mb-[16px]'>
@@ -218,7 +206,6 @@ const GroupPage = () => {
             </div>
             <p className='font-outfit text-[16px] text-TextColor leading-[24.8px] xsm:leading-[27.92px]'>Lorem ipsum dolor sit amet consectetur. Nisi urna arcu tempor in dui. At rhoncus senectus vel ullamcorper eget at id est. Imperdiet penatibus purus augue ut vitae interdum. Sit netus tincidunt massa fames id iaculis molestie at. Egestas duis et id tincidunt eros elit urna. Sed nunc nec fringilla gravida faucibus consequat feugiat fermentum tempus. Eleifend tempus mauris ac metus quis tellus feugiat. At libero pellentesque enim senectus odio suscipit augue eu pulvinar. Nisl integer quis tellus id hendrerit.</p>
           </div>
-
           <div id='reviews' className='px-[32px] xsm:px-[16px] mt-[80px] sm:mt-[82px] md:mt-[82px] xsm:mt-[58px] flex flex-col gap-[40px] sm:gap-[36px] md:gap-[36px] xsm:gap-[17px]'>
             <h1 className='font-rubik p-[10px] text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>Reviews</h1>
             <div className='flex xsm:flex-col xsm:divide-x-0 px-[23px] md:px-0 sm:px-0 xsm:px-0 divide-x-2 divide-primaryLighten2'>
@@ -253,7 +240,6 @@ const GroupPage = () => {
               </div>
             </div>
           </div>
-
           <div className='px-[32px] xsm:px-[16px] mt-[67.5px] flex flex-col gap-[62px] sm:gap-[37px] md:gap-[37px] xsm:gap-[58px] sm:mt-[72.5px] md:mt-[72.5px] xsm:mt-[62px]'>
             {[1, 2, 3].map((val, index) => {
               return (
@@ -284,7 +270,6 @@ const GroupPage = () => {
             </button>
           </div>
         </div>
-
         <div className='blurEndGroup ml-[62px] md:pl-[23px] md:m-auto sm:m-auto xsm:m-auto sm:pl-[23px] xsm:pl-[23px] mt-[92px] md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full max-w-[51.181vw] min-w-[51.181vw] sm:mt-[75px] md:mt-[75px] xsm:mt-[57px]'>
           <h1 className='font-rubik p-[10px] text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>Other groups</h1>
           <div ref={scrollRef} className='flex pb-[49px] gap-[20px] xsm:pl-[10px] overflow-scroll max-w-[51.181vw] min-w-[51.181vw] hideScrollbar md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full'>
@@ -402,5 +387,4 @@ const GroupPage = () => {
     </div>
   )
 }
-
 export default GroupPage

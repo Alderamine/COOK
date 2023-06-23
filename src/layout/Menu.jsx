@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
-import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
-import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
-import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
-import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
-import { useState } from 'react';
+import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg";
+import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg";
+import GermanIcon from "../assets/LandingPage/GermanIcon.svg";
+import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg";
+import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg";
 
 export default function Menu({ showMenu, closeMenu }) {
   const navigate = useNavigate();
@@ -27,13 +26,13 @@ export default function Menu({ showMenu, closeMenu }) {
     <div style={showMenu ? { right: 0 } : { right: '-80vw' }} className='transition-all duration-500 fixed z-[2000] right-0 bg-primary2 h-screen w-[79.487vw] top-0 pl-[7.949vw] pr-[6.923vw] py-[23px]'>
       <div className='flex items-center justify-between'>
         <svg onClick={closeMenu} className='cursor-pointer' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 4L21.5 20.5" stroke="#FFDBB8" stroke-width="3" stroke-linecap="round" />
-          <path d="M21.5 4L5 20.5" stroke="#FFDBB8" stroke-width="3" stroke-linecap="round" />
+          <path d="M5 4L21.5 20.5" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" />
+          <path d="M21.5 4L5 20.5" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" />
         </svg>
         <svg width="33" height="33" className='cursor-pointer' viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.625 4.125H26.125C26.8543 4.125 27.5538 4.41473 28.0695 4.93046C28.5853 5.44618 28.875 6.14565 28.875 6.875V26.125C28.875 26.8543 28.5853 27.5538 28.0695 28.0695C27.5538 28.5853 26.8543 28.875 26.125 28.875H20.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M13.75 23.375L20.625 16.5L13.75 9.625" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M20.625 16.5H4.125" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M20.625 4.125H26.125C26.8543 4.125 27.5538 4.41473 28.0695 4.93046C28.5853 5.44618 28.875 6.14565 28.875 6.875V26.125C28.875 26.8543 28.5853 27.5538 28.0695 28.0695C27.5538 28.5853 26.8543 28.875 26.125 28.875H20.625" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M13.75 23.375L20.625 16.5L13.75 9.625" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M20.625 16.5H4.125" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
       <nav className='flex flex-col gap-[32px] mt-[52px]'>

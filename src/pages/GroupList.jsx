@@ -10,19 +10,15 @@ import PricePerLesson from '../components/DropDowns/PricePerLesson'
 import SortBy from '../components/DropDowns/SortBy'
 import GroupCard from '../components/GroupList/GroupCard'
 import Pagination from '../components/utils/Pagination'
-
 export default function GroupList() {
   const [iWantToLearn, setIWantToLearn] = useState(false);
   const [pricePerLesson, setPricePerLesson] = useState(false);
   const [availability, setAvailability] = useState(false);
   const [sort, setSort] = useState(false);
-
   const handleScroll = (event, id) => {
     event.preventDefault();
-
     const targetElementId = id;
     const targetElement = document.getElementById(targetElementId);
-
     if (targetElement) {
       const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
@@ -31,7 +27,6 @@ export default function GroupList() {
       });
     }
   };
-
   return (
     <main>
       <div className='w-full min-h-[411px] flex items-center md:justify-center sm:justify-center bg-[rgba(255,253,244,1)] xsm:mt-[104px]'>
@@ -56,7 +51,6 @@ export default function GroupList() {
           </div>
         </div>
       </div>
-
       <div className='pl-[65px] pr-[63px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] '>
         <button className='w-full rounded-[12px] justify-center py-[14px] mt-[21px] mb-[41px] xsm:flex hidden gap-[12px] items-center border-2 border-[rgba(255,219,184,1)]'>
           <img src={FilterIcon} alt="" />
@@ -88,7 +82,6 @@ export default function GroupList() {
             </select>
           </div>
         </div> */}
-
         <div className='mt-[52px] flex justify-between items-center xsm:hidden'>
           <div className='flex gap-[21px]'>
             <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
@@ -103,7 +96,6 @@ export default function GroupList() {
                 <IWantToLearn />
               }
             </div>
-
             <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={pricePerLesson ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setPricePerLesson(!pricePerLesson)} className='cursor-pointer h-[67px] w-full md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
                 {/* <p className='absolute font-outfit  font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Price per lesson</p> */}
@@ -116,7 +108,6 @@ export default function GroupList() {
                 <PricePerLesson />
               }
             </div>
-
             <div className='relative w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={availability ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setAvailability(!availability)} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
                 {/* <p className='absolute font-outfit font-medium text-[18px] leading-[23px] left-[-2px] bg-[white] text-primary2 top-[-14px] '>Availability</p> */}
@@ -131,7 +122,6 @@ export default function GroupList() {
             </div>
           </div>
 
-
           <div className='flex gap-[20px] items-center md:hidden sm:hidden'>
             <div className='overflow-hidden relative p-[16px] w-[226px] h-[55px] border-2 border-[rgba(255,219,184,1)] rounded-[8px]'>
               <svg className='min-w-[26px] absolute top-[50%] translate-y-[-50%]' width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +134,6 @@ export default function GroupList() {
               <div onClick={() => setSort(!sort)} className='relative w-[64px] h-[61px] rounded-full border-2 border-[rgba(255,219,184,1)] flex justify-center items-center'>
                 <img className='w-[20px]' src={UpsideDown} alt="" />
               </div>
-
               {sort && <div className='absolute top-[110%] right-0 w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
                 <div style={sort ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
                   <p name="" className='h-full flex items-center font-outfit font-normal md:text-[18px] md:leading-[27px] text-[18px] leading-[22.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Sort By</p>
@@ -154,7 +143,6 @@ export default function GroupList() {
             </div>
           </div>
         </div>
-
         <div className='w-full mt-[52px]'>
           <div>
             <h3 className='font-rubik font-semibold text-[24px] leading-[28.44px] tracking-[-0.02em]'>Popular classes</h3>
@@ -176,7 +164,6 @@ export default function GroupList() {
               <GroupCard />
               <GroupCard />
               <GroupCard />
-
               <div className='xsm:w-[96.71vw] w-full xsm:ml-[-8.205vw] col-span-4 md:col-span-2 sm:col-span-2 xsm:col-span-1'>
                 <div className='w-full my-[55px] min-h-[245px] md:justify-center sm:justify-center xsm:rounded-[0px] xsm:justify-center bg-primary2 md:py-[62px] md:px-[72px] sm:py-[62px] sm:px-[72px] xsm:py-[54px] xsm:px-[8.205vw] rounded-[16px] md:min-w-full sm:min-w-full xsm:min-w-full pl-[3.194vw] pr-[4.028vw] flex items-center'>
                   <div className='flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[5.208vw] gap-y-[24px] w-full'>
@@ -187,18 +174,14 @@ export default function GroupList() {
                 </div>
               </div>
 
-
               <GroupCard />
               <GroupCard />
               <GroupCard />
               <GroupCard />
             </div>
-
             <Pagination currentPage={1} totalPages={6} />
           </div>
         </div>
-
-
 
       </div>
     </main>
