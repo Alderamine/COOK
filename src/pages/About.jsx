@@ -32,40 +32,44 @@ import LandingFooter from '../layout/LandingFooter'
 import CookLogoLight from "../assets/Legal/CookLogoLight.svg"
 import { useRef } from 'react'
 import { useEffect } from 'react'
+import Menu from '../layout/Menu'
 
 
 const About = () => {
   const [currencyModal, setCurrencyModal] = useState(false);
   const [languageModal, setLanguageModal] = useState(false);
 
-  const mainDiv=useRef();
-  const [showNav,setShowNav]=useState(false)
+  const mainDiv = useRef();
+  const [showNav, setShowNav] = useState(false)
 
-  useEffect(()=>{
-    const onScrollHandler=()=>{
+  useEffect(() => {
+    const onScrollHandler = () => {
 
-      if(window.scrollY>mainDiv.current.offsetHeight){
+      if (window.scrollY > mainDiv.current.offsetHeight) {
         setShowNav(true)
         setCurrencyModal(false)
         setLanguageModal(false)
         return
-      } else if (window.scrollY<mainDiv.current.offsetHeight){
+      } else if (window.scrollY < mainDiv.current.offsetHeight) {
         setShowNav(false)
         setCurrencyModal(false)
         setLanguageModal(false)
       }
     }
 
-    document.addEventListener("scroll",onScrollHandler)
+    document.addEventListener("scroll", onScrollHandler)
 
-    return ()=>{
-      document.removeEventListener('scroll',onScrollHandler)
+    return () => {
+      document.removeEventListener('scroll', onScrollHandler)
     }
-  },[])
+  }, [])
+
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div>
-      <nav style={showNav?{top:0,overflow:"visible",}:{top:-102,overflow:"hidden"}} className='transition-all duration-500 fixed z-40 h-[84px] w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
+      <Menu showMenu={showMenu} closeMenu={() => setShowMenu(false)} />
+      <nav style={showNav ? { top: 0, overflow: "visible", } : { top: -102, overflow: "hidden" }} className='transition-all duration-500 fixed z-40 h-[84px] w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
         <div className='flex items-center gap-[32px]'>
           {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
           <Link to={'/'}>
@@ -167,7 +171,7 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
+        <img className='sm:block xsm:block hidden cursor-pointer' onClick={() => {setShowMenu(true)}} src={Hamburger} alt="" />
       </nav>
 
       <div ref={mainDiv} className='relative bg-primary2 min-h-[580px]'>
@@ -271,7 +275,7 @@ const About = () => {
               </svg>
             </Link>
           </div>
-          <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
+          <img className='sm:block xsm:block hidden cursor-pointer' src={Hamburger} onClick={() => {setShowMenu(true)}} alt="" />
         </nav>
 
         <img src={EllipseDesktop} className='absolute z-10 top-0 right-0 sm:hidden xsm:hidden' alt="" />

@@ -4,12 +4,18 @@ import arrow from "../assets/StudentDashboard/arrow.svg"
 import burgerMenu from "../assets/StudentDashboard/burgerMenu.svg"
 import search from "../assets/StudentDashboard/search.svg"
 import user from "../assets/StudentDashboard/user.svg"
+import { useState } from 'react'
+import Menu from './Menu'
 
 const DashboardLayout = () => {
   const location = useLocation()
 
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <div>
+      <Menu showMenu={showMenu} closeMenu={() => setShowMenu(false)} />
+
       <div className='sticky top-0'>
         <nav >
           <div className='h-[104px] w-[100%] px-[64px] sm:px-[48px] xsm:px-[32px] bg-[white] z-[1000] flex items-center justify-between'>
@@ -83,7 +89,7 @@ const DashboardLayout = () => {
               </div>
             </div>
             <div className='hidden cursor-pointer xsm:block'>
-              <img src={burgerMenu} alt="" />
+              <img src={burgerMenu} onClick={()=> setShowMenu(true)} className='cursor-pointer' alt="" />
             </div>
           </div>
         </nav>

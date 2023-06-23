@@ -12,14 +12,19 @@ import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import CookLogoLight from "../assets/Legal/CookLogoLight.svg"
 import CopyrightTable from '../components/Copyright/CopyrightTable'
 import LandingFooter from '../layout/LandingFooter'
+import Menu from '../layout/Menu'
 
 const Copyright = () => {
 
   const [currencyModal, setCurrencyModal] = useState(false);
   const [languageModal, setLanguageModal] = useState(false);
 
+  const [showMenu,setShowMenu]=useState(false);
+
   return (
     <div>
+      <Menu showMenu={showMenu} closeMenu={()=> setShowMenu(false)}/>
+
       <nav className='sticky top-0 h-[84px] z-10 w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
         <div className='flex items-center gap-[32px]'>
           {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
@@ -122,7 +127,7 @@ const Copyright = () => {
             </Link>
           </div>
         </div>
-        <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
+        <img className='sm:block xsm:block hidden cursor-pointer' onClick={()=> setShowMenu(true)}  src={Hamburger} alt="" />
       </nav>
       <div className='flex xsm:flex-col sm:flex-col md:flex-col xsm:gap-[36px] sm:gap-[36px] md:gap-[36px] gap-[54px] pl-[64px] py-[94px] pr-[69px] sm:pt-[89px] md:pt-[89px] sm:px-[48px] md:px-[48px] xsm:pt-[80px] xsm:pr-[32px] xsm:pl-[34px]'>
         <div className='mt-[10px] h-full sticky md:relative sm:relative xsm:relative md:top-[0px] sm:top-[0px] xsm:top-[0px] top-[130px]'>
