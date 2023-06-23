@@ -171,7 +171,7 @@ const About = () => {
       </nav>
 
       <div ref={mainDiv} className='relative bg-primary2 min-h-[580px]'>
-        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='relative z-40 h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
+        <nav className='relative z-40 h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
           <div className='flex items-center gap-[32px]'>
             {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
             <Link to={'/'}>
