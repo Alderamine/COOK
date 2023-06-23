@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import NavIcon from "../../assets/Support/NavIcon.svg"
-import NavEnglish from "../../assets/Support/NavEnglish.svg"
 import { Link } from 'react-router-dom'
+import ChineseIcon from "../../assets/LandingPage/ChineseIcon.svg"
 import EnglishIcon from "../../assets/LandingPage/EnglishIcon.svg"
 import GermanIcon from "../../assets/LandingPage/GermanIcon.svg"
-import ChineseIcon from "../../assets/LandingPage/ChineseIcon.svg"
-import ItalianIcon from "../../assets/LandingPage/ItalianIcon.svg"
 import HebrewIcon from "../../assets/LandingPage/HebrewIcon.svg"
+import ItalianIcon from "../../assets/LandingPage/ItalianIcon.svg"
+import NavEnglish from "../../assets/Support/NavEnglish.svg"
+import NavIcon from "../../assets/Support/NavIcon.svg"
 
 export default function SupportNav() {
 

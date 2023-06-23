@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
-import GroupCard1 from "../assets/GroupList/GroupCard1.png"
-import GroupHeroPattern from "../assets/GroupList/GroupHeroPattern.png"
-import AutherProfile from "../assets/Support/AutherProfile.png"
-import JoinClassGroup from '../assets/allAssets/join-cook-groups.jpg'
-import GroupCard from '../components/GroupList/GroupCard'
-import Pagination from '../components/utils/Pagination'
-import FilterIcon from "../assets/TutorList/FilterIcon.svg"
 import { Link } from 'react-router-dom'
+import GroupHeroPattern from "../assets/GroupList/GroupHeroPattern.png"
+import FilterIcon from "../assets/TutorList/FilterIcon.svg"
+import UpsideDown from "../assets/TutorList/UpsideDown.svg"
+import JoinClassGroup from '../assets/allAssets/join-cook-groups.jpg'
+import Availability from '../components/DropDowns/Availability'
 import IWantToLearn from '../components/DropDowns/IWantToLearn'
 import PricePerLesson from '../components/DropDowns/PricePerLesson'
-import Availability from '../components/DropDowns/Availability'
 import SortBy from '../components/DropDowns/SortBy'
-import UpsideDown from "../assets/TutorList/UpsideDown.svg"
+import GroupCard from '../components/GroupList/GroupCard'
+import Pagination from '../components/utils/Pagination'
 
 export default function GroupList() {
   const [iWantToLearn, setIWantToLearn] = useState(false);

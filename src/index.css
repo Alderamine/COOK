@@ -80,6 +80,21 @@ body {
   width: 180px;
   height: 422px;
 }
+.blurEndGroup {
+  position: relative;
+}
+
+.blurEndGroup:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 64px;
+  right: 0;
+  pointer-events: none;
+  background-image: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  width: 180px;
+  height: 461px;
+}
 
 .blurSignup {
   position: relative;

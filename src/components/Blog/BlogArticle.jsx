@@ -1,12 +1,12 @@
-import React from 'react'
-import BlogNav from '../../layout/BlogNav'
-import { useNavigate, useParams } from 'react-router-dom';
-import ArticleAuthorProfile from "../../assets/Blog/ArticleAuthorProfile.png"
+import React from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import ArticleAuthorProfile from "../../assets/Blog/ArticleAuthorProfile.png";
 import BlogArticle1 from "../../assets/Blog/BlogArticle1.svg";
 import BlogArticleImage from "../../assets/Blog/BlogArticleImage.png";
-import BlogCard from './BlogCard';
+import BlogNav from '../../layout/BlogNav';
 import LandingFooter from '../../layout/LandingFooter';
 import CopyrightTable from '../Copyright/CopyrightTable';
+import BlogCard from './BlogCard';
 
 export default function BlogArticle() {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function BlogArticle() {
                 <span className="font-outfit font-normal text-[16px] leading-[20.16px] mx-2 text-neutral-500 dark:text-neutral-400 text-primary">{`>`}</span>
               </li>
               <li className='cursor-pointer'>
-                <p className="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{params?.category}</p>
+                <p className="font-outfit font-normal text-[16px] leading-[20.16px] text-primary2 transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600">{'Article'}</p>
               </li>
             </ol>
           </nav>
@@ -45,7 +45,7 @@ export default function BlogArticle() {
       </div>
 
       <div className=''>
-        <h1 className='font-rubik font-bold text-[48px] leading-[56.16px] tracking-[-0.02em] text-center mt-[141px] xsm:mt-[54px]'>Lorem Ipsum</h1>
+        <h1 className='font-rubik font-bold text-[48px] leading-[56.16px] tracking-[-0.02em] text-center mt-[70px] xsm:mt-[40px] mb-[16px]'>Lorem Ipsum</h1>
         <div className='flex items-center justify-center gap-[5px]'>
           <img className='w-[32px]' src={ArticleAuthorProfile} alt="" />
           <p className='font-outfit font-medium text-[16px] leading-[20.96px] tracking-[-0.02em] text-primary2'>by Jane Doe</p>
@@ -56,7 +56,9 @@ export default function BlogArticle() {
         <div className='w-fit md:hidden sm:hidden xsm:hidden'>
           <img src={BlogArticle1} alt="" />
           <p className='font-outfit font-semibold text-[24px] leading-[28.08px] tracking-[-0.02em] mt-[27px]'>Learn more about cooking  </p>
-          <button className='w-[129px] h-[39px] bg-primary2 text-[white] font-outfit font-medium text-[16px] leading-[22.68px] rounded-[4px] mt-[27px]'>Fina A Tutor</button>
+          <Link to={'/search-tutors'}>
+            <button className='w-[129px] h-[39px] bg-primary2 text-[white] font-outfit font-medium text-[16px] leading-[22.68px] rounded-[4px] mt-[27px]'>Find A Tutor</button>
+          </Link>
         </div>
         <div className='w-[44.375vw] md:w-full sm:w-full xsm:w-full'>
           <img className='w-[639px] ' src={BlogArticleImage} alt="" />
@@ -64,9 +66,9 @@ export default function BlogArticle() {
           <div className='w-[269px] flex-col mt-[53px] border border-[rgba(255,219,184,1)] rounded-[8px] p-[24px] hidden md:flex sm:flex xsm:flex'>
             <h4 className='font-outfit font-semibold text-[24px] leading-[28.08px] tracking-[-0.02em]'>Table of content</h4>
             <div className='flex flex-col gap-[16px] mt-[26px]'>
-              <CopyrightTable/>
-              <CopyrightTable/>
-              <CopyrightTable/>
+              <CopyrightTable />
+              <CopyrightTable />
+              <CopyrightTable />
             </div>
           </div>
 
@@ -157,9 +159,9 @@ export default function BlogArticle() {
           <div className='w-full flex-col border border-[rgba(255,219,184,1)] mt-[18px] rounded-[8px] p-[24px] flex md:hidden sm:hidden xsm:hidden'>
             <h4 className='font-outfit font-semibold text-[24px] leading-[28.08px] tracking-[-0.02em]'>Table of content</h4>
             <div className='flex flex-col gap-[16px] mt-[26px]'>
-              <CopyrightTable/>
-              <CopyrightTable/>
-              <CopyrightTable/>
+              <CopyrightTable />
+              <CopyrightTable />
+              <CopyrightTable />
             </div>
           </div>
         </div>
@@ -185,7 +187,7 @@ export default function BlogArticle() {
         </div>
       </section>
 
-      <LandingFooter/>
+      <LandingFooter />
     </>
   )
 }

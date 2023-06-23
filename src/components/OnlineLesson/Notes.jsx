@@ -1,6 +1,4 @@
-import React from 'react'
-import { useEffect } from 'react';
-import { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export default function Notes() {
   const targetRef = useRef(null);

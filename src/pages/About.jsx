@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import AboutLogo from "../assets/About/AboutLogo.svg"
 import Community from "../assets/About/Community.svg"
 import CookLunch from '../assets/About/CookLunch.svg'
 import EllipseDesktop from "../assets/About/EllipseDesktop.svg"
 import EllipseTablet from "../assets/About/EllipseTablet.svg"
 import FirstTaste from "../assets/About/FirstTaste.svg"
+import Hamburger from "../assets/About/Hamburger.svg"
 import Knowledge from "../assets/About/Knowledge.svg"
 import Leaf from "../assets/About/Leaf.svg"
 import Main from "../assets/About/Main.png"
@@ -16,21 +18,17 @@ import Openness from "../assets/About/Openness.svg"
 import SimmeringIdeas from "../assets/About/SimmeringIdeas.svg"
 import Support from "../assets/About/Support.svg"
 import Testimonial from "../assets/About/Testimonial.svg"
-import TopPattern from "../assets/About/TopPattern.svg"
 import User from "../assets/About/User.svg"
 import firstSpark from "../assets/About/firstSpark.svg"
 import ourTeam from "../assets/About/ourTeam.svg"
 import teamUser1 from "../assets/About/teamUser1.jpg"
 import teamUser2 from "../assets/About/teamUser2.png"
-import Hamburger from "../assets/About/Hamburger.svg"
-import AboutLogo from "../assets/About/AboutLogo.svg"
-import COOKLogo from "../assets/allAssets/COOK-logo.svg"
-import LandingFooter from '../layout/LandingFooter'
+import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
 import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
 import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
-import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
-import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
+import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
+import LandingFooter from '../layout/LandingFooter'
 
 const About = () => {
   const [currencyModal, setCurrencyModal] = useState(false);

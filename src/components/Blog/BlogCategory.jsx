@@ -1,12 +1,12 @@
-import React from 'react'
-import BlogNav from '../../layout/BlogNav'
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
-import BlogCategoryHeroImage from "../../assets/Blog/BlogCategoryHeroImage.svg"
-import BlogCard from './BlogCard';
-import Pagination from '../utils/Pagination';
-import BlogSecondImage from "../../assets/Blog/BlogSecondImage.png"
-import XSMDidYouKnow from "../../assets/Blog/XSMDidYouKnow.png"
+import React from 'react';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import BlogCategoryHeroImage from "../../assets/Blog/BlogCategoryHeroImage.svg";
+import BlogSecondImage from "../../assets/Blog/BlogSecondImage.png";
+import XSMDidYouKnow from "../../assets/Blog/XSMDidYouKnow.png";
+import BlogNav from '../../layout/BlogNav';
 import LandingFooter from '../../layout/LandingFooter';
+import Pagination from '../utils/Pagination';
+import BlogCard from './BlogCard';
 
 export default function BlogCategory() {
   const navigate = useNavigate();

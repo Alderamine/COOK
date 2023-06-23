@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
-import AutherProfile from "../../assets/Support/AutherProfile.png"
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AutherProfile from "../../assets/Support/AutherProfile.png";
 
 export default function CategoryCard({ title, description, icon }) {
   const [arr, setArr] = useState([1, 2, 3]);
-
-  console.log(icon);
 
   return (
     <div className='min-h-[197px] rounded-[8px] border border-[rgba(255,219,184,1)] m-auto py-[20px] pl-[76px] md:pl-[67px] sm:pl-[67px] pr-[39px] md:pr-[15px] sm:pr-[15px] xsm:pl-[19px] xsm:pr-[17px] relative mt-[58px] xsm:py-0 xsm:pt-[58px] xsm:pb-[16px]'>

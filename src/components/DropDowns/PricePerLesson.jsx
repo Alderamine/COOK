@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 export default function PricePerLesson({ min = 20, max = 100 }) {
   const [minVal, setMinVal] = useState(min);

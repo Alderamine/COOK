@@ -1,16 +1,14 @@
-import React from 'react'
-import user from './../assets/StudentDashboard/user.svg'
-import ratingStar from './../assets/GroupList/ratingStar.svg'
-import star2 from './../assets/GroupList/star2.svg'
-import mainImage from './../assets/GroupList/mainImage.png'
-import specialization from './../assets/GroupList/specialization.svg'
-import groupsize from './../assets/GroupList/groupsize.svg'
-import level from './../assets/GroupList/level.svg'
-import left from './../assets/GroupList/left.svg'
-import right from './../assets/GroupList/right.svg'
+import React, { useRef, useState } from 'react'
 import card from './../assets/GroupList/card.jpg'
-import { useRef } from 'react'
-import { useState } from 'react'
+import groupsize from './../assets/GroupList/groupsize.svg'
+import left from './../assets/GroupList/left.svg'
+import level from './../assets/GroupList/level.svg'
+import mainImage from './../assets/GroupList/mainImage.png'
+import ratingStar from './../assets/GroupList/ratingStar.svg'
+import right from './../assets/GroupList/right.svg'
+import specialization from './../assets/GroupList/specialization.svg'
+import star2 from './../assets/GroupList/star2.svg'
+import user from './../assets/StudentDashboard/user.svg'
 
 const GroupPage = () => {
 
@@ -57,7 +55,7 @@ const GroupPage = () => {
     });
   }
 
-  const [arr, setArr] = useState([1, 2, 3])
+  const [arr, setArr] = useState([1, 2, 3, 1, 1])
 
   return (
     <div className='flex justify-start gap-[23px]'>
@@ -288,10 +286,10 @@ const GroupPage = () => {
           </div>
         </div>
 
-        <div className='pl-[62px] md:pl-[23px] md:m-auto sm:m-auto xsm:m-auto sm:pl-[23px] xsm:pl-[23px] mt-[92px] md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full max-w-[51.181vw] min-w-[51.181vw] sm:mt-[75px] md:mt-[75px] xsm:mt-[57px]'>
+        <div className='blurEndGroup ml-[62px] md:pl-[23px] md:m-auto sm:m-auto xsm:m-auto sm:pl-[23px] xsm:pl-[23px] mt-[92px] md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full max-w-[51.181vw] min-w-[51.181vw] sm:mt-[75px] md:mt-[75px] xsm:mt-[57px]'>
           <h1 className='font-rubik p-[10px] text-[24px] leading-[28.44px] font-[600] tracking-[-0.02em] mb-[16px]'>Other groups</h1>
           <div ref={scrollRef} className='flex pb-[49px] gap-[20px] xsm:pl-[10px] overflow-scroll max-w-[51.181vw] min-w-[51.181vw] hideScrollbar md:w-[88.263vw] sm:w-[88.263vw] xsm:w-[83.59vw] md:max-w-full sm:max-w-full xsm:max-w-full'>
-            {[1, 2, 3].map((val, index) => {
+            {[1, 2, 3,4,5].map((val, index) => {
               return (
                 <div className='relative max-w-[358px] min-w-[358px] rounded-[12px] border border-[rgba(255,219,184,1)] xsm:max-w-[286px] xsm:min-w-[286px]'>
                   <img src={card} className='rounded-[12px] h-[208px] w-full' alt="" />

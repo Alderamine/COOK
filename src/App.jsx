@@ -1,30 +1,31 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import BlogArticle from './components/Blog/BlogArticle'
+import BlogCategory from './components/Blog/BlogCategory'
+import SingleChatMob from './components/Chat/SingleChatMob'
+import Members from './components/OnlineLesson/Members'
+import Notes from './components/OnlineLesson/Notes'
+import OnlineChat from './components/OnlineLesson/OnlineChat'
 import SupportArticle from './components/Support/SupportArticle'
 import SupportArticles from './components/Support/SupportArticles'
 import SupportWrapper from "./components/Support/SupportWrapper"
+import DashboardLayout from './layout/DashboardLayout'
 import LandingLayoutWrapper from './layout/LandingLayoutWrapper'
 import About from './pages/About'
-import Copyright from './pages/Copyright'
-import GroupList from './pages/GroupList'
-import LandingPage from './pages/LandingPage'
-import Signup from './pages/Signup'
-import Support from './pages/Support'
-import TutorList from './pages/TutorList'
-import TermsOfService from './pages/TermsOfService'
-import Profile from './pages/Profile'
-import StudentDashboard from './pages/StudentDashboard'
-import Signin from './pages/Signin'
-import OnlineLesson from './pages/OnlineLesson'
 import Blog from './pages/Blog'
-import BlogCategory from './components/Blog/BlogCategory'
-import BlogArticle from './components/Blog/BlogArticle'
-import DashboardLayout from './layout/DashboardLayout'
 import Chat from './pages/Chat'
-import SingleChatMob from './components/Chat/SingleChatMob'
+import Copyright from './pages/Copyright'
+import Error404 from './pages/Error404'
+import GroupList from './pages/GroupList'
 import GroupPage from './pages/GroupPage'
-import OnlineChat from './components/OnlineLesson/OnlineChat'
-import Notes from './components/OnlineLesson/Notes'
-import Members from './components/OnlineLesson/Members'
+import LandingPage from './pages/LandingPage'
+import OnlineLesson from './pages/OnlineLesson'
+import Profile from './pages/Profile'
+import Signin from './pages/Signin'
+import Signup from './pages/Signup'
+import StudentDashboard from './pages/StudentDashboard'
+import Support from './pages/Support'
+import TermsOfService from './pages/TermsOfService'
+import TutorList from './pages/TutorList'
 
 function App() {
 
@@ -75,6 +76,8 @@ function App() {
           <Route path='copyright' element={<Copyright />} />
           <Route path='terms-of-service' element={<TermsOfService />} />
         </Route>
+
+        <Route path='*' element={<Error404></Error404>}></Route>
       </Routes>
     </div>
   )

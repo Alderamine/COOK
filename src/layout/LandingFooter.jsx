@@ -1,6 +1,6 @@
 import React from 'react'
-import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 import { Link } from 'react-router-dom'
+import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 
 export default function LandingFooter() {
   return (

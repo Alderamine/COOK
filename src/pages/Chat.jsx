@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import user from './../assets/StudentDashboard/user.svg';
 import { useNavigate } from 'react-router-dom';
+import user from './../assets/StudentDashboard/user.svg';
 
 const Chat = () => {
   const [currentChat, setCurrentChat] = useState({});

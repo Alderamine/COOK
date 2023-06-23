@@ -1,7 +1,7 @@
 import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import AutherProfile from "../../assets/Support/AutherProfile.png"
 import SupportArticleImage from "../../assets/Support/SupportArticleImage.png"
-import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function SupportArticle() {
   const navigate = useNavigate()

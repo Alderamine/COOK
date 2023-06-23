@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import GroupCard1 from "../../assets/GroupList/GroupCard1.png"
-import AutherProfile from "../../assets/Support/AutherProfile.png"
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import GroupCard1 from "../../assets/GroupList/GroupCard1.png";
+import AutherProfile from "../../assets/Support/AutherProfile.png";
 
 export default function GroupCard({ background = 'white', divRef = null, width }) {
 

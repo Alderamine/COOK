@@ -1,11 +1,11 @@
 import React from 'react'
-import Google from "../assets/Signup/Google.svg"
+import { Link } from 'react-router-dom'
 import Facebook from "../assets/Signup/Facebook.svg"
+import Google from "../assets/Signup/Google.svg"
 import Image1 from '../assets/Signup/Image1.png'
 import Image2 from '../assets/Signup/Image2.png'
-import MDImage2 from '../assets/Signup/MDImage2.png'
 import MDImage1 from '../assets/Signup/MDImage1.png'
-import { Link } from 'react-router-dom'
+import MDImage2 from '../assets/Signup/MDImage2.png'
 
 export default function Signup() {
   return (

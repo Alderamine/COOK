@@ -1,7 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import user from '../../assets/StudentDashboard/user.svg';
-
 
 const SingleChatMob = () => {
   const location = useLocation()

@@ -1,8 +1,8 @@
 import React from 'react'
-import Nav2 from "../assets/LandingPage/Nav2.svg"
+import { Link } from 'react-router-dom'
 import BlogNavIcon2 from "../assets/Blog/BlogNavIcon2.svg"
 import Hamburger from "../assets/Blog/Hamburger.svg"
-import { Link } from 'react-router-dom'
+import Nav2 from "../assets/LandingPage/Nav2.svg"
 
 export default function BlogNav() {
   return (

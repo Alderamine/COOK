@@ -1,18 +1,16 @@
-import React, { useRef } from 'react'
-import ProfilePicture from "../assets/Profile/ProfilePicture.png"
-import PlayIcon from "../assets/Profile/PlayIcon.svg"
+import React, { useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import BakerIcon from "../assets/Profile/BakerIcon.svg"
-import UserIcon from "../assets/Profile/UserIcon.svg"
 import CookIcon from "../assets/Profile/CookIcon.svg"
-import StarIcon2 from "../assets/TutorList/StarIcon2.svg"
-import ProfileReviewCard from '../components/Profile/ProfileReviewCard'
+import ProfileBakerIcon from '../assets/Profile/ProfileBakerIcon.svg'
+import ProfilePicture from "../assets/Profile/ProfilePicture.png"
 import ProfileSubject1 from '../assets/Profile/ProfileSubject1.svg'
 import ProfileSubject2 from '../assets/Profile/ProfileSubject2.svg'
 import ProfileSubject3 from '../assets/Profile/ProfileSubject3.svg'
 import ReviewProfilePic from "../assets/Profile/ReviewProfilePic.png"
-import ProfileBakerIcon from '../assets/Profile/ProfileBakerIcon.svg'
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import UserIcon from "../assets/Profile/UserIcon.svg"
+import StarIcon2 from "../assets/TutorList/StarIcon2.svg"
+import ProfileReviewCard from '../components/Profile/ProfileReviewCard'
 
 export default function Profile() {
 
@@ -483,8 +481,8 @@ export default function Profile() {
                 </div>
               </div>
             </Link>
-
           </div>
+          
           <div className='flex gap-[12px] self-end'>
             <svg className='cursor-pointer' onClick={handleScrollLeft} width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M26.3409 19.8182L13.2955 19.8182" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

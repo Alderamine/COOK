@@ -1,11 +1,9 @@
 import React from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import arrow from "../assets/StudentDashboard/arrow.svg"
-import message from "../assets/StudentDashboard/message.svg"
-import search from "../assets/StudentDashboard/search.svg"
-import setting from "../assets/StudentDashboard/setting.svg"
-import user from "../assets/StudentDashboard/user.svg"
 import burgerMenu from "../assets/StudentDashboard/burgerMenu.svg"
+import search from "../assets/StudentDashboard/search.svg"
+import user from "../assets/StudentDashboard/user.svg"
 
 const DashboardLayout = () => {
   const location = useLocation()
@@ -95,7 +93,7 @@ const DashboardLayout = () => {
             <NavLink to={'/student-dashboard/chat'} className={({ isActive }) => { return isActive ? "font-outfit font-[600] text-[16px] leading-[18.31px] text-[white]" : "font-outfit font-[600] text-[16px] leading-[18.31px] text-primaryLighten2" }}>Messages</NavLink>
           </div>
           <div className='xsm:hidden flex items-center gap-[8px]'>
-            <Link to={'/group-page'}>
+            <Link to={'/online-lesson'}>
               <p className='font-outfit font-[600] text-[16px] leading-[18.31px] text-[white]'>Join your group lesson</p>
             </Link>
             <img src={arrow} alt="" />

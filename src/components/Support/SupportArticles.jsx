@@ -1,13 +1,11 @@
-import React from 'react'
-import SupportArticlesRow from './SupportArticlesRow'
-import { suportArticlesData } from '../utils/consts'
-import { useLocation, useNavigate } from 'react-router-dom'
+import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { suportArticlesData } from '../utils/consts';
+import SupportArticlesRow from './SupportArticlesRow';
 
 export default function SupportArticles() {
   const navigate = useNavigate();
   const location = useLocation();
-
-  console.log(location.state?.title);
 
   return (
     <>

@@ -1,9 +1,9 @@
 import React from 'react'
-import TutorProfile from "../../assets/TutorList/TutorProfile.png"
-import BakerIcon from "../../assets/TutorList/BakerIcon.svg"
-import UserIcon from "../../assets/TutorList/UserIcon.svg"
-import StarIcon2 from "../../assets/TutorList/StarIcon2.svg"
 import { Link } from 'react-router-dom'
+import BakerIcon from "../../assets/TutorList/BakerIcon.svg"
+import StarIcon2 from "../../assets/TutorList/StarIcon2.svg"
+import TutorProfile from "../../assets/TutorList/TutorProfile.png"
+import UserIcon from "../../assets/TutorList/UserIcon.svg"
 
 export default function TutorCard() {
   return (

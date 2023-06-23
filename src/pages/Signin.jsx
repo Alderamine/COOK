@@ -1,11 +1,11 @@
 import React from 'react'
-import Google from "../assets/Signup/Google.svg"
-import Facebook from "../assets/Signup/Facebook.svg"
+import { Link } from 'react-router-dom'
 import Image1 from '../assets/Signin/Image1.png'
 import Image2 from '../assets/Signin/Image2.png'
-import MDImage2 from '../assets/Signin/MDImage2.png'
 import MDImage1 from '../assets/Signin/MDImage1.png'
-import { Link } from 'react-router-dom'
+import MDImage2 from '../assets/Signin/MDImage2.png'
+import Facebook from "../assets/Signup/Facebook.svg"
+import Google from "../assets/Signup/Google.svg"
 
 export default function Signin() {
   return (
@@ -13,7 +13,6 @@ export default function Signin() {
       <div className='blurSignin md:min-h-[1194px] sm:min-h-[1194px] bg-[rgba(255,219,184,1)] xsm:hidden w-[49.306vw] md:w-full sm:w-full h-[846px] flex gap-[13px] justify-center overflow-hidden'>
         <img className='w-[283px] relative top-[45px] md:hidden xsm:hidden sm:hidden' src={Image1} alt="" />
         <img className='w-[283px] md:hidden xsm:hidden sm:hidden' src={Image2} alt="" />
-
         <img className='max-h-[914px] hidden md:flex xsm:flex sm:flex w-[283px] relative md:absolute md:top-[0px] md:right-[-59px] sm:absolute sm:top-[0px] sm:right-[-59px]' src={MDImage2} alt="" />
         <img className='max-h-[603px] hidden md:flex xsm:flex sm:flex max-w-[283px] relative md:absolute md:bottom-[0px] md:left-[-60px] sm:absolute sm:bottom-[0px] sm:left-[-60px]' src={MDImage1} alt="" />
       </div>

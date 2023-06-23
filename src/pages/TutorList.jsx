@@ -1,18 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react'
-import StarIcon from "../assets/TutorList/StarIcon.svg"
-import UpsideDown from "../assets/TutorList/UpsideDown.svg"
-import FilterIcon from "../assets/TutorList/FilterIcon.svg"
-import FilterButtonIcon from "../assets/TutorList/FilterButtonIcon.svg"
-import TutorCard from '../components/TutorList/TutorCard'
-import GroupCard from '../components/GroupList/GroupCard'
-import GroupCardScroll from '../components/GroupList/GroupCardScroll'
-import ScrollArrow from '../assets/GroupList/ScrollArrow.svg'
 import { Link } from 'react-router-dom'
-import Pagination from '../components/utils/Pagination'
+import ScrollArrow from '../assets/GroupList/ScrollArrow.svg'
+import FilterButtonIcon from "../assets/TutorList/FilterButtonIcon.svg"
+import FilterIcon from "../assets/TutorList/FilterIcon.svg"
+import UpsideDown from "../assets/TutorList/UpsideDown.svg"
+import Availability from '../components/DropDowns/Availability'
 import IWantToLearn from '../components/DropDowns/IWantToLearn'
 import PricePerLesson from '../components/DropDowns/PricePerLesson'
-import Availability from '../components/DropDowns/Availability'
 import SortBy from '../components/DropDowns/SortBy'
+import GroupCardScroll from '../components/GroupList/GroupCardScroll'
+import TutorCard from '../components/TutorList/TutorCard'
+import Pagination from '../components/utils/Pagination'
 
 export default function TutorList() {
   const [iWantToLearn, setIWantToLearn] = useState(false);

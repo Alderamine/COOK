@@ -1,11 +1,6 @@
-import React from 'react'
-import VideoImage from '../assets/OnlineLesson/VideoImage.png'
-import EditIcon from '../assets/OnlineLesson/EditIcon.svg'
-import ChatIcon from '../assets/OnlineLesson/ChatIcon.svg'
-import { useState } from 'react';
-import { useRef } from 'react';
-import { useEffect } from 'react';
-import { Link, NavLink, Outlet } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+import VideoImage from '../assets/OnlineLesson/VideoImage.png';
 
 export default function OnlineLesson() {
   const [currentTab, setCurrentTab] = useState("chat");
@@ -13,7 +8,7 @@ export default function OnlineLesson() {
   const [widthNumber, setWidthNumber] = useState('1024');
   const resizableDivRef = useRef(null);
   const handleDivRef = useRef(null);
-  const [newWidth,setNewWidth]=useState()
+  const [newWidth, setNewWidth] = useState()
 
   const handleDrag = (event) => {
     console.log(event)
@@ -55,15 +50,22 @@ export default function OnlineLesson() {
   }, []);
 
 
+  useEffect(() => {
+
+  }, [])
+
+  const [img, setImg] = useState(document.createElement("img"))
+  useEffect(() => {
+    img.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+  }, [])
+
   const handleDragStart = (event) => {
-    event.dataTransfer.setDragImage(new Image(), 0, 0);
+    event.dataTransfer.setDragImage(img, 0, 0);
   };
 
   const handleDragEnd = (event) => {
     event.target.style.opacity = '1';
   };
-
-
 
   return (
     <main className='min-h-screen max-h-screen w flex md:flex-col sm:flex-col xsm:flex-col'>

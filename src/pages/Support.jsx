@@ -1,11 +1,9 @@
-import React from 'react'
-import SupportNav from '../components/Support/SupportNav'
-import CategoryCard from '../components/Support/CategoryCard'
+import React from 'react';
 import CategoriesIcon1 from '../assets/Support/CategoriesIcon1.svg';
 import CategoriesIcon2 from '../assets/Support/CategoriesIcon2.svg';
 import CategoriesIcon3 from '../assets/Support/CategoriesIcon3.svg';
 import CategoriesIcon4 from '../assets/Support/CategoriesIcon4.svg';
-import SupportFooter from '../components/Support/SupportFooter';
+import CategoryCard from '../components/Support/CategoryCard';
 
 export default function Support() {
   return (
