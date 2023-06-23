@@ -139,6 +139,7 @@ export default function TutorList() {
                 <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
+              
               <input type="text" name="" id="" placeholder='Search' className='indent-[35px] placeholder:text-TextColor outline-none font-outfit text-[20px] leading-[22.68px] ' />
             </div>
             <div className='relative'>

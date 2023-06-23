@@ -5,10 +5,16 @@ import Hamburger from "../assets/Blog/Hamburger.svg"
 import Nav2 from "../assets/LandingPage/Nav2.svg"
 import { useState } from 'react'
 import Menu from './Menu'
+import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
+import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
+import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
+import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
+import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
 
 export default function BlogNav() {
 
   const [showMenu, setShowMenu] = useState(false);
+  const [languageModal, setLanguageModal] = useState(false);
 
   return (
     <>
@@ -26,23 +32,75 @@ export default function BlogNav() {
             <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
               <Link to={'signup'}>
                 <div className='flex gap-[7px]'>
-                  <img className='w-[24px]' src={Nav2} />
+                  <svg className='max-w-[24px] max-h-[24px] min-w-[24px] min-h-[24px]' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.9165 93.75C22.9165 94.3025 23.136 94.8324 23.5267 95.2231C23.9174 95.6138 24.4473 95.8333 24.9998 95.8333H74.9998C75.5523 95.8333 76.0822 95.6138 76.473 95.2231C76.8637 94.8324 77.0831 94.3025 77.0831 93.75V79.1667H22.9165V93.75ZM18.0623 51.4375L22.4998 75H37.2915L35.4165 54.3542C35.3919 54.0806 35.4214 53.8048 35.5033 53.5426C35.5853 53.2804 35.718 53.037 35.8941 52.8261C36.0701 52.6152 36.286 52.4411 36.5293 52.3137C36.7727 52.1862 37.0387 52.108 37.3123 52.0833C37.5859 52.0587 37.8617 52.0882 38.1238 52.1702C38.386 52.2521 38.6295 52.3849 38.8404 52.5609C39.0512 52.737 39.2254 52.9528 39.3528 53.1962C39.4803 53.4395 39.5585 53.7056 39.5831 53.9792L41.479 75H58.5206L60.4165 53.9792C60.4411 53.7056 60.5194 53.4395 60.6468 53.1962C60.7743 52.9528 60.9484 52.737 61.1593 52.5609C61.3701 52.3849 61.6136 52.2521 61.8758 52.1702C62.138 52.0882 62.4137 52.0587 62.6873 52.0833C62.9609 52.108 63.227 52.1862 63.4703 52.3137C63.7136 52.4411 63.9295 52.6152 64.1055 52.8261C64.2816 53.037 64.4144 53.2804 64.4963 53.5426C64.5783 53.8048 64.6078 54.0806 64.5831 54.3542L62.7081 75H77.4998L81.9373 51.4375C84.5116 50.7479 86.9094 49.5174 88.9706 47.8281C91.0319 46.1387 92.7094 44.0294 93.8912 41.6407C95.073 39.252 95.732 36.6387 95.8243 33.9753C95.9166 31.3118 95.44 28.6592 94.4263 26.1944C93.4126 23.7296 91.8852 21.5093 89.9457 19.6814C88.0063 17.8534 85.6995 16.46 83.179 15.5939C80.6586 14.7277 77.9825 14.4089 75.3291 14.6585C72.6758 14.9082 70.1061 15.7206 67.7915 17.0417C66.5488 13.3055 64.1615 10.0554 60.9681 7.75213C57.7747 5.44886 53.9372 4.20935 49.9998 4.20935C46.0624 4.20935 42.225 5.44886 39.0315 7.75213C35.8381 10.0554 33.4508 13.3055 32.2081 17.0417C29.8935 15.7206 27.3238 14.9082 24.6705 14.6585C22.0171 14.4089 19.341 14.7277 16.8206 15.5939C14.3002 16.46 11.9933 17.8534 10.0539 19.6814C8.11446 21.5093 6.58699 23.7296 5.57331 26.1944C4.55963 28.6592 4.08303 31.3118 4.1753 33.9753C4.26758 36.6387 4.92659 39.252 6.10841 41.6407C7.29023 44.0294 8.9677 46.1387 11.029 47.8281C13.0903 49.5174 15.488 50.7479 18.0623 51.4375Z" fill="#D27722" />
+                  </svg>
+
                   <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Become tutor</p>
                 </div>
               </Link>
               <Link to={'signup'}>
                 <div className='flex gap-[7px]'>
-                  <img className='w-[24px]' src={BlogNavIcon2} />
+                  <svg className='max-w-[24px] max-h-[24px] min-w-[24px] min-h-[24px]' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1283_45026)">
+                      <path d="M69.9707 62.6608H78.3101Z" fill="#D27722" />
+                      <path d="M69.9707 62.6608H78.3101" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                      <mask id="mask0_1283_45026" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="-17" y="-17" width="134" height="134">
+                        <path d="M116.674 116.654H-16.6592V-16.6789H116.674V116.654Z" fill="white" />
+                      </mask>
+                      <g mask="url(#mask0_1283_45026)">
+                        <path d="M51.9941 78.7799H19.7301C9.90635 78.7799 1.95752 70.8115 1.95752 61.0073V58.4489H69.7667V61.0073C69.7667 70.8115 61.8179 78.7799 51.9941 78.7799Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M94.0232 66.6823H78.7505V58.6358H94.0232C96.2496 58.6358 98.0464 60.4326 98.0464 62.659C98.0464 64.8855 96.2496 66.6823 94.0232 66.6823Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M44.8155 38.8881C40.304 43.3996 40.8509 51.2898 40.8509 51.2898C40.8509 51.2898 48.7411 51.8562 53.2526 47.3252C57.7641 42.8137 57.2173 34.9235 57.2173 34.9235C57.2173 34.9235 49.327 34.3766 44.8155 38.8881Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.0636 49.3722C15.9541 52.2627 21.8522 51.0518 21.8522 51.0518C21.8522 51.0518 23.0631 45.1537 20.1726 42.2632C17.2626 39.3727 11.384 40.5836 11.384 40.5836C11.384 40.5836 10.1731 46.4817 13.0636 49.3722Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.1782 30.688C24.1782 33.9887 26.8539 36.6838 30.174 36.6838C33.4746 36.6838 36.1698 34.0082 36.1698 30.688C36.1698 27.3679 33.4746 24.6922 30.174 24.6922C26.8539 24.6922 24.1782 27.3874 24.1782 30.688Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M44.6943 24.6988C44.6943 26.6323 46.2568 28.1752 48.1707 28.1752C50.0847 28.1752 51.6667 26.6323 51.6667 24.6988C51.6667 22.7653 50.1042 21.2224 48.1903 21.2224C46.2763 21.2224 44.6943 22.7653 44.6943 24.6988Z" fill="#D27722" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M31.1143 46.14V49.0891Z" fill="#D27722" />
+                        <path d="M31.1143 46.14V49.0891" stroke="#D27722" stroke-width="4" stroke-miterlimit="13.3333" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1283_45026">
+                        <rect width="100" height="100" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
                   <p className='font-outfit font-normal text-lg leading-[22.68px] text-TextColor'>Become tutor</p>
                 </div>
               </Link>
             </div>
           </div>
 
-          <img src={Hamburger} onClick={()=> setShowMenu(true)} className='xsm:flex hidden cursor-pointer' alt="" />
+          <img src={Hamburger} onClick={() => setShowMenu(true)} className='xsm:flex hidden cursor-pointer' alt="" />
 
           <div className='flex items-center gap-[20px] xsm:hidden'>
-            <div className='flex items-center gap-[4px] cursor-pointer'>
+            <div onClick={() => setLanguageModal(!languageModal)}  className='relative flex items-center gap-[4px] cursor-pointer'>
+              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
+                <div className='mt-[17px] flex flex-col gap-[5px]'>
+                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                    <img src={EnglishIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                    <img src={GermanIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ChineseIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={ItalianIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
+                  </div>
+                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                    <img src={HebrewIcon} alt="" />
+                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
+                  </div>
+                </div>
+              </div>}
               <p className='font-outfit font-normal text-[19px] leading-[19px]'>Eng</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
