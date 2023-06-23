@@ -29,14 +29,149 @@ import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
 import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
 import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import LandingFooter from '../layout/LandingFooter'
+import CookLogoLight from "../assets/Legal/CookLogoLight.svg"
+import { useRef } from 'react'
+import { useEffect } from 'react'
+
 
 const About = () => {
   const [currencyModal, setCurrencyModal] = useState(false);
   const [languageModal, setLanguageModal] = useState(false);
+
+  const mainDiv=useRef();
+  const [showNav,setShowNav]=useState(false)
+
+  useEffect(()=>{
+    const onScrollHandler=()=>{
+
+      if(window.scrollY>mainDiv.current.offsetHeight){
+        setShowNav(true)
+        setCurrencyModal(false)
+        setLanguageModal(false)
+        return
+      } else if (window.scrollY<mainDiv.current.offsetHeight){
+        setShowNav(false)
+        setCurrencyModal(false)
+        setLanguageModal(false)
+      }
+    }
+
+    document.addEventListener("scroll",onScrollHandler)
+
+    return ()=>{
+      document.removeEventListener('scroll',onScrollHandler)
+    }
+  },[])
+
   return (
     <div>
-      <div className='relative bg-primary2 min-h-[580px]'>
-        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='fixed top-0 h-[104px] w-[100%] z-30 px-[64px] xsm:px-[32px]  flex items-center justify-between'>
+      <nav style={showNav?{maxHeight:'100%',overflow:"visible",opacity:'1'}:{maxHeight:'0px',overflow:"hidden",opacity:'0'}} className='transition-all duration-200 delay-75 fixed top-0 z-40 h-[84px] w-[100%] px-[64px] xsm:px-[32px] flex items-center bg-primary2 justify-between'>
+        <div className='flex items-center gap-[32px]'>
+          {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
+          <Link to={'/'}>
+            <img src={CookLogoLight} alt="" />
+          </Link>
+          <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
+          <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
+            <Link to={'/search-tutors'} className='flex gap-[7px]'>
+              <img className='w-[24px]' src={Nav1} />
+              <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
+            </Link>
+            <Link to={'/signup'} className='flex gap-[7px]'>
+              <img className='w-[24px]' src={Nav2} />
+              <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
+            </Link>
+            <Link to={'/search-groups'} className='flex gap-[7px]'>
+              <img className='w-[24px]' src={Nav3} />
+              <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Group Cooking</p>
+            </Link>
+          </div>
+        </div>
+        <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
+          <div onClick={() => setLanguageModal(!languageModal)} className='relative cursor-pointer flex items-center gap-[4px]'>
+            {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+              <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
+              <div className='mt-[17px] flex flex-col gap-[5px]'>
+                <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                  <img src={EnglishIcon} alt="" />
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                  <img src={GermanIcon} alt="" />
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <img src={ChineseIcon} alt="" />
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <img src={ItalianIcon} alt="" />
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <img src={HebrewIcon} alt="" />
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
+                </div>
+              </div>
+            </div>}
+            <p className='font-outfit font-normal text-[19px] leading-[19px] text-[white]'>Eng</p>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
+            </svg>
+          </div>
+          <div onClick={() => setCurrencyModal(!currencyModal)} className='relative cursor-pointer flex items-center gap-[4px]'>
+            {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+              <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a currency</h5>
+              <div className='mt-[17px] flex flex-col gap-[5px]'>
+                <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>USD</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>EUR</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>UAH</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>GBP</p>
+                </div>
+                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
+                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>VHF</p>
+                </div>
+              </div>
+            </div>}
+            <p className='font-outfit font-normal text-[18px] leading-[18px] text-[white]'>USD</p>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
+            </svg>
+          </div>
+          <div className='h-[15px] border border-primary rouded-[16px]'></div>
+          <Link to={'/support'}>
+            <div className='custom-tooltip' data-tooltip="Support">
+              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 16.5V12.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M12 8.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </div>
+          </Link>
+          <div className='h-[15px] border border-primary rouded-[16px]'></div>
+          <div>
+            <Link to={'/signin'} className='w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
+              Log In
+              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M11.75 9.5H2.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+        <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
+      </nav>
+
+      <div ref={mainDiv} className='relative bg-primary2 min-h-[580px]'>
+        <nav style={{ background: "linear-gradient(180deg,#8B4C10 0%,#D27722 100%)" }} className='relative z-40 h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
           <div className='flex items-center gap-[32px]'>
             {/* <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em] text-primaryLighten2'>COOK</h1> */}
             <Link to={'/'}>
@@ -60,7 +195,7 @@ const About = () => {
           </div>
           <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
             <div onClick={() => setLanguageModal(!languageModal)} className='flex items-center gap-[4px] relative cursor-pointer'>
-              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
                 <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
                 <div className='mt-[17px] flex flex-col gap-[5px]'>
                   <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
@@ -91,7 +226,7 @@ const About = () => {
               </svg>
             </div>
             <div onClick={() => setCurrencyModal(!currencyModal)} className='flex items-center gap-[4px] relative cursor-pointer'>
-              {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
+              {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
                 <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a currency</h5>
                 <div className='mt-[17px] flex flex-col gap-[5px]'>
                   <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
@@ -139,16 +274,16 @@ const About = () => {
           <img className='sm:block xsm:block hidden' src={Hamburger} alt="" />
         </nav>
 
-        <img src={EllipseDesktop} className='absolute z-0 top-0 right-0 sm:hidden xsm:hidden' alt="" />
-        <img src={EllipseTablet} className='absolute z-0 right-0 top-[157px] hidden sm:block' alt="" />
+        <img src={EllipseDesktop} className='absolute z-10 top-0 right-0 sm:hidden xsm:hidden' alt="" />
+        <img src={EllipseTablet} className='absolute z-10 right-0 top-[157px] hidden sm:block' alt="" />
 
-        <div className='pt-[104px] mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
+        <div className='mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
           <h1 className='font-redHatDisplay text-[white] font-bold text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> Your Inner Chef</h1>
           <div className='flex flex-1 flex-col items-center'>
             <img src={Main} className='w-[535px] min-w-[535px] max-w-[535px] h-[287px] z-10 xsm:hidden' alt="" />
             <img src={Main2} className='hidden xsm:block z-10 xsm:w-[326px] xsm:max-w-[326px] xsm:min-w-[326px] xsm:h-[244px]' alt="" />
             <Link to={'/signup'}>
-            <button className='mt-[39px]  rounded-full border-[3px] border-primaryLighten2 leading-[27px] text-lg w-[155px] h-[47px] font-kanit text-[white]'>Become a Chef</button>
+              <button className='mt-[39px]  rounded-full border-[3px] border-primaryLighten2 leading-[27px] text-lg w-[155px] h-[47px] font-kanit text-[white]'>Become a Chef</button>
             </Link>
           </div>
         </div>
