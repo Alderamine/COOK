@@ -135,8 +135,8 @@ export default function GroupList() {
           <div className='flex gap-[20px] items-center md:hidden sm:hidden'>
             <div className='overflow-hidden relative p-[16px] w-[226px] h-[55px] border-2 border-[rgba(255,219,184,1)] rounded-[8px]'>
               <svg className='min-w-[26px] absolute top-[50%] translate-y-[-50%]' width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <input type="text" name="" id="" placeholder='Search' className='indent-[35px] placeholder:text-TextColor outline-none font-outfit text-[20px] leading-[22.68px] ' />
             </div>

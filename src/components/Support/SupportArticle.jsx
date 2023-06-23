@@ -6,7 +6,7 @@ import SupportArticleImage from "../../assets/Support/SupportArticleImage.png"
 export default function SupportArticle() {
   const navigate = useNavigate()
   const location = useLocation()
-  console.log(location);
+
   return (
     <>
       <nav className="ml-[20.347vw] mr-[20.347vw] md:ml-[6.587vw] md:mr-[5.749vw] sm:ml-[6.587vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw] rounded-md">

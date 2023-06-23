@@ -210,7 +210,7 @@ const Chat = () => {
           {Object.keys(currentChat).length === 0 && (
             <div className='flex flex-col gap-2 min-h-[calc(100vh-142px)] justify-center items-center font-outfit text-[20px] leading-[18.13px]  text-[#949494] font-[600]'>
               <svg width='45' height='45' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H3.2L2 15.2V2H18V14Z' fill='#1E1E21' fill-opacity='0.4' />
+                <path d='M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H3.2L2 15.2V2H18V14Z' fill='#1E1E21' fillOpacity='0.4' />
               </svg>
               <span>{allChats.length === 0 ? 'No chats found' : 'Open a chat'}</span>
             </div>

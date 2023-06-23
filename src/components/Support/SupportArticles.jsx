@@ -36,7 +36,7 @@ export default function SupportArticles() {
       <main className='ml-[12.153vw] mr-[10.764vw] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] xsm:ml-[8.205vw] xsm:mr-[8.205vw] border border-[rgba(255,219,184,1)] rounded-[16px] p-[32px] xsm:p-[24px] xsm:pt-[0px] divide-y divide-[rgba(255,219,184,1)]'>
         {suportArticlesData.map((articleTitle, index) => {
           return (
-            <SupportArticlesRow category={location.state.category} articleTitle={articleTitle} />
+            <SupportArticlesRow key={index} category={location.state.category} articleTitle={articleTitle} />
           )
         })
         }

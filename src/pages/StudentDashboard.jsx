@@ -32,7 +32,7 @@ const StudentDashboard = () => {
             <div className='flex flex-col gap-[12px] xsm:gap-[14px]'>
               {[1, 2, 3].map((val, index) => {
                 return (
-                  <div className='flex justify-between p-[16px] border border-primaryLighten2 rounded-lg'>
+                  <div key={index} className='flex justify-between p-[16px] border border-primaryLighten2 rounded-lg'>
                     <div className='flex gap-[16px] items-center xsm:flex-col xsm:items-start'>
                       <img src={user} alt="" />
                       <div className='flex flex-col gap-[5px]'>

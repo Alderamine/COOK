@@ -47,7 +47,6 @@ export default function TutorList() {
   const handleScroll = () => {
     const currentScrollLeft = scrollRef.current.scrollLeft;
     const targetScrollLeft = currentScrollLeft + width;
-    console.log(width)
 
     scrollRef.current.scrollTo({
       left: targetScrollLeft,
@@ -75,7 +74,7 @@ export default function TutorList() {
         <div className='flex flex-col items-end md:hidden sm:hidden xsm:hidden'>
           <div className='flex items-center gap-[8px]'>
             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1005_50990)">
+              <g clipPath="url(#clip0_1005_50990)">
                 <path d="M15.9583 6.325C15.9071 6.16645 15.8104 6.02646 15.6802 5.92248C15.5501 5.81851 15.3922 5.75515 15.2262 5.7403L10.6082 5.32094L8.78209 1.04677C8.6474 0.733546 8.34077 0.530853 8.00007 0.530853C7.65937 0.530853 7.35271 0.733577 7.21808 1.04755L5.39197 5.32097L0.7732 5.7403C0.607451 5.75548 0.449802 5.81898 0.3198 5.92291C0.189799 6.02685 0.0931609 6.16666 0.0418688 6.325C-0.0634776 6.64901 0.0338061 7.00436 0.290531 7.22837L3.78125 10.2897L2.75191 14.8239C2.67659 15.1573 2.80597 15.5019 3.0826 15.7018C3.23126 15.8093 3.40524 15.864 3.58065 15.864C3.7319 15.864 3.8819 15.8232 4.01659 15.7426L8.00007 13.3618L11.9821 15.7426C12.2735 15.9179 12.6408 15.9019 12.9168 15.7018C13.0519 15.604 13.1553 15.4687 13.2141 15.3126C13.2729 15.1565 13.2845 14.9865 13.2475 14.8239L12.2182 10.2897L15.7089 7.22899C15.8345 7.11932 15.925 6.97517 15.9694 6.81446C16.0137 6.65374 16.0099 6.48354 15.9583 6.325Z" fill="#FFDBB8" />
               </g>
               <defs>
@@ -137,8 +136,8 @@ export default function TutorList() {
           <div className='flex gap-[20px] items-center md:hidden sm:hidden'>
             <div className='overflow-hidden relative p-[16px] w-[226px] h-[55px] border-2 border-[rgba(255,219,184,1)] rounded-[8px]'>
               <svg className='min-w-[26px] absolute top-[50%] translate-y-[-50%]' width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <input type="text" name="" id="" placeholder='Search' className='indent-[35px] placeholder:text-TextColor outline-none font-outfit text-[20px] leading-[22.68px] ' />
             </div>
@@ -183,8 +182,8 @@ export default function TutorList() {
             <div className='gap-[20px] items-center hidden md:flex sm:flex'>
               <div className='overflow-hidden relative p-[16px] w-[226px] h-[55px] border-2 border-[rgba(255,219,184,1)] rounded-[8px]'>
                 <svg className='min-w-[26px] absolute top-[50%] translate-y-[-50%]' width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.9167 21.0833C16.7031 21.0833 20.5833 17.2031 20.5833 12.4167C20.5833 7.6302 16.7031 3.75 11.9167 3.75C7.1302 3.75 3.25 7.6302 3.25 12.4167C3.25 17.2031 7.1302 21.0833 11.9167 21.0833Z" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M22.75 23.25L18.0375 18.5375" stroke="#D27722" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 <input type="text" name="" id="" placeholder='Search' className='indent-[35px] placeholder:text-TextColor outline-none font-outfit text-[20px] leading-[22.68px] ' />
               </div>

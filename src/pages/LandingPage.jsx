@@ -410,8 +410,8 @@ export default function LandingPage() {
         <div className='w-[523px] bg-[rgba(255,253,244,1)] xsm:w-[83.59vw] min-h-[298px] xsm:pb-[52px] mt-[125px] xsm:mt-[148px] flex flex-col items-center  px-[25px] rounded-[16px] bg-primary2Lighten border border-[rgba(255,219,184,1)] m-auto relative'>
           <div className='relative top-[-70px] w-[100px] h-[100px] bg-primary2 rounded-full flex justify-center items-center'>
             <svg className='absolute top-[-19px] right-[-16px]' width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M22.9784 3.00958C22.9784 3.00958 30.0015 2.99594 33.514 5.54081C37.2367 8.23799 38.3369 15.0307 38.3369 15.0307" stroke="#D27722" stroke-width="4" />
-              <path d="M1.99293 6.1303C1.99293 6.1303 16.7094 6.36661 24.1657 11.7441C32.0684 17.4435 34.6294 31.4856 34.6294 31.4856" stroke="#D27722" stroke-width="4" />
+              <path d="M22.9784 3.00958C22.9784 3.00958 30.0015 2.99594 33.514 5.54081C37.2367 8.23799 38.3369 15.0307 38.3369 15.0307" stroke="#D27722" strokeWidth="4" />
+              <path d="M1.99293 6.1303C1.99293 6.1303 16.7094 6.36661 24.1657 11.7441C32.0684 17.4435 34.6294 31.4856 34.6294 31.4856" stroke="#D27722" strokeWidth="4" />
             </svg>
 
             <img className='w-[50px]' src={Benefit3} />
