@@ -15,7 +15,6 @@ export default function Menu({ showMenu, closeMenu }) {
   useEffect(() => {
     const resizeHandler = () => {
       closeMenu();
-      window.removeEventListener('resize', resizeHandler);
     }
 
     window.addEventListener('resize', resizeHandler);

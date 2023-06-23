@@ -165,7 +165,56 @@ export default function LandingPage() {
           </Link>
           <Link to={'/search-tutors'}>
             <div className='flex items-center gap-[1.667vw] group h-[121px] py-[24px] px-[2.361vw] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)]  transition-colors delay-100 duration-100'>
-              <img className='w-[52px]' src={Stats5} />
+              {/* <img className='w-[52px]' src={Stats5} /> */}
+              {/* <svg className='w-[52px] h-[52px]' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1283_44839)">
+                  <mask id="mask0_1283_44839" style={{maskType:"luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+                    <path d="M0 0.000289917H99.9997V100H0V0.000289917Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1283_44839)">
+                    <path d="M8.78906 14.6487C8.78906 35.1437 25.4035 51.7579 45.8983 51.7579H60.8397C67.15 51.7579 72.2654 56.8733 72.2654 63.1837C72.2654 69.494 67.15 74.6094 60.8397 74.6094H52.7342V90.8203H58.9842C80.0185 90.8203 97.07 73.7686 97.07 52.7345C97.07 31.7004 80.0185 14.6487 58.9842 14.6487H8.78906Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M38.0858 14.6487H8.78905C5.55312 14.6487 2.92969 12.0253 2.92969 8.78932C2.92969 5.5534 5.55312 2.92997 8.78905 2.92997H38.0858" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M52.7343 90.8203C52.7343 90.8203 42.9687 97.0703 35.1562 97.0703C27.3438 97.0703 27.3438 89.8926 27.3438 89.8926C27.3438 89.8926 27.3438 82.7149 35.1562 82.7149H52.7343V90.8203Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M52.7343 74.6094C52.7343 74.6094 42.9687 68.3594 35.1562 68.3594C27.3438 68.3594 27.3438 75.5371 27.3438 75.5371C27.3438 75.5371 27.3438 82.7148 35.1562 82.7148H52.7343V74.6094Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M45.5923 51.7579C56.0173 51.7579 64.4532 43.3222 64.4532 32.8971" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M34.1797 27.7737C34.4169 27.7737 34.6094 27.5813 34.6094 27.344C34.6094 27.1068 34.4169 26.9143 34.1797 26.9143C33.9424 26.9143 33.75 27.1068 33.75 27.344C33.75 27.5813 33.9424 27.7737 34.1797 27.7737Z" fill="#D27722" stroke="#D27722" stroke-width="5" />
+                    <path d="M60.8398 74.6094H52.7344V90.8203H58.9844C65.6353 90.8203 71.8869 89.1139 77.3282 86.1174L65.0255 73.8147C63.6927 74.3405 62.2726 74.6101 60.8398 74.6094Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M58.9842 14.6486H8.78906C8.78906 35.1437 25.4035 51.7579 45.8983 51.7579H60.8397C63.9948 51.7579 66.8512 53.0368 68.919 55.1044L91.357 32.6663C84.6382 21.8511 72.6533 14.6486 58.9842 14.6486Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M94.8999 65.4298H72.0435C71.2781 69.2679 68.5898 72.4101 65.0254 73.8147L77.3281 86.1174C85.4536 81.643 91.7683 74.2888 94.8999 65.4298Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M97.07 52.7345C97.07 45.3693 94.9773 38.494 91.357 32.6664L68.9189 55.1044C70.9865 57.1722 72.2654 60.0287 72.2654 63.1837C72.2653 63.9379 72.191 64.6902 72.0434 65.4298H94.8999C96.3036 61.4587 97.07 57.1865 97.07 52.7345Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1283_44839">
+                    <rect width="100" height="100" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg> */}
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1284_44615)">
+                  <mask id="mask0_1284_44615" style={{maskType:"luminance"}} maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="52">
+                    <path d="M0 0.000152588H51.9998V52H0V0.000152588Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1284_44615)">
+                    <path d="M4.57031 7.61731C4.57031 18.2747 13.2098 26.9141 23.8671 26.9141H31.6366C34.918 26.9141 37.578 29.5741 37.578 32.8555C37.578 36.1369 34.918 38.7969 31.6366 38.7969H27.4218V47.2266H30.6718C41.6096 47.2266 50.4764 38.3597 50.4764 27.4219C50.4764 16.4842 41.6096 7.61731 30.6718 7.61731H4.57031Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.8046 7.61719H4.5703C2.88762 7.61719 1.52344 6.253 1.52344 4.57032C1.52344 2.88764 2.88762 1.52345 4.5703 1.52345H19.8046" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M27.4218 47.2266C27.4218 47.2266 22.3437 50.4766 18.2812 50.4766C14.2188 50.4766 14.2188 46.7442 14.2188 46.7442C14.2188 46.7442 14.2188 43.0117 18.2812 43.0117H27.4218V47.2266Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M27.4218 38.7969C27.4218 38.7969 22.3437 35.5469 18.2812 35.5469C14.2188 35.5469 14.2188 39.2793 14.2188 39.2793C14.2188 39.2793 14.2188 43.0117 18.2812 43.0117H27.4218V38.7969Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M23.708 26.9141C29.129 26.9141 33.5157 22.5275 33.5157 17.1064" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.7734 13.2422C17.2341 13.2422 16.7969 13.6794 16.7969 14.2188C16.7969 14.7581 17.2341 15.1953 17.7734 15.1953C18.3128 15.1953 18.75 14.7581 18.75 14.2188C18.75 13.6794 18.3128 13.2422 17.7734 13.2422Z" fill="#D27722" stroke="#D27722" stroke-width="5" />
+                    <path d="M31.6367 38.7969H27.4219V47.2266H30.6719C34.1304 47.2266 37.3812 46.3392 40.2107 44.781L33.8133 38.3836C33.1202 38.6571 32.3818 38.7973 31.6367 38.7969Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M30.6718 7.61731H4.57031C4.57031 18.2747 13.2098 26.9141 23.8671 26.9141H31.6366C33.2773 26.9141 34.7626 27.5792 35.8379 28.6543L47.5056 16.9865C44.0119 11.3626 37.7797 7.61731 30.6718 7.61731Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M49.3477 34.0234H37.4624C37.0644 36.0192 35.6665 37.6532 33.813 38.3836L40.2104 44.781C44.4357 42.4543 47.7193 38.6301 49.3477 34.0234Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M50.4765 27.4219C50.4765 23.592 49.3882 20.0168 47.5057 16.9865L35.8379 28.6543C36.913 29.7295 37.5781 31.2148 37.5781 32.8555C37.578 33.2476 37.5393 33.6389 37.4626 34.0234H49.348C50.0779 31.9585 50.4765 29.7369 50.4765 27.4219Z" stroke="#D27722" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1284_44615">
+                    <rect width="52" height="52" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
               <div className='w-full'>
                 <div className='flex items-center justify-between'>
                   <h3 className='font-rubik font-bold text-[24px] leading-[27.19px] tracking-[-0.02em] text-TextColor delay-100 duration-100 md:text-[20px] md:leading-[22.66px] sm:text-[20px] sm:leading-[22.66px] xsm:text-[20px] xsm:leading-[22.66px]'>Seafood Mastery</h3>
