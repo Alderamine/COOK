@@ -68,7 +68,7 @@ export default function LandingPage() {
               <div>
                 <h2 className='font-rubik text-[18px] font-medium leading-[21.33px]'>David Mitchell</h2>
                 <div className='flex items-center gap-[7px]'>
-                  <h3 className='font-outfit text-[16px] font-semibold leading-[20.16px]'>4.8️</h3>
+                  <h3 className='font-outfit text-[16px] font-semibold leading-[20.16px]'>4r.8</h3>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8 1.5L10.163 5.77865L15 6.46898L11.5 9.79758L12.326 14.5L8 12.2787L3.674 14.5L4.5 9.79758L1 6.46898L5.837 5.77865L8 1.5Z" fill="#D27722" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -567,7 +567,7 @@ export default function LandingPage() {
           </div>
 
           <div className='grid grid-cols-2 xsm:grid-cols-1 mt-[53px] gap-[23px]'>
-            <Link to={"/blog/category/article"}>
+            <Link to={"/blog"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img className='' src={CookBlog1} alt="" />
@@ -586,7 +586,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog/category/article"}>
+            <Link to={"/blog"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog2} alt="" />
@@ -605,7 +605,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog/category/article"}>
+            <Link to={"/blog"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog3} alt="" />
@@ -624,7 +624,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </Link>
-            <Link to={"/blog/category/article"}>
+            <Link to={"/blog"}>
               <div className=' gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog4} alt="" />
