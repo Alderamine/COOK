@@ -21,8 +21,6 @@ const StudentDashboard = () => {
                   </clipPath>
                 </defs>
               </svg>
-
-
               <div className='flex flex-col '>
                 <h2 className='text-[24px] font-outfit font-[600] xsm:text-[20px] text-[black]'>12 Finished Lessons</h2>
                 <p className='font-outfit mt-[4px] xsm:mt-[8px] text-[16px] text-TextColorSec'>Celebrate your progress with completed lessons</p>

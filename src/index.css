@@ -80,6 +80,7 @@ body {
   width: 180px;
   height: 422px;
 }
+
 .blurEndGroup {
   position: relative;
 }
@@ -318,40 +319,6 @@ body {
   position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .react-calendar {
   /* width: 350px; */
   max-width: 100%;
@@ -506,4 +473,37 @@ body {
 
 .react-calendar--selectRange .react-calendar__tile--hover {
   background-color: #e6e6e6;
+}
+
+
+.modalShadow {
+  box-shadow: 0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes animateMaxHeight {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 200px;
+  }
+}
+
+@keyframes animatePadding {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 20px;
+  }
+}
+
+.custom-animation {
+  animation-name: animateMaxHeight, animatePadding;
+  animation-duration: 1s, 1s;
+  animation-delay: 0s, 1s;
+  animation-timing-function: ease, ease;
+  overflow: hidden;
 }

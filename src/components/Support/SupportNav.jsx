@@ -5,6 +5,7 @@ import EnglishIcon from "../../assets/LandingPage/EnglishIcon.svg"
 import GermanIcon from "../../assets/LandingPage/GermanIcon.svg"
 import HebrewIcon from "../../assets/LandingPage/HebrewIcon.svg"
 import ItalianIcon from "../../assets/LandingPage/ItalianIcon.svg"
+import LanguageModal from '../../layout/LanguageModal'
 
 export default function SupportNav() {
 
@@ -33,32 +34,8 @@ export default function SupportNav() {
             <Link className='xsm:hidden' to={'/'}>
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white]'>Go to COOK</p>
             </Link>
-            <div onClick={() => setLanguageModal(!languageModal)} className='flex gap-[8px] cursor-pointer'>
-              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute z-30 top-[75px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
-                <div className='mt-[17px] flex flex-col gap-[5px]'>
-                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                    <img src={EnglishIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                    <img src={GermanIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ChineseIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ItalianIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={HebrewIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
-                  </div>
-                </div>
-              </div>}
+            <div onClick={(e) => { setLanguageModal(!languageModal); e.stopPropagation(); }} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
+              <LanguageModal state={languageModal} closeModal={(e) => { setLanguageModal(false) }} />
               <p className='font-outfit font-normal text-[20px] leading-[25.2px] text-[white] xsm:hidden'>English</p>
               <svg className='max-w-[20px] max-h-[20px] self-center' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_1283_45264)">

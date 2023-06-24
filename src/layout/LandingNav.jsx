@@ -1,18 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
-import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
-import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
 import Hamburger from "../assets/LandingPage/Hamburger.svg"
-import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
-import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import Menu from './Menu'
+import CurrencyModal from './CurrencyModal'
+import LanguageModal from './LanguageModal'
 
 export default function LandingNav() {
 
   const [currencyModal, setCurrencyModal] = useState(false);
   const [languageModal, setLanguageModal] = useState(false);
-
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -91,59 +87,16 @@ export default function LandingNav() {
           </div>
 
           <div className='flex items-center gap-[1.528vw] xsm:hidden'>
-            <div onClick={() => setLanguageModal(!languageModal)} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
-              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
-                <div className='mt-[17px] flex flex-col gap-[5px]'>
-                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                    <img src={EnglishIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                    <img src={GermanIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ChineseIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ItalianIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={HebrewIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
-                  </div>
-                </div>
-              </div>}
-              <p className='font-outfit font-normal text-[19px] leading-[19px]'>Eng</p>
+            <div onClick={(e) => {setLanguageModal(!languageModal);setCurrencyModal(false);e.stopPropagation();}} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
+              <LanguageModal state={languageModal} closeModal={(e)=> {setLanguageModal(false)}}/>
+              <p className='font-outfit font-normal text-[19px] leading-[19px] select-none'>Eng</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
               </svg>
             </div>
-            <div onClick={() => setCurrencyModal(!currencyModal)} className='flex items-center gap-[0.278vw] cursor-pointer relative'>
-              {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a currency</h5>
-                <div className='mt-[17px] flex flex-col gap-[5px]'>
-                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>USD</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>EUR</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>UAH</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>GBP</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>VHF</p>
-                  </div>
-                </div>
-              </div>}
-              <p className='font-outfit font-normal text-[18px] leading-[18px]'>USD</p>
+            <div onClick={(e) => {setCurrencyModal(!currencyModal);setLanguageModal(false);e.stopPropagation();}} className='flex items-center gap-[0.278vw] cursor-pointer relative'>
+              <CurrencyModal state={currencyModal} closeModal={(e)=> {setCurrencyModal(false)}}/>
+              <p className='font-outfit font-normal text-[18px] leading-[18px] select-none'>USD</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
               </svg>
@@ -161,7 +114,7 @@ export default function LandingNav() {
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
             <div>
               <Link to={'/signin'}>
-                <button className='w-[131px] group border-2 hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 h-[41px] bg-primary2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[0.556vw] rounded-[4px]'>
+                <button className='w-[131px] group border-2 border-primary2 hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 h-[41px] bg-primary2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[0.556vw] rounded-[4px]'>
                   Log In
                   <svg className='stroke-[white] group-hover:stroke-primary2 transition-all duration-200' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

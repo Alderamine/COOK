@@ -5,9 +5,14 @@ import burgerMenu from "../assets/StudentDashboard/burgerMenu.svg"
 import search from "../assets/StudentDashboard/search.svg"
 import user from "../assets/StudentDashboard/user.svg"
 import Menu from './Menu'
+import LanguageModal from './LanguageModal'
+import CurrencyModal from './CurrencyModal'
 
 const DashboardLayout = () => {
   const location = useLocation()
+
+  const [currencyModal, setCurrencyModal] = useState(false);
+  const [languageModal, setLanguageModal] = useState(false);
 
   const [showMenu, setShowMenu] = useState(false);
 
@@ -36,13 +41,15 @@ const DashboardLayout = () => {
             </div>
 
             <div className='flex items-center gap-[22px] xsm:hidden'>
-              <div className='flex items-center gap-[4px] cursor-pointer'>
+              <div onClick={(e) => { setLanguageModal(!languageModal); setCurrencyModal(false); e.stopPropagation(); }} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
+                <LanguageModal state={languageModal} closeModal={(e) => { setLanguageModal(false) }} />
                 <p className='font-outfit font-normal text-[19px] leading-[19px]'>Eng</p>
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
                 </svg>
               </div>
-              <div className='flex items-center gap-[4px] cursor-pointer'>
+              <div onClick={(e) => { setCurrencyModal(!currencyModal); setLanguageModal(false); e.stopPropagation(); }} className='flex items-center gap-[0.278vw] cursor-pointer relative'>
+                <CurrencyModal state={currencyModal} closeModal={(e) => { setCurrencyModal(false) }} />
                 <p className='font-outfit font-normal text-[18px] leading-[18px]'>USD</p>
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
@@ -88,7 +95,7 @@ const DashboardLayout = () => {
               </div>
             </div>
             <div className='hidden cursor-pointer xsm:block'>
-              <img src={burgerMenu} onClick={()=> setShowMenu(true)} className='cursor-pointer' alt="" />
+              <img src={burgerMenu} onClick={() => setShowMenu(true)} className='cursor-pointer' alt="" />
             </div>
           </div>
         </nav>
@@ -106,9 +113,7 @@ const DashboardLayout = () => {
         </div>
       </div>
 
-      {/* <div className='flex'> */}
       <Outlet />
-      {/* </div> */}
     </div>
   )
 }

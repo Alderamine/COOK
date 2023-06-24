@@ -7,6 +7,7 @@ import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
 import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
 import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import Menu from './Menu'
+import LanguageModal from './LanguageModal'
 
 export default function BlogNav() {
 
@@ -16,7 +17,6 @@ export default function BlogNav() {
   return (
     <>
       <Menu showMenu={showMenu} closeMenu={() => setShowMenu(false)} />
-
       <nav className='mb-[104px]'>
         <div className='h-[104px] w-[100%] px-[64px] md:px-[48px] sm:px-[48px] xsm:px-[32px] fixed top-0 bg-[white] z-[1000] flex items-center justify-between border-b border-[rgba(255,219,184,1)]'>
           <div className='flex items-center gap-[37px]'>
@@ -72,33 +72,9 @@ export default function BlogNav() {
           <img src={Hamburger} onClick={() => setShowMenu(true)} className='xsm:flex hidden cursor-pointer' alt="" />
 
           <div className='flex items-center gap-[20px] xsm:hidden'>
-            <div onClick={() => setLanguageModal(!languageModal)}  className='relative flex items-center gap-[4px] cursor-pointer'>
-              {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-                <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
-                <div className='mt-[17px] flex flex-col gap-[5px]'>
-                  <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                    <img src={EnglishIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                    <img src={GermanIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ChineseIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={ItalianIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
-                  </div>
-                  <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                    <img src={HebrewIcon} alt="" />
-                    <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
-                  </div>
-                </div>
-              </div>}
-              <p className='font-outfit font-normal text-[19px] leading-[19px]'>Eng</p>
+          <div onClick={(e) => {setLanguageModal(!languageModal);e.stopPropagation();}} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
+              <LanguageModal state={languageModal} closeModal={(e)=> {setLanguageModal(false)}}/>
+              <p className='font-outfit font-normal text-[19px] leading-[19px] select-none'>Eng</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#D27722" />
               </svg>

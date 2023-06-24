@@ -26,10 +26,10 @@ export default function LandingPage() {
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
           <div className='flex gap-x-[20px] mt-[26px] xsm:flex-col xsm:w-full gap-y-[20px]'>
             <Link to={'/search-tutors'}>
-              <button className='w-[153px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
+              <button className='w-[153px] hover:bg-[white] hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-primary2 border-2 border-primary2 text-backPri font-outfit font-medium text-lg leading-[22.68px]'>Find Your Tutor</button>
             </Link>
             <Link to={'/signup'}>
-              <button className='w-[150px] hover:bg-primary2 hover:text-[white] transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
+              <button className='w-[150px] hover:bg-primary2 hover:text-[white] transition-all duration-200 xsm:w-[83.59vw] xsm:m-auto h-[39px] rounded-[8px] bg-backPri text-primary2 border-2 border-primary2 font-outfit font-medium text-lg leading-[22.68px]'>Join Our Chefs</button>
             </Link>
           </div>
         </div>
