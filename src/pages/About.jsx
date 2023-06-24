@@ -79,7 +79,9 @@ const About = () => {
               <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
             </Link>
             <Link to={'/signup'} className='flex gap-[7px]'>
-              <img className='w-[24px]' src={Nav2} />
+              <svg className='max-w-[20px] max-h-[20px] min-w-[20px] min-h-[20px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.50009 22.5C5.50009 22.6326 5.55277 22.7598 5.64654 22.8536C5.74031 22.9473 5.86748 23 6.00009 23H18.0001C18.1327 23 18.2599 22.9473 18.3536 22.8536C18.4474 22.7598 18.5001 22.6326 18.5001 22.5V19H5.50009V22.5ZM4.33509 12.345L5.40009 18H8.95009L8.50009 13.045C8.49418 12.9793 8.50126 12.9132 8.52093 12.8502C8.5406 12.7873 8.57247 12.7289 8.61472 12.6783C8.65697 12.6277 8.70877 12.5859 8.76718 12.5553C8.82558 12.5247 8.88943 12.5059 8.95509 12.5C9.02075 12.4941 9.08693 12.5012 9.14986 12.5208C9.21278 12.5405 9.27122 12.5724 9.32183 12.6146C9.37243 12.6569 9.41422 12.7087 9.44481 12.7671C9.4754 12.8255 9.49418 12.8893 9.50009 12.955L9.95509 18H14.0451L14.5001 12.955C14.506 12.8893 14.5248 12.8255 14.5554 12.7671C14.586 12.7087 14.6278 12.6569 14.6784 12.6146C14.729 12.5724 14.7874 12.5405 14.8503 12.5208C14.9132 12.5012 14.9794 12.4941 15.0451 12.5C15.1108 12.5059 15.1746 12.5247 15.233 12.5553C15.2914 12.5859 15.3432 12.6277 15.3855 12.6783C15.4277 12.7289 15.4596 12.7873 15.4793 12.8502C15.4989 12.9132 15.506 12.9793 15.5001 13.045L15.0501 18H18.6001L19.6651 12.345C20.2829 12.1795 20.8584 11.8842 21.3531 11.4787C21.8478 11.0733 22.2504 10.5671 22.534 9.99377C22.8177 9.42048 22.9758 8.79331 22.998 8.15407C23.0201 7.51483 22.9057 6.87822 22.6625 6.28667C22.4192 5.69512 22.0526 5.16224 21.5871 4.72354C21.1216 4.28484 20.568 3.9504 19.9631 3.74254C19.3582 3.53467 18.7159 3.45814 18.0791 3.51806C17.4423 3.57797 16.8256 3.77296 16.2701 4.09001C15.9719 3.19333 15.3989 2.4133 14.6325 1.86052C13.8661 1.30774 12.9451 1.01025 12.0001 1.01025C11.0551 1.01025 10.1341 1.30774 9.36771 1.86052C8.60129 2.4133 8.02833 3.19333 7.73009 4.09001C7.17458 3.77296 6.55786 3.57797 5.92105 3.51806C5.28424 3.45814 4.64198 3.53467 4.03708 3.74254C3.43217 3.9504 2.87854 4.28484 2.41307 4.72354C1.94761 5.16224 1.58101 5.69512 1.33773 6.28667C1.09445 6.87822 0.980065 7.51483 1.00221 8.15407C1.02435 8.79331 1.18252 9.42048 1.46615 9.99377C1.74979 10.5671 2.15238 11.0733 2.64709 11.4787C3.1418 11.8842 3.71725 12.1795 4.33509 12.345Z" fill="#D27722" />
+              </svg>
               <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
             </Link>
             <Link to={'/search-groups'} className='flex gap-[7px]'>
@@ -169,12 +171,12 @@ const About = () => {
           </Link>
           <div className='h-[15px] border border-primary rouded-[16px]'></div>
           <div>
-            <Link to={'/signin'} className='w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
+            <Link to={'/signin'} className='group transition-all duration-200 hover:bg-primaryLighten2 hover:text-primary2 w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
               Log In
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.75 9.5H2.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <svg className='stroke-[white] group-hover:stroke-primary2 transition-all duration-200' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M8 13.25L11.75 9.5L8 5.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M11.75 9.5H2.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>
@@ -210,7 +212,7 @@ const About = () => {
                 <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Cooking Classes</p>
               </Link>
               <Link to={'/signup'} className='flex gap-[7px]'>
-                <svg className='min-w-[24px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='max-w-[20px] max-h-[20px] min-w-[20px] min-h-[20px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0_1287_44733)">
                     <path d="M6.54553 11.4546C6.54558 11.3829 6.5315 11.312 6.50411 11.2458C6.47671 11.1796 6.43653 11.1194 6.38587 11.0687C6.33521 11.0181 6.27506 10.9779 6.20886 10.9505C6.14266 10.9231 6.07171 10.909 6.00006 10.9091C5.92842 10.909 5.85746 10.9231 5.79126 10.9505C5.72506 10.9779 5.66491 11.0181 5.61425 11.0687C5.56359 11.1194 5.52341 11.1796 5.49602 11.2458C5.46862 11.312 5.45454 11.3829 5.45459 11.4546C5.45459 12.8869 7.0345 14.8535 7.21455 15.0735C7.30651 15.1852 7.43899 15.2559 7.58296 15.27C7.72693 15.2842 7.87064 15.2408 7.98262 15.1492C8.21539 14.9579 8.24894 14.6144 8.05825 14.381C7.47346 13.6684 6.54553 12.244 6.54553 11.4546ZM18.0001 10.9091C17.9284 10.909 17.8575 10.9231 17.7913 10.9505C17.7251 10.9779 17.6649 11.0181 17.6143 11.0687C17.5636 11.1194 17.5234 11.1796 17.496 11.2458C17.4686 11.312 17.4546 11.3829 17.4546 11.4546C17.4546 12.2413 16.5267 13.6673 15.9418 14.3816C15.7512 14.6144 15.7852 14.958 16.018 15.1492C16.1154 15.2293 16.2376 15.273 16.3637 15.2728C16.4444 15.2728 16.5241 15.255 16.597 15.2205C16.67 15.1861 16.7344 15.1359 16.7856 15.0735C16.9656 14.8535 18.5456 12.8869 18.5456 11.4546C18.5456 11.3829 18.5315 11.312 18.5041 11.2458C18.4767 11.1796 18.4366 11.1194 18.3859 11.0687C18.3352 11.0181 18.2751 10.9779 18.2089 10.9505C18.1427 10.9231 18.0717 10.909 18.0001 10.9091ZM12.0001 10.9091C11.9285 10.909 11.8575 10.9231 11.7913 10.9505C11.7251 10.9779 11.6649 11.0181 11.6143 11.0687C11.5636 11.1194 11.5234 11.1796 11.4961 11.2458C11.4687 11.312 11.4546 11.3829 11.4546 11.4546V14.7273C11.4546 15.0288 11.6986 15.2728 12.0001 15.2728C12.3016 15.2728 12.5456 15.0288 12.5456 14.7273V11.4546C12.5456 11.3829 12.5315 11.312 12.5041 11.2458C12.4767 11.1796 12.4365 11.1194 12.3859 11.0688C12.3352 11.0181 12.2751 10.9779 12.2089 10.9505C12.1427 10.9231 12.0717 10.9091 12.0001 10.9091Z" fill="#FFDBB8" />
                     <path d="M18 2.18184C17.6695 2.18184 17.324 2.22556 16.9653 2.29219C15.764 0.891768 13.9856 0 12 0C10.0145 0 8.23603 0.891768 7.03473 2.29214C6.67596 2.22556 6.33053 2.18179 6.00004 2.18179C2.69156 2.18184 0 4.8734 0 8.18182C0 10.4489 1.27841 12.5098 3.28551 13.5287L3.27488 21.7718C3.27437 22.3668 3.5055 22.9261 3.92579 23.3469C4.34659 23.7683 4.90536 24 5.50038 24H18.5018C19.7291 24 20.7273 23.0018 20.7273 21.7745V13.5208C22.727 12.4991 24.0001 10.4414 24.0001 8.18182C24 4.8734 21.3084 2.18184 18 2.18184ZM19.6364 21.7745C19.6364 22.3999 19.1272 22.9092 18.5018 22.9092H5.50033C5.19725 22.9092 4.91226 22.7909 4.69759 22.5763C4.48343 22.3616 4.36521 22.0766 4.36572 21.773L4.36858 19.6364H19.6364V21.7745ZM19.9741 12.6717C19.9453 12.6834 19.9181 12.6973 19.8926 12.7138C19.8254 12.7554 19.7683 12.8115 19.7253 12.8778C19.6819 12.9438 19.6535 13.0186 19.6422 13.0967C19.6376 13.1271 19.6356 13.1577 19.6363 13.1884V18.5454H4.36996L4.37697 13.1958C4.37904 13.1017 4.35679 13.0087 4.31236 12.9257C4.26794 12.8427 4.20284 12.7727 4.12338 12.7222C4.0961 12.7051 4.06741 12.6903 4.03763 12.678C2.24734 11.8951 1.09089 10.1319 1.09089 8.18182C1.09089 5.47477 3.29298 3.27273 5.99999 3.27273C6.10579 3.27273 6.21747 3.28551 6.32706 3.29416C5.77519 4.25327 5.45452 5.3616 5.45452 6.54546C5.45447 6.6171 5.46855 6.68806 5.49594 6.75426C5.52334 6.82046 5.56351 6.88061 5.61418 6.93127C5.66484 6.98193 5.72499 7.02211 5.79119 7.04951C5.85739 7.0769 5.92834 7.09098 5.99999 7.09093C6.07163 7.09098 6.14259 7.0769 6.20879 7.04951C6.27499 7.02211 6.33514 6.98193 6.3858 6.93127C6.43646 6.88061 6.47664 6.82046 6.50403 6.75426C6.53143 6.68806 6.54551 6.6171 6.54546 6.54546C6.54546 3.53797 8.99254 1.09089 12 1.09089C15.0075 1.09089 17.4545 3.53797 17.4545 6.54546C17.4545 6.6171 17.4686 6.68806 17.496 6.75426C17.5234 6.82046 17.5635 6.88061 17.6142 6.93127C17.6649 6.98193 17.725 7.02211 17.7912 7.04951C17.8574 7.0769 17.9284 7.09098 18 7.09093C18.0717 7.09098 18.1426 7.0769 18.2088 7.04951C18.275 7.02211 18.3352 6.98193 18.3858 6.93127C18.4365 6.88061 18.4767 6.82046 18.5041 6.75426C18.5315 6.68806 18.5455 6.6171 18.5455 6.54546C18.5455 5.3616 18.2248 4.25332 17.6729 3.29416C17.7825 3.28551 17.8942 3.27273 18 3.27273C20.7071 3.27273 22.9091 5.47482 22.9091 8.18182C22.9091 10.125 21.7575 11.886 19.9741 12.6717Z" fill="#FFDBB8" />
@@ -221,7 +223,7 @@ const About = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <p className='font-outfit font-normal text-lg leading-[22.68px] text-[white]'>Become a Chef</p>
+                <p className='font-outfit font-medium text-lg leading-[22.68px] text-[white] '>Become a Chef</p>
               </Link>
               <Link to={'/search-groups'} className='flex gap-[7px]'>
                 <svg className='min-w-[24px]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -248,7 +250,7 @@ const About = () => {
                 <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
               </svg>
             </div>
-            <div onClick={(e) => {setCurrencyModal(!currencyModal);setLanguageModal(false);e.stopPropagation();}} className='flex items-center gap-[4px] relative cursor-pointer'>
+            <div onClick={(e) => { setCurrencyModal(!currencyModal); setLanguageModal(false); e.stopPropagation(); }} className='flex items-center gap-[4px] relative cursor-pointer'>
               <CurrencyModal state={currencyModal} closeModal={(e) => { setCurrencyModal(false) }} />
               <p className='font-outfit font-normal text-[18px] leading-[18px] text-[white]'>USD</p>
               <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -266,12 +268,12 @@ const About = () => {
               </div>
             </Link>
             <div className='h-[15px] border border-primary rouded-[16px]'></div>
-            <Link to={'/signin'} className='w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
+            <Link to={'/signin'} className='group hover:bg-primaryLighten2 hover:text-primary2 transition-all duration-200 w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
               Log In
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8 13.25L11.75 9.5L8 5.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.75 9.5H2.75" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <svg className='stroke-[white] group-hover:stroke-primary2 transition-all duration-200' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M8 13.25L11.75 9.5L8 5.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M11.75 9.5H2.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>
@@ -279,13 +281,13 @@ const About = () => {
         </nav>
         <img src={EllipseDesktop} className='absolute z-10 top-0 right-0 sm:hidden xsm:hidden' alt="" />
         <img src={EllipseTablet} className='absolute z-10 right-0 top-[157px] hidden sm:block' alt="" />
-        <div className='mt-[67px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
-          <h1 className='font-redHatDisplay text-[white] font-bold text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> Your Inner Chef</h1>
+        <div className='mt-[67px] pb-[56px] sm:mt-35px xsm:mt-[31px] sm:mt-[35px] md:mt-[35px] flex px-[64px] xsm:px-[32px] xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse'>
+          <h1 className='font-redHatDisplay md:w-full sm:w-full xsm:w-full w-[57.153vw] text-[white] font-bold lg:text-[90px] text-[124px] md:text-[90px] sm:text-[90px] sm:text-center md:text-center sm:mb-[132px] sm:mt-[51px] sm:leading-[96.57px] md:leading-[96.57px] md:mt-[51px] md:mb-[132px] xsm:text-[64px] leading-[133.05px] xsm:leading-[68.87px] xsm:mt-[77px] xsm:mb-[107px] xsm:text-center'><span className='font-pacifico text-primaryLighten2 font-normal'>Unlock</span> Your Inner Chef</h1>
           <div className='flex flex-1 flex-col items-center'>
-            <img src={Main} className='w-[535px] min-w-[535px] max-w-[535px] h-[287px] z-10 xsm:hidden' alt="" />
+            <img src={Main} className='min-w-[37.153vw] md:min-w-auto sm:min-w-auto xsm:min-w-auto z-10 xsm:hidden' alt="" />
             <img src={Main2} className='hidden xsm:block z-10 xsm:w-[326px] xsm:max-w-[326px] xsm:min-w-[326px] xsm:h-[244px]' alt="" />
             <Link to={'/signup'}>
-              <button className='mt-[39px]  rounded-full border-[3px] border-primaryLighten2 leading-[27px] text-lg w-[155px] h-[47px] font-kanit text-[white]'>Become a Chef</button>
+              <button className='mt-[39px]  rounded-full border-[3px] border-primaryLighten2 leading-[27px] text-lg w-[155px] h-[47px] font-kanit text-[white] group transition-all duration-200 hover:bg-primaryLighten2 hover:text-primary2'>Become a Chef</button>
             </Link>
           </div>
         </div>

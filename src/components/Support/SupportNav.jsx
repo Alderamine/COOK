@@ -1,10 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ChineseIcon from "../../assets/LandingPage/ChineseIcon.svg"
-import EnglishIcon from "../../assets/LandingPage/EnglishIcon.svg"
-import GermanIcon from "../../assets/LandingPage/GermanIcon.svg"
-import HebrewIcon from "../../assets/LandingPage/HebrewIcon.svg"
-import ItalianIcon from "../../assets/LandingPage/ItalianIcon.svg"
 import LanguageModal from '../../layout/LanguageModal'
 
 export default function SupportNav() {
