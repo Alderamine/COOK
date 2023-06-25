@@ -265,7 +265,7 @@ const GroupPage = () => {
             })}
           </div>
           <div className='px-[32px] xsm:px-[16px] mt-[77px] flex justify-center xsm:mt-[57px] sm:mt-[52px] md:mt-[52px]'>
-            <button className='w-[225px] h-[35px] bg-primary2 text-[white] leading-[22.68px] font-outfit font-[500] rounded-[54px]'>
+            <button className='w-[225px] hover:bg-[white] hover:text-primary2 border-2 border-primary2 transition-all duration-200 h-[35px] bg-primary2 text-[white] leading-[22.68px] font-outfit font-[500] rounded-[54px]'>
               Read more
             </button>
           </div>

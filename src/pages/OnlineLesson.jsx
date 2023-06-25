@@ -111,9 +111,9 @@ export default function OnlineLesson() {
       <div ref={handleDivRef} draggable onDragStart={handleDragStart} onDrag={handleDrag} onDragEnd={handleDragEnd} className='line md:hidden sm:hidden xsm:hidden transition-all duration-200 min-h-full bg-[#FFDBB8] w-[3px] cursor-e-resize'>
       </div>
       <div className='flex-1 flex flex-col min-h-screen xsm:hidden'>
-        <div className='h-[114px] w-full flex items-center justify-between pr-[4.444vw] border-b border-b-[rgba(255,219,184,1)]'>
-          <NavLink to={'members'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/members" ? "bg-primary2 text-[white] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] ml-[20px]" : "ml-[20px] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
-            <button onClick={() => setCurrentTab('member')} style={currentTab === 'member' ? { background: '#D27722', color: '#fff' } : {}} className='ml-[20px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
+        <div className='pl-[1.389vw] h-[114px] w-full flex items-center justify-between pr-[3.055vw] border-b border-b-[rgba(255,219,184,1)]'>
+          <NavLink to={'members'} className={({ isActive }) => isActive && location.pathname === "/online-lesson/members" ? "bg-primary2 text-[white] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]" : "ml-[0px] px-[16px] h-[46px] flex gap-[6px] items-center justify-center rounded-[8px] text-[black]"}>
+            <button onClick={() => setCurrentTab('member')} style={currentTab === 'member' ? { background: '#D27722', color: '#fff' } : {}} className='h-[46px] flex gap-[6px] items-center justify-center rounded-[8px]'>
               <svg className={location.pathname === "/online-lesson/members" ? "stroke-[white]" : "stroke-[black]"} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17 21.5V19.5C17 18.4391 16.5786 17.4217 15.8284 16.6716C15.0783 15.9214 14.0609 15.5 13 15.5H5C3.93913 15.5 2.92172 15.9214 2.17157 16.6716C1.42143 17.4217 1 18.4391 1 19.5V21.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M9 11.5C11.2091 11.5 13 9.70914 13 7.5C13 5.29086 11.2091 3.5 9 3.5C6.79086 3.5 5 5.29086 5 7.5C5 9.70914 6.79086 11.5 9 11.5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

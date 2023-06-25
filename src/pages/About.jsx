@@ -138,7 +138,29 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <img className='sm:block xsm:block md:block hidden cursor-pointer' onClick={() => { setShowMenu(true) }} src={Hamburger} alt="" />
+        {/* <img className='sm:block xsm:block md:block hidden cursor-pointer' onClick={() => { setShowMenu(true) }} src={Hamburger} alt="" /> */}
+
+        <div className='sm:block xsm:block md:block hidden cursor-pointer'>
+          <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="42" height="42" rx="10" fill="#FFDBB8" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+          </svg>
+        </div>
+
       </nav>
       <div ref={mainDiv} className='relative bg-primary2 min-h-[580px]'>
         <nav className='relative z-20 h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
@@ -234,7 +256,27 @@ const About = () => {
               </svg>
             </Link>
           </div>
-          <img className='sm:block xsm:block md:block hidden cursor-pointer' src={Hamburger} onClick={() => { setShowMenu(true) }} alt="" />
+          {/* <img className='sm:block xsm:block md:block hidden cursor-pointer' src={Hamburger} onClick={() => { setShowMenu(true) }} alt="" /> */}
+          <div className='sm:block xsm:block md:block hidden cursor-pointer'>
+            <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="10" fill="#FFDBB8" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            </svg>
+          </div>
         </nav>
         <img src={EllipseDesktop} className='absolute z-10 top-0 right-0 sm:hidden xsm:hidden' alt="" />
         <img src={EllipseTablet} className='absolute z-10 right-0 top-[157px] hidden sm:block' alt="" />

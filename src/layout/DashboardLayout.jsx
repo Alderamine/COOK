@@ -95,7 +95,27 @@ const DashboardLayout = () => {
               </div>
             </div>
             <div className='hidden cursor-pointer xsm:block sm:block md:block'>
-              <img src={burgerMenu} onClick={() => setShowMenu(true)} className='cursor-pointer' alt="" />
+              {/* <img src={burgerMenu} onClick={() => setShowMenu(true)} className='cursor-pointer' alt="" /> */}
+              <div className='sm:block xsm:block md:block hidden cursor-pointer'>
+                <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="10" fill="#D17721" />
+                  <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                  <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#FFDBB8" />
+                </svg>
+              </div>
             </div>
           </div>
         </nav>

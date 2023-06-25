@@ -342,7 +342,7 @@ export default function Profile() {
             <ProfileReviewCard />
             <ProfileReviewCard />
             <ProfileReviewCard />
-            <button className='mt-[15px] w-[225px] h-[35px] rounded-[54px] bg-primary2 text-[white] self-center font-outfit font-medium text-[18px] leading-[22.68px]'>Read More</button>
+            <button className='mt-[15px] w-[225px] h-[35px] rounded-[54px] bg-primary2 text-[white] self-center font-outfit font-medium text-[18px] leading-[22.68px] hover:bg-[white] hover:text-primary2 border-2 border-primary2 transition-all duration-200'>Read More</button>
           </div>
         </div>
         <div id='resume' className='w-[52.361vw] md:w-full sm:w-full xsm:w-full  border border-[rgba(255,219,184,1)] mt-[50px] min-h-[110px] rounded-[12px] px-[32px] bg-[rgba(255,253,244,1)] py-[24px]'>
@@ -501,8 +501,8 @@ export default function Profile() {
               <p className='font-outfit font-[300] text-[18px] leading-[22.68px] text-TextColorSec'>100 reviews</p>
             </div>
           </div>
-          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary2 mt-[27px]'>Send A Message</button>
-          <button className='w-full h-[39px] border-2 border-primary rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary2 text-[white] mt-[12px]'>Book A Trial Lesson</button>
+          <button className='w-full h-[39px] border-2 border-primary2 rounded-[4px] font-outfit font-normal text-[18px] leading-[22.68px] text-primary2 mt-[27px] hover:bg-primary2 hover:text-[white] transition-all duration-200'>Send A Message</button>
+          <button className='w-full h-[39px] border-2 border-primary2 rounded-[4px] font-kanit font-normal text-[18px] leading-[26.91px] bg-primary2 text-[white] mt-[12px] hover:bg-[rgba(0,0,0,0)] hover:text-primary2 transition-all duration-200'>Book A Trial Lesson</button>
         </div>
       </div>
     </main>

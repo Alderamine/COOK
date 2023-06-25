@@ -9,7 +9,7 @@ export default function GroupCard({ background = 'white', divRef = null, width }
 
   return (
     <Link to={'/group-page'}>
-      <div ref={divRef} style={{ background: background, }} className='rounded-[12px] border border-[rgba(255,219,184,1)]'>
+      <div ref={divRef} style={{ background: background, }} className='landingExploreAndLearn rounded-[12px] border border-[rgba(255,219,184,1)]'>
         <div className='relative'>
           <div className='flex gap-[17px] absolute top-[15px] left-[14px]'>
             <button className='h-[32px] px-[12px] bg-primary2 rounded-[5px] font-outfit font-medium text-[16px] leading-[24px] text-[white]'>For Beginner</button>

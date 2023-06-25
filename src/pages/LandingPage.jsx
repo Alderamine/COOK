@@ -642,7 +642,7 @@ export default function LandingPage() {
               </div>
             </div>
             <Link className='xsm:w-full' to={'signup'}>
-              <button className='h-[39px] hover:bg-[white] hover:border-2 hover:bg-[rgba(255,219,184,1)] hover:text-primary2 hover:border-[rgba(255,219,184,1)] hover:border-primary2 transition-all duration-200 w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+              <button className='h-[39px] hover:bg-primary2 bg-[rgba(255,219,184,1)] hover:text-primaryLighten2 hover:border-2 hover:border-primaryLighten2 transition-all duration-200 w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-primary2 bg-primaryLighten2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
             </Link>
           </div>
         </div>

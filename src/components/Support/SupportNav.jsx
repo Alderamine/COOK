@@ -44,13 +44,12 @@ export default function SupportNav() {
               </svg>
             </div>
           </div>
-          <div className='xsm:hidden w-[37.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative mt-[16px]'>
+          <div className='xsm:hidden min-w-[280px] w-[27.153vw] h-[49px] border-2  border-[#FFDBB8] rounded-[4px] flex items-center px-[16px] relative gap-[15px] mt-[16px]'>
             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M20.9999 21.5L16.6499 17.15" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-
-            <input type="text" className='w-full font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none indent-[37px] bg-[#00000000] text-[#fff] placeholder:text-[#FFDBB8]' placeholder='Search' />
+            <input type="text" className='w-full font-medium font-outfit text-[20px] leading-[25.2px] h-full outline-none bg-[#00000000] text-[#fff] placeholder:text-[#FFDBB8]' placeholder='Search' />
           </div>
         </div>
       </div>

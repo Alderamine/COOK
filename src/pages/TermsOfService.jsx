@@ -83,7 +83,7 @@ const TermsOfService = () => {
             </Link>
           </div>
         </div>
-        <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
+        <div className='flex items-center gap-[22px] xsm:hidden sm:hidden md:hidden'>
           <div onClick={(e) => { setLanguageModal(!languageModal); setCurrencyModal(false); e.stopPropagation(); }} className='flex items-center gap-[4px] relative cursor-pointer'>
             <LanguageModal state={languageModal} closeModal={(e) => { setLanguageModal(false) }} />
             <p className='font-outfit font-normal text-[19px] leading-[19px] text-[white]'>Eng</p>
@@ -120,12 +120,33 @@ const TermsOfService = () => {
             </Link>
           </div>
         </div>
-        <img className='sm:block xsm:block hidden cursor-pointer' onClick={() => setShowMenu(true)} src={Hamburger} alt="" />
+        {/* <img className='sm:block xsm:block hidden cursor-pointer' onClick={() => setShowMenu(true)} src={Hamburger} alt="" /> */}
+        <div className='sm:block xsm:block md:block hidden cursor-pointer'>
+            <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="42" rx="10" fill="#FFDBB8" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            </svg>
+          </div>
+
       </nav>
       <div className='h-full flex xsm:flex-col sm:flex-col md:flex-col xsm:gap-[36px] sm:gap-[36px] md:gap-[36px] gap-[54px] pl-[64px] py-[94px] pr-[69px] sm:pt-[89px] md:pt-[89px] sm:px-[48px] md:px-[48px] xsm:pt-[80px] xsm:pr-[32px] xsm:pl-[34px]'>
         <div className='mt-[10px] h-full sticky md:relative sm:relative xsm:relative md:top-[0px] sm:top-[0px] xsm:top-[0px] top-[130px]'>
           <h1 className='mb-[36px] hidden sm:block md:block xsm:block text-[48px] xsm:text-[36px] font-[700] sm:leading-[56.88px] font-rubik'>Terms Of Service</h1>
-          <div className='relative mb-[30px] h-[50px] w-[313px] xsm:w-full sm:w-full md:w-full border-[2px] rounded-[4px] border-primaryLighten2 pl-[36px]'>
+          <div className='relative mb-[30px] h-[50px] w-[313px] xsm:w-full sm:w-full md:w-full border-[2px] rounded-[4px] border-primaryLighten2 pl-[36px] pr-[10px]'>
             <input type="text" className='h-full w-full outline-none font-medium leading-[26.46px] font-outfit placeholder:text-primary2 pl-4 text-[20px]' placeholder="Search" />
             <svg className='absolute top-[50%] left-[13px] transform translate-y-[-50%]' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

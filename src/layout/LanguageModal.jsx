@@ -7,7 +7,7 @@ import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
 import { useRef } from 'react'
 import { useEffect } from 'react'
 
-export default function LanguageModal({ state, closeModal }) {
+export default function LanguageModal({ state, closeModal, mobileNav=false }) {
 
   const modalRef = useRef(null);
 
@@ -27,9 +27,9 @@ export default function LanguageModal({ state, closeModal }) {
 
 
   return (
-    <div ref={modalRef} style={state ? { maxHeight: "272px", border: "1px" } : { maxHeight: "0px", border: "0px" }} onClick={(e) => e.stopPropagation()} className='modalShadow transition-all duration-300 overflow-hidden absolute z-50 top-[25px] rounded-[6px] right-0 w-[255px] border border-[rgba(255,219,184,1)] bg-[white]'>
+    <div ref={modalRef} style={state ? { maxHeight: "272px", border: "1px" } : { maxHeight: "0px", border: "0px" }} onClick={(e) => e.stopPropagation()} className={mobileNav ? 'modalShadow transition-all duration-300 left-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white] z-[1000]': 'modalShadow transition-all duration-300 right-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white]'}>
       <div className='m-[16px]'>
-        <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
+        <h5 className='font-outfit font-bold text-[18px] leading-[22.68px] text-TextColor'>Select a language</h5>
         <div className='mt-[17px] flex flex-col gap-[5px]'>
           <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
             <img src={EnglishIcon} alt="" />
