@@ -56,8 +56,8 @@ const About = () => {
           <Link to={'/'}>
             <img src={CookLogoLight} alt="" />
           </Link>
-          <div className='md:hidden sm:hidden xsm:hidden h-[15px] border border-primary rouded-[16px]'></div>
-          <div className='md:hidden sm:hidden xsm:hidden flex gap-[24px]'>
+          <div className='sm:hidden xsm:hidden md:hidden h-[15px] border border-primary rouded-[16px]'></div>
+          <div className='sm:hidden xsm:hidden md:hidden flex gap-[24px]'>
             <Link to={'/search-tutors'} className='flex gap-[7px]'>
               <svg className='min-w-[24px] min-h-[24px]' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.5933 14.6145H17.0944Z" fill="#FFDBB8" />
@@ -101,59 +101,16 @@ const About = () => {
             </Link>
           </div>
         </div>
-        <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
-          <div onClick={() => setLanguageModal(!languageModal)} className='relative cursor-pointer flex items-center gap-[4px]'>
-            {languageModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-              <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a language</h5>
-              <div className='mt-[17px] flex flex-col gap-[5px]'>
-                <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                  <img src={EnglishIcon} alt="" />
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>English</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                  <img src={GermanIcon} alt="" />
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>German</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <img src={ChineseIcon} alt="" />
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Chinese</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <img src={ItalianIcon} alt="" />
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Italian</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <img src={HebrewIcon} alt="" />
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>Hebrew</p>
-                </div>
-              </div>
-            </div>}
+        <div className='flex items-center gap-[22px] xsm:hidden sm:hidden md:hidden'>
+          <div onClick={(e) => { setLanguageModal(!languageModal); setCurrencyModal(false); e.stopPropagation(); }} className='flex items-center gap-[4px] relative cursor-pointer'>
+            <LanguageModal state={languageModal} closeModal={(e) => { setLanguageModal(false) }} />
             <p className='font-outfit font-normal text-[19px] leading-[19px] text-[white]'>Eng</p>
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
             </svg>
           </div>
-          <div onClick={() => setCurrencyModal(!currencyModal)} className='relative cursor-pointer flex items-center gap-[4px]'>
-            {currencyModal && <div style={{ boxShadow: '0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.05), 0px 15px 15px rgba(0, 0, 0, 0.09), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1)' }} onClick={(e) => e.stopPropagation()} className='absolute top-[25px] z-30 rounded-[6px] p-[16px] w-[255px] h-[272px] border border-[rgba(255,219,184,1)] bg-[white]'>
-              <h5 className='font-outfit font-bold text-[18px] leading-[22.68px]'>Select a currency</h5>
-              <div className='mt-[17px] flex flex-col gap-[5px]'>
-                <div className='flex gap-[10px] items-center h-[36px] bg-[rgba(255,219,184,1)] px-[12px] '>
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>USD</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px]'>
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>EUR</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>UAH</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>GBP</p>
-                </div>
-                <div className='flex gap-[10px] items-center h-[36px] px-[12px] border-t border-t-[rgba(255,219,184,1)]'>
-                  <p className='font-outfit font-medium text-[16px] leading-[20.16px] text-TextColorSec'>VHF</p>
-                </div>
-              </div>
-            </div>}
+          <div onClick={(e) => { setCurrencyModal(!currencyModal); setLanguageModal(false); e.stopPropagation(); }} className='flex items-center gap-[4px] relative cursor-pointer'>
+            <CurrencyModal state={currencyModal} closeModal={(e) => { setCurrencyModal(false) }} />
             <p className='font-outfit font-normal text-[18px] leading-[18px] text-[white]'>USD</p>
             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.53306 5.46142C5.23955 5.75797 4.76045 5.75797 4.46694 5.46142L1.06833 2.02759C0.599611 1.55401 0.935073 0.75 1.60139 0.75L8.39861 0.750001C9.06493 0.750001 9.40039 1.55401 8.93167 2.02759L5.53306 5.46142Z" fill="#FFDBB8" />
@@ -174,14 +131,14 @@ const About = () => {
             <Link to={'/signin'} className='group transition-all duration-200 hover:bg-primaryLighten2 hover:text-primary2 w-[131px] h-[41px] border-[2px] border-primaryLighten2 text-backPri font-outfit font-[500] text-[20px] leading-[25px] flex justify-center items-center gap-[8px] rounded-[4px]'>
               Log In
               <svg className='stroke-[white] group-hover:stroke-primary2 transition-all duration-200' width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8 13.25L11.75 9.5L8 5.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.75 9.5H2.75"  strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M11.75 2.75H14.75C15.1478 2.75 15.5294 2.90804 15.8107 3.18934C16.092 3.47064 16.25 3.85218 16.25 4.25V14.75C16.25 15.1478 16.092 15.5294 15.8107 15.8107C15.5294 16.092 15.1478 16.25 14.75 16.25H11.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M8 13.25L11.75 9.5L8 5.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M11.75 9.5H2.75" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </Link>
           </div>
         </div>
-        <img className='sm:block xsm:block hidden cursor-pointer' onClick={() => { setShowMenu(true) }} src={Hamburger} alt="" />
+        <img className='sm:block xsm:block md:block hidden cursor-pointer' onClick={() => { setShowMenu(true) }} src={Hamburger} alt="" />
       </nav>
       <div ref={mainDiv} className='relative bg-primary2 min-h-[580px]'>
         <nav className='relative z-20 h-[104px] w-[100%] px-[64px] xsm:px-[32px]  flex items-center justify-between'>
@@ -242,7 +199,7 @@ const About = () => {
               </Link>
             </div>
           </div>
-          <div className='flex items-center gap-[22px] xsm:hidden sm:hidden'>
+          <div className='flex items-center gap-[22px] xsm:hidden sm:hidden md:hidden'>
             <div onClick={(e) => { setLanguageModal(!languageModal); setCurrencyModal(false); e.stopPropagation(); }} className='flex items-center gap-[4px] relative cursor-pointer'>
               <LanguageModal state={languageModal} closeModal={(e) => { setLanguageModal(false) }} />
               <p className='font-outfit font-normal text-[19px] leading-[19px] text-[white]'>Eng</p>
@@ -277,7 +234,7 @@ const About = () => {
               </svg>
             </Link>
           </div>
-          <img className='sm:block xsm:block hidden cursor-pointerN' src={Hamburger} onClick={() => { setShowMenu(true) }} alt="" />
+          <img className='sm:block xsm:block md:block hidden cursor-pointer' src={Hamburger} onClick={() => { setShowMenu(true) }} alt="" />
         </nav>
         <img src={EllipseDesktop} className='absolute z-10 top-0 right-0 sm:hidden xsm:hidden' alt="" />
         <img src={EllipseTablet} className='absolute z-10 right-0 top-[157px] hidden sm:block' alt="" />
@@ -482,8 +439,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='w-full flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[255px]'>
-        <div className='w-full flex flex-col justify-center items-center mb-[121px] '>
+      <div className='w-full flex flex-col items-center mt-[274px] sm:mt-[71px] xsm:mt-[100px]'>
+        <div className='w-full flex flex-col justify-center items-center mb-[121px] xsm:mb-[80px]'>
           <div className='w-full flex justify-center relative'>
             <div className='absolute w-full z-10 left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
             <h1 className='bg-[white] w-[241px] relative z-20 text-center font-rubik font-[600] leading-[59px] sm:leading-[49px] xsm:leading-[42px] text-[50px] sm:text-[42px] xsm:text-[36px] tracking-[-0.02em]'>Our Team</h1>

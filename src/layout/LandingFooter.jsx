@@ -4,28 +4,28 @@ import COOKLogo from "../assets/allAssets/COOK-logo.svg"
 
 export default function LandingFooter() {
   return (
-    <footer >
+    <footer>
       <div className='w-[91.111vw] md:w-full sm:w-full xsm:w-full md:rounded-none sm:rounded-none xsm:rounded-none m-auto min-h-[419px] bg-primary2 rounded-tl-[25px] rounded-tr-[25px] mt-[135px] md:divide-y-0 sm:divide-y-0 xsm:divide-y-0 divide-y-2 divide-[rgba(255,219,184,0.2)]'>
-        <div className='flex md:flex-col sm:flex-col gap-y-[24px] gap-x-[13.75vw] lg:gap-x-[7.75vw] pt-[54px] pb-[43px] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] ml-[91.5px] mr-[102.5px] xsm:flex-col xsm:gap-y-[32px]'>
-          <div className='flex justify-center items-center md:justify-start sm:justify-start'>
+        <div className='flex md:flex-col xsm:gap-y-[25px] sm:flex-col gap-y-[24px] gap-x-[13.75vw] lg:gap-x-[7.75vw] pt-[54px] pb-[43px] xsm:pb-[25px] md:ml-[5.749vw] md:mr-[5.749vw] sm:ml-[5.749vw] sm:mr-[5.749vw] ml-[91.5px] mr-[102.5px] xsm:flex-col'>
+          <div className='flex justify-center  items-center md:justify-start sm:justify-start'>
             {/* <div className='text-[rgba(255,219,184,1)] font-bold font-rubik text-[56px] leading-[66.36px] tracking-[-0.02em]'>Cook</div> */}
             <Link to={'/'}>
               <img src={COOKLogo} alt="" />
             </Link>
           </div>
 
-          <div className='flex-1 flex justify-between sm:gap-[20px] xsm:flex xsm:flex-col xsm:items-center xsm:gap-y-[32px]'>
+          <div className='flex-1 flex xsm:gap-y-[25px] justify-between sm:gap-[20px] xsm:flex xsm:flex-col xsm:items-center'>
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
               <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>ABOUT US</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
-                <Link to={'/about'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
+                <Link className='' to={'/about'}>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Who we are</p>
                 </Link>
                 <Link to={'/about'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>How it works</p>
                 </Link>
                 <Link to={'/about'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK reviews</p>
                 </Link>
               </div>
             </div>
@@ -34,10 +34,10 @@ export default function LandingFooter() {
               <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR STUDENTS</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/blog'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>COOK blog</p>
                 </Link>
                 <Link to={'/search-tutors'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Find a tutor</p>
                 </Link>
               </div>
             </div>
@@ -46,19 +46,19 @@ export default function LandingFooter() {
               <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>FOR TUTORS</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/signup'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Become an online chef</p>
                 </Link>
                 <Link to={'/signup'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Teach cooking online</p>
                 </Link>
               </div>
             </div>
 
             <div className='xsm:flex xsm:flex-col xsm:items-center'>
-              <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>SUPPORT</p>
+              <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[18px] leading-[27pxpx] text-[white]'>SUPPORT</p>
               <div className='flex flex-col gap-[8px] mt-[16px] xsm:flex xsm:flex-col xsm:items-center'>
                 <Link to={'/support'}>
-                  <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
+                  <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Need a help?</p>
                 </Link>
               </div>
             </div>
@@ -66,9 +66,9 @@ export default function LandingFooter() {
         </div>
 
         <div className='ml-[31px] mr-[45.5px] md:ml-0 sm:ml-0'>
-          <div className='flex gap-[10.694vw] lg:gap-x-[4.75vw] pt-[54px] pb-[43px] ml-[49.5px] md:ml-[5.928vw] sm:ml-[5.928vw] xsm:ml-0'>
+          <div className='flex gap-[10.694vw] lg:gap-x-[4.75vw]  pt-[54px] xsm:pt-[25px] pb-[43px] xsm:pb-[25px] ml-[49.5px] md:ml-[5.928vw] sm:ml-[5.928vw] xsm:ml-0'>
 
-            <div className='flex md:flex-1 md:justify-between sm:flex-1 sm:justify-between sm:gap-[20px] xsm:flex-col xsm:gap-y-[41px] xsm:items-center xsm:w-full'>
+            <div className='flex md:flex-1 md:justify-between sm:flex-1 sm:justify-between sm:gap-[20px] xsm:flex-col xsm:gap-y-[25px] xsm:items-center xsm:w-full'>
               <div className='text-[rgba(255,219,184,1)] font-normal font-outfit xsm:text-center text-[20px] leading-[30px] tracking-[-0.02em] xsm:flex xsm:flex-col xsm:items-center'>
                 <p className='text-[20px] leading-[30px] font-outfit xsm:text-center font-normal'>USA</p>
                 <p className='text-[20px] leading-[30px] font-outfit xsm:text-center font-normal'>Your address goes here</p>
@@ -109,10 +109,10 @@ export default function LandingFooter() {
                 <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                 <div className='flex flex-col gap-[8px] mt-[8px] xsm:flex xsm:flex-col xsm:items-center'>
                   <Link to={'/terms-of-service'}>
-                    <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
+                    <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
                   </Link>
                   <Link to={'/copyright'}>
-                    <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                    <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
                   </Link>
                 </div>
               </div>
@@ -154,10 +154,10 @@ export default function LandingFooter() {
                   <p className='font-outfit xsm:text-center font-normal text-[18px] leading-[27px] text-[white]'>LEGAL</p>
                   <div className='flex flex-col gap-[8.006px] mt-[8px]'>
                     <Link to={'/terms-of-service'}>
-                      <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
+                      <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Terms Of Service</p>
                     </Link>
                     <Link to={'/copyright'}>
-                      <p className='font-outfit xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
+                      <p className='font-outfit hover:text-[white] transition-all duration-200 xsm:text-center font-normal text-[20px] leading-[30px] text-[rgba(255,219,184,1)]'>Privacy Policy</p>
                     </Link>
                   </div>
                 </div>

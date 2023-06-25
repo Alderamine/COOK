@@ -1,13 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Hamburger from "../assets/Blog/Hamburger.svg"
-import ChineseIcon from "../assets/LandingPage/ChineseIcon.svg"
-import EnglishIcon from "../assets/LandingPage/EnglishIcon.svg"
-import GermanIcon from "../assets/LandingPage/GermanIcon.svg"
-import HebrewIcon from "../assets/LandingPage/HebrewIcon.svg"
-import ItalianIcon from "../assets/LandingPage/ItalianIcon.svg"
-import Menu from './Menu'
 import LanguageModal from './LanguageModal'
+import Menu from './Menu'
 
 export default function BlogNav() {
 
@@ -69,9 +64,9 @@ export default function BlogNav() {
             </div>
           </div>
 
-          <img src={Hamburger} onClick={() => setShowMenu(true)} className='xsm:flex hidden cursor-pointer' alt="" />
+          <img src={Hamburger} onClick={() => setShowMenu(true)} className='xsm:flex sm:flex md:flex hidden cursor-pointer' alt="" />
 
-          <div className='flex items-center gap-[20px] xsm:hidden'>
+          <div className='flex items-center gap-[20px] xsm:hidden sm:hidden md:hidden'>
           <div onClick={(e) => {setLanguageModal(!languageModal);e.stopPropagation();}} className='flex items-center gap-[0.278vw] cursor-pointer group relative'>
               <LanguageModal state={languageModal} closeModal={(e)=> {setLanguageModal(false)}}/>
               <p className='font-outfit font-normal text-[19px] leading-[19px] select-none'>Eng</p>

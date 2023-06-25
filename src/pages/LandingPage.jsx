@@ -19,8 +19,8 @@ import Three from "../assets/LandingPage/Three.svg"
 import Two from "../assets/LandingPage/Two.svg"
 export default function LandingPage() {
   return (
-    <main>
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
+    <main className='xsm:overflow-hidden'>
+      <section className='xsm:overflow-hidden w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
         <div className='md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center xsm:flex xsm:flex-col xsm:items-center'>
           <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] md:tracking-[0px] sm:tracking-[0px] text-TextColor mt-[85px] md:mt-[142px] sm:mt-[142px] xsm:mt-[192px] md:text-[50px] sm:text-[50px] xsm:text-[32px] md:leading-[56.65px] sm:leading-[56.65px] xsm:leading-[36.26px] md:w-[702px] sm:w-[84.072vw] md:text-center sm:text-center xsm:text-center xsm:min-w-[88.205vw]'>Master the Art of Cooking with <span className='text-primary2 font-normal font-pacifico'>Experts</span> Worldwide </h1>
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
@@ -34,7 +34,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className='mt-[71px] relative w-fit h-fit'>
-          <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
+          <div className='xsm:overflow-hidden xsm:w-[calc(100vw - 100%)] flex justify-center'>
             <img className='w-[518px] md:w-[585.994px] sm:w-[585.994px] xsm:min-w-[110vw] xsm:m-auto' src={HeroImg} />
           </div>
           <div className='absolute right-[-1.84vw] bottom-[-34px] xsm:hidden'>
@@ -95,19 +95,19 @@ export default function LandingPage() {
               <p className='font-outfit font-normal text-[16px] leading-[26.8px] xsm:hidden md:text-[16px] sm:text-[16px] md:leading-[24.32px] sm:leading-[24.32px]'>Dive into a range of cooking styles and techniques tailored to your interests</p>
             </div>
           </div>
-          <div className='flex items-center gap-[10px] md:hidden sm:hidden xsm:hidden'>
+          <div className='flex items-center gap-[10px] md:hidden sm:hidden xsm:hidden group'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M10.0833 17.4167C14.1334 17.4167 17.4167 14.1334 17.4167 10.0833C17.4167 6.03325 14.1334 2.75 10.0833 2.75C6.03325 2.75 2.75 6.03325 2.75 10.0833C2.75 14.1334 6.03325 17.4167 10.0833 17.4167Z" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               <path d="M19.25 19.25L15.2625 15.2625" stroke="#D27722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <Link to={'/search-tutors'}>
-              <p className='font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category </p>
+              <p className='group-hover:text-primary2 transition-all duration-200 font-outfit font-medium leading-[20px] text-[16px] text-TextColor'>Search tutors by category </p>
             </Link>
           </div>
         </div>
         <div className='grid grid-cols-3 xsm:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-[1.667vw] mt-[68px] xsm:mt-[47px] gap-y-[24px]'>
           <Link to={'/search-tutors'}>
-            <div className='landingExploreAndLearn group flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2 transition-colors delay-100 duration-100'>
+            <div className='landingExploreAndLearn group flex items-center gap-[24px] group h-[121px] py-[24px] px-[34px] xsm:px-[16px] rounded-[16px] border border-[rgba(255,219,184,1)] bg-primary2'>
               <svg className='max-w-[52px] max-h-[52px]' width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M84.7896 53.1565C75.4271 47.3385 63.0721 44.1342 50 44.1342C36.9279 44.1342 24.5727 47.3383 15.2104 53.1565C5.40176 59.2518 0 67.4926 0 76.3608C0 84.2292 4.26191 90.7844 15.9719 94.0401C24.4152 96.3876 35.6814 96.8686 50 96.8686C64.3184 96.8686 75.5846 96.3876 84.0281 94.0401C95.7338 90.7856 100 84.2331 100 76.3608C100 67.4926 94.5982 59.2518 84.7896 53.1565ZM70.5078 53.0546C72.5434 53.7049 74.5018 54.4547 76.3672 55.3001V64.6421C76.3672 66.2575 75.0529 67.5717 73.4375 67.5717C71.8221 67.5717 70.5078 66.2575 70.5078 64.6421V53.0546ZM47.0703 50.0536C48.0414 50.0151 49.018 49.9938 50 49.9938C50.982 49.9938 51.9586 50.0151 52.9297 50.0536V64.4155C52.9297 66.0309 51.6154 67.3452 50 67.3452C48.3846 67.3452 47.0703 66.0309 47.0703 64.4155V50.0536ZM23.6328 55.3001C25.4982 54.4547 27.4566 53.7049 29.4922 53.0546V64.6421C29.4922 66.2575 28.1779 67.5717 26.5625 67.5717C24.9471 67.5717 23.6328 66.2575 23.6328 64.6421V55.3001ZM50 91.0092C21.3727 91.0092 5.85938 88.6749 5.85938 76.3608C5.85938 69.744 10.0859 63.4096 17.7734 58.47V64.6421C17.7734 69.4883 21.7162 73.4311 26.5625 73.4311C31.4088 73.4311 35.3516 69.4883 35.3516 64.6421V51.5032C37.2893 51.0903 39.2443 50.7633 41.2109 50.5233V64.4155C41.2109 69.2618 45.1537 73.2046 50 73.2046C54.8463 73.2046 58.7891 69.2618 58.7891 64.4155V50.5233C60.7557 50.7633 62.7107 51.0903 64.6484 51.5032V64.6421C64.6484 69.4883 68.5912 73.4311 73.4375 73.4311C78.2838 73.4311 82.2266 69.4883 82.2266 64.6421V58.47C89.9143 63.4096 94.1406 69.744 94.1406 76.3608C94.1406 88.6749 78.6273 91.0092 50 91.0092ZM37.123 20.413C39.9035 18.5592 41.5635 15.4212 41.5635 12.0182C41.5635 8.6153 39.9035 5.47721 37.123 3.62369C35.7768 2.72623 33.9578 3.0899 33.0604 4.43619C32.1627 5.78248 32.5266 7.60143 33.8729 8.49889C35.0365 9.27467 35.7041 10.5575 35.7041 12.0182C35.7041 13.4792 35.0365 14.762 33.8729 15.5378C32.5057 16.4471 31.3847 17.6805 30.61 19.1282C29.8352 20.5758 29.4307 22.1927 29.4324 23.8346C29.4307 25.4766 29.8352 27.0935 30.61 28.5412C31.3848 29.9888 32.5057 31.2223 33.8729 32.1317C35.2168 33.0276 37.0365 32.6678 37.9355 31.3192C38.8332 29.9729 38.4693 28.154 37.123 27.2565C35.9594 26.4807 35.2918 25.2335 35.2918 23.8346C35.2918 22.436 35.9594 21.1887 37.123 20.413ZM51.7715 20.413C54.552 18.5592 56.2119 15.4212 56.2119 12.0182C56.2119 8.6153 54.552 5.47721 51.7715 3.62369C50.425 2.72623 48.6061 3.0899 47.7088 4.43619C46.8111 5.78248 47.175 7.60143 48.5213 8.49889C49.685 9.27467 50.3525 10.5575 50.3525 12.0182C50.3525 13.4792 49.685 14.762 48.5213 15.5378C47.1541 16.4471 46.0332 17.6805 45.2584 19.1282C44.4836 20.5758 44.0791 22.1927 44.0809 23.8346C44.0791 25.4766 44.4837 27.0935 45.2584 28.5412C46.0332 29.9888 47.1541 31.2223 48.5213 32.1317C49.8652 33.0276 51.685 32.6678 52.584 31.3192C53.4816 29.9729 53.1178 28.154 51.7715 27.2565C50.6078 26.4807 49.9402 25.2335 49.9402 23.8346C49.9402 22.436 50.6078 21.1887 51.7715 20.413ZM66.4199 20.413C69.2004 18.5592 70.8604 15.4212 70.8604 12.0182C70.8604 8.6153 69.2004 5.47721 66.4199 3.62369C65.0734 2.72623 63.2545 3.0899 62.3572 4.43619C61.4596 5.78248 61.8234 7.60143 63.1697 8.49889C64.3334 9.27467 65.001 10.5575 65.001 12.0182C65.001 13.4792 64.3334 14.762 63.1697 15.5378C61.8026 16.4471 60.6816 17.6805 59.9068 19.1282C59.1321 20.5758 58.7275 22.1927 58.7293 23.8346C58.7276 25.4766 59.1321 27.0935 59.9069 28.5412C60.6816 29.9888 61.8026 31.2223 63.1697 32.1317C64.5137 33.0276 66.3334 32.6678 67.2324 31.3192C68.1301 29.9729 67.7662 28.154 66.4199 27.2565C65.2562 26.4807 64.5887 25.2335 64.5887 23.8346C64.5887 22.436 65.2562 21.1887 66.4199 20.413Z" fill="white" />
               </svg>
@@ -365,7 +365,7 @@ export default function LandingPage() {
       </section>
       <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[8.403vw] lg:gap-x-[3.403vw] gap-y-[162px] w-full'>
         <div className='relative w-fit h-fit'>
-          <div className='xsm:w-[96.7vw] xsm:overflow-hidden flex justify-center'>
+          <div className='xsm:w-[calc(100vw - 100%)] xsm:overflow-hidden flex justify-center'>
             <img className='min-w-[535px] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw]' src={AdvantagesHero} />
           </div>
           <div className='absolute rounded-[16px] bg-primary2 h-[180px] w-[284px] bottom-[-27.023px] xsm:bottom-[-101px] left-[-5.694vw] xsm:left-[50%] xsm:translate-x-[-50%] p-[24px] flex flex-col items-end'>
@@ -455,7 +455,7 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Explore Our Culinary Experts</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and cuisines to choose from.</p>
-            <Link className='xsm:self-center' to={'/search-tutors'}>
+            <Link className='xsm:self-center sm:self-center md:self-center' to={'/search-tutors'}>
               <button className='h-[41px] hover:bg-[white] border-2 border-primary2 hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Browse Tutors</button>
             </Link>
           </div>
@@ -478,7 +478,7 @@ export default function LandingPage() {
           <div className='flex flex-col justify-center gap-[29px] w-[41.007vw] md:w-full sm:w-full xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[36px] leading-[42.66px] xsm:text-[28px] xsm:leading-[33.18px]'>Enjoy Your Interactive Lesson</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px]'>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
-            <Link className='xsm:self-center' to={'signup'}>
+            <Link className='xsm:self-center sm:self-center md:self-center' to={'signup'}>
               <button className='h-[41px] hover:bg-[white] border-2 border-primary2 hover:border-2 hover:border-primary2 hover:text-primary2 transition-all duration-200 w-[157px] text-[white] bg-primary2 font-outfit rounded-[4px] font-medium text-[20px] leading-[25.2px]'>Sign up for free</button>
             </Link>
           </div>
@@ -582,18 +582,19 @@ export default function LandingPage() {
             </div>
           </div>
           <div className='h-fit'>
-            <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
+            <div className='xsm:overflow-hidden xsm:max-w-[calc(100vw - 100%)] flex justify-center'>
               <img className='w-[38.264vw] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw] xsm:m-auto' src={BecomeaChef} alt="" />
             </div>
           </div>
         </div>
       </section>
       <section className='w-full md:px-0 sm:px-0 xsm:px-0 px-[4.444vw] min-h-[647px] mt-[142px]'>
-        <div className='bg-primary2 rounded-[26px] xsm:rounded-[0px] flex md:items-center sm:items-center md:px-[42px] sm:px-[36px] px-0 gap-[5.036vw] xsm:gap-0 xsm:flex-col'>
-          <div className='xsm:overflow-hidden xsm:w-[96.7vw] flex justify-center'>
-            <img className='lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:min-w-[278.999px] sm:min-w-[230.999px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
+        <div className='bg-primary2 xsm:rounded-none sm:rounded-none md:rounded-none rounded-[26px] flex md:items-center sm:items-center md:px-[42px] sm:px-[36px] px-0 gap-[5.036vw] xsm:gap-0 xsm:flex-col'>
+          <div className='xsm:overflow-hidden xsm:w-[calc(100vw - 100%)] flex justify-center'>
+            <img className='object-cover rounded-s-[26px] lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:min-w-[278.999px] sm:min-w-[230.999px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
+            {/* <img className='' src={BecomeaStudent} alt="" /> */}
           </div>
-          <div className='pt-[90px] w-full xsm:pt-[42px] xsm:pb-[34px] xsm:px-[2.222vw] md:pr-0 sm:pr-0 pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
+          <div className='pt-[90px] w-full xsm:pt-[65px] xsm:pb-[65px] xsm:px-[2.222vw] md:pr-0 sm:pr-0 pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
             <h3 className='font-rubik font-semibold tracking-[-0.02em] text-[50px] md:text-[42px] md:leading-[47.59px] sm:text-[42px] sm:leading-[47.59px] xsm:text-[30px] xsm:leading-[33.99px] leading-[56.65px] text-[white]'>Become A Student</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'>Kick-start your culinary adventure with COOK. We provide a space for cooking enthusiasts of all levels to learn, explore, and master culinary arts from professional chefs worldwide. So dive in and transform your kitchen into a playground of flavors.</p>
             <div className='flex flex-col gap-[8px]'>
@@ -711,7 +712,7 @@ export default function LandingPage() {
           </div>
           <div className='grid grid-cols-2 xsm:grid-cols-1 mt-[53px] gap-[23px]'>
             <Link to={"/blog"}>
-              <div className='landingExploreAndLearn gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+              <div className='landingExploreAndLearnOrange gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img className='' src={CookBlog1} alt="" />
                   <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
@@ -730,7 +731,7 @@ export default function LandingPage() {
               </div>
             </Link>
             <Link to={"/blog"}>
-              <div className='landingExploreAndLearn gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+              <div className='landingExploreAndLearnOrange gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog2} alt="" />
                   <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
@@ -749,7 +750,7 @@ export default function LandingPage() {
               </div>
             </Link>
             <Link to={"/blog"}>
-              <div className='landingExploreAndLearn gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+              <div className='landingExploreAndLearnOrange gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog3} alt="" />
                   <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>
@@ -768,7 +769,7 @@ export default function LandingPage() {
               </div>
             </Link>
             <Link to={"/blog"}>
-              <div className='landingExploreAndLearn gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
+              <div className='landingExploreAndLearnOrange gap-[23px] min-h-[340px] rounded-[16px] border-[rgba(255,219,184,1)] border overflow-hidden'>
                 <div>
                   <img src={CookBlog4} alt="" />
                   <div className='px-[25px] py-[20px] flex flex-col gap-[9px]'>

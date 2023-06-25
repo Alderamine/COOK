@@ -58,7 +58,7 @@ export default function BlogCategory() {
       <Pagination currentPage={1} totalPages={6} />
 
       <section className='w-full bg-[rgba(255,253,244,1)] min-h-[442px] mt-[159px] px-[11.875vw] xsm:px-[0px] md:pb-[92px] md:pt-[42px] sm:pb-[92px] sm:pt-[42px] xsm:pb-[92px] xsm:pt-[42px] flex items-center md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[122px] md:gap-[52px] sm:gap-[52px] xsm:gap-[34px]'>
-        <div className='w-full'>
+        <div className='w-full flex-1'>
           <div className='xsm:px-[11.875vw]'>
             <h3 className='font-rubik font-medium text-[48px] leading-[56.16px] tracking-[-0.02em]'>Did you know?</h3>
             <p className='font-outfit font-normal text-[18px] leading-[31.14px] tracking-[-0.02em] mt-[27px]'>With COOK you can discover and connect with professional chefs from around the world. Find your perfect chef or become one, as our platform provides a seamless experience for cooking enthusiasts. Unleash your culinary dreams and join our vibrant community today!</p>

@@ -23,8 +23,8 @@ export default function Menu({ showMenu, closeMenu }) {
   }, [])
 
   return (
-    <div style={showMenu ? { right: 0 } : { right: '-80vw' }} className='transition-all duration-500 fixed z-[2000] right-0 bg-primary2 h-screen w-[79.487vw] top-0 pl-[7.949vw] pr-[6.923vw] py-[23px]'>
-      <div className='flex items-center justify-between'>
+    <div style={showMenu ? { right: 0 } : { right: '-80vw' }} className='transition-all duration-500 fixed z-[2000] right-0 bg-primary2 h-screen w-[79.487vw] top-0 pl-[7.949vw] pr-[6.923vw]'>
+      <div className='flex items-center justify-between min-h-[102px]'>
         <svg onClick={closeMenu} className='cursor-pointer' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 4L21.5 20.5" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" />
           <path d="M21.5 4L5 20.5" stroke="#FFDBB8" strokeWidth="3" strokeLinecap="round" />
@@ -35,7 +35,7 @@ export default function Menu({ showMenu, closeMenu }) {
           <path d="M20.625 16.5H4.125" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
-      <nav className='flex flex-col gap-[32px] mt-[52px]'>
+      <nav className='flex flex-col gap-[32px] mt-[30px]'>
         <p onClick={() => { closeMenu(); navigate("/search-tutors") }} className='font-outfit font-normal cursor-pointer text-[24px] leading-[24px] text-[white]'>Cooking Classes</p>
         <p onClick={() => { closeMenu(); navigate("/signup") }} className='font-outfit font-normal cursor-pointer text-[24px] leading-[24px] text-[white]'>Become a Chef</p>
         <p onClick={() => { closeMenu(); navigate("/search-groups") }} className='font-outfit font-normal cursor-pointer text-[24px] leading-[24px] text-[white]'>Group Cooking</p>
