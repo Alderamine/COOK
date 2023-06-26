@@ -95,7 +95,7 @@ export default function TutorList() {
             <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={iWantToLearn ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setIWantToLearn(!iWantToLearn)} className='cursor-pointer h-[67px]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
                 <p name="" className='h-full flex items-center font-outfit font-medium md:text-[18px] md:leading-[27px] text-[20px] leading-[24.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">I want to Learn</p>
-                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style={iWantToLearn?{transform:"rotate(-45deg)"}:{}} className='transition-all duration-200 self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
                 </svg>
               </div>
@@ -107,7 +107,7 @@ export default function TutorList() {
             <div className='relative w-[15.694vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={pricePerLesson ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setPricePerLesson(!pricePerLesson)} className='cursor-pointer h-[67px] w-full md:w-[27.784vw] sm:w-[27.784vw]  rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
                 <p name="" className='h-full flex items-center font-outfit font-medium md:text-[18px] md:leading-[27px] text-[20px] leading-[24.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Price per lesson</p>
-                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style={pricePerLesson?{transform:"rotate(-45deg)"}:{}} className='transition-all duration-200 self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
                 </svg>
               </div>
@@ -118,8 +118,8 @@ export default function TutorList() {
 
             <div className='relative w-[19.792vw] md:w-[27.784vw] sm:w-[27.784vw]'>
               <div style={availability ? { borderBottomLeftRadius: "0", borderBottomRightRadius: "0" } : {}} onClick={() => setAvailability(!availability)} className='cursor-pointer h-[67px] w-full rounded-[12px] flex relative border-2 border-[rgba(255,219,184,1)]'>
-                <p name="" className='h-full flex items-center font-medium md:text-[18px] md:leading-[27px] text-[20px] leading-[24.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Availability</p>
-                <svg className='self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <p name="" className='h-full flex items-center font-outfit font-medium md:text-[18px] md:leading-[27px] text-[20px] leading-[24.68px] text-TextColor flex-1 rounded-[12px] px-[20px]' id="">Availability</p>
+                <svg style={availability?{transform:"rotate(-45deg)"}:{}} className='transition-all duration-200 self-center mr-[20px]' width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.18205 6.40236C5.79792 6.76062 5.20208 6.76062 4.81795 6.40236L0.861155 2.71208C0.197273 2.09292 0.635403 0.980775 1.5432 0.980775L9.4568 0.980776C10.3646 0.980776 10.8027 2.09292 10.1388 2.71208L6.18205 6.40236Z" fill="#D27722" />
                 </svg>
               </div>
@@ -233,7 +233,7 @@ export default function TutorList() {
                   <p className='font-rubik font-semibold text-[16px] leading-[18.96px] relative left-[-13px]'>View all</p>
                 </Link>
               </div>
-              <div className='w-fit relative '>
+              <div className='w-fit relative mt-[21px]'>
                 <img onClick={handleScroll} className='cursor-pointer z-[999] opacity-80 hover:opacity-100 transition-all duration-150 absolute right-[-5%] xsm:right-[-0%] xsm:left-[100%] top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
                 <img onClick={handleScrollLeft} className='cursor-pointer z-[999] opacity-80 hover:opacity-100 transition-all duration-150 absolute left-[-0%] rotate-180 top-[50%] translate-x-[-50%]' src={ScrollArrow} alt="" />
                 <div ref={scrollRef} className='pb-[50px] flex gap-[20px] w-full max-w-[67.986vw] md:max-w-[88.383vw] xsm:max-w-[83.077vw] overflow-scroll hideScrollbar'>

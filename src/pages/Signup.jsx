@@ -19,11 +19,11 @@ export default function Signup() {
         <div className='w-fit xsm:w-[90vw] h-fit flex flex-col justify-center items-center'>
           <h1 className='font-rubik font-bold text-[32px] leading-[37.92px] tracking-[-0.02em]'>Sign up to <Link to={'/'}><span className='text-primary2 underline'>COOK</span></Link></h1>
           <div className='w-full flex flex-col gap-[8px] mt-[24px]'>
-            <button className='xsm:w-full flex hover:bg-primaryLighten2 hover:text-primary transition-all duration-200 items-center justify-center gap-[14px] w-[322px] h-[56px] border border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[30px]'>
+            <button className='xsm:w-full flex hover:bg-primaryLighten2 transition-all duration-200 items-center justify-center gap-[14px] w-[322px] h-[56px] border border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[30px]'>
               <img src={Google} alt="" />
               Continue with Google
             </button>
-            <button className='xsm:w-full flex hover:bg-primaryLighten2 hover:text-primary transition-all duration-200 items-center justify-center gap-[14px] w-[322px] h-[56px] border border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[30px]'>
+            <button className='xsm:w-full flex hover:bg-primaryLighten2 transition-all duration-200 items-center justify-center gap-[14px] w-[322px] h-[56px] border border-[rgba(255,219,184,1)] font-outfit font-normal text-[20px] leading-[30px]'>
               <img src={Facebook} alt="" />
               Continue with Google
             </button>

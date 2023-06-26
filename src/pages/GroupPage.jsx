@@ -330,7 +330,7 @@ const GroupPage = () => {
                   );
                 })}
               </div>
-              <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
+              <button className='w-[73px] h-[39px] rounded-[4px] hover:bg-[rgba(0,0,0,0)] border-2 border-primary2 hover:text-primary2 transition-all duration-200 bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
             </div>
           </div>
           <div className='py-[28px]'>
@@ -354,7 +354,7 @@ const GroupPage = () => {
                   );
                 })}
               </div>
-              <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
+              <button className='w-[73px] h-[39px] rounded-[4px] hover:bg-[rgba(0,0,0,0)] border-2 border-primary2 hover:text-primary2 transition-all duration-200 bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
             </div>
           </div>
           <div className='pt-[28px]'>
@@ -378,11 +378,11 @@ const GroupPage = () => {
                   );
                 })}
               </div>
-              <button className='w-[73px] h-[39px] rounded-[4px] bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
+              <button className='w-[73px] h-[39px] rounded-[4px] hover:bg-[rgba(0,0,0,0)] border-2 border-primary2 hover:text-primary2 transition-all duration-200 bg-primary2 text-[white] font-outfit font-medium text-[18px] leading-[22.68px]'>Book</button>
             </div>
           </div>
         </div>
-        <button className='w-full border-[2px] h-[39px] font-outfit border-primary rounded-[4px] mt-[32px] xsm:mt-[50px] text-[18px] font-[500] leading-[22.68px] text-primary'>Send A Message</button>
+        <button className='w-full border-[2px] h-[39px] font-outfit border-primary2 rounded-[4px] mt-[32px] xsm:mt-[50px] text-[18px] font-[500] leading-[22.68px] text-primary2 hover:bg-primary2 hover:text-primaryLighten transition-all duration-200'>Send A Message</button>
       </div>
     </div>
   )

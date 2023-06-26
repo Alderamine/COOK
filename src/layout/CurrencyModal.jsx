@@ -20,7 +20,7 @@ export default function CurrencyModal({ state, closeModal, mobileNav = false }) 
   }, [closeModal]);
 
   return (
-    <div ref={modalRef} style={state ? { maxHeight: "272px", border: "1px" } : { maxHeight: "0px", border: "0px" }} onClick={(e) => e.stopPropagation()} className={mobileNav ? 'modalShadow transition-all duration-300 left-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white] z-[1000]': 'modalShadow transition-all duration-300 right-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white]'}>
+    <div ref={modalRef} style={state ? { maxHeight: "272px", border: "1px" } : { maxHeight: "0px", border: "0px" }} onClick={(e) => e.stopPropagation()} className={mobileNav ? 'landingExploreAndLearnOrangePerma transition-all duration-300 left-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white] z-[1000]': 'landingExploreAndLearnOrangePerma transition-all duration-300 right-0 overflow-hidden absolute top-[25px] rounded-[6px] w-[255px] border border-[rgba(255,219,184,1)] bg-[white]'}>
       <div className='m-[16px]'>
         <h5 className='font-outfit font-bold text-[18px] leading-[22.68px] text-TextColor'>Select a currency</h5>
         <div className='mt-[17px] flex flex-col gap-[5px]'>
