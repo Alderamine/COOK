@@ -20,7 +20,7 @@ import Two from "../assets/LandingPage/Two.svg"
 export default function LandingPage() {
   return (
     <main className='xsm:overflow-hidden'>
-      <section className='xsm:overflow-hidden w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
+      <section className='xsm:overflow-hidden w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px] flex xsm:flex-col-reverse sm:flex-col-reverse md:flex-col-reverse md:items-center sm:items-center xsm:items-center justify-between gap-[92px] md:gap-0 sm:gap-0 xsm:gap-0'>
         <div className='md:flex md:flex-col md:items-center sm:flex sm:flex-col sm:items-center xsm:flex xsm:flex-col xsm:items-center'>
           <h1 className='font-rubik font-bold text-[61px] leading-[69.11px] w-[48.75vw] tracking-[-0.04em] md:tracking-[0px] sm:tracking-[0px] text-TextColor mt-[85px] md:mt-[142px] sm:mt-[142px] xsm:mt-[192px] md:text-[50px] sm:text-[50px] xsm:text-[32px] md:leading-[56.65px] sm:leading-[56.65px] xsm:leading-[36.26px] md:w-[702px] sm:w-[84.072vw] md:text-center sm:text-center xsm:text-center xsm:min-w-[88.205vw]'>Master the Art of Cooking with <span className='text-primary2 font-normal font-pacifico'>Experts</span> Worldwide </h1>
           <p className='w-[37.014vw] font-outfit font-normal text-[16px] leading-[25.6px] mt-[24px] md:text-center sm:text-center xsm:text-center md:w-[63.832vw] sm:w-[63.832vw] md:text-[16px] md:leading-[25.6px] sm:text-[16px] sm:leading-[25.6px] xsm:min-w-[83.59vw]'>Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.</p>
@@ -59,7 +59,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className='h-fit relative xsm:px-[8.205vw]'>
+      <section className='h-fit relative xsm:px-[32px]'>
         <div className='absolute xsm:hidden w-full left-0 top-[50%] translate-y-[-50%] border border-[rgba(255,219,184,1)]'></div>
         <div className='w-[75.347vw] bg-[rgba(255,253,244,1)] xsm:w-full m-auto mt-[159px] xsm:mt-[78px] mb-[182px] xsm:mb-[112px] bg-primary2Lighten border border-[rgba(255,219,184,1)] min-h-[148px] rounded-[16px] py-[12px] px-[1.597vw] grid grid-cols-4 sm:grid-cols-2 xsm:grid-cols-1 items-center justify-around gap-y-[20px] gap-[29px] relative'>
           <div className=' flex flex-col h-[121px] justify-center items-center'>
@@ -84,7 +84,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
             <svg className='relative top-[10px] xsm:top-[4px] w-[46px] h-[35px] md:w-[36px] md:h-[26px] sm:w-[36px] sm:h-[26px] xsm:w-[36px] xsm:h-[26px]' viewBox="0 0 46 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -295,7 +295,7 @@ export default function LandingPage() {
           </svg> */}
         </div>
       </section>
-      <section className='mt-[152px] xsm:mt-[112px] w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex flex-col items-center'>
+      <section className='mt-[152px] xsm:mt-[112px] w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px] flex flex-col items-center'>
         <h2 className='font-rubik font-semibold text-[50px] leading-[59.25px] relative md:text-[42px] md:leading-[49.77px] sm:text-[42px] sm:leading-[49.77px] xsm:text-[30px] xsm:leading-[35.55px]'>Our Unique Benefits
           <svg className='absolute right-[-30px] top-[-15px]' width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.8703 22.3536L25.9942 15.7492" stroke="#FFDBB8" strokeWidth="4" strokeLinecap="round" />
@@ -363,7 +363,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[8.403vw] lg:gap-x-[3.403vw] gap-y-[162px] w-full'>
+      <section className='mt-[260px] md:mt-[163px] sm:mt-[163px] xsm:mt-[151px] px-[64px] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px] flex md:flex-col sm:flex-col xsm:flex-col items-center gap-x-[8.403vw] lg:gap-x-[3.403vw] gap-y-[162px] w-full'>
         <div className='relative w-fit h-fit'>
           <div className='xsm:w-[calc(100vw - 100%)] xsm:overflow-hidden flex justify-center'>
             <img className='min-w-[535px] md:w-[583px] sm:w-[583px] xsm:min-w-[110vw]' src={AdvantagesHero} />
@@ -423,7 +423,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[199px]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px] mt-[199px]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-[20px]'>
             <svg className='relative top-[15px] xsm:hidden' width="75" height="31" viewBox="0 0 75 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -511,7 +511,7 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px]'>
         <div className='flex justify-between items-center md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[9.097vw] mt-[123px]'>
           <div className='flex flex-col justify-center gap-[15px] w-[590.5px] md:w-[88.383vw] sm:w-[88.383vw] xsm:w-full'>
             <h3 className='font-rubik font-semibold text-[50px] leading-[56.65px] tracking-[-0.02em] xsm:text-[30px] xsm:leading-[33.99px]'>Become A Chef</h3>
@@ -594,7 +594,7 @@ export default function LandingPage() {
             <img className='object-cover rounded-s-[26px] lg:min-w-[39.167vw] xl:min-w-[39.167vw] 2xl:min-w-[39.167vw] md:min-w-[278.999px] sm:min-w-[230.999px] xsm:min-w-[105vw] xsm:m-auto md:rounded-[24px] sm:rounded-[24px] md:h-[506px] sm:h-[506px]' src={BecomeaStudent} alt="" />
             {/* <img className='' src={BecomeaStudent} alt="" /> */}
           </div>
-          <div className='pt-[90px] w-full xsm:pt-[65px] xsm:pb-[65px] xsm:px-[2.222vw] md:pr-0 sm:pr-0 pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
+          <div className='pt-[90px] w-full xsm:pt-[65px] xsm:pb-[65px] xsm:px-[31.997px] md:pr-0 sm:pr-0 pr-[5.556vw] pb-[74px] flex flex-col gap-[31px]'>
             <h3 className='font-rubik font-semibold tracking-[-0.02em] text-[50px] md:text-[42px] md:leading-[47.59px] sm:text-[42px] sm:leading-[47.59px] xsm:text-[30px] xsm:leading-[33.99px] leading-[56.65px] text-[white]'>Become A Student</h3>
             <p className='font-outfit font-normal text-[18px] leading-[28.8px] text-[white]'>Kick-start your culinary adventure with COOK. We provide a space for cooking enthusiasts of all levels to learn, explore, and master culinary arts from professional chefs worldwide. So dive in and transform your kitchen into a playground of flavors.</p>
             <div className='flex flex-col gap-[8px]'>
@@ -642,12 +642,12 @@ export default function LandingPage() {
               </div>
             </div>
             <Link className='xsm:w-full' to={'signup'}>
-              <button className='h-[39px] hover:bg-primary2 bg-[rgba(255,219,184,1)] hover:text-primaryLighten2 hover:border-2 hover:border-primaryLighten2 transition-all duration-200 w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-primary2 bg-primaryLighten2 font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
+              <button className='h-[39px] hover:bg-primary2 hover:text-[rgba(255,219,184,1)] hover:border-2 hover:border-primaryLighten2 transition-all duration-200 w-[90px] xsm:w-full text-[rgba(255,219,184,1)] border-2 border-[rgba(255,219,184,1)] text-primary2 bg-[rgba(255,219,184,1)] font-outfit rounded-[4px] font-medium text-[20px] leading-[23px]'>Sign up</button>
             </Link>
           </div>
         </div>
       </section>
-      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[8.205vw] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[5.069vw] lg:gap-[2.5vw]'>
+      <section className='w-full px-[4.444vw] md:px-[5.749vw] sm:px-[5.749vw] xsm:px-[32px] mt-[142px] xsm:mt-[104px] flex md:flex-col-reverse sm:flex-col-reverse xsm:flex-col-reverse gap-[5.069vw] lg:gap-[2.5vw]'>
         <div className=''>
           <div className='flex items-center gap-[0.903vw]'>
             <svg width="36" height="27" viewBox="0 0 36 27" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -101,10 +101,10 @@ const TermsOfService = () => {
           <div className='h-[15px] border border-primary rouded-[16px]'></div>
           <Link to={'/support'}>
             <div className='custom-tooltip' data-tooltip="Support">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 16.5V12.5" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 8.5H12.01" stroke="#FFDBB8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              <svg className='stroke-primaryLighten2 group fill-primary2 hover:fill-primaryLighten2' width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path className='group-hover:stroke-primary2 transition-all duration-200 stroke-primaryLighten2' d="M12 16.5V12.5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path className='group-hover:stroke-primary2 transition-all duration-200 stroke-primaryLighten2' d="M12 8.5H12.01" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </div>
           </Link>
@@ -122,25 +122,25 @@ const TermsOfService = () => {
         </div>
         {/* <img className='sm:block xsm:block hidden cursor-pointer' onClick={() => setShowMenu(true)} src={Hamburger} alt="" /> */}
         <div className='sm:block xsm:block md:block hidden cursor-pointer'>
-            <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="42" height="42" rx="10" fill="#FFDBB8" />
-              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-              <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
-            </svg>
-          </div>
+          <svg className='cursor-pointer' onClick={() => setShowMenu(true)} width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="42" height="42" rx="10" fill="#FFDBB8" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="14" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="20.125" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+            <rect x="10.5" y="26.25" width="21" height="2.625" rx="1.3125" fill="#D27722" />
+          </svg>
+        </div>
 
       </nav>
       <div className='h-full flex xsm:flex-col sm:flex-col md:flex-col xsm:gap-[36px] sm:gap-[36px] md:gap-[36px] gap-[54px] pl-[64px] py-[94px] pr-[69px] sm:pt-[89px] md:pt-[89px] sm:px-[48px] md:px-[48px] xsm:pt-[80px] xsm:pr-[32px] xsm:pl-[34px]'>
